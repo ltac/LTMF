@@ -39,28 +39,28 @@ clearItemCargoGlobal _unit;
 
 // ADD BACK AGM ITEMS FOR REMOVED VANILLA ITEMS
 
-_unit addItemCargoGlobal ["AGM_Bandage", (_cntFAK * 5)];
+_unit addItemCargoGlobal ["ACE_fieldDressing", (_cntFAK * 5)];
 
 if (_cntFAK <= 25 && _cntMediKit == 0 ) then // Fireteam sized cargo
 	{
-		_unit addItemCargoGlobal ["AGM_Bandage", 10];
-		_unit addItemCargoGlobal ["AGM_Morphine", 5];
+		_unit addItemCargoGlobal ["ACE_fieldDressing", 10];
+		_unit addItemCargoGlobal ["ACE_morphine", 5];
 	};
 
 if (_cntFAK <= 25 && {_cntMediKit == 1}) then // Squad sized cargo
 	{
 		// Add items for 1 medic
-		_unit addItemCargoGlobal ["AGM_Bandage", 15];
-		_unit addItemCargoGlobal ["AGM_Morphine", 10];
-		_unit addItemCargoGlobal ["AGM_Epipen", 10];
-		_unit addItemCargoGlobal ["AGM_Bloodbag", 3];
+		_unit addItemCargoGlobal ["ACE_fieldDressing", 15];
+		_unit addItemCargoGlobal ["ACE_morphine", 10];
+		_unit addItemCargoGlobal ["ACE_epinephrine", 10];
+		_unit addItemCargoGlobal ["ACE_bloodIV_500", 3];
 	};
 
 if (_cntFAK > 50 || {_cntMediKit > 1}) then // Platoon sized Cargo
 	{
 		// Add items for 4 medics
-		_unit addItemCargoGlobal ["AGM_Bandage", 45];
-		_unit addItemCargoGlobal ["AGM_Morphine", 30];
-		_unit addItemCargoGlobal ["AGM_Epipen", 30];
-		_unit addItemCargoGlobal ["AGM_Bloodbag", 9];
+		_unit addItemCargoGlobal ["ACE_fieldDressing", 45];
+		_unit addItemCargoGlobal ["ACE_morphine", 30];
+		_unit addItemCargoGlobal ["ACE_epinephrine", 30];
+		_unit addItemCargoGlobal ["ACE_bloodIV_500", 9];
 	};

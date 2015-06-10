@@ -14,22 +14,22 @@ call
 {
 	// If 0 do nothing (Default Arma Healing)
 
-	// F3 Simple Wounding System
+	// ACE3 Basic
 	if (f_var_medical == 1) exitWith
 	{
 		// If script is being run on a client
 		if (hasInterface) then
 		{
-			[player] execVM "f\simplewoundingsystem\init.sqf";
+			[] execVM "f\medical\ACE_basic_clientInit.sqf";
 		};
 	};
-	// Authentic Gameplay Modification
+	// ACE3 Advanced
 	if (f_var_medical == 2) exitWith
 	{
 		// If script is being run on a client
 		if (hasInterface) then
 		{
-			[] execVM "f\medical\AGM_clientInit.sqf";
+			[] execVM "f\medical\ACE_adv_clientInit.sqf";
 		};
 	};
 };

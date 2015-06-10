@@ -1,4 +1,4 @@
-// F3 - AGM Clientside Initialisation
+// F3 - ACE Basic Clientside Initialisation
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -22,16 +22,16 @@ if (_typeOfUnit == "m") then
 
 	// BACKPACK: LIGHT
 	if (f_param_backpacks <= 1) then {
-		(unitBackpack player) addItemCargoGlobal ["AGM_Bandage",  15];
-		(unitBackpack player) addItemCargoGlobal ["AGM_Morphine", 10];
-		(unitBackpack player) addItemCargoGlobal ["AGM_Epipen",   10];
-		(unitBackpack player) addItemCargoGlobal ["AGM_Bloodbag", 2];
+		(unitBackpack player) addItemCargoGlobal ["ACE_fieldDressing",  15];
+		(unitBackpack player) addItemCargoGlobal ["ACE_morphine", 10];
+		(unitBackpack player) addItemCargoGlobal ["ACE_epinephrine",   10];
+		(unitBackpack player) addItemCargoGlobal ["ACE_bloodIV_500", 4];
 	};
 	// BACKPACK: HEAVY
 	if (f_param_backpacks == 2) then {
-		(unitBackpack player) addItemCargoGlobal ["AGM_Bandage", 25];
-		(unitBackpack player) addItemCargoGlobal ["AGM_Morphine", 15];
-		(unitBackpack player) addItemCargoGlobal ["AGM_Epipen",   15];
-		(unitBackpack player) addItemCargoGlobal ["AGM_Bloodbag", 4];
+		(unitBackpack player) addItemCargoGlobal ["ACE_fieldDressing", 25];
+		(unitBackpack player) addItemCargoGlobal ["ACE_morphine", 15];
+		(unitBackpack player) addItemCargoGlobal ["ACE_epinephrine",   15];
+		(unitBackpack player) addItemCargoGlobal ["ACE_bloodIV_500", 6];
 	};
 };
