@@ -961,6 +961,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 6];
 		_unit addItemCargoGlobal [_firstaid, 25];
+		_unit addItemCargoGlobal [_medkit, 2];
 };
 
 // CRATE: Large, ammo for 1 platoon
@@ -982,6 +983,8 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 20];
 		_unit addItemCargoGlobal [_firstaid, 75];
+		_unit addItemCargoGlobal [_medkit, 2];
+};
 };
 
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
@@ -1007,10 +1010,16 @@ switch (_typeofUnit) do
 
 if (!_isMan) then
 	{
-	// Authentic Gameplay Modification
+	// ACE Modification
+	// TODO : Propogate this change to other gear scripts
+	if (f_var_medical == 1) exitWith
+		{
+			[_unit] execVM "f\medical\ACE_converter_basic.sqf";
+		};
+
 	if (f_var_medical == 2) exitWith
 		{
-			[_unit] execVM "f\medical\ACE_converter.sqf";
+			[_unit] execVM "f\medical\ACE_converter_adv.sqf";
 		};
 	};
 

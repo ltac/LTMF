@@ -944,6 +944,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 6];
 		_unit addItemCargoGlobal [_firstaid, 25];
+		_unit addItemCargoGlobal [_medkit, 2];
 };
 
 // CRATE: Large, ammo for 1 platoon
@@ -965,6 +966,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 20];
 		_unit addItemCargoGlobal [_firstaid, 75];
+		_unit addItemCargoGlobal [_medkit, 2];
 };
 
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)

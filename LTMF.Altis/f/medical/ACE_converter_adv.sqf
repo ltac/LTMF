@@ -39,28 +39,42 @@ clearItemCargoGlobal _unit;
 
 // ADD BACK AGM ITEMS FOR REMOVED VANILLA ITEMS
 
-_unit addItemCargoGlobal ["ACE_fieldDressing", (_cntFAK * 5)];
+// _unit addItemCargoGlobal ["ACE_fieldDressing", (_cntFAK * 5)];
 
 if (_cntFAK <= 25 && _cntMediKit == 0 ) then // Fireteam sized cargo
 	{
-		_unit addItemCargoGlobal ["ACE_fieldDressing", 10];
+		_unit addItemCargoGlobal ["ACE_fieldDressing", 15];
 		_unit addItemCargoGlobal ["ACE_morphine", 5];
+		_unit addItemCargoGlobal ["ACE_epinephrine",   8];
 	};
 
 if (_cntFAK <= 25 && {_cntMediKit == 1}) then // Squad sized cargo
 	{
 		// Add items for 1 medic
-		_unit addItemCargoGlobal ["ACE_fieldDressing", 15];
-		_unit addItemCargoGlobal ["ACE_morphine", 10];
-		_unit addItemCargoGlobal ["ACE_epinephrine", 10];
-		_unit addItemCargoGlobal ["ACE_bloodIV_500", 3];
+		_unit addItemCargoGlobal ["ACE_fieldDressing",  10];
+		_unit addItemCargoGlobal ["ACE_elasticBandage",  15];
+		_unit addItemCargoGlobal ["ACE_packingBandage",  8];
+		_unit addItemCargoGlobal ["ACE_quikclot",  10];
+		_unit addItemCargoGlobal ["ACE_tourniquet",  5];
+		_unit addItemCargoGlobal ["ACE_salineIV_500", 6];
+		_unit addItemCargoGlobal ["ACE_morphine", 8];
+		_unit addItemCargoGlobal ["ACE_epinephrine",   8];
+		_unit addItemCargoGlobal ["ACE_atropine",   12];
+		_unit addItemCargoGlobal ["ACE_bodyBag",   5];
 	};
 
 if (_cntFAK > 50 || {_cntMediKit > 1}) then // Platoon sized Cargo
 	{
 		// Add items for 4 medics
-		_unit addItemCargoGlobal ["ACE_fieldDressing", 45];
-		_unit addItemCargoGlobal ["ACE_morphine", 30];
-		_unit addItemCargoGlobal ["ACE_epinephrine", 30];
-		_unit addItemCargoGlobal ["ACE_bloodIV_500", 9];
+		_unit addItemCargoGlobal ["ACE_fieldDressing",  40];
+		_unit addItemCargoGlobal ["ACE_elasticBandage",  50];
+		_unit addItemCargoGlobal ["ACE_packingBandage",  30];
+		_unit addItemCargoGlobal ["ACE_quikclot",  40];
+		_unit addItemCargoGlobal ["ACE_tourniquet",  20];
+		_unit addItemCargoGlobal ["ACE_salineIV_500", 30];
+		_unit addItemCargoGlobal ["ACE_bloodIV_500", 30];
+		_unit addItemCargoGlobal ["ACE_morphine", 40];
+		_unit addItemCargoGlobal ["ACE_epinephrine",   40];
+		_unit addItemCargoGlobal ["ACE_atropine",   50];
+		_unit addItemCargoGlobal ["ACE_bodyBag",   15];
 	};
