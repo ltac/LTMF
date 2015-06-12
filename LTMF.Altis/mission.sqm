@@ -7559,7 +7559,7 @@ class Mission
 				class Item0
 				{
 					presenceCondition="f_var_medical == 1";
-					position[]={7363.5864,0.0024163388,8559.2744};
+					position[]={7583.2534,0.099391691,8544.7666};
 					class args
 					{
 						items=12;
@@ -7607,7 +7607,7 @@ class Mission
 						};
 						class Item7
 						{
-							value="1";
+							value="2";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="enableUnconsciousnessAI";
 						};
@@ -7704,7 +7704,7 @@ class Mission
 						};
 						class Item7
 						{
-							value="1";
+							value="2";
 							parentCls="ACE_moduleMedicalSettings";
 							typeName="enableUnconsciousnessAI";
 						};
