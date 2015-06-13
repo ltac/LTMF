@@ -985,7 +985,6 @@ switch (_typeofUnit) do
 		_unit addItemCargoGlobal [_firstaid, 75];
 		_unit addItemCargoGlobal [_medkit, 2];
 };
-};
 
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
    default
