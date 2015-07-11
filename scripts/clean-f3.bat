@@ -8,6 +8,7 @@ optDir = "..\optional"
 rem Validate that core folders exist
 IF NOT EXIST %frameworkDir% EXIT /B
 IF NOT EXIST %f3Dir% EXIT /B
+IF NOT EXIST %optDir% mkdir %optDir%
 
 rem Move entire unused F3 directories
 IF EXIST %f3Dir%\EandEcheck MOVE %f3Dir%\EandEcheck %optDir%
@@ -19,5 +20,6 @@ IF EXIST %f3Dir%\nametag MOVE %f3Dir%\nametag %optDir%
 IF EXIST %f3Dir%\removeBody MOVE %f3Dir%\removeBody %optDir%
 IF EXIST %f3Dir%\setAISkill MOVE %f3Dir%\setAISkill %optDir%
 IF EXIST %f3Dir%\simplewoundingsystem MOVE %f3Dir%\simplewoundingsystem %optDir%
+IF EXIST %f3Dir%\zeus MOVE %f3Dir%\zeus %optDir%
 
-rem Use powershell for text replacement in files
+rem Use powershell for text replacement in files?
