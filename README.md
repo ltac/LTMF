@@ -31,4 +31,6 @@ http://ferstaberinde.com/f3/en//index.php?title=Main_Page
  
  Special thanks to everyone at: Folk ARPS | Basterd ArmA | Black sh33p | Bourbon Warfare | Phantactical | Pointfire | Project Awesome | Team One Tactical | The Company
  
- * ##### Modified for Legion Lactical by [LTac] EddBC #####
+ * ##### Modified for Legion Lactical #####
+
+ Contributors: Eddbc, Grubes, Imperator

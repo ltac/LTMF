@@ -59,17 +59,22 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // M4/M16 definition
-private["_m4", "_m4gl", "_m16", "_m16gl", "_stanag", "_stanag_tr", "_m4glrnd", "_m4glrnd_smokewhite", "_m4glrnd_smokegreen", "_m4glrnd_smokered", "_m4_scope_1", "_m4_scope_2", "_m4_laser", "_m4_silencer" ];
+private["_m4", "_m4gl", "_m16", "_m16gl", "_m249", "_mp5", "_stanag", "_stanag_tr", "_m249Mag", "_m249Mag_tr", "_mp5mag", "_m4glrnd", "_m4glrnd_smokewhite", "_m4glrnd_smokegreen", "_m4glrnd_smokered", "_m4_scope_1", "_m4_scope_2", "_m249_scope_1", "_m249_scope_2" ,"_m4_laser", "_m4_silencer" ];
 
 	// Weapons
 _m4 = "RH_m4a1_ris";
 _m4gl = "RH_m4a1_ris_m203";
 _m16 = "RH_m16a4";
 _m16gl = "RH_m16a4gl";
+_m249 = "hlc_m249_pip2";
+_mp5 = "hlc_smg_mp5a4";
 
 // Magazines
 _stanag = "30rnd_556x45_STANAG";
 _stanag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
+_m249mag = "hlc_200rnd_556x45_M_SAW";
+_m249mag_tr = "hlc_200rnd_556x45_T_SAW";
+_mp5mag = "hlc_30Rnd_9x19_B_MP5";
 _m4glrnd = "1Rnd_HE_Grenade_shell";
 _m4glrnd_smokewhite = "1Rnd_Smoke_Grenade_shell";
 _m4glrnd_smokegreen = "1Rnd_SmokeGreen_Grenade_shell";
@@ -80,6 +85,9 @@ _m4_scope_1 = "RH_eotech553";	// Holosight
 _m4_scope_2 = "RH_ta31rco_2d";	// RCO
 _m4_silencer = "RH_qdss_nt4";
 _m4_laser = "acc_pointer_IR";
+
+_m249_scope_1 = "RH_eotech553"; // Holosight
+_m249_scope_2 = "RH_c79"; // Elcan
 
 // ATTACHMENTS - PRIMARY
 _attach1 = _m4_laser;	// IR Laser
@@ -125,9 +133,9 @@ _carbinemag = _stanag;
 _carbinemag_tr = _stanag_tr;
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
-_smg = "SMG_01_F";
-_smgmag = "30Rnd_45ACP_Mag_SMG_01";
-_smgmag_tr = "30Rnd_45ACP_Mag_SMG_01_tracer_green";
+_smg = _mp5;
+_smgmag = _mp5mag;
+_smgmag_tr = _mp5mag;
 
 // Diver
 _diverWep = "arifle_SDAR_F";
@@ -197,9 +205,9 @@ _baghsamag = "B_HMG_01_support_F";			// used by Heavy SAM assistant gunner
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "rhs_weap_m249_pip";
-_ARmag = "rhsusf_100Rnd_556x45_soft_pouch";
-_ARmag_tr = "rhsusf_100Rnd_556x45_soft_pouch";
+_AR = _m249;
+_ARmag = _m249mag;
+_ARmag_tr = _m249mag_tr;
 
 // Medium MG
 _MMG = "rhs_weap_m240B";
@@ -212,8 +220,8 @@ _MMGmag_tr = "rhsusf_100Rnd_762x51";
 // _MMGmag_tr = ""150Rnd_762x54_Box"_Tracer";
 
 // Marksman rifle
-_DMrifle = "srifle_DMR_03_tan_F";
-_DMriflemag = "20Rnd_762x51_Mag";
+_DMrifle = "RH_Mk12mod1";
+_DMriflemag = _stanag;
 
 // MAR-10
 //_DMrifle = "srifle_DMR_02_F";
@@ -224,18 +232,17 @@ _RAT = "rhs_weap_M136";
 _RATmag = "rhs_m136_mag";
 
 // Medium AT
-_MAT = "rhs_weap_fgm148";
-_MATmag1 = "rhs_fgm148_magazine_AT";
-_MATmag2 = "rhs_fgm148_magazine_AT";
+_MAT = "launch_NLAW_F";
+_MATmag = "ACE_PreloadedMissileDummy";
 
 // Surface Air
 _SAM = "rhs_weap_fim92";
 _SAMmag = "rhs_fim92_mag";
 
 // Heavy AT
-_HAT = "launch_B_Titan_short_F";
-_HATmag1 = "Titan_AT";
-_HATmag2 = "Titan_AP";
+_HAT = "rhs_weap_fgm148";
+_HATmag1 = "rhs_fgm148_magazine_AT";
+_HATmag2 = "rhs_fgm148_magazine_AT";
 
 // Sniper
 _SNrifle = "rhs_weap_mk14";
