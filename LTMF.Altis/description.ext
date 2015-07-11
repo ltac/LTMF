@@ -20,6 +20,7 @@ onLoadMission = "Made with the Legion Tactical Mission Development Framework";
 author = "*** Insert mission author name here. ***";
 loadScreen = "loadLogo.jpg";
 overviewPicture = "overviewLogo.jpg";
+overviewText = "*** Insert description for mission browser here. ***";
 
 // ============================================================================================
 
