@@ -7747,7 +7747,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=85;
+		items=93;
 		class Item0
 		{
 			position[]={8759.0557,38.875351,7371.5439};
@@ -8602,6 +8602,78 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehFIA_TH1";
+		};
+		class Item85
+		{
+			presenceCondition="f_var_medical == 1";
+			position[]={9470.5166,27.358353,8473.582};
+			id=560;
+			side="EMPTY";
+			vehicle="ACE_medicalSupplyCrate";
+			skill=0.60000002;
+		};
+		class Item86
+		{
+			presenceCondition="f_var_medical == 2";
+			position[]={9472.7891,27.191463,8473.5742};
+			id=561;
+			side="EMPTY";
+			vehicle="ACE_medicalSupplyCrate_advanced";
+			skill=0.60000002;
+		};
+		class Item87
+		{
+			presenceCondition="f_var_medical == 1";
+			position[]={9012.752,15.958528,7956.0039};
+			id=562;
+			side="EMPTY";
+			vehicle="ACE_medicalSupplyCrate";
+			skill=0.60000002;
+		};
+		class Item88
+		{
+			presenceCondition="f_var_medical == 2";
+			position[]={9015.0244,15.804672,7955.9961};
+			id=563;
+			side="EMPTY";
+			vehicle="ACE_medicalSupplyCrate_advanced";
+			skill=0.60000002;
+		};
+		class Item89
+		{
+			presenceCondition="f_var_medical == 1";
+			position[]={9163.7178,26.439045,7646.9849};
+			id=564;
+			side="EMPTY";
+			vehicle="ACE_medicalSupplyCrate";
+			skill=0.60000002;
+		};
+		class Item90
+		{
+			presenceCondition="f_var_medical == 2";
+			position[]={9165.9902,26.342674,7646.9771};
+			id=565;
+			side="EMPTY";
+			vehicle="ACE_medicalSupplyCrate_advanced";
+			skill=0.60000002;
+		};
+		class Item91
+		{
+			presenceCondition="f_var_medical == 1";
+			position[]={8756.5742,31.609219,7456.2939};
+			id=566;
+			side="EMPTY";
+			vehicle="ACE_medicalSupplyCrate";
+			skill=0.60000002;
+		};
+		class Item92
+		{
+			presenceCondition="f_var_medical == 2";
+			position[]={8758.8467,32.315525,7456.2861};
+			id=567;
+			side="EMPTY";
+			vehicle="ACE_medicalSupplyCrate_advanced";
+			skill=0.60000002;
 		};
 	};
 	class Markers
