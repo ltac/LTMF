@@ -16,7 +16,7 @@ class Header
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 onLoadName = "*** Insert mission name here. ***";
-onLoadMission = "Made with the Legion Tactical Mission Development Framework";
+onLoadMission = "*** Insert short mission description here. *** Made with the Legion Tactical Mission Development Framework";
 author = "*** Insert mission author name here. ***";
 loadScreen = "loadLogo.jpg";
 overviewPicture = "overviewLogo.jpg";
@@ -85,24 +85,6 @@ class cfgNotifications
 		iconPicture="\A3\UI_F\data\IGUI\Cfg\Actions\settimer_ca.paa";
 		duration = 3;
 		priority = 1;
-	};
-
-	// Notification for the F3 Authorised Crew Component
-	class UnauthorisedCrew {
-		title= "NON-AUTHORISED CREW!";
-		description= "%1";
-		iconPicture = "\A3\ui_f\data\map\markers\military\warning_ca.paa";
-		duration = 3;
-		priority = 5;
-	};
-
-	// Notification for the F3 Mapclick Teleport component
-	class MapClickTeleport {
-		title= "NOTE";
-		description= "%1";
-		iconPicture = "\A3\ui_f\data\map\markers\military\start_ca.paa";
-		duration = 3;
-		priority = 5;
 	};
 
 	// Notification for the F3 JIP Component
@@ -230,57 +212,6 @@ class Params
 		function = "f_fnc_setTime";			// This function is called to apply the values
  		isGlobal = 0;						// Execute this only on the server
  		code = "f_param_timeOfDay = %1";
-	};
-
-// ============================================================================================
-
-// F3 - AI Skill Selector
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-/*
-	class f_param_AISkill_BLUFOR
-	{
-		title = "$STR_f_param_AISkill_BLUFOR";
-		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
-		code = "f_param_AISkill_BLUFOR = %1";
-	};
-*/
-
-/*
-	class f_param_AISkill_OPFOR
-	{
-		title = "$STR_f_param_AISkill_OPFOR";
-		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
-		code = "f_param_AISkill_OPFOR = %1";
-	};
-*/
-
-/*
-	class f_param_AISkill_INDP
-	{
-		title = "$STR_f_param_AISkill_INDP";
-		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
-		code = "f_param_AISkill_INDP = %1";
-	};
-*/
-
-// ============================================================================================
-
-// F3 - Caching
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-	class f_param_caching
-	{
-		title = "Cache AI outside distance (m)";
-		values[] = {0,600,800,1000,1500,2000};
-		default = 0;
-		code = "f_param_caching = %1";
 	};
 
 // ============================================================================================
@@ -440,23 +371,10 @@ class CfgFunctions
 			class SetFog{};
 			class SetWeather{};
 		};
-		class cache
-		{
-			file = "f\cache";
-			class cInit {};
-			class cTracker {};
-			class gCache {};
-			class gUncache {};
-		};
 		class groupMarkers {
 			file = "f\groupMarkers";
 			class localGroupMarker{};
 			class localSpecialistMarker{};
-		};
-		class authorisedCrew
-		{
-			file = "f\authorisedCrew";
-			class authorisedCrewCheck {};
 		};
 		class FTMemberMarkers
 		{
@@ -465,38 +383,10 @@ class CfgFunctions
 			class GetMarkerColor{};
 			class LocalFTMarkerSync{};
 		};
-		class bodyRemoval
-		{
-			file = "f\removeBody";
-			class removeBody{};
-		};
-		class setAISkill
-		{
-			file = "f\setAISKill";
-			class setAISKill{};
-		};
-		class mapClickTeleport
-		{
-			file = "f\mapClickTeleport";
-			class mapClickTeleportUnit{};
-			class mapClickTeleportGroup{};
-		};
-		class nametag
-		{
-			file = "f\nametag";
-			class drawNameTag{};
-		};
 		class preMount
 		{
 			file = "f\preMount";
 			class mountGroups{};
-		};
-		class zeus
-		{
-			file = "f\zeus";
-			class zeusInit{};
-			class zeusAddAddons{};
-			class zeusAddObjects{};
 		};
 		class acre
 		{
@@ -519,7 +409,6 @@ class CfgFunctions
 			file = "f\safeStart";
 			class safety{};
 		};
-		#include "f\simplewoundingsystem\config.hpp"
 		#include "f\spect\functions.hpp"
 
 	};
