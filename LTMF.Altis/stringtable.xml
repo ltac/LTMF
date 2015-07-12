@@ -83,6 +83,16 @@
         <Spanish> Noche </Spanish>
         <French> Nuit </French>
       </Key>
+      <Key ID="STR_f_param_timeOfDay_Option8">
+        <English> Mission Default </English>
+        <Czech> Mission Default </Czech>
+        <German> Mission Default </German>
+        <Polish> Mission Default </Polish>
+        <Russian> Mission Default </Russian>
+        <Spanish> Mission Default </Spanish>
+        <French> Mission Default </French>
+      </Key>
+
       <Key ID="STR_f_param_weather">
         <English> Weather </English>
 	<French> Météo </English>
