@@ -13,7 +13,7 @@ To begin using the Software, move the LTMF.Altis folder into one of the followin
 
 ## USAGE ##
 
-As this is based on F3, you can use the F3 documentation, which is far better that anything I could be bothered to write.
+As this is based on F3, you can use the F3 documentation, which is far better than anything I could be bothered to write.
 http://ferstaberinde.com/f3/en//index.php?title=Main_Page
 
 
