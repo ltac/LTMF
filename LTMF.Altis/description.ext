@@ -22,6 +22,10 @@ loadScreen = "loadLogo.jpg";
 overviewPicture = "overviewLogo.jpg";
 overviewText = "*** Insert description for mission browser here. ***";
 
+// Pabst - Spectator
+#include "pabst\gui_common.hpp"
+#include "pabst\gui_spectator.hpp"
+
 // ============================================================================================
 
 // F3 - Debug Console
@@ -34,10 +38,10 @@ enableDebugConsole = 1;
 // F3 - Respawn Settings
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-respawn = 1;
+respawn = "BIRD";
 respawndelay = 3;
 respawnOnStart = 0;
-respawnTemplates[] = {"Seagull","f_spectator","f_JIP"};
+respawnTemplates[] = {"PabstSpectator"};
 
 // ============================================================================================
 
@@ -290,28 +294,11 @@ class CfgDebriefing
 
 };
 
-// ============================================================================================
-
-// F3 - Respawn Templates
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-class CfgRespawnTemplates
-{
-	// F3 Spectator Script
-	class f_Spectator
-	{
-		onPlayerRespawn = "f_fnc_CamInit";
-	};
-  	//Overwrite Vanilla Seagull
-    class Seagull
-    {
-        onPlayerRespawn = "";
+// Pabst - Respawn
+class CfgRespawnTemplates {
+    class PabstSpectator {
+        onPlayerRespawn = "pabst\pabst_spectator.sqf";
     };
-	// F3 JIP Menu
-	class f_JIP
-	{
-		onPlayerRespawn = "f\JIP\f_JIP_playerRespawn.sqf";
-	};
 };
 
 // ============================================================================================
@@ -323,8 +310,6 @@ class CfgRespawnTemplates
 #include "f\JIP\f_JIP_kitpicker.h"
 #include "f\JIP\f_JIP_grppicker.h"
 
-// Menu components for the Spectator Script
-#include "f\spect\config.hpp"
 
 // ============================================================================================
 
@@ -401,7 +386,6 @@ class CfgFunctions
 			file = "f\safeStart";
 			class safety{};
 		};
-		#include "f\spect\functions.hpp"
 
 	};
 };
