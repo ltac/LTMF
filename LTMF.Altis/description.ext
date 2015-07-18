@@ -310,8 +310,6 @@ class CfgRespawnTemplates {
 #include "f\JIP\f_JIP_kitpicker.h"
 #include "f\JIP\f_JIP_grppicker.h"
 
-// Menu components for the Spectator Script
-#include "f\spect\config.hpp"
 
 // ============================================================================================
 
@@ -388,7 +386,6 @@ class CfgFunctions
 			file = "f\safeStart";
 			class safety{};
 		};
-		#include "f\spect\functions.hpp"
 
 	};
 };
