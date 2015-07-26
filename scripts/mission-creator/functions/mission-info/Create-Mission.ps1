@@ -6,5 +6,15 @@
  # Creates a new ARMA 3 mission folder with the provided info.
  #>
 function Create-Mission {
-	Write-Host "CreateMission"
+	Write-Host "Creating your new mission..."
+	
+	# Get the mission folder name and extension from the Script scope
+	# to create the new mission directory
+	Create-MissionFolder $script:missionFolder $script:missionMap
+	
+	# Create the markdown README file for the mission
+	Create-MissionReadme $script:missionName
+	
+	# Remove the Addons from the mission.sqm file
+	Replace-Addons
 }

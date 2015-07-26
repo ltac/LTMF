@@ -37,10 +37,18 @@
 # The Folder Name of the Mission, excluding the extension for the Map
 [string]$script:missionFolder = ""
 
+# The aboslute path to the new mission folder that gets created
+[string]$script:missionPath = ""
+
 
 # *** IMPORTS ***
 
 . "$fnPath\utilities\Print-Separator.ps1"
+. "$fnPath\utilities\Get-RepoPath.ps1"
+. "$fnPath\utilities\Get-BaseFrameworkPath.ps1"
+. "$fnPath\utilities\Get-OutputPath.ps1"
+. "$fnPath\utilities\Replace-MissionName.ps1"
+. "$fnPath\utilities\Replace-Addons.ps1"
 . "$fnPath\user-input\Prompt-User.ps1"
 . "$fnPath\user-input\Get-MissionName.ps1"
 . "$fnPath\user-input\Get-FolderName.ps1"
@@ -51,6 +59,8 @@
 . "$fnPath\user-input\Get-MissionType.ps1"
 . "$fnPath\mission-info\Display-MissionInfo.ps1"
 . "$fnPath\mission-info\Confirm-MissionInfo.ps1"
+. "$fnPath\mission-info\Create-MissionFolder.ps1"
+. "$fnPath\mission-info\Create-MissionReadme.ps1"
 . "$fnPath\mission-info\Create-Mission.ps1"
 
 

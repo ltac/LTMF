@@ -20,10 +20,16 @@ choose *Run as Administrator*.
 `Set-ExecutionPolicy Unrestricted`
 This will allow any PowerShell programs to run.
 1. Run the program by entering the following command:
-`new-mission`
+`.\new-mission.ps1`
 then just follow the on-screen prompts.
 1. Tighten the security settings back up by entering the following command:
 `Set-ExecutionPolicy Restricted`
 
 Once you've provided all the information, your new mission folder will be
 available at *mission-creator/generated-missions/*.
+
+## Notes ##
+
+* If you happen to create a new mission with the same folder name as a folder
+that already exists in *mission-creator/generated-mission/", the program will
+completely remove the existing folder to make way for the new one.
