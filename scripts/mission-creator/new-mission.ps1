@@ -61,6 +61,8 @@
 . "$fnPath\mission-info\Confirm-MissionInfo.ps1"
 . "$fnPath\mission-info\Create-MissionFolder.ps1"
 . "$fnPath\mission-info\Create-MissionReadme.ps1"
+. "$fnPath\mission-info\Update-MissionSqm.ps1"
+. "$fnPath\mission-info\Update-DescriptionExt.ps1"
 . "$fnPath\mission-info\Create-Mission.ps1"
 
 

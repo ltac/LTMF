@@ -17,4 +17,10 @@ function Create-Mission {
 	
 	# Remove the Addons from the mission.sqm file
 	Replace-Addons
+	
+	# Set the mission name and description in mission.sqm
+	Update-MissionSqm	
+	
+	# Set the mission details in description.ext
+	Update-DescriptionExt
 }
