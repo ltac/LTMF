@@ -7,8 +7,8 @@ function Replace-Addons {
 	$fileText = gc $missionFile -raw
 	
 	# Replace the addOns and addOnsAuto sections
-	$fileText = $fileText -replace "(?smi)addOns\[\]([^;]*)", "addOns={}"
-	$fileText = $fileText -replace "(?smi)addOnsAuto\[\]([^;]*)", "addOnsAuto={}"
+	$fileText = $fileText -replace "(?smi)addOns\[\]([^;]*)", "addOns[]={}"
+	$fileText = $fileText -replace "(?smi)addOnsAuto\[\]([^;]*)", "addOnsAuto[]={}"
 	
 	# Update the file with the new text
 	sc $missionFile $fileText
