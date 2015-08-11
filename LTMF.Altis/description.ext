@@ -388,7 +388,7 @@ class CfgFunctions
 		};
 	};
 	
-	#include "L\config\CfgFunctions.hpp";
+	#include "L\config\CfgFunctions.hpp"
 };
 
 
