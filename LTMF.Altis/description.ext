@@ -386,8 +386,9 @@ class CfgFunctions
 			file = "f\safeStart";
 			class safety{};
 		};
-
 	};
+	
+	#include "L\config\CfgFunctions.hpp";
 };
 
 
