@@ -112,8 +112,7 @@ clearAllItemsFromBackpack _unit;
 // Radio
 
 if (!isNil "_radio") then {
-	_unit addItem _radio;
-	_unit assignItem _radio;
+	_unit linkItem _radio;
 };
 
 // Backpack Items

@@ -48,8 +48,8 @@ class ind_f {
     #define IND_PISTOL "rhs_weap_makarov_pmm"
     #define IND_PISTOL_MAG "rhs_mag_9x18_12_57N181S:4"
 	// Radio
-	#define IND_RADIO_RIFLEMAN "tf_anprc154_1"
-	#define IND_RADIO_SHORTWAVE "tf_anprc148jem_1"
+	#define IND_RADIO_RIFLEMAN "tf_anprc154"
+	#define IND_RADIO_SHORTWAVE "tf_anprc148jem"
 	#define IND_RADIO_MANPACK "tf_anprc155"
 	//#define IND_RADIO_MANPACK "tf_anprc155_coyote"
 	#define IND_RADIO_AIRBORNE "tf_anarc164"
