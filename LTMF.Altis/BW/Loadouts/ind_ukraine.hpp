@@ -51,7 +51,6 @@ class ind_f {
 	#define IND_RADIO_RIFLEMAN "tf_anprc154"
 	#define IND_RADIO_SHORTWAVE "tf_anprc148jem"
 	#define IND_RADIO_MANPACK "tf_anprc155"
-	//#define IND_RADIO_MANPACK "tf_anprc155_coyote"
 	#define IND_RADIO_AIRBORNE "tf_anarc164"
 
     class Car {
@@ -73,9 +72,9 @@ class ind_f {
     };
 
     class I_Soldier_F {// rifleman
-        uniform[] = {"MNP_CombatUniform_Militia_C", "MNP_CombatUniform_Militia_E", "MNP_CombatUniform_Rebel_A"};  /// randomized
-        vest[] = {"V_TacVestIR_blk", "V_TacVest_oli", "V_BandollierB_khk", "V_BandollierB_oli"}; /// randomized
-        headgear[] = {"MNP_Helmet_PAGST_OD", "MNP_MC_Rev", "H_Shemag_olive", "MNP_Helmet_SOV_Steel", "MNP_Helmet_SOVC_RU", "MNP_Helmet_SOVC_NK"}; /// randomized
+        uniform[] = {"MNP_CombatUniform_Ukrainian"};  /// randomized
+        vest[] = {"MNP_Vest_UKR_A","MNP_Vest_UKR_B"}; /// randomized
+        headgear[] = {"MNP_Helmet_PAGST_UKR"}; /// randomized
         facewear[] = {nil, "rhs_balaclava", "G_Balaclava_blk", "G_Balaclava_oli", "G_Bandanna_oli", "rhs_scarf"}; /// randomized
         backpack[] = {"B_AssaultPack_rgr", "B_AssaultPack_blk"}; /// randomized
         backpackItems[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"};
