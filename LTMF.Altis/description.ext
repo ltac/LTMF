@@ -26,6 +26,34 @@ overviewText = "*** Insert description for mission browser here. ***";
 #include "pabst\gui_common.hpp"
 #include "pabst\gui_spectator.hpp"
 
+// BWMF Gear
+// Credits:headswe, Pabst, Zerith
+#include "CfgLoadouts.hpp"
+
+// ============================================================================================
+
+//Extended Event Handlers:
+class Extended_InitPost_EventHandlers {
+    class CAManBase {
+        class F_AssignGear { init = "_this call F_fnc_assignGearMan;"; };
+    };
+	class Car {
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Car'] call F_fnc_assignGearVehicle;"; };
+    };
+    class Tank {
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Tank'] call F_fnc_assignGearVehicle;"; };
+    };
+    class Helicopter {
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Helicopter'] call F_fnc_assignGearVehicle;"; };
+    };
+    class Plane {
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Plane'] call F_fnc_assignGearVehicle;"; };
+    };
+    class Ship_F {
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Ship_F'] call F_fnc_assignGearVehicle;"; };
+    };
+};
+
 // ============================================================================================
 
 // F3 - Debug Console
@@ -227,73 +255,6 @@ class Params
 
 // ============================================================================================
 
-// F3 - Briefing Template
-// Credits: BIS - Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-class CfgDebriefing
-{
-	class End1
-	{
-		title = "Ending #1";
-		subtitle = "";
-		description = "*** Insert debriefing #1 here. ***";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
-	};
-
-	class End2
-	{
-		title = "Ending #2";
-		subtitle = "";
-		description = "*** Insert debriefing #2 here. ***";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
-	};
-
-	class End3
-	{
-		title = "Ending #3";
-		subtitle = "";
-		description = "*** Insert debriefing #3 here. ***";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
-	};
-
-	class End4
-	{
-		title = "Ending #4";
-		subtitle = "";
-		description = "*** Insert debriefing #4 here. ***";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
-	};
-
-	class End5
-	{
-		title = "Ending #5";
-		subtitle = "";
-		description = "*** Insert debriefing #5 here. ***";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
-	};
-
-	class End6
-	{
-		title = "Ending #6";
-		subtitle = "";
-		description = "*** Insert debriefing #6 here. ***";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
-	};
-
-};
-
 // Pabst - Respawn
 class CfgRespawnTemplates {
     class PabstSpectator {
@@ -342,7 +303,8 @@ class CfgFunctions
 		{
 			// Defines the functions to preInit the compling of the assignGear function used by units.
 			file = "f\assignGear";
-			class assignGear{};
+			class assignGearMan {};
+			class assignGearVehicle {};
 		};
 		class setGroupID
 		{
@@ -376,9 +338,9 @@ class CfgFunctions
 		class tfr
 		{
 			file = "f\radios\tfr";
-			class tfr_removeRadios{};
-			class tfr_addRadios{};
-			class tfr_setRadioFrequencies{};
+			//class tfr_removeRadios{};
+			//class tfr_addRadios{};
+			//class tfr_setRadioFrequencies{};
 			class tfr_configureSpectatorChat{};
 		};
 		class safeStart
