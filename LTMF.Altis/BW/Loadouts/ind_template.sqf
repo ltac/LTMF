@@ -247,7 +247,7 @@ class ind_f {
 		};
 		// List the attachments that will be automatically added
 		// to the unit's equipped weapons
-        attachments[] = {};
+        attachments[] = {"acc_flashlight"};
 		// Set the basic radio for the unit
         radio = IND_RADIO_RIFLEMAN;
     };
@@ -295,7 +295,8 @@ class ind_f {
         backpackItems[] += {"ACE_key_west"};
         linkedItems[] += {
 			"ItemGPS",
-			"ACE_Vector"
+			"ACE_Vector",
+            "rhsusf_ANPVS_15"
 		};
         items[] = {"ACE_MapTools"};
         radio = IND_RADIO_SHORTWAVE;
@@ -306,7 +307,8 @@ class ind_f {
     class I_Soldier_SL_F: I_Officer_F {
         backpack[] = {IND_RADIO_MANPACK};
         linkedItems[] += {
-			"Binocular"
+			"Binocular",
+            "rhsusf_ANPVS_15"
 		};
         items[] = {"ACE_MapTools"};
         backpackItems[] += {"ACE_fieldDressing"};
@@ -317,7 +319,9 @@ class ind_f {
 	// Define gear additions and overrides for UAV Operator units
     class I_Soldier_UAV_F: I_Soldier_F {
         backpack[] = {"B_rhsusf_B_BACKPACK"};
-        linkedItems[] += {"B_uavterminal"};
+        linkedItems[] += {
+			"B_uavterminal"
+		};
         radio = IND_RADIO_SHORTWAVE;
     };
 
@@ -360,7 +364,7 @@ class ind_f {
 	// Define gear additions and overrides for Asst Autorifleman units
     class I_Soldier_AAR_F: I_Soldier_F {
         backpackItems[] += {IND_AR_MAG2};
-        attachments[] = {"rhsusf_acc_ACOG_USMC"};
+        attachments[] = {"optic_MRCO"};
         linkedItems[] += {"Binocular"};
     };
 
@@ -553,7 +557,8 @@ class ind_f {
 			"itemMap",
 			"itemCompass",
 			"itemGPS",
-			"LaserDesignator"
+			"LaserDesignator",
+			"rhsusf_ANPVS_15"
 		};
         attachments[] = {
 			"rhsusf_acc_eotech_552",
@@ -613,7 +618,8 @@ class ind_f {
 			"itemMap",
 			"itemCompass",
 			"itemGPS",
-			"LaserDesignator"
+			"LaserDesignator",
+			"rhsusf_ANPVS_15"
 		};
         attachments[] = {
 			"rhsusf_acc_LEUPOLDMK4_2",
@@ -656,7 +662,7 @@ class ind_f {
             "ItemMap",
             "ItemCompass",
             "itemGPS",
-            "NVgoggles"
+            "rhsusf_ANPVS_15"
         };
 		attachments[] = {};
         radio = IND_RADIO_SHORTWAVE;
@@ -717,8 +723,7 @@ class ind_f {
             "ItemWatch",
             "ItemMap",
             "ItemCompass",
-            "itemGPS",
-            "NVgoggles"
+            "itemGPS"
         };
 		attachments[] = {};
         radio = IND_RADIO_SHORTWAVE;
