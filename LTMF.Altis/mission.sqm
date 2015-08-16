@@ -5353,7 +5353,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_DT1_TL";
-					init="GrpCSAT_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpCSAT_DT1 = group this;  ";
 					description="CSAT Diver Team 1 Team Leader";
 				};
 				class Item1
@@ -5366,7 +5366,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_DT1_D1";
-					init="GrpCSAT_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpCSAT_DT1 = group this;  ";
 					description="CSAT Diver Team 1 Diver";
 				};
 				class Item2
@@ -5379,7 +5379,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_DT1_D2";
-					init="GrpCSAT_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpCSAT_DT1 = group this;  ";
 					description="CSAT Diver Team 1 Diver";
 				};
 				class Item3
@@ -5392,7 +5392,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_DT1_D3";
-					init="GrpCSAT_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpCSAT_DT1 = group this;  ";
 					description="CSAT Diver Team 1 Diver";
 				};
 			};
@@ -5800,7 +5800,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_DT1_TL";
-					init="GrpAAF_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpAAF_DT1 = group this;  ";
 					description="AAF Diver Team 1 Team Leader";
 				};
 				class Item1
@@ -5813,7 +5813,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_DT1_D1";
-					init="GrpAAF_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpAAF_DT1 = group this;  ";
 					description="AAF Diver Team 1 Diver";
 				};
 				class Item2
@@ -5826,7 +5826,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_DT1_D2";
-					init="GrpAAF_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpAAF_DT1 = group this;  ";
 					description="AAF Diver Team 1 Diver";
 				};
 				class Item3
@@ -5839,7 +5839,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_DT1_D3";
-					init="GrpAAF_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpAAF_DT1 = group this;  ";
 					description="AAF Diver Team 1 Diver";
 				};
 			};
@@ -6250,7 +6250,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_DT1_TL";
-					init="GrpNATO_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpNATO_DT1 = group this;  ";
 					description="NATO Diver Team 1 Team Leader";
 				};
 				class Item1
@@ -6263,7 +6263,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_DT1_D1";
-					init="GrpNATO_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpNATO_DT1 = group this;  ";
 					description="NATO Diver Team 1 Diver";
 				};
 				class Item2
@@ -6276,7 +6276,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_DT1_D2";
-					init="GrpNATO_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpNATO_DT1 = group this;  ";
 					description="NATO Diver Team 1 Diver";
 				};
 				class Item3
@@ -6289,7 +6289,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_DT1_D3";
-					init="GrpNATO_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpNATO_DT1 = group this;  ";
 					description="NATO Diver Team 1 Diver";
 				};
 			};
@@ -7907,7 +7907,6 @@ class Mission
 			vehicle="RHS_M2A2";
 			skill=0.60000002;
 			text="VehNATO_IFV1";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item11
 		{
@@ -7917,7 +7916,6 @@ class Mission
 			vehicle="RHS_M2A2";
 			skill=0.60000002;
 			text="VehNATO_IFV2";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item12
 		{
@@ -7927,7 +7925,6 @@ class Mission
 			vehicle="RHS_M2A2";
 			skill=0.60000002;
 			text="VehNATO_IFV3";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item13
 		{
@@ -7937,7 +7934,6 @@ class Mission
 			vehicle="RHS_M2A2";
 			skill=0.60000002;
 			text="VehNATO_IFV4";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item14
 		{
@@ -7947,7 +7943,6 @@ class Mission
 			vehicle="RHS_M2A2";
 			skill=0.60000002;
 			text="VehNATO_IFV5";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item15
 		{
@@ -7957,7 +7952,6 @@ class Mission
 			vehicle="RHS_M2A2";
 			skill=0.60000002;
 			text="VehNATO_IFV6";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item16
 		{
@@ -7967,7 +7961,6 @@ class Mission
 			vehicle="RHS_M2A2";
 			skill=0.60000002;
 			text="VehNATO_IFV7";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item17
 		{
@@ -7977,7 +7970,6 @@ class Mission
 			vehicle="RHS_M2A2";
 			skill=0.60000002;
 			text="VehNATO_IFV8";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item18
 		{
@@ -8091,7 +8083,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_IFV1";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item30
 		{
@@ -8102,7 +8093,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_IFV2";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item31
 		{
@@ -8113,7 +8103,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_IFV3";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item32
 		{
@@ -8124,7 +8113,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_IFV4";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item33
 		{
@@ -8135,7 +8123,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_IFV5";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item34
 		{
@@ -8146,7 +8133,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_IFV6";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item35
 		{
@@ -8157,7 +8143,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_IFV7";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item36
 		{
@@ -8168,7 +8153,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_IFV8";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item37
 		{
@@ -8197,7 +8181,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_IFV1";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item40
 		{
@@ -8208,7 +8191,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_IFV2";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item41
 		{
@@ -8219,7 +8201,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_IFV3";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item42
 		{
@@ -8230,7 +8211,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_IFV4";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item43
 		{
@@ -8241,7 +8221,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_IFV5";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item44
 		{
@@ -8252,7 +8231,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_IFV6";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item45
 		{
@@ -8263,7 +8241,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_IFV7";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item46
 		{
@@ -8274,7 +8251,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_IFV8";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item47
 		{
@@ -8313,7 +8289,6 @@ class Mission
 			vehicle="I_Truck_02_transport_F";
 			skill=0.60000002;
 			text="VehAAF_TR1";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item51
 		{
@@ -8323,7 +8298,6 @@ class Mission
 			vehicle="I_Truck_02_transport_F";
 			skill=0.60000002;
 			text="VehAAF_TR2";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item52
 		{
@@ -8333,7 +8307,6 @@ class Mission
 			vehicle="I_Truck_02_transport_F";
 			skill=0.60000002;
 			text="VehAAF_TR3";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item53
 		{
@@ -8343,7 +8316,6 @@ class Mission
 			vehicle="I_MRAP_03_F";
 			skill=0.60000002;
 			text="VehAAF_CAR1";
-			init="[""v_car"",this] call f_fnc_assignGear";
 		};
 		class Item54
 		{
@@ -8353,7 +8325,6 @@ class Mission
 			vehicle="rhsusf_m1025_d_m2";
 			skill=0.60000002;
 			text="VehNato_CAR1";
-			init="[""v_car"",this] call f_fnc_assignGear";
 		};
 		class Item55
 		{
@@ -8363,7 +8334,6 @@ class Mission
 			vehicle="B_Truck_01_transport_F";
 			skill=0.60000002;
 			text="VehNato_TR1";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item56
 		{
@@ -8373,7 +8343,6 @@ class Mission
 			vehicle="B_Truck_01_transport_F";
 			skill=0.60000002;
 			text="VehNato_TR2";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item57
 		{
@@ -8383,7 +8352,6 @@ class Mission
 			vehicle="B_Truck_01_transport_F";
 			skill=0.60000002;
 			text="VehNato_TR3";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item58
 		{
@@ -8393,7 +8361,6 @@ class Mission
 			vehicle="rhs_tigr_vdv";
 			skill=0.60000002;
 			text="VehCSAT_CAR1";
-			init="[""v_car"",this] call f_fnc_assignGear";
 		};
 		class Item59
 		{
@@ -8403,7 +8370,6 @@ class Mission
 			vehicle="O_Truck_03_transport_F";
 			skill=0.60000002;
 			text="VehCSAT_TR1";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item60
 		{
@@ -8413,7 +8379,6 @@ class Mission
 			vehicle="O_Truck_03_transport_F";
 			skill=0.60000002;
 			text="VehCSAT_TR2";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item61
 		{
@@ -8423,7 +8388,6 @@ class Mission
 			vehicle="O_Truck_03_transport_F";
 			skill=0.60000002;
 			text="VehCSAT_TR3";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item62
 		{
@@ -8433,7 +8397,6 @@ class Mission
 			vehicle="B_G_Offroad_01_F";
 			skill=0.60000002;
 			text="VehFIA_CAR0";
-			init="[""v_car"",this] call f_fnc_assignGear";
 		};
 		class Item63
 		{
@@ -8443,7 +8406,6 @@ class Mission
 			vehicle="B_G_Offroad_01_F";
 			skill=0.60000002;
 			text="VehFIA_CAR1";
-			init="[""v_car"",this] call f_fnc_assignGear";
 		};
 		class Item64
 		{
@@ -8453,7 +8415,6 @@ class Mission
 			vehicle="B_G_Offroad_01_F";
 			skill=0.60000002;
 			text="VehFIA_CAR2";
-			init="[""v_car"",this] call f_fnc_assignGear";
 		};
 		class Item65
 		{
@@ -8463,7 +8424,6 @@ class Mission
 			vehicle="B_G_Offroad_01_F";
 			skill=0.60000002;
 			text="VehFIA_CAR3";
-			init="[""v_car"",this] call f_fnc_assignGear";
 		};
 		class Item66
 		{
@@ -8473,7 +8433,6 @@ class Mission
 			vehicle="B_G_Van_01_transport_F";
 			skill=0.60000002;
 			text="VehFIA_TR1";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item67
 		{
@@ -8483,7 +8442,6 @@ class Mission
 			vehicle="B_G_Van_01_transport_F";
 			skill=0.60000002;
 			text="VehFIA_TR2";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item68
 		{
@@ -8493,7 +8451,6 @@ class Mission
 			vehicle="B_G_Van_01_transport_F";
 			skill=0.60000002;
 			text="VehFIA_TR3";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item69
 		{
@@ -8503,7 +8460,6 @@ class Mission
 			vehicle="I_MRAP_03_F";
 			skill=0.60000002;
 			text="VehAAF_CAR2";
-			init="[""v_car"",this] call f_fnc_assignGear";
 		};
 		class Item70
 		{
@@ -8513,7 +8469,6 @@ class Mission
 			vehicle="rhs_tigr_vdv";
 			skill=0.60000002;
 			text="VehCSAT_CAR2";
-			init="[""v_car"",this] call f_fnc_assignGear";
 		};
 		class Item71
 		{
@@ -8523,7 +8478,6 @@ class Mission
 			vehicle="rhsusf_m1025_d_m2";
 			skill=0.60000002;
 			text="VehNato_CAR2";
-			init="[""v_car"",this] call f_fnc_assignGear";
 		};
 		class Item72
 		{

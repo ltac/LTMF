@@ -22,7 +22,8 @@ class F // Defines the "owner"
 	{
 		// Defines the functions to preInit the compling of the assignGear function used by units.
 		file = "f\assignGear";
-		class assignGear{};
+		class assignGearMan{};
+		class assignGearVehicle{};
 	};
 	class setGroupID
 	{
@@ -56,9 +57,6 @@ class F // Defines the "owner"
 	class tfr
 	{
 		file = "f\radios\tfr";
-		class tfr_removeRadios{};
-		class tfr_addRadios{};
-		class tfr_setRadioFrequencies{};
 		class tfr_configureSpectatorChat{};
 	};
 	class safeStart
