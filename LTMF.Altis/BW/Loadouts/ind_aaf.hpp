@@ -1,25 +1,9 @@
 /*
  * Description:
- * Template file for INDFOR faction loadouts. Also defines standard
- * AAF loadout
- *
- * All objects are specified by their classname. Classnames can be
- * found easily by creating a loadout in the Virtual Arsenal
- * (ARMA 3 Main Menu > Learn > Virtual Arsenal), clicking Export,
- * then pasting into a text document.
- *
- * For placing multiples of some object in inventory, type the
- * classname, a colon, then the number of that item to place.
- * For example, if we want the Car class to contain 12 ACE Bandages,
- * then we include "ACE_fieldDressing:12".
- *
- * When #define-ing the standard magazine loadouts, you can list
- * multiple magazine types and counts by separating them with a comma.
- * For example:
- * #define IND_RIFLE_MAG "hlc_30rnd_556x45_EPR:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
- *
- * This will add 8 EPR magazines and 2 yellow tracer magazines to
- * the loadout.
+ * Loadout definition for AAF forces
+ * Weapons: Standard AAF F2000 variants
+ * Uniforms: AAF
+ * Limited NVG, GPS, and Optics
  *
  * Author:
  * BWMF
@@ -132,30 +116,8 @@ class ind_f {
         TransportMagazines[] = {};
     };
 
-	/* RIFLEMAN BASE
+	/* RIFLEMAN BASE */
 
-	I_Soldier_F defines the base loadout for the following unit types.
-	-Rifleman
-	-Officer
-	-Squad leader
-	-Team leader
-	-Autorifleman
-	-UAV Operator
-	-Assistant Autorifleman
-	-AT Rifleman
-	-Medic
-	-MMG Gunner
-	-MMG Spotter
-	-MAT Gunner
-	-MAT Assistant
-	-SAM Gunner
-	-SAM Assistant
-	-Mortar Gunner
-	-Mortar Assistant
-	
-	Each specific class can add to or completely override the
-	loadouts defined by this base
-	*/
     class I_Soldier_F {
 		/* Randomized gear
 		One item from each of these lists will be chosen at
@@ -256,29 +218,9 @@ class ind_f {
 	
 	/* RIFLEMAN EXTENSIONS */
 	
-	/*
-	The next set of units all copy their gear from the Rifleman Base,
-	as defined with the : in the class definition. For example,
-	
-	    class I_officer_F : I_Soldier_F
-		
-	says that I_officer_F will have the same properties and data
-	as I_Soldier_F unless specifically set otherwise.
-	
-	You can override a certain type of gear by setting it to something
-	new using =
-	For example:
-	backpack[] = {IND_RADIO_MANPACK};
-	
-	Instead of replacing gear, you can also add to gear by using +=
-	For example, to add GPS in addition to the base Watch, Map,
-	and Compass:
-	linkedItems[] += {"ItemGPS"};
-	*/
-	
 	// CO and DC
 	// Define gear additions and overrides for Officer units
-    class I_officer_F: I_Soldier_F {
+    class I_Officer_F: I_Soldier_F {
         backpack[] = {IND_RADIO_MANPACK};
         weapons[] = {IND_GLRIFLE};
         magazines[] = {
@@ -291,8 +233,8 @@ class ind_f {
 			"rhs_mag_an_m8hc:2",
 			"rhs_mag_m18_green:2"
 		};
-        handguns[] = {IND_PISTOL}; /// randomized
-        backpackItems[] += {"ACE_key_west"};
+        handguns[] = {IND_PISTOL};
+        backpackItems[] += {"ACE_key_indp"};
         linkedItems[] += {
 			"ItemGPS",
 			"ACE_Vector",
@@ -320,7 +262,7 @@ class ind_f {
     class I_Soldier_UAV_F: I_Soldier_F {
         backpack[] = {"B_rhsusf_B_BACKPACK"};
         linkedItems[] += {
-			"B_uavterminal"
+			"I_uavterminal"
 		};
         radio = IND_RADIO_SHORTWAVE;
     };
@@ -340,7 +282,7 @@ class ind_f {
 			"rhs_mag_m67:1",
 			"rhs_mag_an_m8hc:2"
 		};
-        backpackItems[] += {"ACE_key_west"};
+        backpackItems[] += {"ACE_key_indp"};
         linkedItems[] += {
 			"ItemGPS",
 			"Binocular"
@@ -403,7 +345,7 @@ class ind_f {
     class I_support_MG_F: I_Soldier_F {
         weapons[] = {IND_MMG};
         magazines[] = {
-			IND_MMG_MAG
+			IND_MMG_MAG,
 			IND_PISTOL_MAG,
 			"rhs_mag_m67:1",
 			"rhs_mag_an_m8hc:2"
@@ -648,10 +590,10 @@ class ind_f {
 		
         magazines[] = {
 			IND_SMG_MAG,
-			IND_PISTOL_MAG
+			IND_PISTOL_MAG,
 			"rhs_mag_an_m8hc:2"
 		};
-        backpackItems[] += {"ACE_key_west"};
+        backpackItems[] += {"ACE_key_indp"};
         items[] = {
 			"ACE_fieldDressing:3",
 			"ACE_morphine",
@@ -713,7 +655,7 @@ class ind_f {
 			IND_SMG_MAG,
 			"rhs_mag_an_m8hc:2"
 		};
-        backpackItems[] = {"ACE_key_west"};
+        backpackItems[] = {"ACE_key_indp"};
         items[] = {
 			"ACE_fieldDressing:3",
 			"ACE_morphine",
@@ -733,7 +675,7 @@ class ind_f {
 	// Define gear additions and overrides for Repair Specialist units
 	// as well as the base class for all Explosive/Mine specialists
     class I_Soldier_repair_F: I_crew_F {
-		weapon = {IND_CARBINE};
+		weapons[] = {IND_CARBINE};
 		magazines[] = {
             IND_CARBINE_MAG,
             "rhs_mag_m67:2",

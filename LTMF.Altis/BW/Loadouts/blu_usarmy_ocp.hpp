@@ -29,7 +29,7 @@ class blu_f {
     // MMG
     #define WEST_MMG "rhs_weap_m240B"
     #define WEST_MMG_MAG "rhsusf_100Rnd_762x51:5"
-    // MAT
+    // MAT - resume
     #define WEST_MAT "launch_B_Titan_short_F"
     #define WEST_MAT_MAG "Titan_AT:3"
     // SAM

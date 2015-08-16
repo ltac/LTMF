@@ -11,9 +11,9 @@ class CfgLoadouts {
 
     /* BLUFOR FACTION */
 
-    //#include "BW\Loadouts\blu_usarmy_desert.hpp" // US Army, UCP, M4/16
-    //#include "BW\Loadouts\blu_usarmy_woodland.hpp" // US Army, OCP, M4/16
-    #include "BW\Loadouts\blu_usmc_desert.hpp" // USMC, Desert MARPAT, M4/16
+    #include "BW\Loadouts\blu_usarmy_ucp.hpp" // US Army, UCP, M4/16
+    //#include "BW\Loadouts\blu_usarmy_ocp.hpp" // US Army, OCP, M4/16
+    //#include "BW\Loadouts\blu_usmc_desert.hpp" // USMC, Desert MARPAT, M4/16
     //#include "BW\Loadouts\blu_usmc_woodland.hpp" // USMC, Woodland MARPAT, M4/16
     //#include "BW\Loadouts\blu_usmc_snow.hpp" // USMC, Arctic MARPAT, M4/16
 
@@ -21,8 +21,9 @@ class CfgLoadouts {
     //#include "BW\Loadouts\ind_finland_snow.hpp" // Finland, Arctic, HK and FN
     //#include "BW\Loadouts\ind_militia_desert.hpp" // Militia, Tan, HK and FN
     //#include "BW\Loadouts\ind_militia_woodland.hpp" // Militia, Green, HK and FN
-    #include "BW\Loadouts\ind_pmc.hpp" // Mercenary, Black/Green, M4
-    //#include "BW\Loadouts\ind_ukraine.hpp" // Ukraine, Woodland, AK47/74
+    //#include "BW\Loadouts\ind_pmc.hpp" // Mercenary, Black/Green, M4
+    #include "BW\Loadouts\ind_ukraine.hpp" // Ukraine, Woodland, AK47/74
+    //#include "BW\Loadouts\ind_aaf.hpp" // AAF, Green Digi, F2000
 
     /* OPFOR FACTION */
     //#include "BW\Loadouts\opf_csat_snow.hpp" // CSAT, Arctic, AK12
