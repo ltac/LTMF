@@ -8,25 +8,25 @@
  */
 class ind_f {
     //Rifle
-    #define IND_RIFLE "rhs_weap_m4a1_carryhandle_grip2"
-    #define IND_RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_m18_red:2"
+    #define IND_RIFLE "hlc_rifle_M4"
+    #define IND_RIFLE_MAG "hlc_30rnd_556x45_EPR:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
     //GL Rifle
-    #define IND_GLRIFLE "rhs_weap_m4a1_carryhandle_m203S"
-    #define IND_GLRIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_m18_red:2"
+    #define IND_GLRIFLE "hlc_rifle_m4m203"
+    #define IND_GLRIFLE_MAG "hlc_30rnd_556x45_EPR:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
     #define IND_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
-    #define IND_GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:8"
+    #define IND_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:8"
     #define IND_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareGreen_F:2"
     //Carbine
-    #define IND_CARBINE "rhs_weap_m4a1_carryhandle_grip"
-    #define IND_CARBINE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_m18_red:2"
+    #define IND_CARBINE "hlc_rifle_CQBR"
+    #define IND_CARBINE_MAG "hlc_30rnd_556x45_EPR:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
     // AR
-    #define IND_AR "rhs_weap_m249_pip_L"
-    #define IND_AR_MAG "rhsusf_200Rnd_556x45_soft_pouch:2"
-    #define IND_AR_MAG2 "rhsusf_200Rnd_556x45_soft_pouch:2"
+    #define IND_AR "hlc_m249_pip3"
+    #define IND_AR_MAG "hlc_200rnd_556x45_M_SAW:2"
+    #define IND_AR_MAG2 "hlc_200rnd_556x45_T_SAW:2"
     // AT
-    #define IND_AT "rhs_weap_M136"
-    #define IND_AT_MAG "rhs_m136_mag"
-    // MMG
+    #define IND_AT "rhs_weap_rpg26"
+    #define IND_AT_MAG "rhs_rpg26_mag"
+    // MMG -- RESUME
     #define IND_MMG "rhs_weap_m240B"
     #define IND_MMG_MAG "rhsusf_100Rnd_762x51:5"
     // MAT
@@ -90,7 +90,16 @@ class ind_f {
 			"MNP_Vest_Black_Tac_B",
 			"MNP_Vest_Black_Tac_A"
 		}; /// randomized
-        headgear[] = {"rhsusf_ach_bare","rhsusf_ach_bare_semi","rhsusf_ach_bare_headset","rhsusf_ach_bare_headset_ess","rhsusf_ach_helmet_M81","rhsusf_ach_bare_wood_headset_ess","rhsusf_ach_bare_wood","MNP_Helmet_OD"};
+        headgear[] = {
+			"rhsusf_ach_bare",
+			"rhsusf_ach_bare_semi",
+			"rhsusf_ach_bare_headset",
+			"rhsusf_ach_bare_headset_ess",
+			"rhsusf_ach_helmet_M81",
+			"rhsusf_ach_bare_wood_headset_ess",
+			"rhsusf_ach_bare_wood",
+			"MNP_Helmet_OD"
+		};
         backpack[] = {"rhsusf_assault_eagleaiii_coy"}; /// randomized
         backpackItems[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"};
         weapons[] = {IND_RIFLE}; /// randomized
@@ -98,8 +107,8 @@ class ind_f {
         handguns[] = {}; /// randomized
         magazines[] = {IND_RIFLE_MAG,"rhs_mag_m67:2","rhs_mag_an_m8hc:2"};
         items[] = {};
-        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","rhsusf_ANPVS_14"};
-        attachments[] = {"rhsusf_acc_eotech_552","rhsusf_acc_anpeq15side"};
+        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch"};
+        attachments[] = {};
 		radio = IND_RADIO_RIFLEMAN;
     };
     class I_officer_F: I_Soldier_F {// CO and DC
