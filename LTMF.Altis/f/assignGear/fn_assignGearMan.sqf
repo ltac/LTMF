@@ -9,6 +9,7 @@ if (!(local _unit)) exitWith {};
 _faction = tolower (faction _unit);
 //Check variable f_gear, otherwise default to typeof
 _loadout = _unit getVariable ["F_Gear", (typeOf _unit)];
+_factionpath = missionConfigFile >> "CfgLoadouts" >> _faction;
 _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
 
 if (!isClass(_path)) then {
@@ -19,6 +20,7 @@ if (!isClass(_path)) exitWith {
     systemChat format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
 };
 
+_faces = getArray(_factionpath >> "faces");
 _uniforms = getArray(_path >> "uniform");
 _vests = getArray(_path >> "vest");
 _headgears = getArray(_path >> "headgear");
@@ -103,7 +105,15 @@ if ((count _facewears) == 0) then {
         diag_log text format ["[BW] %1 Facewear (%2) not found using default (%3)", _loadout, _toAdd, (goggles _unit)];
     };
 };
-
+//Random Face:
+if ((count _faces) != 0) then {
+    _toAdd = _faces call BIS_fnc_selectRandom;
+    if (!isNil "_toAdd") then {
+        _unit setFace _toAdd
+    } else {
+        diag_log text format ["[BW] %1 Face (%2) not found using default", _loadout, _toAdd];
+    };
+};
 //Clear backpack
 clearAllItemsFromBackpack _unit;
 
