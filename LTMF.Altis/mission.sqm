@@ -32,7 +32,6 @@ class Mission
 		"A3_Weapons_F_Beta_Ammoboxes",
 		"a3_weapons_f_ammoboxes",
 		"A3_Air_F_Heli_Heli_Transport_03",
-		"A3_Air_F_Heli_Heli_Transport_04",
 		"A3_Air_F_Heli_Heli_Light_01",
 		"a3_air_f_heli_light_01",
 		"ace_medical",
@@ -47,7 +46,8 @@ class Mission
 		"rhs_c_cars",
 		"A3_Modules_F_Curator_Curator",
 		"task_force_radio_items",
-		"A3_Characters_F_EPC"
+		"A3_Characters_F_EPC",
+		"rhs_c_a2port_car"
 	};
 	addOnsAuto[]=
 	{
@@ -61,10 +61,9 @@ class Mission
 		"A3_Modules_F_Curator_Curator",
 		"A3_Characters_F_EPC",
 		"RHS_US_A2_AirImport",
-		"A3_Air_F_Heli_Heli_Transport_04",
+		"rhs_c_a2port_air",
 		"A3_Air_F_Beta_Heli_Transport_02",
 		"RHS_US_A2Port_Armor",
-		"rhs_c_a2port_air",
 		"rhs_c_bmp",
 		"rhsusf_c_m1a2",
 		"A3_Armor_F_APC_Wheeled_03",
@@ -77,7 +76,7 @@ class Mission
 		"rhsusf_vehicles",
 		"A3_Soft_F_HEMTT",
 		"rhs_c_cars",
-		"A3_Soft_F_EPC_Truck_03",
+		"rhs_c_a2port_car",
 		"A3_Soft_F_Gamma_Offroad",
 		"a3_soft_f_offroad_01",
 		"A3_Soft_F_Truck",
@@ -7815,7 +7814,7 @@ class Mission
 			position[]={9479.9541,23.889904,8398.1895};
 			id=477;
 			side="EMPTY";
-			vehicle="O_Heli_Transport_04_covered_F";
+			vehicle="RHS_Mi8mt_vdv";
 			skill=0.60000002;
 			text="VehCSAT_TH1";
 		};
@@ -8016,7 +8015,7 @@ class Mission
 			position[]={9479.0986,24.121653,8372.3965};
 			id=498;
 			side="EMPTY";
-			vehicle="O_Heli_Transport_04_covered_F";
+			vehicle="RHS_Mi8mt_vdv";
 			skill=0.60000002;
 			text="VehCSAT_TH2";
 		};
@@ -8358,7 +8357,7 @@ class Mission
 			position[]={9439.3018,31.435173,8469.2188};
 			id=534;
 			side="EMPTY";
-			vehicle="rhs_tigr_vdv";
+			vehicle="rhs_tigr_ffv_msv";
 			skill=0.60000002;
 			text="VehCSAT_CAR1";
 		};
@@ -8367,7 +8366,7 @@ class Mission
 			position[]={9474.915,27.556665,8485.8066};
 			id=535;
 			side="EMPTY";
-			vehicle="O_Truck_03_transport_F";
+			vehicle="RHS_Ural_MSV_01";
 			skill=0.60000002;
 			text="VehCSAT_TR1";
 		};
@@ -8376,7 +8375,7 @@ class Mission
 			position[]={9497.8467,25.495405,8485.5781};
 			id=536;
 			side="EMPTY";
-			vehicle="O_Truck_03_transport_F";
+			vehicle="RHS_Ural_MSV_01";
 			skill=0.60000002;
 			text="VehCSAT_TR2";
 		};
@@ -8385,7 +8384,7 @@ class Mission
 			position[]={9523.7607,25.053005,8486.0352};
 			id=537;
 			side="EMPTY";
-			vehicle="O_Truck_03_transport_F";
+			vehicle="RHS_Ural_MSV_01";
 			skill=0.60000002;
 			text="VehCSAT_TR3";
 		};
@@ -8466,7 +8465,7 @@ class Mission
 			position[]={9438.2119,30.456455,8450.5078};
 			id=546;
 			side="EMPTY";
-			vehicle="rhs_tigr_vdv";
+			vehicle="rhs_tigr_ffv_msv";
 			skill=0.60000002;
 			text="VehCSAT_CAR2";
 		};
