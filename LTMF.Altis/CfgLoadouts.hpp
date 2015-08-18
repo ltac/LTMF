@@ -11,11 +11,11 @@ class CfgLoadouts {
 
     /* BLUFOR FACTION */
 
-    #include "BW\Loadouts\blu_usarmy_ucp.hpp" // US Army, UCP, M4/16
-    //#include "BW\Loadouts\blu_usarmy_ocp.hpp" // US Army, OCP, M4/16
-    //#include "BW\Loadouts\blu_usmc_desert.hpp" // USMC, Desert MARPAT, M4/16
-    //#include "BW\Loadouts\blu_usmc_woodland.hpp" // USMC, Woodland MARPAT, M4/16
-    //#include "BW\Loadouts\blu_usmc_snow.hpp" // USMC, Arctic MARPAT, M4/16
+    #include "BW\Loadouts\blu_usarmy_ucp.hpp" // US Army, UCP, M4
+    //#include "BW\Loadouts\blu_usarmy_ocp.hpp" // US Army, OCP, M4
+    //#include "BW\Loadouts\blu_usmc_desert.hpp" // USMC, Desert MARPAT, M4
+    //#include "BW\Loadouts\blu_usmc_woodland.hpp" // USMC, Woodland MARPAT, M4
+    //#include "BW\Loadouts\blu_usmc_snow.hpp" // USMC, Arctic MARPAT, M4
 
     /* INDFOR FACTION */
     //#include "BW\Loadouts\ind_finland_snow.hpp" // WIP

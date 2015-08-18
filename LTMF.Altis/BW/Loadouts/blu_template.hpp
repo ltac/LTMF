@@ -79,6 +79,10 @@ class blu_f {
 	#define WEST_RADIO_MANPACK "tf_rt1523g_rhs"
 	#define WEST_RADIO_AIRBORNE "tf_anarc210"
 
+	// By default, BLUFOR uses White, Black, and Asian faces.
+	// If you want something else, specify the list here.
+	faces[] = {};
+	
 	// Define the cargo for Vehicles
     class Car {
         TransportMagazines[] = {

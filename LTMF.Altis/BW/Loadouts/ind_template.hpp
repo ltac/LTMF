@@ -79,6 +79,10 @@ class ind_f {
 	#define IND_RADIO_MANPACK "tf_anprc155"
 	#define IND_RADIO_AIRBORNE "tf_anarc164"
 
+	// By default, INDFOR uses Greek faces.
+	// If you want something else, specify the list here.
+	faces[] = {};
+	
 	// Define the cargo for Vehicles
     class Car {
         TransportMagazines[] = {
