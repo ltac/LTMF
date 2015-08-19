@@ -22,18 +22,19 @@ class CfgLoadouts {
     //#include "BW\Loadouts\ind_militia_desert.hpp" // WIP
     //#include "BW\Loadouts\ind_militia_woodland.hpp" // WIP
     //#include "BW\Loadouts\ind_pmc.hpp" // WIP
-    //#include "BW\Loadouts\ind_ukraine.hpp" // Ukraine, Woodland, AK47/74
-    #include "BW\Loadouts\ind_aaf.hpp" // AAF, Green Digi, F2000
+    #include "BW\Loadouts\ind_ukraine.hpp" // Ukraine, Woodland, AK47/74
+    //#include "BW\Loadouts\ind_aaf.hpp" // AAF, Green Digi, F2000
 
     /* OPFOR FACTION */
     //#include "BW\Loadouts\opf_csat_snow.hpp" // WIP
     //#include "BW\Loadouts\opf_pla_desert.hpp" // WIP
     //#include "BW\Loadouts\opf_pla_woodland.hpp" // WIP
     //#include "BW\Loadouts\opf_russia_desert.hpp" // WIP
-    #include "BW\Loadouts\opf_russia_woodland.hpp" // Russia, Woodland Digital, AK74
+    //#include "BW\Loadouts\opf_russia_woodland.hpp" // Russia, Woodland Digital, AK74
     //#include "BW\Loadouts\opf_russia_snow.hpp" // WIP
-    //#include "BW\Loadouts\opf_afghan.hpp" // Afghani, AKM
+    #include "BW\Loadouts\opf_afghan.hpp" // Afghani, AKM
 
     /* CIVILIAN FACTIONS */
+	// Comment this out if you are using a different civilian faction
     #include "BW\Loadouts\civ_europe.hpp" // More randomized European civilians
 };
