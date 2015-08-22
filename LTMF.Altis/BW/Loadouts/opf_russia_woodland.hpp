@@ -857,4 +857,9 @@ class opf_f {
             "APERSMine_Range_Mag:2"
         };
     };
+
+    // Default if no other loadout can be found
+    class fallback: O_soldier_f {
+    	// Same as normal rifleman
+    };
 };

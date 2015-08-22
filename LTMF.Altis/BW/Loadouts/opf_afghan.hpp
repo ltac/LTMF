@@ -119,39 +119,7 @@ class opf_f {
 
 	/* RIFLEMAN BASE */
 
-	/*
-	NOTE This comment can be deleted when copied in actual loadout files
-	-Rifleman
-	-Officer
-	-Squad leader
-	-Team leader
-	-Autorifleman
-	-UAV Operator
-	-Assistant Autorifleman
-	-AT Rifleman
-	-Medic
-	-MMG Gunner
-	-MMG Spotter
-	-MAT Gunner
-	-MAT Assistant
-	-SAM Gunner
-	-SAM Assistant
-	-Mortar Gunner
-	-Mortar Assistant
-	
-	Each specific class can add to or completely override the
-	loadouts defined by this base
-	*/
     class O_Soldier_F {
-		/* Randomized gear
-		One item from each of these lists will be chosen at
-		random when the unit spawns.
-		
-		If you want "nothing" to be one of the random options,
-		just include nil in the list
-		
-		Leave the list empty {} to add nothing of that type.
-		*/
 		
 		// Define the list of possible uniforms that units will wear
         uniform[] = {
@@ -291,26 +259,6 @@ class opf_f {
 	/* END RIFLEMAN BASE */
 	
 	/* RIFLEMAN EXTENSIONS */
-	
-	/*
-	The next set of units all copy their gear from the Rifleman Base,
-	as defined with the : in the class definition. For example,
-	
-	    class O_officer_F : O_Soldier_F
-		
-	says that O_officer_F will have the same properties and data
-	as O_Soldier_F unless specifically set otherwise.
-	
-	You can override a certain type of gear by setting it to something
-	new using =
-	For example:
-	backpack[] = {EAST_RADIO_MANPACK};
-	
-	Instead of replacing gear, you can also add to gear by using +=
-	For example, to add GPS in addition to the base Watch, Map,
-	and Compass:
-	linkedItems[] += {"ItemGPS"};
-	*/
 	
 	// CO and DC
 	// Define gear additions and overrides for Officer units
@@ -947,5 +895,10 @@ class opf_f {
             "APERSBoundingMine_Range_Mag:2",
             "APERSMine_Range_Mag:2"
         };
+    };
+
+    // Default if no other loadout can be found
+    class fallback: O_soldier_f {
+    	// Same as normal rifleman
     };
 };

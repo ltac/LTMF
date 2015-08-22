@@ -787,4 +787,9 @@ class ind_f {
             "APERSMine_Range_Mag:2"
         };
     };
+
+    // Default if no other loadout can be found
+    class fallback: I_soldier_f {
+    	// Same as normal rifleman
+    };
 };
