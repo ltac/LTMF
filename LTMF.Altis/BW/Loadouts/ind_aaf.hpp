@@ -1,16 +1,16 @@
 /*
- * Description:
- * Loadout definition for AAF forces
- * Weapons: Standard AAF F2000 variants
- * Uniforms: AAF
- * Limited NVG, GPS, and Optics
- *
- * Author:
- * BWMF
- * modified by Legion Tactical
- */
+* Description:
+* Loadout definition for AAF forces
+* Weapons: Standard AAF F2000 variants
+* Uniforms: AAF
+* Limited NVG, GPS, and Optics
+*
+* Author:
+* BWMF
+* modified by Legion Tactical
+*/
 class ind_f {
-    // Rifle
+	// Rifle
 	#define IND_RIFLE "arifle_Mk20_ACO_pointer_F"
 	#define IND_RIFLE_MAG "30Rnd_556x45_Stanag:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
 	// GL Rifle
@@ -57,25 +57,25 @@ class ind_f {
 	#define IND_RADIO_AIRBORNE "tf_anarc164"
 
 	// Define the cargo for Vehicles
-    class Car {
-        TransportMagazines[] = {
-            IND_RIFLE_MAG,
+	class Car {
+		TransportMagazines[] = {
+			IND_RIFLE_MAG,
 			IND_RIFLE_MAG,
 			IND_CARBINE_MAG,
 			IND_AR_MAG,
 			IND_AR_MAG,
 			IND_GLRIFLE_MAG_HE,
 			IND_AT_MAG
-        };
-        TransportItems[] = {
+		};
+		TransportItems[] = {
 			"ACE_fieldDressing:12",
 			"ACE_morphine:4"
 		};
-    };
-	
+	};
+
 	// Define the cargo for Tanks
-    class Tank {
-        TransportMagazines[] = {
+	class Tank {
+		TransportMagazines[] = {
 			IND_RIFLE_MAG,
 			IND_RIFLE_MAG,
 			IND_CARBINE_MAG,
@@ -84,15 +84,15 @@ class ind_f {
 			IND_GLRIFLE_MAG_HE,
 			IND_AT_MAG
 		};
-        TransportItems[] = {
+		TransportItems[] = {
 			"ACE_fieldDressing:12",
 			"ACE_morphine:4"
 		};
-    };
+	};
 
 	// Define the cargo for Helicopters
-    class Helicopter {
-        TransportMagazines[] = {
+	class Helicopter {
+		TransportMagazines[] = {
 			IND_RIFLE_MAG,
 			IND_RIFLE_MAG,
 			IND_CARBINE_MAG,
@@ -100,52 +100,52 @@ class ind_f {
 			IND_AR_MAG,
 			IND_GLRIFLE_MAG_HE
 		};
-        TransportItems[] = {
+		TransportItems[] = {
 			"ACE_fieldDressing:12",
 			"ACE_morphine:4"
 		};
-    };
+	};
 
 	// Define the cargo for Jets
-    class Plane {
-        TransportMagazines[] = {};
-    };
+	class Plane {
+		TransportMagazines[] = {};
+	};
 
 	// Define the cargo for Boats
-    class Ship_F {
-        TransportMagazines[] = {};
-    };
+	class Ship_F {
+		TransportMagazines[] = {};
+	};
 
 	/* RIFLEMAN BASE */
 
-    class I_Soldier_F {
+	class I_Soldier_F {
 		/* Randomized gear
 		One item from each of these lists will be chosen at
 		random when the unit spawns.
-		
+
 		If you want "nothing" to be one of the random options,
 		just include nil in the list
-		
+
 		Leave the list empty {} to add nothing of that type.
 		*/
-		
+
 		// Define the list of possible uniforms that units will wear
-        uniform[] = {
-            "U_I_CombatUniform",
-            "U_I_CombatUniform_shortsleeve"
-        };
+		uniform[] = {
+			"U_I_CombatUniform",
+			"U_I_CombatUniform_shortsleeve"
+		};
 		// Define the list of possible vests that units will wear
-        vest[] = {
-            "V_PlateCarrierIA1_dgtl",
-            "V_PlateCarrierIA2_dgtl"
-        };
+		vest[] = {
+			"V_PlateCarrierIA1_dgtl",
+			"V_PlateCarrierIA2_dgtl"
+		};
 		// Define the list of possible headgear that units will wear
-        headgear[] = {
-            "H_HelmetIA"
-        };
+		headgear[] = {
+			"H_HelmetIA"
+		};
 		// Define the list of possible facewear that units will wear
-        facewear[] = {
-            nil,
+		facewear[] = {
+			nil,
 			"G_Balaclava_oli",
 			"G_Shades_Black",
 			"G_Shades_Blue",
@@ -155,75 +155,75 @@ class ind_f {
 			"G_Bandanna_oli",
 			"G_Bandanna_blk",
 			"G_Bandanna_shades"
-        };
+		};
 		// Define the list of possible backpacks that units will wear
-        backpack[] = {
-            "B_AssaultPack_dgtl"
-        };
+		backpack[] = {
+			"B_AssaultPack_dgtl"
+		};
 		// Define the list of possible primary weapons that units
 		// will be assigned
-        weapons[] = {IND_RIFLE};
+		weapons[] = {IND_RIFLE};
 		// Define the list of possible launcher weapons that units
 		// will be assigned
-        launchers[] = {};
+		launchers[] = {};
 		// Define the list of possible sidearms that units
 		// will be assigned
-        handguns[] = {};
+		handguns[] = {};
 		/* END Randomized Gear */
-		
+
 		/*
 		Gear lists
-		
+
 		These lists are not randomized; all items from these lists
 		will selected and placed in the unit's inventory.
 		Leave them empty {} to add nothing of that type by default.
 		*/
-		
+
 		// List the items (along with the amount) that will be placed
 		// specifically in the unit's backpack
 		backpackItems[] = {
-            "ACE_fieldDressing:3",
-            "ACE_morphine",
-            "ACE_IR_Strobe_item",
-            "ACE_earplugs"
-        };
+			"ACE_fieldDressing:3",
+			"ACE_morphine",
+			"ACE_IR_Strobe_item",
+			"ACE_earplugs"
+		};
 		// List the magazines, explosives, and throwables
 		// that will be placed wherever there is room in the unit's
 		// inventory
-        magazines[] = {
-            IND_RIFLE_MAG,
-            "HandGrenade:2",
-            "SmokeShell:2"
-        };
+		magazines[] = {
+			IND_RIFLE_MAG,
+			"HandGrenade:2",
+			"SmokeShell:2"
+		};
 		// List the items (along with the amount) that will be placed
 		// wherever there is room in the unit's inventory
-        items[] = {
+		items[] = {
 			"ACE_Banana" // In case of emergency.
 		};
 		// List the gear items txhat should be automatically slotted
 		// correctly for the unit (like Map, Watch, NVG, etc)
-        linkedItems[] = {
+		linkedItems[] = {
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch"
 		};
 		// List the attachments that will be automatically added
 		// to the unit's equipped weapons
-        attachments[] = {"acc_flashlight"};
+		attachments[] = {"acc_flashlight"};
 		// Set the basic radio for the unit
-        radio = IND_RADIO_RIFLEMAN;
-    };
+		radio = IND_RADIO_RIFLEMAN;
+	};
 
 	/* END RIFLEMAN BASE */
-	
+
 	/* RIFLEMAN EXTENSIONS */
-	
+
 	// CO and DC
 	// Define gear additions and overrides for Officer units
-    class I_Officer_F: I_Soldier_F {
-        backpack[] = {IND_RADIO_MANPACK};
-        weapons[] = {IND_GLRIFLE};
-        magazines[] = {
+	class I_Officer_F: I_Soldier_F {
+		backpack[] = {IND_RADIO_MANPACK};
+		weapons[] = {IND_GLRIFLE};
+		magazines[] = {
 			IND_GLRIFLE_MAG,
 			IND_GLRIFLE_MAG_HE,
 			IND_GLRIFLE_MAG_SMOKE,
@@ -233,45 +233,45 @@ class ind_f {
 			"SmokeShell:2",
 			"rhs_mag_m18_green:2"
 		};
-        handguns[] = {IND_PISTOL};
-        backpackItems[] += {"ACE_key_indp"};
-        linkedItems[] += {
+		handguns[] = {IND_PISTOL};
+		backpackItems[] += {"ACE_key_indp"};
+		linkedItems[] += {
 			"ItemGPS",
 			"ACE_Vector",
-            "rhsusf_ANPVS_15"
+			"rhsusf_ANPVS_15"
 		};
-        items[] = {"ACE_MapTools"};
-        radio = IND_RADIO_SHORTWAVE;
-    };
+		items[] = {"ACE_MapTools"};
+		radio = IND_RADIO_SHORTWAVE;
+	};
 
 	// SL
 	// Define gear additions and overrides for Squad Leader units
-    class I_Soldier_SL_F: I_Officer_F {
-        backpack[] = {IND_RADIO_MANPACK};
-        linkedItems[] += {
+	class I_Soldier_SL_F: I_Officer_F {
+		backpack[] = {IND_RADIO_MANPACK};
+		linkedItems[] += {
 			"Binocular",
-            "rhsusf_ANPVS_15"
+			"rhsusf_ANPVS_15"
 		};
-        items[] = {"ACE_MapTools"};
-        backpackItems[] += {"ACE_fieldDressing"};
-        radio = IND_RADIO_SHORTWAVE;
-    };
+		items[] = {"ACE_MapTools"};
+		backpackItems[] += {"ACE_fieldDressing"};
+		radio = IND_RADIO_SHORTWAVE;
+	};
 
 	// UAV
 	// Define gear additions and overrides for UAV Operator units
-    class I_Soldier_UAV_F: I_Soldier_F {
-        backpack[] = {"B_rhsusf_B_BACKPACK"};
-        linkedItems[] += {
+	class I_Soldier_UAV_F: I_Soldier_F {
+		backpack[] = {"B_rhsusf_B_BACKPACK"};
+		linkedItems[] += {
 			"I_uavterminal"
 		};
-        radio = IND_RADIO_SHORTWAVE;
-    };
+		radio = IND_RADIO_SHORTWAVE;
+	};
 
 	// FTL
 	// Define gear additions and overrides for Team Leader units
-    class I_Soldier_TL_F: I_Soldier_F {
-        weapons[] = {IND_GLRIFLE};
-        magazines[] = {
+	class I_Soldier_TL_F: I_Soldier_F {
+		weapons[] = {IND_GLRIFLE};
+		magazines[] = {
 			IND_GLRIFLE_MAG,
 			IND_GLRIFLE_MAG_HE,
 			IND_GLRIFLE_MAG_SMOKE,
@@ -282,189 +282,189 @@ class ind_f {
 			"HandGrenade:1",
 			"SmokeShell:2"
 		};
-        backpackItems[] += {"ACE_key_indp"};
-        linkedItems[] += {
+		backpackItems[] += {"ACE_key_indp"};
+		linkedItems[] += {
 			"ItemGPS",
 			"Binocular"
 		};
-    };
+	};
 
 	// AR
 	// Define gear additions and overrides for Autorifleman units
-    class I_Soldier_AR_F: I_Soldier_F {
-        weapons[] = {IND_AR};
-        magazines[] = {
+	class I_Soldier_AR_F: I_Soldier_F {
+		weapons[] = {IND_AR};
+		magazines[] = {
 			IND_AR_MAG,
 			IND_PISTOL_MAG,
 			"HandGrenade:2",
 			"SmokeShell:2"
 		};
-        handguns[] = {IND_PISTOL}; /// randomized
-    };
+		handguns[] = {IND_PISTOL}; /// randomized
+	};
 
 	// AAR
 	// Define gear additions and overrides for Asst Autorifleman units
-    class I_Soldier_AAR_F: I_Soldier_F {
-        backpackItems[] += {IND_AR_MAG2};
-        attachments[] = {"optic_MRCO"};
-        linkedItems[] += {"Binocular"};
-    };
+	class I_Soldier_AAR_F: I_Soldier_F {
+		backpackItems[] += {IND_AR_MAG2};
+		attachments[] = {"optic_MRCO"};
+		linkedItems[] += {"Binocular"};
+	};
 
 	// RAT
 	// Define gear additions and overrides for AT Rifleman units
-    class I_Soldier_LAT_F: I_Soldier_F {
-        weapons[] = {IND_CARBINE};
-        magazines[] = {
+	class I_Soldier_LAT_F: I_Soldier_F {
+		weapons[] = {IND_CARBINE};
+		magazines[] = {
 			IND_CARBINE_MAG,
 			IND_AT_MAG,
 			"HandGrenade:2",
 			"SmokeShell:2"
 		};
-        launchers[] = {IND_AT};
-    };
+		launchers[] = {IND_AT};
+	};
 
 	// Medic
 	// Define gear additions and overrides for Medic units
-    class I_medic_F: I_Soldier_F {
-        weapons[] = {IND_CARBINE};
-        magazines[] = {
+	class I_medic_F: I_Soldier_F {
+		weapons[] = {IND_CARBINE};
+		magazines[] = {
 			IND_CARBINE_MAG,
 			"SmokeShell:6"
 		};
-        backpackItems[] = {
+		backpackItems[] = {
 			"ACE_fieldDressing:31",
 			"ACE_epinephrine:8",
 			"ACE_bloodIV:2",
 			"ACE_morphine:14",
 			"ACE_earplugs"
 		};
-    };
+	};
 
 	// MMG
 	// Define gear additions and overrides for MMG Gunner units
-    class I_support_MG_F: I_Soldier_F {
-        weapons[] = {IND_MMG};
-        magazines[] = {
+	class I_support_MG_F: I_Soldier_F {
+		weapons[] = {IND_MMG};
+		magazines[] = {
 			IND_MMG_MAG,
 			IND_PISTOL_MAG,
 			"HandGrenade:1",
 			"SmokeShell:2"
 		};
-        handguns[] = {IND_PISTOL}; /// randomized
-        attachments[] = {};
-    };
+		handguns[] = {IND_PISTOL}; /// randomized
+		attachments[] = {};
+	};
 
 	// MMG Asst
 	// Define gear additions and overrides for MMG Spotter units
-    class I_Soldier_A_F: I_Soldier_F {
-        backpack[] = {"B_Kitbag_rgr"};
-        backpackItems[] += {IND_MMG_MAG};
-        linkedItems[] += {"ACE_Vector"};
-    };
+	class I_Soldier_A_F: I_Soldier_F {
+		backpack[] = {"B_Kitbag_rgr"};
+		backpackItems[] += {IND_MMG_MAG};
+		linkedItems[] += {"ACE_Vector"};
+	};
 
 	// Medium AT
 	// Define gear additions and overrides for MAT Gunner units
-    class I_Soldier_AT_F: I_Soldier_F {
-        weapons[] = {IND_CARBINE};
-        magazines[] = {
-            IND_CARBINE_MAG,
-            "HandGrenade:2",
-            "SmokeShell:2"
-        };
-        launchers[] = {IND_MAT};
-        items[] += {
+	class I_Soldier_AT_F: I_Soldier_F {
+		weapons[] = {IND_CARBINE};
+		magazines[] = {
+			IND_CARBINE_MAG,
+			"HandGrenade:2",
+			"SmokeShell:2"
+		};
+		launchers[] = {IND_MAT};
+		items[] += {
 			"ACE_fieldDressing:3",
 			"ACE_morphine",
 			"ACE_earplugs"
 		};
-        backpack[] = {"rhs_rpg_empty"};
-        backpackItems[] = {IND_MAT_MAG};
-    };
+		backpack[] = {"rhs_rpg_empty"};
+		backpackItems[] = {IND_MAT_MAG};
+	};
 
 	// Medium AT Asst
 	// Define gear additions and overrides for MAT Spotter units
-    class I_Soldier_AAT_F: I_Soldier_F {
-        backpack[] = {"rhs_rpg_empty"};
-        backpackItems[] = {IND_MAT_MAG};
-        linkedItems[] += {"ACE_Vector"};
-        items[] += {
+	class I_Soldier_AAT_F: I_Soldier_F {
+		backpack[] = {"rhs_rpg_empty"};
+		backpackItems[] = {IND_MAT_MAG};
+		linkedItems[] += {"ACE_Vector"};
+		items[] += {
 			"ACE_fieldDressing:3",
 			"ACE_morphine",
 			"ACE_earplugs"
 		};
-    };
+	};
 
 	// AA Gunner
 	// Define gear additions and overrides for AA Gunner units
-    class I_Soldier_AA_F: I_Soldier_F {
-        backpack[] = {"B_Carryall_oli"};
-        weapons[] = {IND_CARBINE};
-        magazines[] = {
-            IND_CARBINE_MAG,
-            "HandGrenade:2",
-            "MiniGrenade:1",
-            "SmokeShell:2"
-        };
-        launchers[] = {IND_SAM};
-        backpackItems[] += {IND_SAM_MAG};
-    };
+	class I_Soldier_AA_F: I_Soldier_F {
+		backpack[] = {"B_Carryall_oli"};
+		weapons[] = {IND_CARBINE};
+		magazines[] = {
+			IND_CARBINE_MAG,
+			"HandGrenade:2",
+			"MiniGrenade:1",
+			"SmokeShell:2"
+		};
+		launchers[] = {IND_SAM};
+		backpackItems[] += {IND_SAM_MAG};
+	};
 
 	// AA Asst
 	// Define gear additions and overrides for AA Spotter units
-    class I_Soldier_AAA_F: I_Soldier_F {
-        backpack[] = {"B_Carryall_oli"};
-        backpackItems[] = {IND_SAM_MAG};
-        linkedItems[] += {"ACE_Vector"};
-    };
+	class I_Soldier_AAA_F: I_Soldier_F {
+		backpack[] = {"B_Carryall_oli"};
+		backpackItems[] = {IND_SAM_MAG};
+		linkedItems[] += {"ACE_Vector"};
+	};
 
 	// Mortar Gunner
 	// Define gear additions and overrides for Mortar Gunner units
-    class I_support_Mort_F: I_Soldier_F {
-        weapons[] = {IND_CARBINE};
-        magazines[] = {
-            IND_CARBINE_MAG,
-            "HandGrenade:2",
-            "SmokeShell:2"
-        };
-        items[] += {
+	class I_support_Mort_F: I_Soldier_F {
+		weapons[] = {IND_CARBINE};
+		magazines[] = {
+			IND_CARBINE_MAG,
+			"HandGrenade:2",
+			"SmokeShell:2"
+		};
+		items[] += {
 			"ACE_fieldDressing:3",
 			"ACE_morphine",
 			"ACE_earplugs"
 		};
-        backpack[] = {"B_Mortar_01_weapon_F"};
-    };
+		backpack[] = {"B_Mortar_01_weapon_F"};
+	};
 
 	// Mortar Asst
 	// Define gear additions and overrides for Mortar Asst units
-    class I_support_AMort_F: I_Soldier_F {
-        backpack[] = {"B_Mortar_01_support_F"};
-        linkedItems[] += {"ACE_Vector"};
-        items[] += {
+	class I_support_AMort_F: I_Soldier_F {
+		backpack[] = {"B_Mortar_01_support_F"};
+		linkedItems[] += {"ACE_Vector"};
+		items[] += {
 			"ACE_fieldDressing:3",
 			"ACE_morphine",
 			"ACE_earplugs"
 		};
-    };
+	};
 
 	/* END RIFLEMAN EXTENSIONS */
-	
+
 	/* SPOTTER BASE */
-	
+
 	// Define the base class for Spotter units
-    class I_spotter_F {
+	class I_spotter_F {
 		uniform[] = {
-            "U_I_CombatUniform",
-            "U_I_CombatUniform_shortsleeve"
-        };
+			"U_I_CombatUniform",
+			"U_I_CombatUniform_shortsleeve"
+		};
 		vest[] = {
-            "V_PlateCarrierIA1_dgtl",
-            "V_PlateCarrierIA2_dgtl"
-        };
+			"V_PlateCarrierIA1_dgtl",
+			"V_PlateCarrierIA2_dgtl"
+		};
 		headgear[] = {
-            "H_HelmetIA"
-        };
+			"H_HelmetIA"
+		};
 		facewear[] = {
-            nil,
+			nil,
 			"G_Balaclava_oli",
 			"G_Shades_Black",
 			"G_Shades_Blue",
@@ -474,27 +474,27 @@ class ind_f {
 			"G_Bandanna_oli",
 			"G_Bandanna_blk",
 			"G_Bandanna_shades"
-        };
+		};
 		backpack[] = {
-            "B_AssaultPack_dgtl"
-        };
-		
-        weapons[] = {IND_SPOTTER};
-        launchers[] = {};
-        handguns[] = {};
-		
-        magazines[] = {
+			"B_AssaultPack_dgtl"
+		};
+
+		weapons[] = {IND_SPOTTER};
+		launchers[] = {};
+		handguns[] = {};
+
+		magazines[] = {
 			IND_SPOTTER_MAG,
 			"SmokeShell:2",
 			"HandGrenade:2"
 		};
-        items[] = {
+		items[] = {
 			"ACE_fieldDressing:3",
 			"ACE_morphine",
 			"ACE_earplugs"
 		};
 		backpackItems[] = {};
-        linkedItems[] = {
+		linkedItems[] = {
 			"itemWatch",
 			"itemMap",
 			"itemCompass",
@@ -502,30 +502,30 @@ class ind_f {
 			"LaserDesignator",
 			"rhsusf_ANPVS_15"
 		};
-        attachments[] = {
+		attachments[] = {
 			"rhsusf_acc_eotech_552",
 			"rhsusf_acc_anpeq15side"
 		};
-        radio = IND_RADIO_SHORTWAVE;
-    };
+		radio = IND_RADIO_SHORTWAVE;
+	};
 
 	/* SNIPER BASE */
-	
+
 	// Define the base class for Sniper units
-    class I_sniper_F {
+	class I_sniper_F {
 		uniform[] = {
-            "U_I_CombatUniform",
-            "U_I_CombatUniform_shortsleeve"
-        };
+			"U_I_CombatUniform",
+			"U_I_CombatUniform_shortsleeve"
+		};
 		vest[] = {
-            "V_PlateCarrierIA1_dgtl",
-            "V_PlateCarrierIA2_dgtl"
-        };
+			"V_PlateCarrierIA1_dgtl",
+			"V_PlateCarrierIA2_dgtl"
+		};
 		headgear[] = {
-            "H_HelmetIA"
-        };
+			"H_HelmetIA"
+		};
 		facewear[] = {
-            nil,
+			nil,
 			"G_Balaclava_oli",
 			"G_Shades_Black",
 			"G_Shades_Blue",
@@ -535,27 +535,27 @@ class ind_f {
 			"G_Bandanna_oli",
 			"G_Bandanna_blk",
 			"G_Bandanna_shades"
-        };
+		};
 		backpack[] = {
-            "B_AssaultPack_dgtl"
-        };
-		
-        weapons[] = {IND_SNIPER};
-        launchers[] = {};
-        handguns[] = {};
-		
-        magazines[] = {
+			"B_AssaultPack_dgtl"
+		};
+
+		weapons[] = {IND_SNIPER};
+		launchers[] = {};
+		handguns[] = {};
+
+		magazines[] = {
 			IND_SNIPER_MAG,
 			"SmokeShell:2",
 			"HandGrenade:2"
 		};
-        items[] = {
+		items[] = {
 			"ACE_fieldDressing:3",
 			"ACE_morphine",
 			"ACE_earplugs"
 		};
 		backpackItems[] = {};
-        linkedItems[] = {
+		linkedItems[] = {
 			"itemWatch",
 			"itemMap",
 			"itemCompass",
@@ -563,76 +563,76 @@ class ind_f {
 			"LaserDesignator",
 			"rhsusf_ANPVS_15"
 		};
-        attachments[] = {
+		attachments[] = {
 			"rhsusf_acc_LEUPOLDMK4_2",
 			"rhsusf_acc_anpeq15side",
 			"RH_m110sd_t"
 		};
-        radio = IND_RADIO_SHORTWAVE;
-    };
+		radio = IND_RADIO_SHORTWAVE;
+	};
 
 	/* HELICOPTER CREW BASE */
-	
+
 	// Heli Pilot
 	// Define the base class for all Helicopter pilot and crew units
-    class I_Helipilot_F {
-        uniform[] = {"U_BG_Guerrilla_6_1"};
-        headgear[] = {"rhsusf_cvc_green_helmet"};
+	class I_Helipilot_F {
+		uniform[] = {"U_BG_Guerrilla_6_1"};
+		headgear[] = {"rhsusf_cvc_green_helmet"};
 		vest[] = {};
 		facewear[] = {};
 		backpack[] = {
-            "B_AssaultPack_dgtl"
-        };
-		
-        weapons[] = {IND_SMG};
+			"B_AssaultPack_dgtl"
+		};
+
+		weapons[] = {IND_SMG};
 		launchers[] = {};
-        handguns[] = {IND_PISTOL};
-		
-        magazines[] = {
+		handguns[] = {IND_PISTOL};
+
+		magazines[] = {
 			IND_SMG_MAG,
 			IND_PISTOL_MAG,
 			"SmokeShell:2"
 		};
-        backpackItems[] += {"ACE_key_indp"};
-        items[] = {
+		backpackItems[] += {"ACE_key_indp"};
+		items[] = {
 			"ACE_fieldDressing:3",
 			"ACE_morphine",
 			"ACE_earplugs"
 		};
-        linkedItems[] = {
-            "ItemWatch",
-            "ItemMap",
-            "ItemCompass",
-            "itemGPS",
-            "rhsusf_ANPVS_15"
-        };
+		linkedItems[] = {
+			"ItemWatch",
+			"ItemMap",
+			"ItemCompass",
+			"itemGPS",
+			"rhsusf_ANPVS_15"
+		};
 		attachments[] = {};
-        radio = IND_RADIO_SHORTWAVE;
-    };
+		radio = IND_RADIO_SHORTWAVE;
+	};
 
 	// Heli crew
 	// Define gear additions and overrides for Helicopter Crew units
-    class I_helicrew_F: I_Helipilot_F {
+	class I_helicrew_F: I_Helipilot_F {
 		// No changes
-    };
+	};
 
 	/* VEHICLE CREW BASE */
-	
+
 	// Define the base class for all vehicle crew and engineer units
-    class I_crew_F {
-        uniform[] = {
-            "U_I_CombatUniform",
-            "U_I_CombatUniform_shortsleeve"
-        };
-        headgear[] = {
-            "H_HelmetIA"
-        };
-        vest[] = {
-            "V_PlateCarrierIA1_dgtl",
-            "V_PlateCarrierIA2_dgtl"
-        };
+	class I_crew_F {
+		uniform[] = {
+			"U_I_CombatUniform",
+			"U_I_CombatUniform_shortsleeve"
+		};
+		headgear[] = {
+			"H_HelmetIA"
+		};
+		vest[] = {
+			"V_PlateCarrierIA1_dgtl",
+			"V_PlateCarrierIA2_dgtl"
+		};
 		facewear[] = {
-            nil,
+			nil,
 			"G_Balaclava_oli",
 			"G_Shades_Black",
 			"G_Shades_Blue",
@@ -642,84 +642,84 @@ class ind_f {
 			"G_Bandanna_oli",
 			"G_Bandanna_blk",
 			"G_Bandanna_shades"
-        };
+		};
 		backpack[] = {
-            "B_AssaultPack_dgtl"
-        };
-		
-        weapons[] = {IND_SMG};
+			"B_AssaultPack_dgtl"
+		};
+
+		weapons[] = {IND_SMG};
 		launchers[] = {};
-        handguns[] = {};
-		
-        magazines[] = {
+		handguns[] = {};
+
+		magazines[] = {
 			IND_SMG_MAG,
 			"SmokeShell:2"
 		};
-        backpackItems[] = {"ACE_key_indp"};
-        items[] = {
+		backpackItems[] = {"ACE_key_indp"};
+		items[] = {
 			"ACE_fieldDressing:3",
 			"ACE_morphine",
 			"ACE_earplugs"
 		};
-        linkedItems[] = {
-            "ItemWatch",
-            "ItemMap",
-            "ItemCompass",
-            "itemGPS"
-        };
+		linkedItems[] = {
+			"ItemWatch",
+			"ItemMap",
+			"ItemCompass",
+			"itemGPS"
+		};
 		attachments[] = {};
-        radio = IND_RADIO_SHORTWAVE;
-    };
+		radio = IND_RADIO_SHORTWAVE;
+	};
 
 	// Repair Specialist
 	// Define gear additions and overrides for Repair Specialist units
 	// as well as the base class for all Explosive/Mine specialists
-    class I_Soldier_repair_F: I_crew_F {
+	class I_Soldier_repair_F: I_crew_F {
 		weapons[] = {IND_CARBINE};
 		magazines[] = {
-            IND_CARBINE_MAG,
-            "HandGrenade:2",
-            "SmokeShell:2"
-        };
-        backpack[] = {"B_Kitbag_rgr"};
-        backpackItems[] = {"Toolkit"};
-    };
+			IND_CARBINE_MAG,
+			"HandGrenade:2",
+			"SmokeShell:2"
+		};
+		backpack[] = {"B_Kitbag_rgr"};
+		backpackItems[] = {"Toolkit"};
+	};
 
 	// Explosive Specialist
 	// Define gear additions and overrides for Explosive Specialist units
-    class I_Soldier_exp_F: I_Soldier_repair_F {
-        backpackItems[] = {
-            "Toolkit",
-            "ACE_DefusalKit",
-            "ACE_Clacker",
-            "MineDetector"
-        };
-        magazines[] = {
-            IND_CARBINE_MAG,
-            "DemoCharge_Remote_Mag:3",
-            "SatchelCharge_Remote_Mag:2"
-        };
-    };
+	class I_Soldier_exp_F: I_Soldier_repair_F {
+		backpackItems[] = {
+			"Toolkit",
+			"ACE_DefusalKit",
+			"ACE_Clacker",
+			"MineDetector"
+		};
+		magazines[] = {
+			IND_CARBINE_MAG,
+			"DemoCharge_Remote_Mag:3",
+			"SatchelCharge_Remote_Mag:2"
+		};
+	};
 
 	// Mine Specialist
 	// Define gear additions and overrides for Mine Specialist units
-    class I_engineer_F: I_Soldier_repair_F {
-        backpackItems[] = {
-            "Toolkit",
-            "ACE_DefusalKit",
-            "ACE_Clacker",
-            "MineDetector"
-        };
-        magazines[] = {
-            IND_CARBINE_MAG,
-            "ATMine_Range_Mag:2",
-            "APERSBoundingMine_Range_Mag:2",
-            "APERSMine_Range_Mag:2"
-        };
-    };
+	class I_engineer_F: I_Soldier_repair_F {
+		backpackItems[] = {
+			"Toolkit",
+			"ACE_DefusalKit",
+			"ACE_Clacker",
+			"MineDetector"
+		};
+		magazines[] = {
+			IND_CARBINE_MAG,
+			"ATMine_Range_Mag:2",
+			"APERSBoundingMine_Range_Mag:2",
+			"APERSMine_Range_Mag:2"
+		};
+	};
 
-    // Default if no other loadout can be found
-    class fallback: I_soldier_f {
-    	// Same as normal rifleman
-    };
+	// Default if no other loadout can be found
+	class fallback: I_soldier_f {
+		// Same as normal rifleman
+	};
 };
