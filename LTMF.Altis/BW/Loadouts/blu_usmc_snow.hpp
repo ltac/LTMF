@@ -132,6 +132,8 @@ class blu_f {
     // Define the list of possible vests that units will wear
     vest[] = {
       "rhsusf_spc",
+      "rhsusf_spc_light",
+      "rhsusf_spc_rifleman",
       "MNP_Vest_USMC",
       "MNP_Vest_USMC_2"
     };
@@ -201,6 +203,9 @@ class blu_f {
   // CO and DC
   // Define gear additions and overrides for Officer units
   class B_officer_F: B_Soldier_F {
+    vest[] = {
+      "rhsusf_spc_squadleader"
+    };
     backpack[] = {WEST_RADIO_MANPACK};
     weapons[] = {WEST_GLRIFLE};
     magazines[] = {
@@ -250,6 +255,9 @@ class blu_f {
   // FTL
   // Define gear additions and overrides for Team Leader units
   class B_Soldier_TL_F: B_Soldier_F {
+    vest[] = {
+      "rhsusf_spc_teamleader"
+    };
     weapons[] = {WEST_GLRIFLE};
     magazines[] = {
       WEST_GLRIFLE_MAG,
@@ -273,6 +281,9 @@ class blu_f {
   // AR
   // Define gear additions and overrides for Autorifleman units
   class B_Soldier_AR_F: B_Soldier_F {
+    vest[] = {
+      "rhsusf_spc_iar"
+    };
     weapons[] = {WEST_AR};
     magazines[] = {
       WEST_AR_MAG,
@@ -286,6 +297,9 @@ class blu_f {
   // AAR
   // Define gear additions and overrides for Asst Autorifleman units
   class B_Soldier_AAR_F: B_Soldier_F {
+    vest[] = {
+      "rhsusf_spc_machinegunner"
+    };
     backpackItems[] += {WEST_AR_MAG2};
     attachments[] += {"rhsusf_acc_ACOG_USMC"};
     linkedItems[] += {"Binocular"};
@@ -307,6 +321,9 @@ class blu_f {
   // Medic
   // Define gear additions and overrides for Medic units
   class B_medic_F: B_Soldier_F {
+    vest[] = {
+      "rhsusf_spc_corpsman"
+    };
     weapons[] = {WEST_CARBINE};
     magazines[] = {
       WEST_CARBINE_MAG,
@@ -324,6 +341,9 @@ class blu_f {
   // MMG
   // Define gear additions and overrides for MMG Gunner units
   class B_support_MG_F: B_Soldier_F {
+    vest[] = {
+      "rhsusf_spc_machinegunner"
+    };
     weapons[] = {WEST_MMG};
     magazines[] = {
       WEST_MMG_MAG,
@@ -338,6 +358,9 @@ class blu_f {
   // MMG Asst
   // Define gear additions and overrides for MMG Spotter units
   class B_Soldier_A_F: B_Soldier_F {
+    vest[] = {
+      "rhsusf_spc_machinegunner"
+    };
     backpack[] = {"B_Kitbag_cbr"};
     backpackItems[] += {WEST_MMG_MAG};
     linkedItems[] += {"ACE_Vector"};
@@ -437,9 +460,7 @@ class blu_f {
       "MNP_CombatUniform_USMC_arctic"
     };
     vest[] = {
-      "rhsusf_spc",
-      "MNP_Vest_USMC",
-      "MNP_Vest_USMC_2"
+      "rhsusf_spc_marksman"
     };
     headgear[] = {
       "H_Watchcap_blk"
@@ -487,9 +508,7 @@ class blu_f {
       "MNP_CombatUniform_USMC_arctic"
     };
     vest[] = {
-      "rhsusf_spc",
-      "MNP_Vest_USMC",
-      "MNP_Vest_USMC_2"
+      "rhsusf_spc_marksman"
     };
     headgear[] = {
       "H_Watchcap_blk"
@@ -540,9 +559,7 @@ class blu_f {
     };
     headgear[] = {"H_PilotHelmetHeli_B"};
     vest[] = {
-      "rhsusf_spc",
-      "MNP_Vest_USMC",
-      "MNP_Vest_USMC_2"
+      "rhsusf_spc_crewman"
     };
     facewear[] = {};
     backpack[] = {
@@ -589,9 +606,7 @@ class blu_f {
       "MNP_CombatUniform_USMC_arctic"
     };
     vest[] = {
-      "rhsusf_spc",
-      "MNP_Vest_USMC",
-      "MNP_Vest_USMC_2"
+      "rhsusf_spc_crewman"
     };
     headgear[] = {
       "MNP_Helmet_USMC_arctic"
