@@ -78,6 +78,11 @@ class blu_f {
 	#define WEST_RADIO_SHORTWAVE "tf_anprc152"
 	#define WEST_RADIO_MANPACK "tf_rt1523g_big"
 	#define WEST_RADIO_AIRBORNE "tf_anarc210"
+  // Throwables
+  #define WEST_SMOKE_WHITE "SmokeShell:2"
+  #define WEST_SMOKE_COLOR "SmokeShellGreen:2"
+  #define WEST_CHEMLIGHT "Chemlight_green:2"
+  #define WEST_FRAG "HandGrenade:2"
 
 	// By default, BLUFOR uses White, Black, and Asian faces.
 	// If you want something else, specify the list here.
@@ -92,7 +97,19 @@ class blu_f {
 			WEST_AR_MAG,
 			WEST_AR_MAG,
 			WEST_GLRIFLE_MAG_HE,
-			WEST_AT_MAG
+			WEST_AT_MAG,
+      WEST_FRAG,
+      WEST_FRAG,
+      WEST_FRAG,
+      WEST_FRAG,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE
 		};
 		TransportItems[] = {
 			"ACE_fieldDressing:12",
@@ -109,7 +126,19 @@ class blu_f {
 			WEST_AR_MAG,
 			WEST_AR_MAG,
 			WEST_GLRIFLE_MAG_HE,
-			WEST_AT_MAG
+			WEST_AT_MAG,
+      WEST_FRAG,
+      WEST_FRAG,
+      WEST_FRAG,
+      WEST_FRAG,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE
 		};
 		TransportItems[] = {
 			"ACE_fieldDressing:12",
@@ -125,7 +154,19 @@ class blu_f {
 			WEST_CARBINE_MAG,
 			WEST_AR_MAG,
 			WEST_AR_MAG,
-			WEST_GLRIFLE_MAG_HE
+			WEST_GLRIFLE_MAG_HE,
+      WEST_FRAG,
+      WEST_FRAG,
+      WEST_FRAG,
+      WEST_FRAG,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE
 		};
 		TransportItems[] = {
 			"ACE_fieldDressing:12",
@@ -231,8 +272,8 @@ class blu_f {
 		// inventory
 		magazines[] = {
 			WEST_RIFLE_MAG,
-			"HandGrenade:2",
-			"SmokeShell:2"
+			WEST_FRAG,
+			WEST_SMOKE_WHITE
 		};
 		// List the items (along with the amount) that will be placed
 		// wherever there is room in the unit's inventory
@@ -292,9 +333,9 @@ class blu_f {
 			WEST_GLRIFLE_MAG_SMOKE,
 			WEST_GLRIFLE_MAG_FLARE,
 			WEST_PISTOL_MAG,
-			"HandGrenade:2",
-			"SmokeShell:2",
-			"rhs_mag_m18_green:2"
+			WEST_FRAG,
+			WEST_SMOKE_WHITE,
+			WEST_SMOKE_COLOR
 		};
 		handguns[] = {WEST_PISTOL}; /// randomized
 		backpackItems[] += {"ACE_key_west"};
@@ -337,11 +378,11 @@ class blu_f {
 			WEST_GLRIFLE_MAG_HE,
 			WEST_GLRIFLE_MAG_SMOKE,
 			WEST_GLRIFLE_MAG_FLARE,
-			"rhs_mag_m18_green:2",
-			"HandGrenade:2",
-			"SmokeShell:2",
-			"HandGrenade:1",
-			"SmokeShell:2"
+			WEST_SMOKE_COLOR,
+			WEST_FRAG,
+			WEST_SMOKE_WHITE,
+			WEST_FRAG,
+			WEST_SMOKE_WHITE
 		};
 		backpackItems[] += {"ACE_key_west"};
 		linkedItems[] += {
@@ -357,8 +398,8 @@ class blu_f {
 		magazines[] = {
 			WEST_AR_MAG,
 			WEST_PISTOL_MAG,
-			"HandGrenade:2",
-			"SmokeShell:2"
+			WEST_FRAG,
+			WEST_SMOKE_WHITE
 		};
 		handguns[] = {WEST_PISTOL}; /// randomized
 	};
@@ -378,8 +419,8 @@ class blu_f {
 		magazines[] = {
 			WEST_CARBINE_MAG,
 			WEST_AT_MAG,
-			"HandGrenade:2",
-			"SmokeShell:2"
+			WEST_FRAG,
+			WEST_SMOKE_WHITE
 		};
 		launchers[] = {WEST_AT};
 	};
@@ -390,7 +431,9 @@ class blu_f {
 		weapons[] = {WEST_CARBINE};
 		magazines[] = {
 			WEST_CARBINE_MAG,
-			"SmokeShell:6"
+			WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE
 		};
 		backpackItems[] = {
 			"ACE_fieldDressing:31",
@@ -408,8 +451,8 @@ class blu_f {
 		magazines[] = {
 			WEST_MMG_MAG,
 			WEST_PISTOL_MAG,
-			"HandGrenade:1",
-			"SmokeShell:2"
+			WEST_FRAG,
+			WEST_SMOKE_WHITE
 		};
 		handguns[] = {WEST_PISTOL}; /// randomized
 		attachments[] = {};
@@ -429,8 +472,8 @@ class blu_f {
 		weapons[] = {WEST_CARBINE};
 		magazines[] = {
 			WEST_CARBINE_MAG,
-			"HandGrenade:2",
-			"SmokeShell:2"
+			WEST_FRAG,
+			WEST_SMOKE_WHITE
 		};
 		launchers[] = {WEST_MAT};
 		items[] += {
@@ -462,9 +505,9 @@ class blu_f {
 		weapons[] = {WEST_CARBINE};
 		magazines[] = {
 			WEST_CARBINE_MAG,
-			"HandGrenade:2",
+			WEST_FRAG,
 			"MiniGrenade:1",
-			"SmokeShell:2"
+			WEST_SMOKE_WHITE
 		};
 		launchers[] = {WEST_SAM};
 		backpackItems[] += {WEST_SAM_MAG};
@@ -484,8 +527,8 @@ class blu_f {
 		weapons[] = {WEST_CARBINE};
 		magazines[] = {
 			WEST_CARBINE_MAG,
-			"HandGrenade:2",
-			"SmokeShell:2"
+			WEST_FRAG,
+			WEST_SMOKE_WHITE
 		};
 		items[] += {
 			"ACE_fieldDressing:3",
@@ -540,8 +583,8 @@ class blu_f {
 
 		magazines[] = {
 			WEST_SPOTTER_MAG,
-			"SmokeShell:2",
-			"HandGrenade:2"
+			WEST_SMOKE_WHITE,
+			WEST_FRAG
 		};
 		items[] = {
 			"ACE_fieldDressing:3",
@@ -595,8 +638,8 @@ class blu_f {
 
 		magazines[] = {
 			WEST_SNIPER_MAG,
-			"SmokeShell:2",
-			"HandGrenade:2"
+			WEST_SMOKE_WHITE,
+			WEST_FRAG
 		};
 		items[] = {
 			"ACE_fieldDressing:3",
@@ -645,7 +688,7 @@ class blu_f {
 		magazines[] = {
 			WEST_SMG_MAG,
 			WEST_PISTOL_MAG,
-			"SmokeShell:2"
+			WEST_SMOKE_WHITE
 		};
 		backpackItems[] += {"ACE_key_west"};
 		items[] = {
@@ -701,7 +744,7 @@ class blu_f {
 
 		magazines[] = {
 			WEST_SMG_MAG,
-			"SmokeShell:2"
+			WEST_SMOKE_WHITE
 		};
 		backpackItems[] = {"ACE_key_west"};
 		items[] = {
@@ -727,8 +770,8 @@ class blu_f {
 		weapons[] = {WEST_CARBINE};
 		magazines[] = {
 			WEST_CARBINE_MAG,
-			"HandGrenade:2",
-			"SmokeShell:2"
+			WEST_FRAG,
+			WEST_SMOKE_WHITE
 		};
 		backpack[] = {"B_Kitbag_rgr"};
 		backpackItems[] = {"Toolkit"};
