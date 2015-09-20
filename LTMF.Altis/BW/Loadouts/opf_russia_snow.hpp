@@ -243,16 +243,15 @@ class opf_f {
     backpackItems[] = {
       "ACE_fieldDressing:3",
       "ACE_morphine",
-      "ACE_IR_Strobe_item",
-      "ACE_earplugs"
+      "ACE_IR_Strobe_item"
     };
     // List the magazines, explosives, and throwables
     // that will be placed wherever there is room in the unit's
     // inventory
     magazines[] = {
       EAST_RIFLE_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2"
+      EAST_FRAG,
+      EAST_SMOKE_WHITE
     };
     // List the items (along with the amount) that will be placed
     // wherever there is room in the unit's inventory
@@ -309,9 +308,9 @@ class opf_f {
       EAST_GLRIFLE_MAG_SMOKE,
       EAST_GLRIFLE_MAG_FLARE,
       EAST_PISTOL_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2",
-      "rhs_mag_m18_green:2"
+      EAST_FRAG,
+      EAST_SMOKE_WHITE,
+      EAST_SMOKE_COLOR
     };
     handguns[] = {EAST_PISTOL};
     backpackItems[] += {"ACE_key_east"};
@@ -353,11 +352,11 @@ class opf_f {
       EAST_GLRIFLE_MAG_HE,
       EAST_GLRIFLE_MAG_SMOKE,
       EAST_GLRIFLE_MAG_FLARE,
-      "rhs_mag_m18_green:2",
-      "HandGrenade:2",
-      "SmokeShell:2",
-      "HandGrenade:1",
-      "SmokeShell:2"
+      EAST_SMOKE_COLOR,
+      EAST_FRAG,
+      EAST_SMOKE_WHITE,
+      EAST_FRAG,
+      EAST_SMOKE_WHITE
     };
     backpackItems[] += {"ACE_key_east"};
     linkedItems[] += {
@@ -373,8 +372,8 @@ class opf_f {
     magazines[] = {
       EAST_AR_MAG,
       EAST_PISTOL_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2"
+      EAST_FRAG,
+      EAST_SMOKE_WHITE
     };
     handguns[] = {EAST_PISTOL};
   };
@@ -394,8 +393,8 @@ class opf_f {
     magazines[] = {
       EAST_CARBINE_MAG,
       EAST_AT_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2"
+      EAST_FRAG,
+      EAST_SMOKE_WHITE
     };
     launchers[] = {EAST_AT};
   };
@@ -406,14 +405,15 @@ class opf_f {
     weapons[] = {EAST_CARBINE};
     magazines[] = {
       EAST_CARBINE_MAG,
-      "SmokeShell:6"
+      EAST_SMOKE_WHITE,
+      EAST_SMOKE_WHITE,
+      EAST_SMOKE_WHITE
     };
     backpackItems[] = {
       "ACE_fieldDressing:31",
       "ACE_epinephrine:8",
       "ACE_bloodIV:2",
-      "ACE_morphine:14",
-      "ACE_earplugs"
+      "ACE_morphine:14"
     };
   };
 
@@ -424,8 +424,8 @@ class opf_f {
     magazines[] = {
       EAST_MMG_MAG,
       EAST_PISTOL_MAG,
-      "HandGrenade:1",
-      "SmokeShell:2"
+      EAST_FRAG,
+      EAST_SMOKE_WHITE
     };
     handguns[] = {EAST_PISTOL}; /// randomized
     attachments[] = {};
@@ -445,14 +445,13 @@ class opf_f {
     weapons[] = {EAST_CARBINE};
     magazines[] = {
       EAST_CARBINE_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2"
+      EAST_FRAG,
+      EAST_SMOKE_WHITE
     };
     launchers[] = {EAST_MAT};
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpack[] = {"rhs_rpg_empty"};
     backpackItems[] = {EAST_MAT_MAG};
@@ -466,8 +465,7 @@ class opf_f {
     linkedItems[] += {"ACE_Vector"};
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
   };
 
@@ -478,9 +476,9 @@ class opf_f {
     weapons[] = {EAST_CARBINE};
     magazines[] = {
       EAST_CARBINE_MAG,
-      "HandGrenade:2",
-      "MiniGrenade:1",
-      "SmokeShell:2"
+      EAST_FRAG,
+      "rhs_mag_rgn:1",
+      EAST_SMOKE_WHITE
     };
     launchers[] = {EAST_SAM};
     backpackItems[] += {EAST_SAM_MAG};
@@ -500,13 +498,12 @@ class opf_f {
     weapons[] = {EAST_CARBINE};
     magazines[] = {
       EAST_CARBINE_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2"
+      EAST_FRAG,
+      EAST_SMOKE_WHITE
     };
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpack[] = {"B_Mortar_01_weapon_F"};
   };
@@ -518,8 +515,7 @@ class opf_f {
     linkedItems[] += {"ACE_Vector"};
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
   };
 
@@ -575,13 +571,12 @@ class opf_f {
 
     magazines[] = {
       EAST_SPOTTER_MAG,
-      "SmokeShell:2",
-      "HandGrenade:2"
+      EAST_SMOKE_WHITE,
+      EAST_FRAG
     };
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpackItems[] = {};
     linkedItems[] = {
@@ -646,13 +641,12 @@ class opf_f {
 
     magazines[] = {
       EAST_SNIPER_MAG,
-      "SmokeShell:2",
-      "HandGrenade:2"
+      EAST_SMOKE_WHITE,
+      EAST_FRAG
     };
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpackItems[] = {};
     linkedItems[] = {
@@ -698,13 +692,12 @@ class opf_f {
     magazines[] = {
       EAST_SMG_MAG,
       EAST_PISTOL_MAG,
-      "SmokeShell:2"
+      EAST_SMOKE_WHITE
     };
     backpackItems[] += {"ACE_key_east"};
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     linkedItems[] = {
       "ItemWatch",
@@ -771,13 +764,12 @@ class opf_f {
 
     magazines[] = {
       EAST_SMG_MAG,
-      "SmokeShell:2"
+      EAST_SMOKE_WHITE
     };
     backpackItems[] = {"ACE_key_east"};
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     linkedItems[] = {
       "ItemWatch",
@@ -796,8 +788,8 @@ class opf_f {
     weapons[] = {EAST_CARBINE};
     magazines[] = {
       EAST_CARBINE_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2"
+      EAST_FRAG,
+      EAST_SMOKE_WHITE
     };
     backpack[] = {"B_Kitbag_rgr"};
     backpackItems[] = {"Toolkit"};

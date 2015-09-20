@@ -56,6 +56,11 @@ class blu_f {
   #define WEST_RADIO_SHORTWAVE "tf_anprc152"
   #define WEST_RADIO_MANPACK "tf_rt1523g_sage"
   #define WEST_RADIO_AIRBORNE "tf_anarc210"
+  // Throwables
+  #define WEST_SMOKE_WHITE "SmokeShell:2"
+  #define WEST_SMOKE_COLOR "SmokeShellGreen:2"
+  #define WEST_CHEMLIGHT "Chemlight_green:2"
+  #define WEST_FRAG "HandGrenade:2"
 
   // By default, BLUFOR uses White, Black, and Asian faces.
   // If you want something else, specify the list here.
@@ -165,16 +170,15 @@ class blu_f {
     backpackItems[] = {
       "ACE_fieldDressing:3",
       "ACE_morphine",
-      "ACE_IR_Strobe_item",
-      "ACE_earplugs"
+      "ACE_IR_Strobe_item"
     };
     // List the magazines, explosives, and throwables
     // that will be placed wherever there is room in the unit's
     // inventory
     magazines[] = {
       WEST_RIFLE_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2"
+      WEST_FRAG,
+      WEST_SMOKE_WHITE
     };
     // List the items (along with the amount) that will be placed
     // wherever there is room in the unit's inventory
@@ -217,9 +221,9 @@ class blu_f {
       WEST_GLRIFLE_MAG_SMOKE,
       WEST_GLRIFLE_MAG_FLARE,
       WEST_PISTOL_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2",
-      "rhs_mag_m18_green:2"
+      WEST_FRAG,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_COLOR
     };
     handguns[] = {WEST_PISTOL}; /// randomized
     backpackItems[] += {"ACE_key_west"};
@@ -267,11 +271,11 @@ class blu_f {
       WEST_GLRIFLE_MAG_HE,
       WEST_GLRIFLE_MAG_SMOKE,
       WEST_GLRIFLE_MAG_FLARE,
-      "rhs_mag_m18_green:2",
-      "HandGrenade:2",
-      "SmokeShell:2",
-      "HandGrenade:1",
-      "SmokeShell:2"
+      WEST_SMOKE_COLOR,
+      WEST_FRAG,
+      WEST_SMOKE_WHITE,
+      WEST_FRAG,
+      WEST_SMOKE_WHITE
     };
     backpackItems[] += {"ACE_key_west"};
     attachments[] += {"rhsusf_acc_ACOG_USMC"};
@@ -291,8 +295,8 @@ class blu_f {
     magazines[] = {
       WEST_AR_MAG,
       WEST_PISTOL_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2"
+      WEST_FRAG,
+      WEST_SMOKE_WHITE
     };
     handguns[] = {WEST_PISTOL}; /// randomized
   };
@@ -315,8 +319,8 @@ class blu_f {
     magazines[] = {
       WEST_CARBINE_MAG,
       WEST_AT_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2"
+      WEST_FRAG,
+      WEST_SMOKE_WHITE
     };
     launchers[] = {WEST_AT};
   };
@@ -330,14 +334,15 @@ class blu_f {
     weapons[] = {WEST_CARBINE};
     magazines[] = {
       WEST_CARBINE_MAG,
-      "SmokeShell:6"
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE
     };
     backpackItems[] = {
       "ACE_fieldDressing:31",
       "ACE_epinephrine:8",
       "ACE_bloodIV:2",
-      "ACE_morphine:14",
-      "ACE_earplugs"
+      "ACE_morphine:14"
     };
   };
 
@@ -351,8 +356,8 @@ class blu_f {
     magazines[] = {
       WEST_MMG_MAG,
       WEST_PISTOL_MAG,
-      "HandGrenade:1",
-      "SmokeShell:2"
+      WEST_FRAG,
+      WEST_SMOKE_WHITE
     };
     handguns[] = {WEST_PISTOL}; /// randomized
     attachments[] = {};
@@ -375,14 +380,13 @@ class blu_f {
     weapons[] = {WEST_CARBINE};
     magazines[] = {
       WEST_CARBINE_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2"
+      WEST_FRAG,
+      WEST_SMOKE_WHITE
     };
     launchers[] = {WEST_MAT};
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpack[] = {"B_Kitbag_cbr"};
     backpackItems[] = {WEST_MAT_MAG};
@@ -396,8 +400,7 @@ class blu_f {
     linkedItems[] += {"ACE_Vector"};
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
   };
 
@@ -408,9 +411,9 @@ class blu_f {
     weapons[] = {WEST_CARBINE};
     magazines[] = {
       WEST_CARBINE_MAG,
-      "HandGrenade:2",
+      WEST_FRAG,
       "MiniGrenade:1",
-      "SmokeShell:2"
+      WEST_SMOKE_WHITE
     };
     launchers[] = {WEST_SAM};
     backpackItems[] += {WEST_SAM_MAG};
@@ -430,13 +433,12 @@ class blu_f {
     weapons[] = {WEST_CARBINE};
     magazines[] = {
       WEST_CARBINE_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2"
+      WEST_FRAG,
+      WEST_SMOKE_WHITE
     };
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpack[] = {"B_Mortar_01_weapon_F"};
   };
@@ -448,8 +450,7 @@ class blu_f {
     linkedItems[] += {"ACE_Vector"};
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
   };
 
@@ -479,13 +480,12 @@ class blu_f {
 
     magazines[] = {
       WEST_SPOTTER_MAG,
-      "SmokeShell:2",
-      "HandGrenade:2"
+      WEST_SMOKE_WHITE,
+      WEST_FRAG
     };
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpackItems[] = {};
     linkedItems[] = {
@@ -527,13 +527,12 @@ class blu_f {
 
     magazines[] = {
       WEST_SNIPER_MAG,
-      "SmokeShell:2",
-      "HandGrenade:2"
+      WEST_SMOKE_WHITE,
+      WEST_FRAG
     };
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpackItems[] = {};
     linkedItems[] = {
@@ -576,13 +575,12 @@ class blu_f {
     magazines[] = {
       WEST_SMG_MAG,
       WEST_PISTOL_MAG,
-      "SmokeShell:2"
+      WEST_SMOKE_WHITE
     };
     backpackItems[] += {"ACE_key_west"};
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     linkedItems[] = {
       "ItemWatch",
@@ -628,13 +626,12 @@ class blu_f {
 
     magazines[] = {
       WEST_SMG_MAG,
-      "SmokeShell:2"
+      WEST_SMOKE_WHITE
     };
     backpackItems[] = {"ACE_key_west"};
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     linkedItems[] = {
       "ItemWatch",
@@ -654,8 +651,8 @@ class blu_f {
     weapons[] = {WEST_CARBINE};
     magazines[] = {
       WEST_CARBINE_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2"
+      WEST_FRAG,
+      WEST_SMOKE_WHITE
     };
     backpack[] = {"B_Kitbag_cbr"};
     backpackItems[] = {"Toolkit"};
