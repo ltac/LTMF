@@ -14,25 +14,35 @@ class blu_f {
 	// Rifle
 	#define WEST_RIFLE "hlc_rifle_g3ka4"
 	#define WEST_RIFLE_MAG "hlc_20rnd_762x51_b_G3:8","hlc_20rnd_762x51_T_G3:2"
+  #define WEST_RIFLE_SCOPE "rhsusf_acc_eotech_552"
+  #define WEST_RIFLE_RAIL "rhsusf_acc_anpeq15A"
 	// GL Rifle
 	#define WEST_GLRIFLE "HLC_Rifle_g3ka4_GL"
 	#define WEST_GLRIFLE_MAG "hlc_20rnd_762x51_b_G3:8","hlc_20rnd_762x51_T_G3:2"
 	#define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
 	#define WEST_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:8"
 	#define WEST_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareGreen_F:2"
+  #define WEST_GLRIFLE_SCOPE "rhsusf_acc_eotech_552"
+  #define WEST_GLRIFLE_RAIL "rhsusf_acc_anpeq15A"
 	// Carbine
 	#define WEST_CARBINE "RH_hk416c_tg"
 	#define WEST_CARBINE_MAG "RH_30Rnd_556x45_M855A1:8","30Rnd_556x45_Stanag_Tracer_Red:2"
+  #define WEST_CARBINE_SCOPE "rhsusf_acc_eotech_552"
+  #define WEST_CARBINE_RAIL "rhsusf_acc_anpeq15A"
 	// AR
 	#define WEST_AR "hlc_lmg_minimi_railed"
 	#define WEST_AR_MAG "hlc_200rnd_556x45_M_SAW:2"
 	#define WEST_AR_MAG2 "hlc_200rnd_556x45_M_SAW:2"
+  #define WEST_AR_SCOPE "rhsusf_acc_eotech_552"
+  #define WEST_AR_RAIL "rhsusf_acc_anpeq15A"
 	// AT
 	#define WEST_AT "rhs_weap_M136"
 	#define WEST_AT_MAG "rhs_m136_mag"
 	// MMG
 	#define WEST_MMG "rhs_weap_m240B"
 	#define WEST_MMG_MAG "rhsusf_100Rnd_762x51:5"
+  #define WEST_MMG_SCOPE "rhsusf_acc_eotech_552"
+  #define WEST_MMG_RAIL "rhsusf_acc_anpeq15A"
 	// MAT
 	#define WEST_MAT "launch_I_Titan_short_F"
 	#define WEST_MAT_MAG "Titan_AT:2","Titan_AP:1"
@@ -42,12 +52,18 @@ class blu_f {
 	// Sniper Rifle
 	#define WEST_SNIPER "hlc_rifle_psg1"
 	#define WEST_SNIPER_MAG "hlc_20rnd_762x51_barrier_G3:8"
+  #define WEST_SNIPER_SCOPE "rhsusf_acc_LEUPOLDMK4_2"
+  #define WEST_SNIPER_RAIL "rhsusf_acc_anpeq15side"
 	// Spotter Rifle
 	#define WEST_SPOTTER "hlc_rifle_g3ka4"
 	#define WEST_SPOTTER_MAG "hlc_20rnd_762x51_b_G3:8"
+  #define WEST_SPOTTER_SCOPE "rhsusf_acc_eotech_552"
+  #define WEST_SPOTTER_RAIL "rhsusf_acc_anpeq15A"
 	// SMG
 	#define WEST_SMG "hlc_smg_MP5N"
 	#define WEST_SMG_MAG "hlc_30Rnd_9x19_B_MP5:6"
+  #define WEST_SMG_SCOPE "rhsusf_acc_eotech_552"
+  #define WEST_SMG_RAIL "rhsusf_acc_anpeq15A"
 	// Pistol
 	#define WEST_PISTOL "hgun_P07_F"
 	#define WEST_PISTOL_MAG "16Rnd_9x21_Mag:4"
@@ -228,9 +244,9 @@ class blu_f {
 		};
 		// List the attachments that will be automatically added
 		// to the unit's equipped weapons
-		attachments[] = {
-			"RH_compm4s",
-			"rhsusf_acc_anpeq15A"
+    attachments[] = {
+			WEST_RIFLE_SCOPE,
+			WEST_RIFLE_RAIL
 		};
 		// Set the basic radio for the unit
 		radio = WEST_RADIO_RIFLEMAN;
@@ -254,6 +270,10 @@ class blu_f {
 			WEST_FRAG,
 			WEST_SMOKE_WHITE,
 			WEST_SMOKE_COLOR
+		};
+    attachments[] = {
+			WEST_GLRIFLE_SCOPE,
+			WEST_GLRIFLE_RAIL
 		};
 		handguns[] = {WEST_PISTOL}; /// randomized
 		backpackItems[] += {"ACE_key_west"};
@@ -301,6 +321,10 @@ class blu_f {
 			WEST_FRAG,
 			WEST_SMOKE_WHITE
 		};
+    attachments[] = {
+			WEST_GLRIFLE_SCOPE,
+			WEST_GLRIFLE_RAIL
+		};
 		backpackItems[] += {"ACE_key_west"};
 		linkedItems[] += {
 			"ItemGPS",
@@ -317,6 +341,10 @@ class blu_f {
 			WEST_PISTOL_MAG,
 			WEST_FRAG,
 			WEST_SMOKE_WHITE
+		};
+    attachments[] = {
+			WEST_AR_SCOPE,
+			WEST_AR_RAIL
 		};
 		handguns[] = {WEST_PISTOL}; /// randomized
 	};
@@ -371,7 +399,10 @@ class blu_f {
 			WEST_SMOKE_WHITE
 		};
 		handguns[] = {WEST_PISTOL}; /// randomized
-		attachments[] = {};
+    attachments[] = {
+			WEST_MMG_SCOPE,
+			WEST_MMG_RAIL
+		};
 	};
 
 	// MMG Asst
@@ -508,9 +539,9 @@ class blu_f {
 			"LaserDesignator",
 			"rhsusf_ANPVS_15"
 		};
-		attachments[] = {
-			"rhsusf_acc_ACOG_USMC",
-			"rhsusf_acc_anpeq15A"
+    attachments[] = {
+			WEST_SPOTTER_SCOPE,
+			WEST_SPOTTER_RAIL
 		};
 		radio = WEST_RADIO_SHORTWAVE;
 	};
@@ -611,7 +642,10 @@ class blu_f {
 			"itemGPS",
 			"rhsusf_ANPVS_15"
 		};
-		attachments[] = {};
+    attachments[] = {
+			WEST_SMG_SCOPE,
+			WEST_SMG_RAIL
+		};
 		radio = WEST_RADIO_SHORTWAVE;
 	};
 
@@ -665,7 +699,10 @@ class blu_f {
 			"itemGPS",
 			"rhsusf_ANPVS_15"
 		};
-		attachments[] = {};
+    attachments[] = {
+			WEST_SMG_SCOPE,
+			WEST_SMG_RAIL
+		};
 		radio = WEST_RADIO_SHORTWAVE;
 	};
 
@@ -678,6 +715,10 @@ class blu_f {
 			WEST_CARBINE_MAG,
 			WEST_FRAG,
 			WEST_SMOKE_WHITE
+		};
+    attachments[] = {
+			WEST_CARBINE_SCOPE,
+			WEST_CARBINE_RAIL
 		};
 		backpack[] = {WEST_PACK_MEDIUM};
 		backpackItems[] = {"Toolkit"};

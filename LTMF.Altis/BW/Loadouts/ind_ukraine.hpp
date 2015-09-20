@@ -13,25 +13,35 @@ class ind_f {
   //Rifle
   #define IND_RIFLE "hlc_rifle_ak74"
   #define IND_RIFLE_MAG "hlc_30Rnd_545x39_B_AK:8","hlc_30Rnd_545x39_t_ak:2"
+  #define IND_RIFLE_SCOPE "RH_barska_rds"
+  #define IND_RIFLE_RAIL "acc_flashlight"
   //GL Rifle
   #define IND_GLRIFLE "hlc_rifle_aks74_GL"
   #define IND_GLRIFLE_MAG "hlc_30Rnd_545x39_B_AK:8","hlc_30Rnd_545x39_t_ak:2"
   #define IND_GLRIFLE_MAG_SMOKE "hlc_GRD_White:4","hlc_GRD_green:2","hlc_GRD_Red:3"
   #define IND_GLRIFLE_MAG_HE "hlc_VOG25_AK:14"
   #define IND_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareGreen_F:2"
+  #define IND_GLRIFLE_SCOPE "RH_barska_rds"
+  #define IND_GLRIFLE_RAIL "acc_flashlight"
   //Carbine
   #define IND_CARBINE "hlc_rifle_ak74"
   #define IND_CARBINE_MAG "hlc_30Rnd_545x39_B_AK:8","hlc_30Rnd_545x39_t_ak:2"
+  #define IND_CARBINE_SCOPE "RH_barska_rds"
+  #define IND_CARBINE_RAIL "acc_flashlight"
   // AR
   #define IND_AR "hlc_rifle_rpk74n"
   #define IND_AR_MAG "hlc_45Rnd_545x39_t_rpk:9"
   #define IND_AR_MAG2 "hlc_45Rnd_545x39_t_rpk:5"
+  #define IND_AR_SCOPE "RH_barska_rds"
+  #define IND_AR_RAIL "acc_flashlight"
   // AT
   #define IND_AT "rhs_weap_rpg7"
   #define IND_AT_MAG "rhs_rpg7_PG7VL_mag:3"
   // MMG
   #define IND_MMG "rhs_weap_pkm"
   #define IND_MMG_MAG "rhs_100Rnd_762x54mmR:5"
+  #define IND_MMG_SCOPE "RH_barska_rds"
+  #define IND_MMG_RAIL "acc_flashlight"
   // MAT
   #define IND_MAT "rhs_weap_rpg7"
   #define IND_MAT_MAG "rhs_rpg7_PG7VR_mag:2","rhs_rpg7_PG7VL_mag:1"
@@ -41,12 +51,18 @@ class ind_f {
   // Sniper Rifle
   #define IND_SNIPER "rhs_weap_svdp"
   #define IND_SNIPER_MAG "rhs_10Rnd_762x54mmR_7N1:8"
+  #define IND_SNIPER_SCOPE "rhsusf_acc_LEUPOLDMK4_2"
+  #define IND_SNIPER_RAIL "acc_flashlight"
   // Spotter Rifle
   #define IND_SPOTTER "rhs_weap_svdp"
   #define IND_SPOTTER_MAG "rhs_10Rnd_762x54mmR_7N1:8"
+  #define IND_SPOTTER_SCOPE "RH_barska_rds"
+  #define IND_SPOTTER_RAIL "acc_flashlight"
   // SMG
   #define IND_SMG "hlc_rifle_aks74u"
   #define IND_SMG_MAG "hlc_30Rnd_545x39_B_AK:6"
+  #define IND_SMG_SCOPE "RH_barska_rds"
+  #define IND_SMG_RAIL "acc_flashlight"
   // Pistol
   #define IND_PISTOL "rhs_weap_makarov_pmm"
   #define IND_PISTOL_MAG "rhs_mag_9x18_12_57N181S:4"
@@ -217,7 +233,9 @@ class ind_f {
     };
     // List the attachments that will be automatically added
     // to the unit's equipped weapons
-    attachments[] = {"acc_flashlight"};
+    attachments[] = {
+			IND_RIFLE_RAIL
+		};
     // Set the basic radio for the unit
     radio = IND_RADIO_RIFLEMAN;
   };
@@ -241,6 +259,10 @@ class ind_f {
       IND_SMOKE_WHITE,
       IND_SMOKE_COLOR
     };
+    attachments[] = {
+			IND_GLRIFLE_SCOPE,
+			IND_GLRIFLE_RAIL
+		};
     handguns[] = {IND_PISTOL}; /// randomized
     backpackItems[] += {"ACE_key_indp"};
     linkedItems[] += {
@@ -290,6 +312,10 @@ class ind_f {
       IND_FRAG,
       IND_SMOKE_WHITE
     };
+    attachments[] = {
+			IND_GLRIFLE_SCOPE,
+			IND_GLRIFLE_RAIL
+		};
     backpackItems[] += {"ACE_key_indp"};
     linkedItems[] += {
       "ItemGPS",
@@ -307,6 +333,10 @@ class ind_f {
       IND_FRAG,
       IND_SMOKE_WHITE
     };
+    attachments[] = {
+			IND_AR_SCOPE,
+			IND_AR_RAIL
+		};
     handguns[] = {IND_PISTOL}; /// randomized
   };
 
@@ -360,7 +390,10 @@ class ind_f {
       IND_SMOKE_WHITE
     };
     handguns[] = {IND_PISTOL}; /// randomized
-    attachments[] = {};
+    attachments[] = {
+			IND_MMG_SCOPE,
+			IND_MMG_RAIL
+		};
   };
 
   // MMG Asst
@@ -507,9 +540,9 @@ class ind_f {
       "rhsusf_ANPVS_15"
     };
     attachments[] = {
-      "rhsusf_acc_eotech_552",
-      "rhsusf_acc_anpeq15side"
-    };
+			IND_SPOTTER_SCOPE,
+			IND_SPOTTER_RAIL
+		};
     radio = IND_RADIO_SHORTWAVE;
   };
 
@@ -567,10 +600,9 @@ class ind_f {
       "rhsusf_ANPVS_15"
     };
     attachments[] = {
-      "rhsusf_acc_LEUPOLDMK4_2",
-      "rhsusf_acc_anpeq15side",
-      "RH_m110sd_t"
-    };
+			IND_SNIPER_SCOPE,
+			IND_SNIPER_RAIL
+		};
     radio = IND_RADIO_SHORTWAVE;
   };
 
@@ -611,7 +643,10 @@ class ind_f {
       "itemGPS",
       "rhsusf_ANPVS_15"
     };
-    attachments[] = {};
+    attachments[] = {
+			IND_SMG_SCOPE,
+			IND_SMG_RAIL
+		};
     radio = IND_RADIO_SHORTWAVE;
   };
 
@@ -671,7 +706,10 @@ class ind_f {
       "ItemCompass",
       "itemGPS"
     };
-    attachments[] = {};
+    attachments[] = {
+			IND_SMG_SCOPE,
+			IND_SMG_RAIL
+		};
     radio = IND_RADIO_SHORTWAVE;
   };
 
@@ -685,6 +723,10 @@ class ind_f {
       IND_FRAG,
       IND_SMOKE_WHITE
     };
+    attachments[] = {
+			IND_CARBINE_SCOPE,
+			IND_CARBINE_RAIL
+		};
     backpack[] = {IND_PACK_MEDIUM};
     backpackItems[] = {"Toolkit"};
   };
