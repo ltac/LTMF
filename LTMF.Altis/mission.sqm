@@ -5046,7 +5046,7 @@ class Mission
 					position[]={9592.7275,28.564192,8465.4473};
 					id=312;
 					side="EAST";
-					vehicle="O_Soldier_AR_F";
+					vehicle="O_support_MG_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_MMG1_G";
@@ -5304,7 +5304,7 @@ class Mission
 					position[]={9590.8408,28.099239,8371.1426};
 					id=327;
 					side="EAST";
-					vehicle="O_engineer_F";
+					vehicle="O_soldier_exp_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -5318,7 +5318,7 @@ class Mission
 					position[]={9593.8174,28.431444,8369.748};
 					id=328;
 					side="EAST";
-					vehicle="O_engineer_F";
+					vehicle="O_soldier_exp_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_ENG1_A1";
@@ -5491,7 +5491,7 @@ class Mission
 					position[]={9124.002,19.159428,7952.3521};
 					id=340;
 					side="GUER";
-					vehicle="I_Soldier_AR_F";
+					vehicle="I_support_MG_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_MMG1_G";
@@ -5752,7 +5752,7 @@ class Mission
 					position[]={9122.0176,19.462198,7856.8931};
 					id=355;
 					side="GUER";
-					vehicle="I_engineer_F";
+					vehicle="I_Soldier_exp_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -5765,7 +5765,7 @@ class Mission
 					position[]={9124.7832,19.754644,7854.9751};
 					id=356;
 					side="GUER";
-					vehicle="I_engineer_F";
+					vehicle="I_Soldier_exp_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_ENG1_A1";
@@ -5937,7 +5937,7 @@ class Mission
 					position[]={8874.791,58.302063,7445.3926};
 					id=368;
 					side="WEST";
-					vehicle="B_soldier_AR_F";
+					vehicle="B_support_MG_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_MMG1_G";
@@ -6201,7 +6201,7 @@ class Mission
 					position[]={8872.1924,25.990511,7352.1333};
 					id=383;
 					side="WEST";
-					vehicle="B_engineer_F";
+					vehicle="B_soldier_exp_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -6215,7 +6215,7 @@ class Mission
 					position[]={8874.8984,25.471401,7350.3364};
 					id=384;
 					side="WEST";
-					vehicle="B_engineer_F";
+					vehicle="B_soldier_exp_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_ENG1_A1";
@@ -7396,7 +7396,7 @@ class Mission
 					position[]={9241.8105,20.231314,7546.499};
 					id=461;
 					side="WEST";
-					vehicle="B_G_engineer_F";
+					vehicle="B_G_Soldier_exp_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -7434,7 +7434,7 @@ class Mission
 					position[]={9244.3174,20.244623,7544.6416};
 					id=464;
 					side="WEST";
-					vehicle="B_G_engineer_F";
+					vehicle="B_G_Soldier_exp_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitFIA_ENG1_A3";
