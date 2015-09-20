@@ -17,6 +17,10 @@ private ["_unitfaction"];
 
 waitUntil {!isnil "f_var_debugMode"};
 
+// CREDITS
+
+#include "f\briefing\f_briefing_credits.sqf"
+
 // ====================================================================================
 
 // DETECT PLAYER FACTION
