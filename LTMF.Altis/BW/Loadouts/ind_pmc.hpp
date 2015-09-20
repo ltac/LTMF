@@ -112,8 +112,7 @@ class ind_f {
     backpackItems[] = {
       "ACE_fieldDressing:3",
       "ACE_morphine",
-      "ACE_IR_Strobe_item",
-      "ACE_earplugs"
+      "ACE_IR_Strobe_item"
     };
     weapons[] = {IND_RIFLE}; /// randomized
     launchers[] = {}; /// randomized
@@ -132,7 +131,16 @@ class ind_f {
     vest[] = {"MNP_V_M81_Harness","MNP_Vest_OD_B"};
     backpack[] = {IND_RADIO_MANPACK};
     weapons[] = {IND_GLRIFLE};
-    magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,IND_GLRIFLE_MAG_FLARE,IND_PISTOL_MAG,IND_FRAG,IND_SMOKE_WHITE,IND_SMOKE_COLOR};
+    magazines[] = {
+      IND_GLRIFLE_MAG,
+      IND_GLRIFLE_MAG_HE,
+      IND_GLRIFLE_MAG_SMOKE,
+      IND_GLRIFLE_MAG_FLARE,
+      IND_PISTOL_MAG,
+      IND_FRAG,
+      IND_SMOKE_WHITE,
+      IND_SMOKE_COLOR
+    };
     handguns[] = {IND_PISTOL}; /// randomized
     backpackItems[] += {"ACE_key_west"};
     linkedItems[] += {"ItemGPS","ACE_Vector"};
@@ -144,7 +152,7 @@ class ind_f {
     backpack[] = {IND_RADIO_MANPACK};
     linkedItems[] += {"Binocular"};
     items[] = {"ACE_MapTools"};
-    backpackItems[] = {"ACE_fieldDressing:4","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"};
+    backpackItems[] = {"ACE_fieldDressing:4","ACE_morphine","ACE_IR_Strobe_item"};
     radio = IND_RADIO_SHORTWAVE;
   };
   class I_Soldier_UAV_F: I_Soldier_F {
@@ -155,7 +163,17 @@ class ind_f {
   class I_Soldier_TL_F: I_Soldier_F {// FTL
     vest[] = {"MNP_V_OD_GL_Harness","MNP_V_M81_GL_Harness"};
     weapons[] = {IND_GLRIFLE};
-    magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,IND_GLRIFLE_MAG_FLARE,IND_SMOKE_COLOR,IND_FRAG,IND_SMOKE_WHITE,"HandGrenade:1",IND_SMOKE_WHITE};
+    magazines[] = {
+      IND_GLRIFLE_MAG,
+      IND_GLRIFLE_MAG_HE,
+      IND_GLRIFLE_MAG_SMOKE,
+      IND_GLRIFLE_MAG_FLARE,
+      IND_SMOKE_COLOR,
+      IND_FRAG,
+      IND_SMOKE_WHITE,
+      IND_FRAG,
+      IND_SMOKE_WHITE
+    };
     backpackItems[] += {"ACE_key_west"};
     linkedItems[] += {"ItemGPS","Binocular"};
   };
@@ -177,7 +195,7 @@ class ind_f {
   class I_medic_F: I_Soldier_F {// Medic
     weapons[] = {IND_CARBINE};
     magazines[] = {IND_CARBINE_MAG,"SmokeShell:6"};
-    backpackItems[] = {"ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14", "ACE_earplugs"};
+    backpackItems[] = {"ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"};
   };
   class I_support_MG_F: I_Soldier_F {// MMG
     weapons[] = {IND_MMG};
@@ -198,7 +216,7 @@ class ind_f {
       IND_SMOKE_WHITE
     };
     launchers[] = {IND_MAT}; /// randomized
-    items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+    items[] += {"ACE_fieldDressing:3","ACE_morphine"};
     backpack[] = {"rhs_rpg_empty"};
     backpackItems[] = {IND_MAT_MAG};
   };
@@ -206,7 +224,7 @@ class ind_f {
     backpack[] = {"rhs_rpg_empty"};
     backpackItems[] = {IND_MAT_MAG};
     linkedItems[] += {"ACE_Vector"};
-    items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+    items[] += {"ACE_fieldDressing:3","ACE_morphine"};
   };
   class I_Soldier_AA_F: I_Soldier_F {// SAM Gunner
     backpack[] = {"B_Carryall_oli"};
@@ -232,26 +250,37 @@ class ind_f {
       IND_FRAG,
       IND_SMOKE_WHITE
     };
-    items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+    items[] += {"ACE_fieldDressing:3","ACE_morphine"};
     backpack[] = {"B_Mortar_01_weapon_F"}; /// randomized
   };
   class I_support_AMort_F: I_Soldier_F {// Assistant Mortar
     backpack[] = {"B_Mortar_01_support_F"}; /// randomized
     linkedItems[] += {"ACE_Vector"};
-    items[] += {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+    items[] += {"ACE_fieldDressing:3","ACE_morphine"};
   };
   class I_spotter_F {// Spotter
     weapons[] = {IND_SPOTTER}; /// randomized
-    magazines[] = {IND_SPOTTER_MAG,IND_SMOKE_WHITE,IND_FRAG};
-    items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+    magazines[] = {
+      IND_SPOTTER_MAG,
+      IND_SMOKE_WHITE,
+      IND_FRAG
+    };
+    items[] = {
+      "ACE_fieldDressing:3",
+      "ACE_morphine"
+    };
     linkedItems[] += {"itemGPS","LaserDesignator"};
     attachments[] = {"rhsusf_acc_eotech_552","rhsusf_acc_anpeq15side"};
     radio = IND_RADIO_SHORTWAVE;
   };
   class I_sniper_F {// Sniper
     weapons[] = {IND_SNIPER}; /// randomized
-    magazines[] = {IND_SNIPER_MAG,IND_SMOKE_WHITE,IND_FRAG};
-    items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+    magazines[] = {
+      IND_SNIPER_MAG,
+      IND_SMOKE_WHITE,
+      IND_FRAG
+    };
+    items[] = {"ACE_fieldDressing:3","ACE_morphine"};
     linkedItems[] += {"itemGPS"};
     attachments[] = {"rhsusf_acc_LEUPOLDMK4_2","rhsusf_acc_anpeq15side","RH_m110sd_t"};
     radio = IND_RADIO_SHORTWAVE;
@@ -262,7 +291,7 @@ class ind_f {
     weapons[] = {IND_SMG}; /// randomized
     magazines[] = {IND_SMG_MAG,IND_SMOKE_WHITE};
     backpackItems[] += {"ACE_key_west"};
-    items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+    items[] = {"ACE_fieldDressing:3","ACE_morphine"};
     linkedItems[] = {
       "ItemWatch",
       "ItemMap",
@@ -286,7 +315,7 @@ class ind_f {
       "B_AssaultPack_rgr"
     };
     backpackItems[] = {"ACE_key_west"};
-    items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+    items[] = {"ACE_fieldDressing:3","ACE_morphine"};
     linkedItems[] = {
       "ItemWatch",
       "ItemMap",

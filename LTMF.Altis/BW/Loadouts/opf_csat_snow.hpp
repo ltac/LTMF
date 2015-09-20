@@ -243,8 +243,7 @@ class opf_f {
     backpackItems[] = {
       "ACE_fieldDressing:3",
       "ACE_morphine",
-      "ACE_IR_Strobe_item",
-      "ACE_earplugs"
+      "ACE_IR_Strobe_item"
     };
     // List the magazines, explosives, and throwables
     // that will be placed wherever there is room in the unit's
@@ -414,8 +413,7 @@ class opf_f {
       "ACE_fieldDressing:31",
       "ACE_epinephrine:8",
       "ACE_bloodIV:2",
-      "ACE_morphine:14",
-      "ACE_earplugs"
+      "ACE_morphine:14"
     };
   };
 
@@ -453,8 +451,7 @@ class opf_f {
     launchers[] = {EAST_MAT};
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpack[] = {"rhs_rpg_empty"};
     backpackItems[] = {EAST_MAT_MAG};
@@ -468,8 +465,7 @@ class opf_f {
     linkedItems[] += {"ACE_Vector"};
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
   };
 
@@ -507,8 +503,7 @@ class opf_f {
     };
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpack[] = {"B_Mortar_01_weapon_F"};
   };
@@ -520,8 +515,7 @@ class opf_f {
     linkedItems[] += {"ACE_Vector"};
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
   };
 
@@ -582,8 +576,7 @@ class opf_f {
     };
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpackItems[] = {};
     linkedItems[] = {
@@ -653,8 +646,7 @@ class opf_f {
     };
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpackItems[] = {};
     linkedItems[] = {
@@ -705,8 +697,7 @@ class opf_f {
     backpackItems[] += {"ACE_key_east"};
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     linkedItems[] = {
       "ItemWatch",
@@ -778,8 +769,7 @@ class opf_f {
     backpackItems[] = {"ACE_key_east"};
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     linkedItems[] = {
       "ItemWatch",

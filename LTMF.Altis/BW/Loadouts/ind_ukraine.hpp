@@ -190,8 +190,7 @@ class ind_f {
     backpackItems[] = {
       "ACE_fieldDressing:3",
       "ACE_morphine",
-      "ACE_IR_Strobe_item",
-      "ACE_earplugs"
+      "ACE_IR_Strobe_item"
     };
     // List the magazines, explosives, and throwables
     // that will be placed wherever there is room in the unit's
@@ -285,7 +284,7 @@ class ind_f {
       IND_SMOKE_COLOR,
       IND_FRAG,
       IND_SMOKE_WHITE,
-      "HandGrenade:1",
+      IND_FRAG,
       IND_SMOKE_WHITE
     };
     backpackItems[] += {"ACE_key_indp"};
@@ -343,8 +342,7 @@ class ind_f {
       "ACE_fieldDressing:31",
       "ACE_epinephrine:8",
       "ACE_bloodIV:2",
-      "ACE_morphine:14",
-      "ACE_earplugs"
+      "ACE_morphine:14"
     };
   };
 
@@ -382,8 +380,7 @@ class ind_f {
     launchers[] = {IND_MAT};
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpack[] = {"rhs_rpg_empty"};
     backpackItems[] = {IND_MAT_MAG};
@@ -397,8 +394,7 @@ class ind_f {
     linkedItems[] += {"ACE_Vector"};
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
   };
 
@@ -436,8 +432,7 @@ class ind_f {
     };
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpack[] = {"B_Mortar_01_weapon_F"};
   };
@@ -449,8 +444,7 @@ class ind_f {
     linkedItems[] += {"ACE_Vector"};
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
   };
 
@@ -498,8 +492,7 @@ class ind_f {
     };
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpackItems[] = {};
     linkedItems[] = {
@@ -559,8 +552,7 @@ class ind_f {
     };
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpackItems[] = {};
     linkedItems[] = {
@@ -607,8 +599,7 @@ class ind_f {
     backpackItems[] += {"ACE_key_indp"};
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     linkedItems[] = {
       "ItemWatch",
@@ -669,8 +660,7 @@ class ind_f {
     backpackItems[] = {"ACE_key_indp"};
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     linkedItems[] = {
       "ItemWatch",
