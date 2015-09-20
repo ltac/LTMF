@@ -19,7 +19,7 @@ waitUntil {!isnil "f_var_debugMode"};
 
 // CREDITS
 
-#include "f_briefing_credits.sqf"
+#include "f\briefing\f_briefing_credits.sqf"
 
 // ====================================================================================
 
