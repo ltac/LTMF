@@ -56,6 +56,10 @@ class opf_f {
   #define EAST_RADIO_SHORTWAVE "tf_fadak"
   #define EAST_RADIO_MANPACK "tf_mr3000"
   #define EAST_RADIO_AIRBORNE "tf_mr6000l"
+  // Backpacks
+  #define EAST_PACK_LIGHT "rhs_sidor","B_TacticalPack_blk","B_TacticalPack_rgr","B_TacticalPack_oli","rhs_assault_umbts_engineer_empty","rhs_assault_umbts","MNP_B_RU2_FP","B_FieldPack_khk","B_FieldPack_blk","ibr_backpack"
+  #define EAST_PACK_MEDIUM "B_Kitbag_rgr","B_Kitbag_cbr"
+  #define EAST_PACK_HEAVY "MNP_B_RU2_CA"
 
   // Define the cargo for Vehicles
   class Car {
@@ -190,18 +194,7 @@ class opf_f {
     // Define the list of possible facewear that units will wear
     facewear[] = {};
     // Define the list of possible backpacks that units will wear
-    backpack[] = {
-      "rhs_sidor",
-      "B_TacticalPack_blk",
-      "B_TacticalPack_rgr",
-      "B_TacticalPack_oli",
-      "rhs_assault_umbts_engineer_empty",
-      "rhs_assault_umbts",
-      "MNP_B_RU2_FP",
-      "B_FieldPack_khk",
-      "B_FieldPack_blk",
-      "ibr_backpack"
-    };
+    backpack[] = {EAST_PACK_LIGHT};
     // Define the list of possible primary weapons that units
     // will be assigned
     weapons[] = {EAST_RIFLE};
@@ -386,10 +379,7 @@ class opf_f {
   // MMG Asst
   // Define gear additions and overrides for MMG Spotter units
   class O_Soldier_A_F: O_Soldier_F {
-    backpack[] = {
-      "B_Kitbag_rgr",
-      "B_Kitbag_cbr"
-    };
+    backpack[] = {EAST_PACK_MEDIUM};
     backpackItems[] += {EAST_MMG_MAG};
     linkedItems[] += {"Binocular"};
   };
@@ -427,7 +417,7 @@ class opf_f {
   // AA Gunner
   // Define gear additions and overrides for AA Gunner units
   class O_Soldier_AA_F: O_Soldier_F {
-    backpack[] = {"MNP_B_RU2_CA"};
+    backpack[] = {EAST_PACK_HEAVY};
     weapons[] = {EAST_CARBINE};
     magazines[] = {
       EAST_CARBINE_MAG,
@@ -442,7 +432,7 @@ class opf_f {
   // AA Asst
   // Define gear additions and overrides for AA Spotter units
   class O_Soldier_AAA_F: O_Soldier_F {
-    backpack[] = {"MNP_B_RU2_CA"};
+    backpack[] = {EAST_PACK_HEAVY};
     backpackItems[] = {EAST_SAM_MAG};
     linkedItems[] += {"Binocular"};
   };

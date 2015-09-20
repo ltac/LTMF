@@ -60,6 +60,10 @@ class ind_f {
   #define IND_SMOKE_COLOR "rhs_mag_rdg2_black:2"
   #define IND_CHEMLIGHT "Chemlight_yellow:2"
   #define IND_FRAG "rhs_mag_rgd5:2"
+  // Backpacks
+  #define IND_PACK_LIGHT "B_AssaultPack_dgtl"
+  #define IND_PACK_MEDIUM "B_Kitbag_rgr"
+  #define IND_PACK_HEAVY "B_Carryall_oli"
 
 	// Define the cargo for Vehicles
 	class Car {
@@ -163,7 +167,7 @@ class ind_f {
 		};
 		// Define the list of possible backpacks that units will wear
 		backpack[] = {
-			"B_AssaultPack_dgtl"
+			IND_PACK_LIGHT
 		};
 		// Define the list of possible primary weapons that units
 		// will be assigned
@@ -362,7 +366,7 @@ class ind_f {
 	// MMG Asst
 	// Define gear additions and overrides for MMG Spotter units
 	class I_Soldier_A_F: I_Soldier_F {
-		backpack[] = {"B_Kitbag_rgr"};
+		backpack[] = {IND_PACK_MEDIUM};
 		backpackItems[] += {IND_MMG_MAG};
 		linkedItems[] += {"ACE_Vector"};
 	};
@@ -400,7 +404,7 @@ class ind_f {
 	// AA Gunner
 	// Define gear additions and overrides for AA Gunner units
 	class I_Soldier_AA_F: I_Soldier_F {
-		backpack[] = {"B_Carryall_oli"};
+		backpack[] = {IND_PACK_HEAVY};
 		weapons[] = {IND_CARBINE};
 		magazines[] = {
 			IND_CARBINE_MAG,
@@ -415,7 +419,7 @@ class ind_f {
 	// AA Asst
 	// Define gear additions and overrides for AA Spotter units
 	class I_Soldier_AAA_F: I_Soldier_F {
-		backpack[] = {"B_Carryall_oli"};
+		backpack[] = {IND_PACK_HEAVY};
 		backpackItems[] = {IND_SAM_MAG};
 		linkedItems[] += {"ACE_Vector"};
 	};
@@ -477,7 +481,7 @@ class ind_f {
 			"G_Bandanna_shades"
 		};
 		backpack[] = {
-			"B_AssaultPack_dgtl"
+			IND_PACK_LIGHT
 		};
 
 		weapons[] = {IND_SPOTTER};
@@ -537,7 +541,7 @@ class ind_f {
 			"G_Bandanna_shades"
 		};
 		backpack[] = {
-			"B_AssaultPack_dgtl"
+			IND_PACK_LIGHT
 		};
 
 		weapons[] = {IND_SNIPER};
@@ -580,7 +584,7 @@ class ind_f {
 		vest[] = {};
 		facewear[] = {};
 		backpack[] = {
-			"B_AssaultPack_dgtl"
+			IND_PACK_LIGHT
 		};
 
 		weapons[] = {IND_SMG};
@@ -642,7 +646,7 @@ class ind_f {
 			"G_Bandanna_shades"
 		};
 		backpack[] = {
-			"B_AssaultPack_dgtl"
+			IND_PACK_LIGHT
 		};
 
 		weapons[] = {IND_SMG};
@@ -678,7 +682,7 @@ class ind_f {
 			IND_FRAG,
 			IND_SMOKE_WHITE
 		};
-		backpack[] = {"B_Kitbag_rgr"};
+		backpack[] = {IND_PACK_MEDIUM};
 		backpackItems[] = {"Toolkit"};
 	};
 

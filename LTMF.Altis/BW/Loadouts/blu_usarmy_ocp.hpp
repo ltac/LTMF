@@ -61,6 +61,10 @@ class blu_f {
   #define WEST_SMOKE_COLOR "SmokeShellGreen:2"
   #define WEST_CHEMLIGHT "Chemlight_green:2"
   #define WEST_FRAG "HandGrenade:2"
+  // Backpacks
+  #define WEST_PACK_LIGHT "rhsusf_assault_eagleaiii_ucp"
+  #define WEST_PACK_MEDIUM "B_Kitbag_khk"
+  #define WEST_PACK_HEAVY "B_Carryall_oli"
 
   // By default, BLUFOR uses White, Black, and Asian faces.
   // If you want something else, specify the list here.
@@ -157,7 +161,7 @@ class blu_f {
     facewear[] = {};
     // Define the list of possible backpacks that units will wear
     backpack[] = {
-      "rhsusf_assault_eagleaiii_ocp"
+      WEST_PACK_LIGHT
     };
     // Define the list of possible primary weapons that units
     // will be assigned
@@ -358,7 +362,7 @@ class blu_f {
   // MMG Asst
   // Define gear additions and overrides for MMG Spotter units
   class B_Soldier_A_F: B_Soldier_F {
-    backpack[] = {"B_Kitbag_cbr"};
+    backpack[] = {WEST_PACK_MEDIUM};
     backpackItems[] += {WEST_MMG_MAG};
     linkedItems[] += {"ACE_Vector"};
   };
@@ -377,14 +381,14 @@ class blu_f {
       "ACE_fieldDressing:3",
       "ACE_morphine"
     };
-    backpack[] = {"B_Kitbag_cbr"};
+    backpack[] = {WEST_PACK_MEDIUM};
     backpackItems[] = {WEST_MAT_MAG};
   };
 
   // Medium AT Asst
   // Define gear additions and overrides for MAT Spotter units
   class B_Soldier_AAT_F: B_Soldier_F {
-    backpack[] = {"B_Kitbag_cbr"};
+    backpack[] = {WEST_PACK_MEDIUM};
     backpackItems[] = {WEST_MAT_MAG};
     linkedItems[] += {"ACE_Vector"};
     items[] += {
@@ -396,7 +400,7 @@ class blu_f {
   // AA Gunner
   // Define gear additions and overrides for AA Gunner units
   class B_Soldier_AA_F: B_Soldier_F {
-    backpack[] = {"B_Carryall_oli"};
+    backpack[] = {WEST_PACK_HEAVY};
     weapons[] = {WEST_CARBINE};
     magazines[] = {
       WEST_CARBINE_MAG,
@@ -411,7 +415,7 @@ class blu_f {
   // AA Asst
   // Define gear additions and overrides for AA Spotter units
   class B_Soldier_AAA_F: B_Soldier_F {
-    backpack[] = {"B_Carryall_oli"};
+    backpack[] = {WEST_PACK_HEAVY};
     backpackItems[] = {WEST_SAM_MAG};
     linkedItems[] += {"ACE_Vector"};
   };
@@ -465,7 +469,7 @@ class blu_f {
     };
     facewear[] = {};
     backpack[] = {
-      "rhsusf_assault_eagleaiii_ocp"
+      WEST_PACK_LIGHT
     };
 
     weapons[] = {WEST_SPOTTER};
@@ -517,7 +521,7 @@ class blu_f {
     };
     facewear[] = {};
     backpack[] = {
-      "rhsusf_assault_eagleaiii_ocp"
+      WEST_PACK_LIGHT
     };
 
     weapons[] = {WEST_SNIPER};
@@ -565,7 +569,7 @@ class blu_f {
     };
     facewear[] = {nil};
     backpack[] = {
-      "rhsusf_assault_eagleaiii_ocp"
+      WEST_PACK_LIGHT
     };
 
     weapons[] = {WEST_SMG};
@@ -619,7 +623,7 @@ class blu_f {
     };
     facewear[] = {};
     backpack[] = {
-      "rhsusf_assault_eagleaiii_ocp"
+      WEST_PACK_LIGHT
     };
 
     weapons[] = {WEST_SMG};
@@ -656,7 +660,7 @@ class blu_f {
       WEST_FRAG,
       WEST_SMOKE_WHITE
     };
-    backpack[] = {"B_Kitbag_rgr"};
+    backpack[] = {WEST_PACK_MEDIUM};
     backpackItems[] = {"Toolkit"};
   };
 

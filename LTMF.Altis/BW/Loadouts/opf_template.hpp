@@ -83,6 +83,10 @@ class opf_f {
   #define EAST_SMOKE_COLOR "rhs_mag_rdg2_black:2"
   #define EAST_CHEMLIGHT "Chemlight_red:2"
   #define EAST_FRAG "rhs_mag_rgd5:2"
+  // Backpacks
+  #define EAST_PACK_LIGHT "MNP_B_RU2_FP"
+  #define EAST_PACK_MEDIUM "B_Kitbag_rgr"
+  #define EAST_PACK_HEAVY "MNP_B_RU2_CA"
 
   // By default, OPFOR uses Persian faces.
   // If you want something else, specify the list here.
@@ -226,7 +230,7 @@ class opf_f {
     };
     // Define the list of possible backpacks that units will wear
     backpack[] = {
-      "MNP_B_RU2_FP"
+      EAST_PACK_LIGHT
     };
     // Define the list of possible primary weapons that units
     // will be assigned
@@ -443,7 +447,7 @@ class opf_f {
   // MMG Asst
   // Define gear additions and overrides for MMG Spotter units
   class O_Soldier_A_F: O_Soldier_F {
-    backpack[] = {"B_Kitbag_rgr"};
+    backpack[] = {EAST_PACK_LIGHT};
     backpackItems[] += {EAST_MMG_MAG};
     linkedItems[] += {"ACE_Vector"};
   };
@@ -481,7 +485,7 @@ class opf_f {
   // AA Gunner
   // Define gear additions and overrides for AA Gunner units
   class O_Soldier_AA_F: O_Soldier_F {
-    backpack[] = {"MNP_B_RU2_CA"};
+    backpack[] = {EAST_PACK_LIGHT};
     weapons[] = {EAST_CARBINE};
     magazines[] = {
       EAST_CARBINE_MAG,
@@ -496,7 +500,7 @@ class opf_f {
   // AA Asst
   // Define gear additions and overrides for AA Spotter units
   class O_Soldier_AAA_F: O_Soldier_F {
-    backpack[] = {"MNP_B_RU2_CA"};
+    backpack[] = {EAST_PACK_LIGHT};
     backpackItems[] = {EAST_SAM_MAG};
     linkedItems[] += {"ACE_Vector"};
   };
@@ -571,7 +575,7 @@ class opf_f {
       "G_Sport_Blackyellow"
     };
     backpack[] = {
-      "MNP_B_RU2_FP"
+      EAST_PACK_LIGHT
     };
 
     weapons[] = {EAST_SPOTTER};
@@ -641,7 +645,7 @@ class opf_f {
       "G_Sport_Blackyellow"
     };
     backpack[] = {
-      "MNP_B_RU2_FP"
+      EAST_PACK_LIGHT
     };
 
     weapons[] = {EAST_SNIPER};
@@ -691,7 +695,7 @@ class opf_f {
     };
     facewear[] = {};
     backpack[] = {
-      "MNP_B_RU2_FP"
+      EAST_PACK_LIGHT
     };
 
     weapons[] = {EAST_SMG};
@@ -764,7 +768,7 @@ class opf_f {
       "G_Sport_Blackyellow"
     };
     backpack[] = {
-      "MNP_B_RU2_FP"
+      EAST_PACK_LIGHT
     };
 
     weapons[] = {EAST_SMG};
@@ -800,7 +804,7 @@ class opf_f {
       EAST_FRAG,
       EAST_SMOKE_WHITE
     };
-    backpack[] = {"B_Kitbag_rgr"};
+    backpack[] = {EAST_PACK_LIGHT};
     backpackItems[] = {"Toolkit"};
   };
 
