@@ -36,25 +36,35 @@ class ind_f {
   // Rifle
   #define IND_RIFLE "arifle_Mk20_ACO_pointer_F"
   #define IND_RIFLE_MAG "30Rnd_556x45_Stanag:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
+  #define IND_RIFLE_SCOPE "RH_barska_rds"
+  #define IND_RIFLE_RAIL "acc_flashlight"
   // GL Rifle
   #define IND_GLRIFLE "arifle_Mk20_GL_F"
   #define IND_GLRIFLE_MAG "30Rnd_556x45_Stanag:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
   #define IND_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
   #define IND_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:8"
   #define IND_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareGreen_F:2"
+  #define IND_GLRIFLE_SCOPE "RH_barska_rds"
+  #define IND_GLRIFLE_RAIL "acc_flashlight"
   // Carbine
   #define IND_CARBINE "arifle_Mk20C_F"
   #define IND_CARBINE_MAG "30Rnd_556x45_Stanag:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
+  #define IND_CARBINE_SCOPE "RH_barska_rds"
+  #define IND_CARBINE_RAIL "acc_flashlight"
   // AR
   #define IND_AR "LMG_Mk200_LP_BI_F"
   #define IND_AR_MAG "200Rnd_65x39_cased_Box:2"
   #define IND_AR_MAG2 "200Rnd_65x39_cased_Box:2"
+  #define IND_AR_SCOPE "RH_barska_rds"
+  #define IND_AR_RAIL "acc_flashlight"
   // AT
   #define IND_AT "launch_NLAW_F"
   #define IND_AT_MAG "NLAW_F"
   // MMG
   #define IND_MMG "MMG_02_black_F"
   #define IND_MMG_MAG "130Rnd_338_Mag:5"
+  #define IND_MMG_SCOPE "RH_barska_rds"
+  #define IND_MMG_RAIL "acc_flashlight"
   // MAT
   #define IND_MAT "launch_I_Titan_short_F"
   #define IND_MAT_MAG "Titan_AT:2","Titan_AP:1"
@@ -64,12 +74,18 @@ class ind_f {
   // Sniper Rifle
   #define IND_SNIPER "srifle_GM6_LRPS_F"
   #define IND_SNIPER_MAG "5Rnd_127x108_Mag:8"
+  #define IND_SNIPER_SCOPE "rhsusf_acc_LEUPOLDMK4_2"
+  #define IND_SNIPER_RAIL "acc_flashlight"
   // Spotter Rifle
   #define IND_SPOTTER "arifle_Mk20C_F"
   #define IND_SPOTTER_MAG "30Rnd_556x45_Stanag:8"
+  #define IND_SPOTTER_SCOPE "RH_barska_rds"
+  #define IND_SPOTTER_RAIL "acc_flashlight"
   // SMG
   #define IND_SMG "SMG_02_F"
   #define IND_SMG_MAG "30Rnd_9x21_Mag:6"
+  #define IND_SMG_SCOPE "RH_barska_rds"
+  #define IND_SMG_RAIL "acc_flashlight"
   // Pistol
   #define IND_PISTOL "hgun_ACPC2_snds_F"
   #define IND_PISTOL_MAG "9Rnd_45ACP_Mag:4"
@@ -78,6 +94,15 @@ class ind_f {
   #define IND_RADIO_SHORTWAVE "tf_anprc148jem"
   #define IND_RADIO_MANPACK "tf_anprc155"
   #define IND_RADIO_AIRBORNE "tf_anarc164"
+  // Throwables
+  #define IND_SMOKE_WHITE "rhs_mag_rdg2_white:2"
+  #define IND_SMOKE_COLOR "rhs_mag_rdg2_black:2"
+  #define IND_CHEMLIGHT "Chemlight_yellow:2"
+  #define IND_FRAG "rhs_mag_rgd5:2"
+  // Backpacks
+  #define IND_PACK_LIGHT "B_AssaultPack_dgtl"
+  #define IND_PACK_MEDIUM "B_Kitbag_rgr"
+  #define IND_PACK_HEAVY "B_Carryall_oli"
 
   // By default, INDFOR uses Greek faces.
   // If you want something else, specify the list here.
@@ -89,7 +114,6 @@ class ind_f {
       IND_RIFLE_MAG,
       IND_RIFLE_MAG,
       IND_CARBINE_MAG,
-      IND_AR_MAG,
       IND_AR_MAG,
       IND_GLRIFLE_MAG_HE,
       IND_AT_MAG
@@ -208,7 +232,7 @@ class ind_f {
     };
     // Define the list of possible backpacks that units will wear
     backpack[] = {
-      "B_AssaultPack_dgtl"
+      IND_PACK_LIGHT
     };
     // Define the list of possible primary weapons that units
     // will be assigned
@@ -234,16 +258,15 @@ class ind_f {
     backpackItems[] = {
       "ACE_fieldDressing:3",
       "ACE_morphine",
-      "ACE_IR_Strobe_item",
-      "ACE_earplugs"
+      "ACE_IR_Strobe_item"
     };
     // List the magazines, explosives, and throwables
     // that will be placed wherever there is room in the unit's
     // inventory
     magazines[] = {
       IND_RIFLE_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2"
+      IND_FRAG,
+      IND_SMOKE_WHITE
     };
     // List the items (along with the amount) that will be placed
     // wherever there is room in the unit's inventory
@@ -259,7 +282,10 @@ class ind_f {
     };
     // List the attachments that will be automatically added
     // to the unit's equipped weapons
-    attachments[] = {"acc_flashlight"};
+    attachments[] = {
+			IND_RIFLE_SCOPE,
+			IND_RIFLE_RAIL
+		};
     // Set the basic radio for the unit
     radio = IND_RADIO_RIFLEMAN;
   };
@@ -299,9 +325,9 @@ class ind_f {
       IND_GLRIFLE_MAG_SMOKE,
       IND_GLRIFLE_MAG_FLARE,
       IND_PISTOL_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2",
-      "rhs_mag_m18_green:2"
+      IND_FRAG,
+      IND_SMOKE_WHITE,
+      IND_SMOKE_COLOR
     };
     handguns[] = {IND_PISTOL}; /// randomized
     backpackItems[] += {"ACE_key_indp"};
@@ -310,6 +336,10 @@ class ind_f {
       "ACE_Vector",
       "rhsusf_ANPVS_15"
     };
+    attachments[] = {
+			IND_GLRIFLE_SCOPE,
+			IND_GLRIFLE_RAIL
+		};
     items[] = {"ACE_MapTools"};
     radio = IND_RADIO_SHORTWAVE;
   };
@@ -346,12 +376,16 @@ class ind_f {
       IND_GLRIFLE_MAG_HE,
       IND_GLRIFLE_MAG_SMOKE,
       IND_GLRIFLE_MAG_FLARE,
-      "rhs_mag_m18_green:2",
-      "HandGrenade:2",
-      "SmokeShell:2",
-      "HandGrenade:1",
-      "SmokeShell:2"
+      IND_SMOKE_COLOR,
+      IND_FRAG,
+      IND_SMOKE_WHITE,
+      IND_FRAG,
+      IND_SMOKE_WHITE
     };
+    attachments[] = {
+			IND_GLRIFLE_SCOPE,
+			IND_GLRIFLE_RAIL
+		};
     backpackItems[] += {"ACE_key_indp"};
     linkedItems[] += {
       "ItemGPS",
@@ -366,9 +400,13 @@ class ind_f {
     magazines[] = {
       IND_AR_MAG,
       IND_PISTOL_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2"
+      IND_FRAG,
+      IND_SMOKE_WHITE
     };
+    attachments[] = {
+			IND_AR_SCOPE,
+			IND_AR_RAIL
+		};
     handguns[] = {IND_PISTOL}; /// randomized
   };
 
@@ -387,8 +425,8 @@ class ind_f {
     magazines[] = {
       IND_CARBINE_MAG,
       IND_AT_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2"
+      IND_FRAG,
+      IND_SMOKE_WHITE
     };
     launchers[] = {IND_AT};
   };
@@ -399,14 +437,15 @@ class ind_f {
     weapons[] = {IND_CARBINE};
     magazines[] = {
       IND_CARBINE_MAG,
-      "SmokeShell:6"
+      IND_SMOKE_WHITE,
+			IND_SMOKE_WHITE,
+			IND_SMOKE_WHITE
     };
     backpackItems[] = {
       "ACE_fieldDressing:31",
       "ACE_epinephrine:8",
       "ACE_bloodIV:2",
-      "ACE_morphine:14",
-      "ACE_earplugs"
+      "ACE_morphine:14"
     };
   };
 
@@ -418,16 +457,19 @@ class ind_f {
       IND_MMG_MAG,
       IND_PISTOL_MAG,
       "HandGrenade:1",
-      "SmokeShell:2"
+      IND_SMOKE_WHITE
     };
     handguns[] = {IND_PISTOL}; /// randomized
-    attachments[] = {};
+    attachments[] = {
+			IND_MMG_SCOPE,
+			IND_MMG_RAIL
+		};
   };
 
   // MMG Asst
   // Define gear additions and overrides for MMG Spotter units
   class I_Soldier_A_F: I_Soldier_F {
-    backpack[] = {"B_Kitbag_rgr"};
+    backpack[] = {IND_PACK_MEDIUM};
     backpackItems[] += {IND_MMG_MAG};
     linkedItems[] += {"ACE_Vector"};
   };
@@ -438,14 +480,13 @@ class ind_f {
     weapons[] = {IND_CARBINE};
     magazines[] = {
       IND_CARBINE_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2"
+      IND_FRAG,
+      IND_SMOKE_WHITE
     };
     launchers[] = {IND_MAT};
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpack[] = {"rhs_rpg_empty"};
     backpackItems[] = {IND_MAT_MAG};
@@ -459,21 +500,20 @@ class ind_f {
     linkedItems[] += {"ACE_Vector"};
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
   };
 
   // AA Gunner
   // Define gear additions and overrides for AA Gunner units
   class I_Soldier_AA_F: I_Soldier_F {
-    backpack[] = {"B_Carryall_oli"};
+    backpack[] = {IND_PACK_HEAVY};
     weapons[] = {IND_CARBINE};
     magazines[] = {
       IND_CARBINE_MAG,
-      "HandGrenade:2",
-      "MiniGrenade:1",
-      "SmokeShell:2"
+      IND_FRAG,
+      "rhs_mag_rgn:1",
+      IND_SMOKE_WHITE
     };
     launchers[] = {IND_SAM};
     backpackItems[] += {IND_SAM_MAG};
@@ -482,7 +522,7 @@ class ind_f {
   // AA Asst
   // Define gear additions and overrides for AA Spotter units
   class I_Soldier_AAA_F: I_Soldier_F {
-    backpack[] = {"B_Carryall_oli"};
+    backpack[] = {IND_PACK_HEAVY};
     backpackItems[] = {IND_SAM_MAG};
     linkedItems[] += {"ACE_Vector"};
   };
@@ -493,13 +533,12 @@ class ind_f {
     weapons[] = {IND_CARBINE};
     magazines[] = {
       IND_CARBINE_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2"
+      IND_FRAG,
+      IND_SMOKE_WHITE
     };
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpack[] = {"B_Mortar_01_weapon_F"};
   };
@@ -511,8 +550,7 @@ class ind_f {
     linkedItems[] += {"ACE_Vector"};
     items[] += {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
   };
 
@@ -546,7 +584,7 @@ class ind_f {
       "G_Bandanna_shades"
     };
     backpack[] = {
-      "B_AssaultPack_dgtl"
+      IND_PACK_LIGHT
     };
 
     weapons[] = {IND_SPOTTER};
@@ -555,13 +593,12 @@ class ind_f {
 
     magazines[] = {
       IND_SPOTTER_MAG,
-      "SmokeShell:2",
-      "HandGrenade:2"
+      IND_SMOKE_WHITE,
+      IND_FRAG
     };
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpackItems[] = {};
     linkedItems[] = {
@@ -573,9 +610,9 @@ class ind_f {
       "rhsusf_ANPVS_15"
     };
     attachments[] = {
-      "rhsusf_acc_eotech_552",
-      "rhsusf_acc_anpeq15side"
-    };
+			IND_SPOTTER_SCOPE,
+			IND_SPOTTER_RAIL
+		};
     radio = IND_RADIO_SHORTWAVE;
   };
 
@@ -607,7 +644,7 @@ class ind_f {
       "G_Bandanna_shades"
     };
     backpack[] = {
-      "B_AssaultPack_dgtl"
+      IND_PACK_LIGHT
     };
 
     weapons[] = {IND_SNIPER};
@@ -616,13 +653,12 @@ class ind_f {
 
     magazines[] = {
       IND_SNIPER_MAG,
-      "SmokeShell:2",
-      "HandGrenade:2"
+      IND_SMOKE_WHITE,
+      IND_FRAG
     };
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     backpackItems[] = {};
     linkedItems[] = {
@@ -634,10 +670,9 @@ class ind_f {
       "rhsusf_ANPVS_15"
     };
     attachments[] = {
-      "rhsusf_acc_LEUPOLDMK4_2",
-      "rhsusf_acc_anpeq15side",
-      "RH_m110sd_t"
-    };
+			IND_SNIPER_SCOPE,
+			IND_SNIPER_RAIL
+		};
     radio = IND_RADIO_SHORTWAVE;
   };
 
@@ -651,7 +686,7 @@ class ind_f {
     vest[] = {};
     facewear[] = {};
     backpack[] = {
-      "B_AssaultPack_dgtl"
+      IND_PACK_LIGHT
     };
 
     weapons[] = {IND_SMG};
@@ -661,13 +696,12 @@ class ind_f {
     magazines[] = {
       IND_SMG_MAG,
       IND_PISTOL_MAG,
-      "SmokeShell:2"
+      IND_SMOKE_WHITE
     };
     backpackItems[] += {"ACE_key_indp"};
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     linkedItems[] = {
       "ItemWatch",
@@ -676,7 +710,10 @@ class ind_f {
       "itemGPS",
       "rhsusf_ANPVS_15"
     };
-    attachments[] = {};
+    attachments[] = {
+			IND_SMG_SCOPE,
+			IND_SMG_RAIL
+		};
     radio = IND_RADIO_SHORTWAVE;
   };
 
@@ -714,7 +751,7 @@ class ind_f {
       "G_Bandanna_shades"
     };
     backpack[] = {
-      "B_AssaultPack_dgtl"
+      IND_PACK_LIGHT
     };
 
     weapons[] = {IND_SMG};
@@ -723,13 +760,12 @@ class ind_f {
 
     magazines[] = {
       IND_SMG_MAG,
-      "SmokeShell:2"
+      IND_SMOKE_WHITE
     };
     backpackItems[] = {"ACE_key_indp"};
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_earplugs"
+      "ACE_morphine"
     };
     linkedItems[] = {
       "ItemWatch",
@@ -737,7 +773,10 @@ class ind_f {
       "ItemCompass",
       "itemGPS"
     };
-    attachments[] = {};
+    attachments[] = {
+			IND_SMG_SCOPE,
+			IND_SMG_RAIL
+		};
     radio = IND_RADIO_SHORTWAVE;
   };
 
@@ -748,10 +787,14 @@ class ind_f {
     weapons[] = {IND_CARBINE};
     magazines[] = {
       IND_CARBINE_MAG,
-      "HandGrenade:2",
-      "SmokeShell:2"
+      IND_FRAG,
+      IND_SMOKE_WHITE
     };
-    backpack[] = {"B_Kitbag_rgr"};
+    attachments[] = {
+			IND_CARBINE_SCOPE,
+			IND_CARBINE_RAIL
+		};
+    backpack[] = {IND_PACK_MEDIUM};
     backpackItems[] = {"Toolkit"};
   };
 

@@ -16,6 +16,7 @@ class CfgLoadouts {
     //#include "BW\Loadouts\blu_usmc_desert.hpp" // USMC, Desert MARPAT, M4
     //#include "BW\Loadouts\blu_usmc_woodland.hpp" // USMC, Woodland MARPAT, M4
     //#include "BW\Loadouts\blu_usmc_snow.hpp" // USMC, Arctic MARPAT, M4
+    //#include "BW\Loadouts\blu_germany_woodland.hpp" // Germany, Autumn Flecktarn, HK/G3
 
     /* INDFOR FACTION */
     //#include "BW\Loadouts\ind_finland_snow.hpp" // WIP
@@ -30,9 +31,9 @@ class CfgLoadouts {
     //#include "BW\Loadouts\opf_pla_desert.hpp" // WIP
     //#include "BW\Loadouts\opf_pla_woodland.hpp" // WIP
     //#include "BW\Loadouts\opf_russia_desert.hpp" // WIP
-    //#include "BW\Loadouts\opf_russia_woodland.hpp" // Russia, Woodland Digital, AK74
+    #include "BW\Loadouts\opf_russia_woodland.hpp" // Russia, Woodland Digital, AK74
     //#include "BW\Loadouts\opf_russia_snow.hpp" // WIP
-    #include "BW\Loadouts\opf_afghan.hpp" // Afghani, AKM
+    //#include "BW\Loadouts\opf_afghan.hpp" // Afghani, AKM
 
     /* CIVILIAN FACTIONS */
 	// Comment this out if you are using a different civilian faction
