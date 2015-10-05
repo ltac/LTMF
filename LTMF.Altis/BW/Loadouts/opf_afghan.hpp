@@ -72,6 +72,11 @@ class opf_f {
   #define EAST_RADIO_SHORTWAVE "tf_fadak"
   #define EAST_RADIO_MANPACK "tf_mr3000"
   #define EAST_RADIO_AIRBORNE "tf_mr6000l"
+  // Throwables
+  #define EAST_SMOKE_WHITE "rhs_mag_rdg2_white:2"
+  #define EAST_SMOKE_COLOR "rhs_mag_rdg2_black:2"
+  #define EAST_CHEMLIGHT "Chemlight_red:2"
+  #define EAST_FRAG "rhs_mag_rgd5:2"
   // Backpacks
   #define EAST_PACK_LIGHT "rhs_sidor","B_TacticalPack_blk","B_TacticalPack_rgr","B_TacticalPack_oli","rhs_assault_umbts_engineer_empty","rhs_assault_umbts","MNP_B_RU2_FP","B_FieldPack_khk","B_FieldPack_blk","ibr_backpack"
   #define EAST_PACK_MEDIUM "B_Kitbag_rgr","B_Kitbag_cbr"
