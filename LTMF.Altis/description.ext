@@ -5,7 +5,7 @@
 
 class Header
 {
-	gameType = Coop;
+	gameType=Coop;
 	minPlayers = 1;
 	maxPlayers = 457;
 };
@@ -35,7 +35,7 @@ overviewText = "*** Insert description for mission browser here. ***";
 //Extended Event Handlers:
 class Extended_InitPost_EventHandlers {
     class CAManBase {
-        class F_AssignGear { init = "_this call F_fnc_assignGearMan;"; };
+        class F_AssignGear { init = "_this call F_fnc_assignGearMan; _this call L_fnc_initUnit"; };
     };
 	class Car {
         class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Car'] call F_fnc_assignGearVehicle;"; };
