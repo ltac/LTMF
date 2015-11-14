@@ -7745,7 +7745,7 @@ class Mission
 						};
 						class Item1
 						{
-							value="";
+							value="zeusPlayer";
 							parentCls="ModuleCurator_F";
 							typeName="Name";
 						};
