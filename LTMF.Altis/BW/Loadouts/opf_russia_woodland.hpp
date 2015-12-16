@@ -52,11 +52,14 @@ class opf_f {
   #define EAST_CARBINE_SCOPE "RH_barska_rds"
   #define EAST_CARBINE_RAIL "rhsusf_acc_anpeq15A"
   // AR
-  #define EAST_AR "rhs_weap_pkm"
+  /*#define EAST_AR "rhs_weap_pkm"
   #define EAST_AR_MAG "rhs_100Rnd_762x54mmR:2"
   #define EAST_AR_MAG2 "rhs_100Rnd_762x54mmR_green:2"
   #define EAST_AR_SCOPE "RH_barska_rds"
-  #define EAST_AR_RAIL "rhsusf_acc_anpeq15A"
+  #define EAST_AR_RAIL "rhsusf_acc_anpeq15A"*/
+  #define EAST_AR "CUP_RPK_74 "
+  #define EAST_AR_MAG "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M:6"
+  #define EAST_AR_MAG2 "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M:4"
   // AT
   #define EAST_AT "rhs_weap_rshg2"
   #define EAST_AT_MAG "rhs_rshg2_mag"
