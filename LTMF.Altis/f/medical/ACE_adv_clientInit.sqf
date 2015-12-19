@@ -22,26 +22,24 @@ _typeOfUnit = player getVariable "f_var_assignGear";
 	"ACE_salineIV_250"
 ];
 
-// Add basic items to all units
-player addItem "ACE_EarBuds";
-
 if (_typeOfUnit == "m") then
 {
-
 	// BACKPACK: LIGHT
 	if (f_param_backpacks <= 1) then {
+		(unitBackpack player) addItemCargoGlobal ["ACE_personalAidKit",   2];
 		(unitBackpack player) addItemCargoGlobal ["ACE_fieldDressing",  10];
-		(unitBackpack player) addItemCargoGlobal ["ACE_elasticBandage",  15];
+		(unitBackpack player) addItemCargoGlobal ["ACE_elasticBandage",  10];
 		(unitBackpack player) addItemCargoGlobal ["ACE_packingBandage",  8];
-		(unitBackpack player) addItemCargoGlobal ["ACE_quikclot",  10];
-		(unitBackpack player) addItemCargoGlobal ["ACE_tourniquet",  5];
+		(unitBackpack player) addItemCargoGlobal ["ACE_quikclot",  8];
+		(unitBackpack player) addItemCargoGlobal ["ACE_tourniquet",  4];
 		(unitBackpack player) addItemCargoGlobal ["ACE_salineIV_500", 6];
-		(unitBackpack player) addItemCargoGlobal ["ACE_morphine", 8];
+		(unitBackpack player) addItemCargoGlobal ["ACE_morphine", 10];
 		(unitBackpack player) addItemCargoGlobal ["ACE_epinephrine",   8];
 		(unitBackpack player) addItemCargoGlobal ["ACE_atropine",   12];
 	};
 	// BACKPACK: HEAVY
 	if (f_param_backpacks == 2) then {
+		(unitBackpack player) addItemCargoGlobal ["ACE_personalAidKit",   2];
 		(unitBackpack player) addItemCargoGlobal ["ACE_fieldDressing",  10];
 		(unitBackpack player) addItemCargoGlobal ["ACE_elasticBandage",  20];
 		(unitBackpack player) addItemCargoGlobal ["ACE_packingBandage",  10];

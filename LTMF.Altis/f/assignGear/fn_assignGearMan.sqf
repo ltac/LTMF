@@ -223,3 +223,25 @@ _a = _path >> "init";
 if (isText _a) then {
     _unit call compile ("this = _this;"+ getText _a);
 };
+
+//  ====================================================================================
+// Medic unit ~~things~~
+
+// List of medic units
+_medicUnits = [
+"B_medic_F",
+"O_medic_F",
+"I_medic_F"
+];
+
+{
+  if((typeOf _unit) == _x) then {
+    _unit setVariable ["f_var_assignGear","m",true];
+  };
+} forEach _medicUnits;
+
+
+// ====================================================================================
+// This variable simply tracks the progress of the gear assignation process, for other
+// scripts to reference.
+_unit setVariable ["f_var_assignGear_done",true,true];

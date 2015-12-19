@@ -9,9 +9,10 @@
 // Wait for parameter to be initialised
 waitUntil{!isNil "f_var_medical"};
 
-// Check which system to use
+
 call
 {
+	// Check which system to use
 	// If 0 do nothing (Default Arma Healing)
 
 	// ACE3 Basic
