@@ -372,10 +372,8 @@ class ind_f {
 			IND_SMOKE_WHITE
     };
     backpackItems[] = {
-      "ACE_fieldDressing:31",
-      "ACE_epinephrine:8",
-      "ACE_bloodIV:2",
-      "ACE_morphine:14"
+      "Medikit",
+      "FirstAidKit:3"
     };
   };
 

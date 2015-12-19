@@ -8189,7 +8189,7 @@ class Mission
 						};
 						class Item4
 						{
-							value="1";
+							value="0";
 							parentCls="ACE_moduleAdvancedMedicalSettings";
 							typeName="consumeItem_PAK";
 						};
@@ -8225,7 +8225,7 @@ class Mission
 						};
 						class Item10
 						{
-							value="0";
+							value="1";
 							parentCls="ACE_moduleAdvancedMedicalSettings";
 							typeName="useCondition_SurgicalKit";
 						};
@@ -8237,7 +8237,7 @@ class Mission
 						};
 						class Item12
 						{
-							value="1";
+							value="0";
 							parentCls="ACE_moduleAdvancedMedicalSettings";
 							typeName="painIsOnlySuppressed";
 						};
