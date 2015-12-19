@@ -19,11 +19,8 @@ _typeOfUnit = player getVariable "f_var_assignGear";
 	"ACE_bloodIV_500"
 ];
 
-// Add basic items to all units
-player addItem "ACE_EarBuds";
 if (_typeOfUnit == "m") then
 {
-
 	// BACKPACK: LIGHT
 	if (f_param_backpacks <= 1) then {
 		(unitBackpack player) addItemCargoGlobal ["ACE_fieldDressing",  20];

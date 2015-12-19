@@ -25,16 +25,19 @@ class opf_f {
   #define EAST_GLRIFLE_SCOPE "RH_barska_rds"
   #define EAST_GLRIFLE_RAIL "rhsusf_acc_anpeq15A"
   // Carbine
-  #define EAST_CARBINE "rhs_weap_ak74m_npz"
+  #define EAST_CARBINE "rhs_weap_akm"
   #define EAST_CARBINE_MAG "rhs_30Rnd_762x39mm:8","rhs_30Rnd_762x39mm_tracer:2"
   #define EAST_CARBINE_SCOPE "RH_barska_rds"
   #define EAST_CARBINE_RAIL "rhsusf_acc_anpeq15A"
   // AR
-  #define EAST_AR "ibr_rpk"
+  /*#define EAST_AR "ibr_rpk"
   #define EAST_AR_MAG "40Rnd_762x39_ibr:2"
   #define EAST_AR_MAG2 "40Rnd_762x39_ibr:2"
   #define EAST_AR_SCOPE "RH_barska_rds"
-  #define EAST_AR_RAIL "rhsusf_acc_anpeq15A"
+  #define EAST_AR_RAIL "rhsusf_acc_anpeq15A"*/
+  #define EAST_AR "CUP_RPK_74 "
+  #define EAST_AR_MAG "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M:6"
+  #define EAST_AR_MAG2 "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M:4"
   // AT
   #define EAST_AT "rhs_weap_rpg7"
   #define EAST_AT_MAG "rhs_rpg7_PG7VL_mag"
@@ -72,6 +75,11 @@ class opf_f {
   #define EAST_RADIO_SHORTWAVE "tf_fadak"
   #define EAST_RADIO_MANPACK "tf_mr3000"
   #define EAST_RADIO_AIRBORNE "tf_mr6000l"
+  // Throwables
+  #define EAST_SMOKE_WHITE "rhs_mag_rdg2_white:2"
+  #define EAST_SMOKE_COLOR "rhs_mag_rdg2_black:2"
+  #define EAST_CHEMLIGHT "Chemlight_red:2"
+  #define EAST_FRAG "rhs_mag_rgd5:2"
   // Backpacks
   #define EAST_PACK_LIGHT "rhs_sidor","B_TacticalPack_blk","B_TacticalPack_rgr","B_TacticalPack_oli","rhs_assault_umbts_engineer_empty","rhs_assault_umbts","MNP_B_RU2_FP","B_FieldPack_khk","B_FieldPack_blk","ibr_backpack"
   #define EAST_PACK_MEDIUM "B_Kitbag_rgr","B_Kitbag_cbr"
@@ -372,10 +380,8 @@ class opf_f {
       EAST_SMOKE_WHITE
     };
     backpackItems[] = {
-      "ACE_fieldDressing:31",
-      "ACE_epinephrine:8",
-      "ACE_bloodIV:2",
-      "ACE_morphine:14"
+      "Medikit",
+      "FirstAidKit:3"
     };
   };
 
