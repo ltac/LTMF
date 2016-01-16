@@ -7,7 +7,7 @@ waitUntil{(player getVariable ["f_var_assignGear_done", false])};
 
 private "_typeOfUnit";
 
-_typeOfUnit = player getVariable ["f_var_assignGear", "o"];
+_typeOfUnit = player getVariable "f_var_assignGear";
 
 // Remove pre-assigned medical items
 {player removeItems _x} forEach [
