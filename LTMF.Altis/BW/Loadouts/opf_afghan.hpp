@@ -35,7 +35,7 @@ class opf_f {
   #define EAST_AR_MAG2 "40Rnd_762x39_ibr:2"
   #define EAST_AR_SCOPE "RH_barska_rds"
   #define EAST_AR_RAIL "rhsusf_acc_anpeq15A"*/
-  #define EAST_AR "CUP_RPK_74 "
+  #define EAST_AR "CUP_RPK_74"
   #define EAST_AR_MAG "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M:6"
   #define EAST_AR_MAG2 "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M:4"
   // AT
