@@ -30,6 +30,11 @@ class F // Defines the "owner"
 		file = "f\setGroupID";
 		class setGroupID{};
 	};
+	class setAISkill
+	{
+		file = "f\setAISKill";
+		class setAISKill{};
+	};
 	class missionConditions
 	{
 		file = "f\missionConditions";
