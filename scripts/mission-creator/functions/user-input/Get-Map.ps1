@@ -39,10 +39,12 @@ function Get-Map {
 	$buk = New-Object System.Management.Automation.Host.ChoiceDescription "[&O] Bukovina", "Bukovina"
 	$porto = New-Object System.Management.Automation.Host.ChoiceDescription "[&P] Porto", "Porto"
 	$rahmadi = New-Object System.Management.Automation.Host.ChoiceDescription "[&Q] Rahmadi", "Rahmadi"
-	$des = New-Object System.Management.Automation.Host.ChoiceDescription "[&R] Desert", "Desert"
-	$pg = New-Object System.Management.Automation.Host.ChoiceDescription "[&S] Proving Grounds", "Proving Grounds"
-	$vr = New-Object System.Management.Automation.Host.ChoiceDescription "[&T] Virtual Reality", "Virtual Reality"
-	
+	$fallujah = New-Object System.Management.Automation.Host.ChoiceDescription "[&R] Fallujah", "Fallujah"
+	$ryak = New-Object System.Management.Automation.Host.ChoiceDescription "[&S] Al Ryak", "Al Ryak"
+	$des = New-Object System.Management.Automation.Host.ChoiceDescription "[&T] Desert", "Desert"
+	$pg = New-Object System.Management.Automation.Host.ChoiceDescription "[&U] Proving Grounds", "Proving Grounds"
+	$vr = New-Object System.Management.Automation.Host.ChoiceDescription "[&V] Virtual Reality", "Virtual Reality"
+
 	$options = [System.management.Automation.Host.ChoiceDescription[]](
 		$altis,
 		$stratis,
@@ -71,11 +73,13 @@ function Get-Map {
 		$rahmadi,
 		$bys,
 		$buk,
+    $fallujah,
+    $ryak,
 		$des,
 		$pg,
 		$vr
 	)
-	
+
 	# We use the $folderNames array for the appropriate folder extension
 	# for each map. WARNING: The indexes in this array must line up with
 	# the appropriate item from the $options array.
@@ -109,12 +113,14 @@ function Get-Map {
 		"Intro",
 		"Woodland_ACR",
 		"Bootcamp_ACR",
+    "fallujah",
+    "pja310",
 		"Desert_E",
 		"ProvingGrounds_PMC",
 		"vr"
 	)
-	
+
 	$response = $host.ui.PromptForChoice($title, $message, $options, 0)
-	
+
 	$script:missionMap = $folderNames[$response]
 }
