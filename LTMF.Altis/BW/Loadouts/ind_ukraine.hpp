@@ -29,9 +29,9 @@ class ind_f {
   #define IND_CARBINE_SCOPE "RH_barska_rds"
   #define IND_CARBINE_RAIL "acc_flashlight"
   // AR
-  #define IND_AR "hlc_rifle_rpk74n"
-  #define IND_AR_MAG "hlc_45Rnd_545x39_t_rpk:9"
-  #define IND_AR_MAG2 "hlc_45Rnd_545x39_t_rpk:5"
+  #define IND_AR "rhs_weap_pkm"
+  #define IND_AR_MAG "rhs_100Rnd_762x54mmR:2"
+  #define IND_AR_MAG2 "rhs_100Rnd_762x54mmR_green:2"
   #define IND_AR_SCOPE "RH_barska_rds"
   #define IND_AR_RAIL "acc_flashlight"
   // AT
