@@ -29,7 +29,7 @@ class opf_f {
   #define EAST_CARBINE_MAG "rhs_30Rnd_762x39mm:8","rhs_30Rnd_762x39mm_tracer:2"
   #define EAST_CARBINE_SCOPE "RH_barska_rds"
   #define EAST_CARBINE_RAIL "rhsusf_acc_anpeq15A"
-  // AR  
+  // AR
   #define EAST_AR "rhs_weap_pkm"
   #define EAST_AR_MAG "rhs_100Rnd_762x54mmR:2"
   #define EAST_AR_MAG2 "rhs_100Rnd_762x54mmR_green:2"
@@ -253,7 +253,7 @@ class opf_f {
     // List the items (along with the amount) that will be placed
     // wherever there is room in the unit's inventory
     items[] = {
-      "ACE_Banana" // In case of emergency.
+      
     };
     // List the gear items txhat should be automatically slotted
     // correctly for the unit (like Map, Watch, NVG, etc)

@@ -285,7 +285,7 @@ class opf_f {
     // List the items (along with the amount) that will be placed
     // wherever there is room in the unit's inventory
     items[] = {
-      "ACE_Banana" // In case of emergency.
+
     };
     // List the gear items txhat should be automatically slotted
     // correctly for the unit (like Map, Watch, NVG, etc)
