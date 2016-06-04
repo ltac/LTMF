@@ -8,5 +8,9 @@ class L
 	class init{
 		file="L\init";
 		class initUnit{};
+	};
+	class zeus{
+		file="L\zeus";
+		class zeusPlayer{};
 	}
 };
