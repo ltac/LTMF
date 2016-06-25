@@ -1,11 +1,6 @@
 /*
 * Description:
-* Loadout definition for British Armed Forces - Desert Loadout
-* Weapons: M4/M249/M240/M136 variants
-* Uniforms: CUP BAF DDPM
-
-
-uniformClass = "CUP_U_B_BAF_DDPM_S1_RolledUp";
+* Loadout definition for British Armed Forces
 
 
 * Ubiquitous NVG and Optics
@@ -17,21 +12,21 @@ uniformClass = "CUP_U_B_BAF_DDPM_S1_RolledUp";
 class blu_f {
 
   // Rifle
-  #define WEST_RIFLE "CUP_arifle_L85A2"
-  #define WEST_RIFLE_MAG "CUP_30Rnd_556x45_G36:8","CUP_30Rnd_TE1_Red_Tracer_556x45_G36:2"
+  #define WEST_RIFLE "UK3CB_BAF_L85A2_EMAG"
+  #define WEST_RIFLE_MAG "UK3CB_BAF_30Rnd:8","UK3CB_BAF_30Rnd_T:2"
   #define WEST_RIFLE_SCOPE "rhsusf_acc_eotech_552"
   #define WEST_RIFLE_RAIL "rhsusf_acc_anpeq15A"
   // GL Rifle
-  #define WEST_GLRIFLE "CUP_arifle_L85A2_GL"
-  #define WEST_GLRIFLE_MAG "CUP_30Rnd_556x45_G36:8","CUP_30Rnd_TE1_Red_Tracer_556x45_G36:2"
+  #define WEST_GLRIFLE "UK3CB_BAF_L85A2_UGL"
+  #define WEST_GLRIFLE_MAG "UK3CB_BAF_30Rnd:8","UK3CB_BAF_30Rnd_T:2"
   #define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
   #define WEST_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:8"
   #define WEST_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareGreen_F:2"
   #define WEST_GLRIFLE_SCOPE "rhsusf_acc_eotech_552"
   #define WEST_GLRIFLE_RAIL "rhsusf_acc_anpeq15A"
   // Carbine
-  #define WEST_CARBINE "CUP_arifle_L85A2"
-  #define WEST_CARBINE_MAG "CUP_30Rnd_556x45_G36:8","CUP_30Rnd_TE1_Red_Tracer_556x45_G36:2"
+  #define WEST_CARBINE "UK3CB_BAF_L22"
+  #define WEST_CARBINE_MAG "UK3CB_BAF_30Rnd:8","UK3CB_BAF_30Rnd_T:2"
   #define WEST_CARBINE_SCOPE "rhsusf_acc_eotech_552"
   #define WEST_CARBINE_RAIL "rhsusf_acc_anpeq15A"
   // AR
@@ -70,8 +65,8 @@ class blu_f {
   #define WEST_SMG_SCOPE "rhsusf_acc_eotech_552"
   #define WEST_SMG_RAIL "rhsusf_acc_anpeq15A"
   // Pistol
-  #define WEST_PISTOL "CUP_hgun_Glock17"
-  #define WEST_PISTOL_MAG "CUP_17Rnd_9x19_glock17:4"
+  #define WEST_PISTOL "UK3CB_BAF_L131A1"
+  #define WEST_PISTOL_MAG "UK3CB_BAF_17Rnd_9mm:4"
   // Radio
   #define WEST_RADIO_RIFLEMAN "tf_rf7800str"
   #define WEST_RADIO_SHORTWAVE "tf_anprc152"
@@ -83,9 +78,9 @@ class blu_f {
   #define WEST_CHEMLIGHT "Chemlight_green:2"
   #define WEST_FRAG "HandGrenade:2"
   // Backpacks
-  #define WEST_PACK_LIGHT "rhsusf_assault_eagleaiii_coy"
-  #define WEST_PACK_MEDIUM "B_Kitbag_khk"
-  #define WEST_PACK_HEAVY "B_Carryall_khk"
+  #define WEST_PACK_LIGHT "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A"
+  #define WEST_PACK_MEDIUM "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A"
+  #define WEST_PACK_HEAVY "UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A"
 
   // By default, BLUFOR uses White, Black, and Asian faces.
   // If you want something else, specify the list here.
@@ -157,19 +152,23 @@ class blu_f {
 
     // Define the list of possible uniforms that units will wear
     uniform[] = {
-      "CUP_U_B_BAF_DDPM_S1_RolledUp"
+      "UK3CB_BAF_U_CombatUniform_MTP"
     };
     // Define the list of possible vests that units will wear
     vest[] = {
-      "CUP_V_BAF_Osprey_Mk2_DDPM_Soldier1",
-      "CUP_V_BAF_Osprey_Mk2_DDPM_Soldier2"
+      "UK3CB_BAF_V_Osprey_Rifleman_A",
+      "UK3CB_BAF_V_Osprey_Rifleman_B",
+      "UK3CB_BAF_V_Osprey_Rifleman_C",
+      "UK3CB_BAF_V_Osprey_Rifleman_D",
+      "UK3CB_BAF_V_Osprey_Rifleman_E",
+      "UK3CB_BAF_V_Osprey_Rifleman_F"
     };
     // Define the list of possible headgear that units will wear
     headgear[] = {
-      "CUP_H_BAF_Helmet_1_DDPM",
-      "CUP_H_BAF_Helmet_2_DDPM",
-      "CUP_H_BAF_Helmet_3_DDPM",
-      "CUP_H_BAF_Helmet_4_DDPM"
+      "UK3CB_BAF_H_Mk7_Camo_A",
+      "UK3CB_BAF_H_Mk7_Camo_B",
+      "UK3CB_BAF_H_Mk7_Camo_C",
+      "UK3CB_BAF_H_Mk7_Camo_D"
     };
     // Define the list of possible facewear that units will wear
     facewear[] = {};
@@ -205,7 +204,7 @@ class blu_f {
     // List the items (along with the amount) that will be placed
     // wherever there is room in the unit's inventory
     items[] = {
-      
+
     };
     // List the gear items txhat should be automatically slotted
     // correctly for the unit (like Map, Watch, NVG, etc)
@@ -589,11 +588,13 @@ class blu_f {
   // Define the base class for all Helicopter pilot and crew units
   class B_Helipilot_F {
     uniform[] = {
-      "CUP_U_B_BAF_DDPM_S1_RolledUp"
+      "UK3CB_BAF_U_HeliPilotCoveralls_RAF"
     };
-    headgear[] = {"CUP_H_BAF_Helmet_Pilot"};
+    headgear[] = {
+      "UK3CB_BAF_H_PilotHelmetHeli_A Helmet Mk7"
+    };
     vest[] = {
-      "CUP_V_BAF_Osprey_Mk2_DDPM_Pilot"
+      "UK3CB_BAF_V_Pilot_A"
     };
     facewear[] = {};
     backpack[] = {
@@ -639,13 +640,13 @@ class blu_f {
   // Define the base class for all vehicle crew and engineer units
   class B_crew_F {
     uniform[] = {
-      "CUP_U_B_BAF_DDPM_Tshirt"
+      "UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve"
     };
     vest[] = {
-      "CUP_V_BAF_Osprey_Mk2_DDPM_Crewman"
+      "UK3CB_BAF_V_Pilot_A"
     };
     headgear[] = {
-      "CUP_H_BAF_Crew_Helmet_DDPM"
+      "UK3CB_BAF_H_CrewHelmet_A Crew Helmet"
     };
     facewear[] = {};
     backpack[] = {
