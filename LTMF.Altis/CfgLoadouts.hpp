@@ -11,8 +11,8 @@ class CfgLoadouts {
 
     /* BLUFOR FACTION */
 
-    //#include "BW\Loadouts\blu_baf_desert.hpp" // British Armed Forces, DDPM, M4
-    #include "BW\Loadouts\blu_usarmy_ucp.hpp" // US Army, UCP, M4
+    #include "BW\Loadouts\blu_baf_mtp.hpp" // British Armed Forces
+    //#include "BW\Loadouts\blu_usarmy_ucp.hpp" // US Army, UCP, M4
     //#include "BW\Loadouts\blu_usarmy_ocp.hpp" // US Army, OCP, M4
     //#include "BW\Loadouts\blu_usmc_desert.hpp" // USMC, Desert MARPAT, M4
     //#include "BW\Loadouts\blu_usmc_woodland.hpp" // USMC, Woodland MARPAT, M4

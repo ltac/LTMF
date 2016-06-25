@@ -22,6 +22,7 @@ binarizationWanted=0;
 addons[]=
 {
 	"RHS_US_A2_AirImport",
+	"ace_compat_rhs_usf3",
 	"rhs_c_a2port_air",
 	"A3_Air_F_Beta_Heli_Transport_02",
 	"ace_realisticnames",
@@ -70,157 +71,157 @@ class AddonsMetaData
 		};
 		class Item1
 		{
+			className="ace_compat_rhs_usf3";
+			name="ace_compat_rhs_usf3";
+		};
+		class Item2
+		{
 			className="rhs_c_a2port_air";
 			name="rhs_c_a2port_air";
 		};
-		class Item2
+		class Item3
 		{
 			className="A3_Air_F_Beta";
 			name="Arma 3 Beta - Aircrafts";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item3
+		class Item4
 		{
 			className="ace_realisticnames";
 			name="ace_realisticnames";
 		};
-		class Item4
+		class Item5
 		{
 			className="ace_repair";
 			name="ace_repair";
 		};
-		class Item5
+		class Item6
 		{
 			className="ace_cargo";
 			name="ace_cargo";
 		};
-		class Item6
+		class Item7
 		{
 			className="RHS_US_A2Port_Armor";
 			name="RHS_US_A2Port_Armor";
 		};
-		class Item7
+		class Item8
 		{
 			className="rhs_c_bmp";
 			name="rhs_c_bmp";
 		};
-		class Item8
+		class Item9
 		{
 			className="rhsusf_c_m1a2";
 			name="rhsusf_c_m1a2";
 		};
-		class Item9
+		class Item10
 		{
 			className="A3_Armor_F_Gamma";
 			name="Arma 3 - Armored land vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item10
+		class Item11
 		{
 			className="rhs_c_tanks";
 			name="rhs_c_tanks";
 		};
-		class Item11
+		class Item12
 		{
 			className="A3_Armor_F_EPB";
 			name="Arma 3 Adapt Episode - Armored land vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item12
+		class Item13
 		{
 			className="A3_Air_F_EPB";
 			name="Arma 3 Adapt Episode - Aircrafts";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item13
+		class Item14
 		{
 			className="A3_Soft_F_Beta";
 			name="Arma 3 Beta - Unarmored land vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item14
+		class Item15
 		{
 			className="rhsusf_vehicles";
 			name="rhsusf_vehicles";
 		};
-		class Item15
+		class Item16
 		{
 			className="rhs_c_cars";
 			name="rhs_c_cars";
 		};
-		class Item16
+		class Item17
 		{
 			className="rhs_c_a2port_car";
 			name="rhs_c_a2port_car";
 		};
-		class Item17
+		class Item18
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item18
+		class Item19
 		{
 			className="A3_Soft_F_Gamma";
 			name="Arma 3 - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item19
+		class Item20
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item20
+		class Item21
 		{
 			className="A3_Air_F";
 			name="Arma 3 Alpha - Aircrafts";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item21
+		class Item22
 		{
 			className="ace_medical";
 			name="ace_medical";
 		};
-		class Item22
+		class Item23
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item23
+		class Item24
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item24
+		class Item25
 		{
 			className="ace_explosives";
 			name="ace_explosives";
 		};
-		class Item25
+		class Item26
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted features";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
-		};
-		class Item26
-		{
-			className="cba_xeh";
-			name="cba_xeh";
 		};
 		class Item27
 		{
@@ -5924,7 +5925,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=225;
-					type="B_helicrew_F";
+					type="B_Helicrew_F";
 				};
 			};
 			class Attributes
@@ -7410,7 +7411,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=301;
-					type="B_helicrew_F";
+					type="B_Helicrew_F";
 				};
 			};
 			class Attributes
@@ -7511,7 +7512,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=306;
-					type="B_helicrew_F";
+					type="B_Helicrew_F";
 				};
 			};
 			class Attributes
@@ -7612,7 +7613,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=311;
-					type="B_helicrew_F";
+					type="B_Helicrew_F";
 				};
 			};
 			class Attributes
@@ -7713,7 +7714,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=316;
-					type="B_helicrew_F";
+					type="B_Helicrew_F";
 				};
 			};
 			class Attributes
@@ -7814,7 +7815,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=321;
-					type="B_helicrew_F";
+					type="B_Helicrew_F";
 				};
 			};
 			class Attributes
@@ -7915,7 +7916,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=326;
-					type="B_helicrew_F";
+					type="B_Helicrew_F";
 				};
 			};
 			class Attributes
@@ -8016,7 +8017,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=331;
-					type="B_helicrew_F";
+					type="B_Helicrew_F";
 				};
 			};
 			class Attributes
