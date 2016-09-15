@@ -12,11 +12,11 @@ private ["_zeusOwner"];
 waitUntil{!isNil "f_var_zeusPlayer"};
 
 _zeusOwner = switch (f_var_zeusPlayer) do {
-  case (0): {"#adminlogged"};
-  case (1): {"76561198025405060"}; // IMPERATORS USER ID SHOULD HERE!
-  case (2): {"76561198025405060"};
-  case (3): {"zeusUnit"};
-  case (4): {"PUT YOUR USER ID HERE"};
+  case (0): {"#adminlogged"};           // Admin
+  case (1): {"zeusUnit"};               // Zeus Slot
+  case (2): {"PUT YOUR USER ID HERE"};  // Mission Creator (This is you!)
+  case (3): {"76561197961323298"};      // Imperator
+  case (4): {"76561198025405060"};      // EddBC
   default {"#adminlogged"};
 };
 

@@ -200,9 +200,15 @@ class Params
 
     class f_param_zeusPlayer
     {
-            title = "Mission Coordinator";
+            title = "Mission Coordinator (Zeus)";
             values[] = {0,1,2,3,4};
-            texts[] = {"Admin","Imperator","EddBC","Zeus Slot (Configurable)","Mission Creator (Configurable)"};
+            texts[] = {
+					"Admin",
+					"Zeus Slot (Configurable)",
+					"Mission Creator (Configurable)",
+					"Imperator",
+					"EddBC"
+			};
             default = 0;
             code = "f_var_zeusPlayer = %1";
     };
