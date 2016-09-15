@@ -190,7 +190,7 @@ class Params
             title = "Medical System";
             values[] = {0,1,2};
             texts[] = {"Arma 3 Default","ACE3 - Basic","ACE3 - Advanced"};
-            default = 1;
+            default = 2;
             code = "f_var_medical = %1";
     };
 
