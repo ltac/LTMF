@@ -27,7 +27,6 @@ addons[]=
 	"A3_Air_F_Beta_Heli_Transport_02",
 	"ace_realisticnames",
 	"ace_repair",
-	"ace_cargo",
 	"RHS_US_A2Port_Armor",
 	"rhs_c_bmp",
 	"rhsusf_c_m1a2",
@@ -39,6 +38,7 @@ addons[]=
 	"A3_Soft_F_Beta_MRAP_03",
 	"rhsusf_vehicles",
 	"A3_Soft_F_Beta_Truck_01",
+	"ace_cargo",
 	"rhs_c_cars",
 	"rhs_c_a2port_car",
 	"A3_Soft_F_Offroad_01",
@@ -63,21 +63,27 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=34;
+		items=33;
 		class Item0
 		{
 			className="RHS_US_A2_AirImport";
-			name="RHS_US_A2_AirImport";
+			name="RHSUSF A2 Air Ports";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 		class Item1
 		{
 			className="ace_compat_rhs_usf3";
-			name="ace_compat_rhs_usf3";
+			name="ACE3 - RHS USF Compatibility";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item2
 		{
 			className="rhs_c_a2port_air";
-			name="rhs_c_a2port_air";
+			name="A2 ported air";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 		class Item3
 		{
@@ -88,81 +94,99 @@ class AddonsMetaData
 		};
 		class Item4
 		{
-			className="ace_realisticnames";
-			name="ace_realisticnames";
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
 		};
 		class Item5
 		{
 			className="ace_repair";
-			name="ace_repair";
+			name="ACE3 - Repair";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item6
 		{
-			className="ace_cargo";
-			name="ace_cargo";
+			className="RHS_US_A2Port_Armor";
+			name="M2 Bradley IFV";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 		class Item7
 		{
-			className="RHS_US_A2Port_Armor";
-			name="RHS_US_A2Port_Armor";
+			className="rhs_c_bmp";
+			name="BMP-1 & 2 IFV";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 		class Item8
 		{
-			className="rhs_c_bmp";
-			name="rhs_c_bmp";
+			className="rhsusf_c_m1a2";
+			name="M1A2 Tanks";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 		class Item9
 		{
-			className="rhsusf_c_m1a2";
-			name="rhsusf_c_m1a2";
+			className="A3_Armor_F_Gamma";
+			name="Arma 3 - Armored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
 		};
 		class Item10
 		{
-			className="A3_Armor_F_Gamma";
-			name="Arma 3 - Armored land vehicles";
-			author="Bohemia Interactive";
-			url="http://www.arma3.com";
+			className="rhs_c_tanks";
+			name="T-80 Series Tanks";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 		class Item11
 		{
-			className="rhs_c_tanks";
-			name="rhs_c_tanks";
-		};
-		class Item12
-		{
 			className="A3_Armor_F_EPB";
-			name="Arma 3 Adapt Episode - Armored land vehicles";
+			name="Arma 3 Adapt Episode - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item13
+		class Item12
 		{
 			className="A3_Air_F_EPB";
 			name="Arma 3 Adapt Episode - Aircrafts";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item14
+		class Item13
 		{
 			className="A3_Soft_F_Beta";
-			name="Arma 3 Beta - Unarmored land vehicles";
+			name="Arma 3 Beta - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item15
+		class Item14
 		{
 			className="rhsusf_vehicles";
 			name="rhsusf_vehicles";
 		};
+		class Item15
+		{
+			className="ace_cargo";
+			name="ACE3 - Cargo";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
 		class Item16
 		{
 			className="rhs_c_cars";
-			name="rhs_c_cars";
+			name="Tigr vehicles";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 		class Item17
 		{
 			className="rhs_c_a2port_car";
-			name="rhs_c_a2port_car";
+			name="A2 ported cars";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 		class Item18
 		{
@@ -195,68 +219,79 @@ class AddonsMetaData
 		class Item22
 		{
 			className="ace_medical";
-			name="ace_medical";
+			name="ACE3 - Medical";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item23
-		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="http://www.arma3.com";
-		};
-		class Item24
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item25
+		class Item24
 		{
 			className="ace_explosives";
-			name="ace_explosives";
+			name="ACE3 - Explosives";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
-		class Item26
+		class Item25
 		{
 			className="A3_Modules_F_Curator";
-			name="Arma 3 Zeus Update - Scripted features";
+			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item27
+		class Item26
 		{
 			className="ace_weather";
-			name="ace_weather";
+			name="ACE3 - Weather";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item27
+		{
+			className="ace_finger";
+			name="ACE3 - Finger";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item28
 		{
-			className="ace_finger";
-			name="ace_finger";
+			className="ace_captives";
+			name="ACE3 - Captives";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item29
 		{
-			className="ace_captives";
-			name="ace_captives";
+			className="ace_interaction";
+			name="ACE3 - Interaction";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item30
 		{
-			className="ace_interaction";
-			name="ace_interaction";
+			className="ace_map";
+			name="ACE3 - Map";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item31
 		{
-			className="ace_map";
-			name="ace_map";
+			className="ace_zeus";
+			name="ACE3 - Zeus";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 		class Item32
 		{
-			className="ace_zeus";
-			name="ace_zeus";
-		};
-		class Item33
-		{
 			className="ace_advanced_ballistics";
-			name="ace_advanced_ballistics";
+			name="ACE3 - Advanced Ballistics";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 	};
 };
@@ -392,7 +427,7 @@ class Mission
 			};
 			id=3;
 			type="RHS_CH_47F";
-			atlOffset=0.014144897;
+			atlOffset=0.00035858154;
 		};
 		class Item4
 		{
@@ -519,6 +554,7 @@ class Mission
 			};
 			id=10;
 			type="RHS_M2A2";
+			atlOffset=-8.2015991e-005;
 		};
 		class Item11
 		{
@@ -537,6 +573,7 @@ class Mission
 			};
 			id=11;
 			type="RHS_M2A2";
+			atlOffset=-0.00013923645;
 		};
 		class Item12
 		{
@@ -555,6 +592,7 @@ class Mission
 			};
 			id=12;
 			type="RHS_M2A2";
+			atlOffset=8.7738037e-005;
 		};
 		class Item13
 		{
@@ -591,6 +629,7 @@ class Mission
 			};
 			id=14;
 			type="RHS_M2A2";
+			atlOffset=-1.5258789e-005;
 		};
 		class Item15
 		{
@@ -609,7 +648,7 @@ class Mission
 			};
 			id=15;
 			type="RHS_M2A2";
-			atlOffset=0.0016450882;
+			atlOffset=2.0980835e-005;
 		};
 		class Item16
 		{
@@ -628,6 +667,7 @@ class Mission
 			};
 			id=16;
 			type="RHS_M2A2";
+			atlOffset=2.0980835e-005;
 		};
 		class Item17
 		{
@@ -646,6 +686,7 @@ class Mission
 			};
 			id=17;
 			type="RHS_M2A2";
+			atlOffset=2.8610229e-005;
 		};
 		class Item18
 		{
@@ -2505,6 +2546,7 @@ class Mission
 				angles[]={0,0,6.2791886};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -2653,7 +2695,6 @@ class Mission
 				angles[]={6.2551923,0,6.2352209};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -2672,7 +2713,6 @@ class Mission
 				angles[]={0.10098849,0,6.2086568};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -2691,7 +2731,6 @@ class Mission
 				angles[]={0.014664836,0,6.2711854};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -2868,6 +2907,7 @@ class Mission
 			};
 			id=70;
 			type="rhs_tigr_ffv_msv";
+			atlOffset=-1.9854984;
 		};
 		class Item71
 		{
@@ -16729,7 +16769,26 @@ class Mission
 						};
 					};
 				};
-				nAttributes=5;
+				class Attribute5
+				{
+					property="ace_zeus_moduleSettings_autoAddObjects";
+					expression="_this setVariable ['autoAddObjects',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=6;
 			};
 		};
 		class Item271
@@ -17095,6 +17154,7 @@ class Mission
 				position[]={7515.127,0,8502.9131};
 			};
 			name="zeusEddbc";
+			presenceCondition="false";
 			id=730;
 			type="ModuleCurator_F";
 			atlOffset=127.47353;
@@ -17206,6 +17266,7 @@ class Mission
 				position[]={7529.4482,0,8502.7412};
 			};
 			name="zeusImperator";
+			presenceCondition="false";
 			id=731;
 			type="ModuleCurator_F";
 			atlOffset=126.18697;
