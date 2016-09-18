@@ -157,7 +157,6 @@ class blu_f {
     };
     // Define the list of possible vests that units will wear
     vest[] = {
-      "rhsusf_spc",
       "rhsusf_spc_light",
       "rhsusf_spc_rifleman",
       "MNP_Vest_USMC",
@@ -263,6 +262,9 @@ class blu_f {
   // Define gear additions and overrides for Squad Leader units
   class B_Soldier_SL_F: B_Officer_F {
     backpack[] = {WEST_RADIO_MANPACK};
+    vest[] = {
+      "rhsusf_spc_squadleader"
+    };
     linkedItems[] += {
       "Binocular"
     };
@@ -706,6 +708,9 @@ class blu_f {
   // Explosive Specialist
   // Define gear additions and overrides for Explosive Specialist units
   class B_Soldier_exp_F: B_Soldier_repair_F {
+    vest[] = {
+      "rhsusf_spc_rifleman"
+    };
     backpackItems[] = {
       "Toolkit",
       "ACE_DefusalKit",
@@ -722,6 +727,9 @@ class blu_f {
   // Mine Specialist
   // Define gear additions and overrides for Mine Specialist units
   class B_engineer_F: B_Soldier_repair_F {
+    vest[] = {
+      "rhsusf_spc_rifleman"
+    };
     backpackItems[] = {
       "Toolkit",
       "ACE_DefusalKit",
