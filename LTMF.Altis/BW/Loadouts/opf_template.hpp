@@ -154,7 +154,8 @@ class opf_f {
     };
     TransportItems[] = {
       "ACE_fieldDressing:12",
-      "ACE_morphine:4"
+      "ACE_morphine:4",
+      "ItemGPS"
     };
   };
 
@@ -285,7 +286,8 @@ class opf_f {
     // List the items (along with the amount) that will be placed
     // wherever there is room in the unit's inventory
     items[] = {
-
+      "ACE_CableTie",
+      "ACE_Flashlight_XL50"
     };
     // List the gear items txhat should be automatically slotted
     // correctly for the unit (like Map, Watch, NVG, etc)
@@ -621,7 +623,9 @@ class opf_f {
     };
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine"
+      "ACE_morphine",
+      "ACE_CableTie",
+      "ACE_Flashlight_XL50"
     };
     backpackItems[] = {};
     linkedItems[] = {
@@ -694,7 +698,9 @@ class opf_f {
     };
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine"
+      "ACE_morphine",
+      "ACE_CableTie",
+      "ACE_Flashlight_XL50"
     };
     backpackItems[] = {};
     linkedItems[] = {
@@ -746,7 +752,9 @@ class opf_f {
     backpackItems[] += {"ACE_key_east"};
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine"
+      "ACE_morphine",
+      "ACE_CableTie",
+      "ACE_Flashlight_XL50"
     };
     linkedItems[] = {
       "ItemWatch",
@@ -821,7 +829,9 @@ class opf_f {
     backpackItems[] = {"ACE_key_east"};
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine"
+      "ACE_morphine",
+      "ACE_CableTie",
+      "ACE_Flashlight_XL50"
     };
     linkedItems[] = {
       "ItemWatch",

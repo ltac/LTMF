@@ -10,29 +10,7 @@
 * modified by Legion Tactical
 */
 class ind_f {
-  /*
-  * NOTE This comment can be deleted when copied in actual loadout files
-  * Template file for INDFOR faction loadouts.
-  *
-  * All objects are specified by their classname. Classnames can be
-  * found easily by creating a loadout in the Virtual Arsenal
-  * (ARMA 3 Main Menu > Learn > Virtual Arsenal), clicking Export,
-  * then pasting into a text document.
-  *
-  * For placing multiples of some object in inventory, type the
-  * classname, a colon, then the number of that item to place.
-  * For example, if we want the Car class to contain 12 ACE Bandages,
-  * then we include "ACE_fieldDressing:12".
-  *
-  * When #define-ing the standard magazine loadouts, you can list
-  * multiple magazine types and counts by separating them with a comma.
-  * For example:
-  * #define IND_RIFLE_MAG "hlc_30rnd_556x45_EPR:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
-  *
-  * This will add 8 EPR magazines and 2 yellow tracer magazines to
-  * the loadout.
-  */
-
+ 
   // Rifle
   #define IND_RIFLE "rhs_weap_akm"
   #define IND_RIFLE_MAG "rhs_30Rnd_762x39mm:8"
@@ -169,29 +147,6 @@ class ind_f {
 
   /* RIFLEMAN BASE */
 
-  /*
-  NOTE This comment can be deleted when copied in actual loadout files
-  -Rifleman
-  -Officer
-  -Squad leader
-  -Team leader
-  -Autorifleman
-  -UAV Operator
-  -Assistant Autorifleman
-  -AT Rifleman
-  -Medic
-  -MMG Gunner
-  -MMG Spotter
-  -MAT Gunner
-  -MAT Assistant
-  -SAM Gunner
-  -SAM Assistant
-  -Mortar Gunner
-  -Mortar Assistant
-
-  Each specific class can add to or completely override the
-  loadouts defined by this base
-  */
   class I_Soldier_F {
     /* Randomized gear
     One item from each of these lists will be chosen at
@@ -275,7 +230,9 @@ class ind_f {
     backpackItems[] = {
       "ACE_fieldDressing:3",
       "ACE_morphine",
-      "ACE_CableTie"
+      "ACE_CableTie",
+      "ACE_CableTie",
+      "ACE_Flashlight_XL50"
     };
     // List the magazines, explosives, and throwables
     // that will be placed wherever there is room in the unit's
@@ -613,7 +570,9 @@ class ind_f {
     };
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine"
+      "ACE_morphine",
+      "ACE_CableTie",
+      "ACE_Flashlight_XL50"
     };
     backpackItems[] = {};
     linkedItems[] = {
@@ -673,7 +632,9 @@ class ind_f {
     };
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine"
+      "ACE_morphine",
+      "ACE_CableTie",
+      "ACE_Flashlight_XL50"
     };
     backpackItems[] = {};
     linkedItems[] = {
@@ -716,7 +677,9 @@ class ind_f {
     backpackItems[] += {"ACE_key_indp"};
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine"
+      "ACE_morphine",
+      "ACE_CableTie",
+      "ACE_Flashlight_XL50"
     };
     linkedItems[] = {
       "ItemWatch",
@@ -780,7 +743,9 @@ class ind_f {
     backpackItems[] = {"ACE_key_indp"};
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine"
+      "ACE_morphine",
+      "ACE_CableTie",
+      "ACE_Flashlight_XL50"
     };
     linkedItems[] = {
       "ItemWatch",

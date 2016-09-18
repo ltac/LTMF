@@ -190,7 +190,8 @@ class blu_f {
 		};
 		TransportItems[] = {
 			"ACE_fieldDressing:12",
-			"ACE_morphine:4"
+			"ACE_morphine:4",
+			"ItemGPS"
 		};
 	};
 
@@ -284,7 +285,9 @@ class blu_f {
 		backpackItems[] = {
 			"ACE_fieldDressing:3",
 			"ACE_morphine",
-			"ACE_IR_Strobe_item"
+			"ACE_IR_Strobe_item",
+			"ACE_CableTie",
+			"ACE_Flashlight_XL50"
 		};
 		// List the magazines, explosives, and throwables
 		// that will be placed wherever there is room in the unit's
@@ -615,7 +618,9 @@ class blu_f {
 		};
 		items[] = {
 			"ACE_fieldDressing:3",
-			"ACE_morphine"
+			"ACE_morphine",
+			"ACE_CableTie",
+			"ACE_Flashlight_XL50"
 		};
 		backpackItems[] = {};
 		linkedItems[] = {
@@ -669,7 +674,9 @@ class blu_f {
 		};
 		items[] = {
 			"ACE_fieldDressing:3",
-			"ACE_morphine"
+			"ACE_morphine",
+			"ACE_CableTie",
+			"ACE_Flashlight_XL50"
 		};
 		backpackItems[] = {};
 		linkedItems[] = {
@@ -717,7 +724,9 @@ class blu_f {
 		backpackItems[] += {"ACE_key_west"};
 		items[] = {
 			"ACE_fieldDressing:3",
-			"ACE_morphine"
+			"ACE_morphine",
+			"ACE_CableTie",
+			"ACE_Flashlight_XL50"
 		};
 		linkedItems[] = {
 			"ItemWatch",
@@ -775,7 +784,9 @@ class blu_f {
 		backpackItems[] = {"ACE_key_west"};
 		items[] = {
 			"ACE_fieldDressing:3",
-			"ACE_morphine"
+			"ACE_morphine",
+			"ACE_CableTie",
+			"ACE_Flashlight_XL50"
 		};
 		linkedItems[] = {
 			"ItemWatch",
