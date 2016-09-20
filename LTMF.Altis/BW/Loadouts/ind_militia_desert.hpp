@@ -51,7 +51,7 @@ class ind_f {
   #define IND_SAM_MAG "rhs_mag_9k38_rocket:2"
   // Sniper Rifle
   #define IND_SNIPER "rhs_weap_svdp"
-  #define IND_SNIPER_MAG "5Rnd_127x108_Mag:8"
+  #define IND_SNIPER_MAG "rhs_10Rnd_762x54mmR_7N1:8"
   #define IND_SNIPER_SCOPE "rhs_acc_pso1m2"
   #define IND_SNIPER_RAIL "nil"
   // Spotter Rifle
@@ -646,8 +646,7 @@ class ind_f {
       "rhsusf_ANPVS_15"
     };
     attachments[] = {
-			IND_SNIPER_SCOPE,
-			IND_SNIPER_RAIL
+			IND_SNIPER_SCOPE
 		};
     radio = IND_RADIO_SHORTWAVE;
   };

@@ -30,11 +30,10 @@ class opf_f {
   #define EAST_CARBINE_SCOPE "RH_barska_rds"
   #define EAST_CARBINE_RAIL "rhsusf_acc_anpeq15A"
   // AR
-  #define EAST_AR "rhs_weap_pkm"
-  #define EAST_AR_MAG "rhs_100Rnd_762x54mmR:2"
-  #define EAST_AR_MAG2 "rhs_100Rnd_762x54mmR_green:2"
-  #define EAST_AR_SCOPE "RH_barska_rds"
-  #define EAST_AR_RAIL "rhsusf_acc_anpeq15A"
+  #define EAST_AR "hlc_rifle_rpk"
+  #define EAST_AR_MAG "hlc_75Rnd_762x39_m_rpk:5"
+  #define EAST_AR_MAG2 "hlc_75Rnd_762x39_m_rpk:5"
+  #define EAST_AR_SCOPE "rhs_acc_pkas"
   // AT
   #define EAST_AT "rhs_weap_rpg7"
   #define EAST_AT_MAG "rhs_rpg7_PG7VL_mag"
@@ -50,9 +49,9 @@ class opf_f {
   #define EAST_SAM "rhs_weap_igla"
   #define EAST_SAM_MAG "rhs_mag_9k38_rocket:2"
   // Sniper Rifle
-  #define EAST_SNIPER "ibr_svd"
-  #define EAST_SNIPER_MAG "10Rnd_762x54R_ibr:8"
-  #define EAST_SNIPER_SCOPE "rhs_acc_1pn93_1"
+  #define EAST_SNIPER "rhs_weap_svdp"
+  #define EAST_SNIPER_MAG "rhs_10Rnd_762x54mmR_7N1:8"
+  #define EAST_SNIPER_SCOPE "rhs_acc_pso1m2"
   #define EAST_SNIPER_RAIL "rhsusf_acc_anpeq15side"
   // Spotter Rifle
   #define EAST_SPOTTER "rhs_weap_akm"
