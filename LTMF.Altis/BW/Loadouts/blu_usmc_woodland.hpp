@@ -70,7 +70,7 @@ class blu_f {
   // Radio
   #define WEST_RADIO_RIFLEMAN "tf_rf7800str"
   #define WEST_RADIO_SHORTWAVE "tf_anprc152"
-  #define WEST_RADIO_MANPACK "tf_rt1523g_green"
+  #define WEST_RADIO_MANPACK "UK3CB_BAF_B_Bergen_TAN_SL_A"
   #define WEST_RADIO_AIRBORNE "tf_anarc210"
   // Throwables
   #define WEST_SMOKE_WHITE "SmokeShell:2"
@@ -213,7 +213,7 @@ class blu_f {
       "ItemMap",
       "ItemCompass",
       "ItemWatch",
-      "rhsusf_ANPVS_14"
+      "rhsusf_ANPVS_15"
     };
     // List the attachments that will be automatically added
     // to the unit's equipped weapons
@@ -221,10 +221,7 @@ class blu_f {
 			WEST_RIFLE_SCOPE,
 			WEST_RIFLE_RAIL
 		};
-    // Set the basic radio for the unit
-    radio = WEST_RADIO_RIFLEMAN;
   };
-
   /* END RIFLEMAN BASE */
 
   /* RIFLEMAN EXTENSIONS */
@@ -258,7 +255,6 @@ class blu_f {
 			WEST_GLRIFLE_SCOPE,
 			WEST_GLRIFLE_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
   };
 
   // SL
@@ -274,7 +270,6 @@ class blu_f {
     items[] = {"ACE_MapTools"};
     backpackItems[] += {"ACE_fieldDressing"};
     attachments[] += {"rhsusf_acc_ACOG_USMC"};
-    radio = WEST_RADIO_SHORTWAVE;
   };
 
   // UAV
@@ -284,7 +279,6 @@ class blu_f {
     linkedItems[] += {
       "B_uavterminal"
     };
-    radio = WEST_RADIO_SHORTWAVE;
   };
 
   // FTL
@@ -314,6 +308,7 @@ class blu_f {
       "ItemGPS",
       "Binocular"
     };
+    backpack[] = {WEST_RADIO_MANPACK};
   };
 
   // AR
@@ -506,9 +501,7 @@ class blu_f {
       "rhs_Booniehat_marpatwd"
     };
     facewear[] = {};
-    backpack[] = {
-      WEST_PACK_LIGHT
-    };
+    backpack[] = {WEST_RADIO_MANPACK};
 
     weapons[] = {WEST_SPOTTER};
     launchers[] = {};
@@ -523,6 +516,7 @@ class blu_f {
       "ACE_fieldDressing:3",
       "ACE_morphine",
       "ACE_CableTie",
+      "ACE_IR_Strobe_item",
       "ACE_Flashlight_XL50"
     };
     backpackItems[] = {};
@@ -538,9 +532,7 @@ class blu_f {
 			WEST_SPOTTER_SCOPE,
 			WEST_SPOTTER_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
   };
-
   /* SNIPER BASE */
 
   // Define the base class for Sniper units
@@ -572,6 +564,7 @@ class blu_f {
       "ACE_fieldDressing:3",
       "ACE_morphine",
       "ACE_CableTie",
+      "ACE_IR_Strobe_item",
       "ACE_Flashlight_XL50"
     };
     backpackItems[] = {};
@@ -587,7 +580,6 @@ class blu_f {
 			WEST_SNIPER_SCOPE,
 			WEST_SNIPER_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
   };
 
   /* HELICOPTER CREW BASE */
@@ -621,6 +613,7 @@ class blu_f {
       "ACE_fieldDressing:3",
       "ACE_morphine",
       "ACE_CableTie",
+      "ACE_IR_Strobe_item",
       "ACE_Flashlight_XL50"
     };
     linkedItems[] = {
@@ -634,7 +627,6 @@ class blu_f {
 			WEST_SMG_SCOPE,
 			WEST_SMG_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
   };
 
   // Heli crew
@@ -677,6 +669,7 @@ class blu_f {
       "ACE_fieldDressing:3",
       "ACE_morphine",
       "ACE_CableTie",
+      "ACE_IR_Strobe_item",
       "ACE_Flashlight_XL50"
     };
     linkedItems[] = {
@@ -690,7 +683,6 @@ class blu_f {
 			WEST_SMG_SCOPE,
 			WEST_SMG_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
   };
 
   // Repair Specialist
