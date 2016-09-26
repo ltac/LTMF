@@ -18,6 +18,7 @@ class CfgLoadouts {
     //#include "BW\Loadouts\blu_usmc_woodland.hpp" // USMC, Woodland MARPAT, M4
     //#include "BW\Loadouts\blu_usmc_snow.hpp" // USMC, Arctic MARPAT, M4
     //#include "BW\Loadouts\blu_germany_woodland.hpp" // Germany, Autumn Flecktarn, HK/G3
+    //#include "BW\Loadouts\blu_specop_woodland.hpp // US, CTRG Woodland, MK18"
 
     /* INDFOR FACTION */
     //#include "BW\Loadouts\ind_pmc.hpp" // WIP
