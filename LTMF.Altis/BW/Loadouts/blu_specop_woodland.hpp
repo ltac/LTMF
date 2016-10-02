@@ -13,7 +13,7 @@ class blu_f {
 	// Rifle
 	#define WEST_RIFLE "rhs_weap_mk18_wd"
 	#define WEST_RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_m18_red:2"
- 	#define WEST_RIFLE_SCOPE "optic_ERCO_khk_F"
+ 	#define WEST_RIFLE_SCOPE "rhsusf_acc_SpecterDR_OD"
   	#define WEST_RIFLE_RAIL "rhsusf_acc_anpeq15side","muzzle_snds_m_khk_F"
 	// GL Rifle
 	#define WEST_GLRIFLE "rhs_weap_mk18_m320"
@@ -21,8 +21,8 @@ class blu_f {
 	#define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
 	#define WEST_GLRIFLE_MAG_HE "3Rnd_HE_Grenade_shell:3","ACE_HuntIR_M203:2"
 	#define WEST_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareGreen_F:2"
-  	#define WEST_GLRIFLE_SCOPE "optic_ERCO_blk_F"
-  	#define WEST_GLRIFLE_RAIL "rhsusf_acc_anpeq15side"
+  	#define WEST_GLRIFLE_SCOPE "rhsusf_acc_SpecterDR_A"
+  	#define WEST_GLRIFLE_RAIL "rhsusf_acc_anpeq15side","rhsusf_acc_nt4_black"
 	// Carbine
 	#define WEST_CARBINE "rhs_weap_mk18_wd"
 	#define WEST_CARBINE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_m18_red:2"
@@ -32,7 +32,7 @@ class blu_f {
 	#define WEST_AR "rhs_weap_m249_pip_L"
 	#define WEST_AR_MAG "rhsusf_200Rnd_556x45_soft_pouch:2"
 	#define WEST_AR_MAG2 "rhsusf_200Rnd_556x45_soft_pouch:2"
-  	#define WEST_AR_SCOPE "RKSL_optic_LDS"
+  	#define WEST_AR_SCOPE "rhsusf_acc_SpecterDR_A"
   	#define WEST_AR_RAIL "rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_black"
 	// AT
 	#define WEST_AT "rhs_weap_M136"
@@ -40,10 +40,11 @@ class blu_f {
 	// MMG
 	#define WEST_MMG "rhs_weap_m240G"
 	#define WEST_MMG_MAG "rhsusf_100Rnd_762x51_m62_tracer:5"
-  	#define WEST_MMG_SCOPE "rhsusf_acc_eotech_552"
+  	#define WEST_MMG_SCOPE "rhsusf_acc_SpecterDR_A"
   	#define WEST_MMG_RAIL "rhsusf_acc_anpeq15side"
 	// MAT
 	#define WEST_MAT "rhs_weap_smaw_green"
+	#define West_MAT_SCOPE "rhs_weap_optic_smaw"
 	#define WEST_MAT_MAG "rhs_mag_smaw_HEDP:2","rhs_mag_smaw_SR"
 	// SAM
 	#define WEST_SAM "rhs_weap_fim92"
@@ -56,7 +57,7 @@ class blu_f {
 	// Spotter Rifle
 	#define WEST_SPOTTER "hlc_rifle_honeybadger"
 	#define WEST_SPOTTER_MAG "29rnd_300BLK_STANAG:8"
-  	#define WEST_SPOTTER_SCOPE "RKSL_optic_LDS"
+  	#define WEST_SPOTTER_SCOPE "rhsusf_acc_SpecterDR_OD"
   	#define WEST_SPOTTER_RAIL "rhsusf_acc_anpeq15_bk_top","muzzle_HBADGER"
 	// SMG
 	#define WEST_SMG "rhsusf_weap_MP7A1_base_f"
@@ -262,11 +263,6 @@ class blu_f {
 		// List the items (along with the amount) that will be placed
 		// specifically in the unit's backpack
 		backpackItems[] = {
-			"ACE_fieldDressing:3",
-			"ACE_morphine",
-			"ACE_IR_Strobe_item",
-			"ACE_CableTie",
-			"ACE_Flashlight_XL50"
 		};
 		// List the magazines, explosives, and throwables
 		// that will be placed wherever there is room in the unit's
@@ -279,7 +275,12 @@ class blu_f {
 		// List the items (along with the amount) that will be placed
 		// wherever there is room in the unit's inventory
 		items[] = {
-			"ACE_microDAGR"
+			"ACE_microDAGR",
+			"ACE_fieldDressing:3",
+			"ACE_morphine",
+			"ACE_IR_Strobe_item",
+			"ACE_CableTie",
+			"ACE_Flashlight_XL50"
 		};
 		// List the gear items txhat should be automatically slotted
 		// correctly for the unit (like Map, Watch, NVG, etc)
@@ -346,9 +347,13 @@ class blu_f {
 		backpackItems[] += {"ACE_key_west"};
 		linkedItems[] += {
 			"ItemGPS",
-			"ACE_Vector"
+			"Laserdesignator_03"
 		};
-		items[] = {"ACE_MapTools"};
+		items[] = {
+			"ACE_MapTools",
+			"Laserbatteries",
+			"ALIVE_Tablet"
+		};
 		radio = WEST_RADIO_SHORTWAVE;
 	};
 
@@ -359,7 +364,7 @@ class blu_f {
 		linkedItems[] += {
 			"Laserdesignator_03"
 		};
-		items[] = {
+		items[] += {
 			"ACE_MapTools",
 			"Laserbatteries"
 		};
@@ -427,7 +432,6 @@ class blu_f {
 	// Define gear additions and overrides for Asst Autorifleman units
 	class B_Soldier_AAR_F: B_Soldier_F {
 		backpackItems[] += {WEST_AR_MAG2};
-		attachments[] += {"rhsusf_acc_ACOG_USMC"};
 		linkedItems[] += {"Rangefinder"};
 	};
 
@@ -495,10 +499,7 @@ class blu_f {
 			WEST_SMOKE_WHITE
 		};
 		launchers[] = {WEST_MAT};
-		items[] += {
-			"ACE_fieldDressing:3",
-			"ACE_morphine"
-		};
+		attachments[] = {West_MAT_SCOPE};
 		backpack[] = {WEST_PACK_MEDIUM};
 		backpackItems[] = {WEST_MAT_MAG};
 	};
@@ -509,10 +510,6 @@ class blu_f {
 		backpack[] = {WEST_PACK_MEDIUM};
 		backpackItems[] = {WEST_MAT_MAG};
 		linkedItems[] += {"ACE_Vector"};
-		items[] += {
-			"ACE_fieldDressing:3",
-			"ACE_morphine"
-		};
 	};
 
 	// AA Gunner
@@ -557,11 +554,12 @@ class blu_f {
 	// Mortar Asst
 	// Define gear additions and overrides for Mortar Asst units
 	class B_support_AMort_F: B_Soldier_F {
-		launchers[] = {"UK3CB_BAF_L16_Tripod";
+		backpack[] = {WEST_RADIO_MANPACK};
+		launchers[] = {"UK3CB_BAF_L16_Tripod"};
 		linkedItems[] += {"ACE_Vector"};
 		items[] += {
-			"ACE_fieldDressing:3",
-			"ACE_morphine"
+			"ACE_MapTools",
+			"ACE_RangeTable_82mm"
 		};
 	};
 
@@ -615,7 +613,7 @@ class blu_f {
 			"itemMap",
 			"itemCompass",
 			"itemGPS",
-			"LaserDesignator",
+			"ACE_Vector",
 			West_NVG
 		};
     attachments[] = {
@@ -673,7 +671,7 @@ class blu_f {
 			"itemMap",
 			"itemCompass",
 			"itemGPS",
-			"LaserDesignator",
+			"ACE_Vector",
 			West_NVG
 		};
     attachments[] = {
