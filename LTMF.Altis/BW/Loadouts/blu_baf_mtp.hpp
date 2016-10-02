@@ -13,12 +13,12 @@ class blu_f {
 
   // Rifle
   #define WEST_RIFLE "UK3CB_BAF_L85A2_EMAG"
-  #define WEST_RIFLE_MAG "UK3CB_BAF_30Rnd:8","UK3CB_BAF_30Rnd_T:2"
+  #define WEST_RIFLE_MAG "UK3CB_BAF_556_30Rnd:8","UK3CB_BAF_556_30Rnd_T:2"
   #define WEST_RIFLE_SCOPE "rhsusf_acc_eotech_552"
   #define WEST_RIFLE_RAIL "rhsusf_acc_anpeq15A"
   // GL Rifle
   #define WEST_GLRIFLE "UK3CB_BAF_L85A2_UGL"
-  #define WEST_GLRIFLE_MAG "UK3CB_BAF_30Rnd:8","UK3CB_BAF_30Rnd_T:2"
+  #define WEST_GLRIFLE_MAG "UK3CB_BAF_556_30Rnd:8","UK3CB_BAF_556_30Rnd_T:2"
   #define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
   #define WEST_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:8"
   #define WEST_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareGreen_F:2"
@@ -26,13 +26,13 @@ class blu_f {
   #define WEST_GLRIFLE_RAIL "rhsusf_acc_anpeq15A"
   // Carbine
   #define WEST_CARBINE "UK3CB_BAF_L22"
-  #define WEST_CARBINE_MAG "UK3CB_BAF_30Rnd:8","UK3CB_BAF_30Rnd_T:2"
+  #define WEST_CARBINE_MAG "UK3CB_BAF_556_30Rnd:8","UK3CB_BAF_556_30Rnd_T:2"
   #define WEST_CARBINE_SCOPE "rhsusf_acc_eotech_552"
   #define WEST_CARBINE_RAIL "rhsusf_acc_anpeq15A"
   // AR
   #define WEST_AR "UK3CB_BAF_L110A2"
-  #define WEST_AR_MAG "UK3CB_BAF_100Rnd:3"
-  #define WEST_AR_MAG2 "UK3CB_BAF_100Rnd:3"
+  #define WEST_AR_MAG "UK3CB_BAF_556_100Rnd:3"
+  #define WEST_AR_MAG2 "UK3CB_BAF_556_100Rnd:3"
   #define WEST_AR_SCOPE "rhsusf_acc_eotech_552"
   #define WEST_AR_RAIL "rhsusf_acc_anpeq15A"
   // AT
@@ -66,7 +66,7 @@ class blu_f {
   #define WEST_SMG_RAIL "rhsusf_acc_anpeq15A"
   // Pistol
   #define WEST_PISTOL "UK3CB_BAF_L131A1"
-  #define WEST_PISTOL_MAG "UK3CB_BAF_17Rnd_9mm:4"
+  #define WEST_PISTOL_MAG "UK3CB_BAF_9_17Rnd:4"
   // Radio
   #define WEST_RADIO_RIFLEMAN "tf_rf7800str"
   #define WEST_RADIO_SHORTWAVE "tf_anprc152"
@@ -220,7 +220,7 @@ class blu_f {
     // List the attachments that will be automatically added
     // to the unit's equipped weapons
     attachments[] = {
-			WEST_RIFLE_SCOPE,
+			// WEST_RIFLE_SCOPE,
 			WEST_RIFLE_RAIL
 		};
     // Set the basic radio for the unit
