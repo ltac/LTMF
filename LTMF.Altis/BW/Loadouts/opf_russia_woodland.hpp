@@ -284,9 +284,7 @@ class opf_f {
     // List the items (along with the amount) that will be placed
     // specifically in the unit's backpack
     backpackItems[] = {
-      "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_IR_Strobe_item"
+
     };
     // List the magazines, explosives, and throwables
     // that will be placed wherever there is room in the unit's
@@ -299,6 +297,9 @@ class opf_f {
     // List the items (along with the amount) that will be placed
     // wherever there is room in the unit's inventory
     items[] = {
+      "ACE_fieldDressing:3",
+      "ACE_morphine",
+      "ACE_IR_Strobe_item",
       "ACE_CableTie",
       "ACE_Flashlight_XL50"
     };
