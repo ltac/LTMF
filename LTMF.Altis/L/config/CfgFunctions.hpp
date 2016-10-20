@@ -9,4 +9,10 @@ class L
 		file="L\init";
 		class initUnit{};
 	}
+	class radio
+	{
+		file="L\radio";
+		class getRadiosTFR {};
+		class getRadiosACRE {};
+	}
 };

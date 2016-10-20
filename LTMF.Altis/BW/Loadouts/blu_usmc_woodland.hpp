@@ -228,7 +228,6 @@ class blu_f {
   // CO and DC
   // Define gear additions and overrides for Officer units
   class B_officer_F: B_Soldier_F {
-    backpack[] = {WEST_RADIO_MANPACK};
     vest[] = {
       "rhsusf_spc_squadleader"
     };
@@ -254,12 +253,12 @@ class blu_f {
 			WEST_GLRIFLE_SCOPE,
 			WEST_GLRIFLE_RAIL
 		};
+    lr_radio = true
   };
 
   // SL
   // Define gear additions and overrides for Squad Leader units
   class B_Soldier_SL_F: B_Officer_F {
-    backpack[] = {WEST_RADIO_MANPACK};
     vest[] = {
       "rhsusf_spc_squadleader"
     };
@@ -269,6 +268,7 @@ class blu_f {
     items[] = {"ACE_MapTools"};
     backpackItems[] += {"ACE_fieldDressing"};
     attachments[] += {"rhsusf_acc_ACOG_USMC"};
+    lr_radio = true
   };
 
   // UAV
@@ -307,7 +307,7 @@ class blu_f {
       "ItemGPS",
       "Binocular"
     };
-    backpack[] = {WEST_RADIO_MANPACK};
+    lr_radio = true
   };
 
   // AR
@@ -500,7 +500,6 @@ class blu_f {
       "rhs_Booniehat_marpatwd"
     };
     facewear[] = {};
-    backpack[] = {WEST_RADIO_MANPACK};
 
     weapons[] = {WEST_SPOTTER};
     launchers[] = {};
@@ -531,6 +530,7 @@ class blu_f {
 			WEST_SPOTTER_SCOPE,
 			WEST_SPOTTER_RAIL
 		};
+    lr_radio = true
   };
   /* SNIPER BASE */
 

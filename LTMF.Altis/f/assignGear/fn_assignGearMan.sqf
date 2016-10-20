@@ -34,7 +34,8 @@ _magazines = getArray(_path >> "magazines");
 _items = getArray(_path >> "items");
 _linkedItems = getArray(_path >> "linkedItems");
 _attachments = getArray(_path >> "attachments");
-_radio = getText(_path >> "radio");
+_radio = getVariable(_path >> "radio");
+_lr_radio = getVariable(_path >> "lr_radio");
 
 removeAllWeapons _unit;
 removeAllAssignedItems _unit;
@@ -122,7 +123,18 @@ clearAllItemsFromBackpack _unit;
 // Radio
 
 if (!isNil "_radio") then {
-	_unit linkItem _radio;
+    switch (f_var_radios) do {
+        // TFR
+        case 1: {
+            // TODO: TFR radio item script
+            [_unit, _radio, _lr_radio] call L_fnc_getRadiosTRF;
+        };
+        // ACRE2
+        case 2: {
+            // TODO: ACRE2 radio item script
+            [_unit, _radio, _lr_radio] call L_fnc_getRadiosACRE;
+        };
+    }
 };
 
 // Backpack Items

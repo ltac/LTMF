@@ -68,10 +68,10 @@ class blu_f {
   #define WEST_PISTOL "UK3CB_BAF_L131A1"
   #define WEST_PISTOL_MAG "UK3CB_BAF_9_17Rnd:4"
   // Radio
-  #define WEST_RADIO_RIFLEMAN "tf_rf7800str"
-  #define WEST_RADIO_SHORTWAVE "tf_anprc152"
-  #define WEST_RADIO_MANPACK "tf_rt1523g_sage"
-  #define WEST_RADIO_AIRBORNE "tf_anarc210"
+  // #define WEST_RADIO_RIFLEMAN "tf_rf7800str"
+  // #define WEST_RADIO_SHORTWAVE "tf_anprc152"
+  // #define WEST_RADIO_MANPACK "tf_rt1523g_sage"
+  // #define WEST_RADIO_AIRBORNE "tf_anarc210"
   // Throwables
   #define WEST_SMOKE_WHITE "SmokeShell:2"
   #define WEST_SMOKE_COLOR "SmokeShellGreen:2"
@@ -224,7 +224,7 @@ class blu_f {
 			WEST_RIFLE_RAIL
 		};
     // Set the basic radio for the unit
-    radio = WEST_RADIO_RIFLEMAN;
+    radio = true;
   };
 
   /* END RIFLEMAN BASE */
@@ -234,7 +234,6 @@ class blu_f {
   // CO and DC
   // Define gear additions and overrides for Officer units
   class B_officer_F: B_Soldier_F {
-    backpack[] = {WEST_RADIO_MANPACK};
     vest[] = {
       "UK3CB_BAF_V_Osprey_SL_D"
     };
@@ -260,13 +259,13 @@ class blu_f {
 			WEST_GLRIFLE_SCOPE,
 			WEST_GLRIFLE_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
+    radio = true;
+    lr_radio = true;
   };
 
   // SL
   // Define gear additions and overrides for Squad Leader units
   class B_Soldier_SL_F: B_Officer_F {
-    backpack[] = {WEST_RADIO_MANPACK};
     vest[] = {
       "UK3CB_BAF_V_Osprey_SL_D"
     };
@@ -276,7 +275,8 @@ class blu_f {
     items[] = {"ACE_MapTools"};
     backpackItems[] += {"ACE_fieldDressing"};
     attachments[] += {"rhsusf_acc_ACOG_USMC"};
-    radio = WEST_RADIO_SHORTWAVE;
+    radio = true;
+    lr_radio = true;
   };
 
   // UAV
@@ -286,7 +286,7 @@ class blu_f {
     linkedItems[] += {
       "B_uavterminal"
     };
-    radio = WEST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   // FTL
@@ -537,7 +537,7 @@ class blu_f {
 			WEST_SPOTTER_SCOPE,
 			WEST_SPOTTER_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   /* SNIPER BASE */
@@ -583,7 +583,7 @@ class blu_f {
 			WEST_SNIPER_SCOPE,
 			WEST_SNIPER_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   /* HELICOPTER CREW BASE */
@@ -632,7 +632,7 @@ class blu_f {
 			/*WEST_SMG_SCOPE,*/
 			WEST_SMG_RAIL
 		};
-    /*radio = WEST_RADIO_SHORTWAVE;*/
+    /*radio = true;*/
   };
 
   // Heli crew
@@ -685,7 +685,7 @@ class blu_f {
 			WEST_SMG_SCOPE,
 			WEST_SMG_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   // Repair Specialist

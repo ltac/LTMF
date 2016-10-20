@@ -219,7 +219,7 @@ class blu_f {
 			WEST_RIFLE_RAIL
 		};
     // Set the basic radio for the unit
-    radio = WEST_RADIO_RIFLEMAN;
+    radio = true;
   };
 
   /* END RIFLEMAN BASE */
@@ -232,7 +232,6 @@ class blu_f {
     vest[] = {
       "rhsusf_spc_squadleader"
     };
-    backpack[] = {WEST_RADIO_MANPACK};
     weapons[] = {WEST_GLRIFLE};
     magazines[] = {
       WEST_GLRIFLE_MAG,
@@ -255,13 +254,13 @@ class blu_f {
 			WEST_GLRIFLE_SCOPE,
 			WEST_GLRIFLE_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
+    radio = true;
+    lr_radio = true
   };
 
   // SL
   // Define gear additions and overrides for Squad Leader units
   class B_Soldier_SL_F: B_Officer_F {
-    backpack[] = {WEST_RADIO_MANPACK};
     vest[] = {
       "rhsusf_spc_squadleader"
     };
@@ -271,7 +270,8 @@ class blu_f {
     items[] = {"ACE_MapTools"};
     backpackItems[] += {"ACE_fieldDressing"};
     attachments[] += {"rhsusf_acc_ACOG_USMC"};
-    radio = WEST_RADIO_SHORTWAVE;
+    radio = true;
+    lr_radio = true
   };
 
   // UAV
@@ -281,7 +281,7 @@ class blu_f {
     linkedItems[] += {
       "B_uavterminal"
     };
-    radio = WEST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   // FTL
@@ -535,7 +535,7 @@ class blu_f {
 			WEST_SPOTTER_SCOPE,
 			WEST_SPOTTER_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   /* SNIPER BASE */
@@ -584,7 +584,7 @@ class blu_f {
 			WEST_SNIPER_SCOPE,
 			WEST_SNIPER_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   /* HELICOPTER CREW BASE */
@@ -631,7 +631,7 @@ class blu_f {
 			WEST_SMG_SCOPE,
 			WEST_SMG_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   // Heli crew
@@ -684,7 +684,7 @@ class blu_f {
 			WEST_SMG_SCOPE,
 			WEST_SMG_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   // Repair Specialist

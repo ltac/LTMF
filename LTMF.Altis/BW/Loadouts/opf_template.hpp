@@ -305,7 +305,7 @@ class opf_f {
 			EAST_RIFLE_RAIL
 		};
     // Set the basic radio for the unit
-    radio = EAST_RADIO_RIFLEMAN;
+    radio = true;
   };
 
   /* END RIFLEMAN BASE */
@@ -324,7 +324,7 @@ class opf_f {
   You can override a certain type of gear by setting it to something
   new using =
   For example:
-  backpack[] = {EAST_RADIO_MANPACK};
+  lr_radio = true
 
   Instead of replacing gear, you can also add to gear by using +=
   For example, to add GPS in addition to the base Watch, Map,
@@ -335,7 +335,6 @@ class opf_f {
   // CO and DC
   // Define gear additions and overrides for Officer units
   class O_Officer_F: O_Soldier_F {
-    backpack[] = {EAST_RADIO_MANPACK};
     weapons[] = {EAST_GLRIFLE};
     magazines[] = {
       EAST_GLRIFLE_MAG,
@@ -358,7 +357,8 @@ class opf_f {
       "ACE_Vector"
     };
     items[] = {"ACE_MapTools"};
-    radio = EAST_RADIO_SHORTWAVE;
+    radio = true;
+    lr_radio = true
   };
 
   // SL
@@ -369,7 +369,7 @@ class opf_f {
     };
     items[] = {"ACE_MapTools"};
     backpackItems[] += {"ACE_fieldDressing"};
-    radio = EAST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   // UAV
@@ -379,7 +379,7 @@ class opf_f {
     linkedItems[] += {
       "O_uavterminal"
     };
-    radio = EAST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   // FTL
@@ -641,7 +641,7 @@ class opf_f {
 			EAST_SPOTTER_SCOPE,
 			EAST_SPOTTER_RAIL
 		};
-    radio = EAST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   /* SNIPER BASE */
@@ -716,7 +716,7 @@ class opf_f {
 			EAST_SNIPER_SCOPE,
 			EAST_SNIPER_RAIL
 		};
-    radio = EAST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   /* HELICOPTER CREW BASE */
@@ -768,7 +768,7 @@ class opf_f {
 			EAST_SMG_SCOPE,
 			EAST_SMG_RAIL
 		};
-    radio = EAST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   // Heli crew
@@ -844,7 +844,7 @@ class opf_f {
 			EAST_SMG_SCOPE,
 			EAST_SMG_RAIL
 		};
-    radio = EAST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   // Repair Specialist

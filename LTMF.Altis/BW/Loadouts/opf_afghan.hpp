@@ -268,7 +268,7 @@ class opf_f {
     // to the unit's equipped weapons
     attachments[] = {};
     // Set the basic radio for the unit
-    radio = EAST_RADIO_RIFLEMAN;
+    radio = true;
   };
 
   /* END RIFLEMAN BASE */
@@ -278,7 +278,6 @@ class opf_f {
   // CO and DC
   // Define gear additions and overrides for Officer units
   class O_Officer_F: O_Soldier_F {
-    backpack[] = {EAST_RADIO_MANPACK};
     weapons[] = {EAST_GLRIFLE};
     magazines[] = {
       EAST_GLRIFLE_MAG,
@@ -295,7 +294,8 @@ class opf_f {
       "Binocular"
     };
     items[] = {"ACE_MapTools"};
-    radio = EAST_RADIO_SHORTWAVE;
+    radio = true;
+    lr_radio = true
   };
 
   // SL
@@ -303,7 +303,7 @@ class opf_f {
   class O_Soldier_SL_F: O_Officer_F {
     items[] = {"ACE_MapTools"};
     backpackItems[] += {"ACE_fieldDressing"};
-    radio = EAST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   // UAV
@@ -595,7 +595,7 @@ class opf_f {
       "itemCompass",
       "Binocular"
     };
-    radio = EAST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   /* SNIPER BASE */
@@ -706,7 +706,7 @@ class opf_f {
 			EAST_SNIPER_SCOPE
 		};
 
-    radio = EAST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   /* HELICOPTER CREW BASE */
@@ -778,7 +778,7 @@ class opf_f {
 			EAST_SMG_SCOPE,
 			EAST_SMG_RAIL
 		};
-    radio = EAST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   // Heli crew
@@ -867,7 +867,7 @@ class opf_f {
 			EAST_SMG_SCOPE,
 			EAST_SMG_RAIL
 		};
-    radio = EAST_RADIO_SHORTWAVE;
+    radio = true;
   };
 
   // Repair Specialist
