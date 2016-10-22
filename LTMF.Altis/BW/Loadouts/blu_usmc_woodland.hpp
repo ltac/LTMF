@@ -253,7 +253,10 @@ class blu_f {
 			WEST_GLRIFLE_SCOPE,
 			WEST_GLRIFLE_RAIL
 		};
-    lr_radio = true
+    radios[] = {
+      "sr",
+      "rfl"
+    };
   };
 
   // SL
@@ -268,7 +271,10 @@ class blu_f {
     items[] = {"ACE_MapTools"};
     backpackItems[] += {"ACE_fieldDressing"};
     attachments[] += {"rhsusf_acc_ACOG_USMC"};
-    lr_radio = true
+    radios[] = {
+      "sr",
+      "rfl"
+    };
   };
 
   // UAV
@@ -307,7 +313,10 @@ class blu_f {
       "ItemGPS",
       "Binocular"
     };
-    lr_radio = true
+    radios[] = {
+      "sr",
+      "rfl"
+    };
   };
 
   // AR
@@ -530,7 +539,10 @@ class blu_f {
 			WEST_SPOTTER_SCOPE,
 			WEST_SPOTTER_RAIL
 		};
-    lr_radio = true
+    radios[] = {
+      "sr",
+      "rfl"
+    };
   };
   /* SNIPER BASE */
 

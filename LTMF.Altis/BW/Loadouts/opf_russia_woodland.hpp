@@ -318,7 +318,9 @@ class opf_f {
 			EAST_RIFLE_RAIL
 		};
     // Set the basic radio for the unit
-    radio = true;
+    radios[] = {
+      "rfl"
+    };
   };
 
   /* END RIFLEMAN BASE */
@@ -337,7 +339,7 @@ class opf_f {
   You can override a certain type of gear by setting it to something
   new using =
   For example:
-  lr_radio = true
+  
 
   Instead of replacing gear, you can also add to gear by using +=
   For example, to add GPS in addition to the base Watch, Map,
@@ -370,8 +372,10 @@ class opf_f {
       "ACE_Vector"
     };
     items[] = {"ACE_MapTools"};
-    radio = true;
-    lr_radio = true
+    radios[] = {
+      "sr",
+      "rfl"
+    };
   };
 
   // SL
@@ -382,7 +386,10 @@ class opf_f {
     };
     items[] = {"ACE_MapTools"};
     backpackItems[] += {"ACE_fieldDressing"};
-    radio = true;
+    radios[] = {
+      "sr",
+      "rfl"
+    };
   };
 
   // UAV
@@ -392,7 +399,9 @@ class opf_f {
     linkedItems[] += {
       "O_uavterminal"
     };
-    radio = true;
+    radios[] = {
+      "rfl"
+    };
   };
 
   // FTL
@@ -654,7 +663,9 @@ class opf_f {
 			EAST_SPOTTER_SCOPE,
 			EAST_SPOTTER_RAIL
 		};
-    radio = true;
+    radios[] = {
+      "rfl"
+    };
   };
 
   /* SNIPER BASE */
@@ -729,7 +740,9 @@ class opf_f {
 			EAST_SNIPER_SCOPE,
 			EAST_SNIPER_RAIL
 		};
-    radio = true;
+    radios[] = {
+      "rfl"
+    };
   };
 
   /* HELICOPTER CREW BASE */
@@ -781,7 +794,9 @@ class opf_f {
 			EAST_SMG_SCOPE,
 			EAST_SMG_RAIL
 		};
-    radio = true;
+    radios[] = {
+      "rfl"
+    };
   };
 
   // Heli crew
@@ -857,7 +872,9 @@ class opf_f {
 			EAST_SMG_SCOPE,
 			EAST_SMG_RAIL
 		};
-    radio = true;
+    radios[] = {
+      "rfl"
+    };
   };
 
   // Repair Specialist

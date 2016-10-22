@@ -263,7 +263,7 @@ class blu_f {
 		};
     radios[] = {
       "sr",
-      "lr"
+      "rfl"
     };
   };
 
@@ -280,7 +280,8 @@ class blu_f {
     backpackItems[] += {"ACE_fieldDressing"};
     attachments[] += {"rhsusf_acc_ACOG_USMC"};
     radios[] = {
-      "sr"
+      "sr",
+      "rfl"
     };
   };
 
@@ -324,7 +325,8 @@ class blu_f {
       "Binocular"
     };
     radios[] = {
-      "sr"
+      "sr",
+      "rfl"
     };
   };
 

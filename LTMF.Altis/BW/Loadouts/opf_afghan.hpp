@@ -268,7 +268,9 @@ class opf_f {
     // to the unit's equipped weapons
     attachments[] = {};
     // Set the basic radio for the unit
-    radio = true;
+    radios[] = {
+      "rfl"
+    };
   };
 
   /* END RIFLEMAN BASE */
@@ -294,8 +296,10 @@ class opf_f {
       "Binocular"
     };
     items[] = {"ACE_MapTools"};
-    radio = true;
-    lr_radio = true
+    radios[] = {
+      "sr",
+      "rfl"
+    };
   };
 
   // SL
@@ -303,7 +307,9 @@ class opf_f {
   class O_Soldier_SL_F: O_Officer_F {
     items[] = {"ACE_MapTools"};
     backpackItems[] += {"ACE_fieldDressing"};
-    radio = true;
+    radios[] = {
+      "rfl"
+    };
   };
 
   // UAV
@@ -595,7 +601,9 @@ class opf_f {
       "itemCompass",
       "Binocular"
     };
-    radio = true;
+    radios[] = {
+      "rfl"
+    };
   };
 
   /* SNIPER BASE */
@@ -706,7 +714,9 @@ class opf_f {
 			EAST_SNIPER_SCOPE
 		};
 
-    radio = true;
+    radios[] = {
+      "rfl"
+    };
   };
 
   /* HELICOPTER CREW BASE */
@@ -778,7 +788,9 @@ class opf_f {
 			EAST_SMG_SCOPE,
 			EAST_SMG_RAIL
 		};
-    radio = true;
+    radios[] = {
+      "rfl"
+    };
   };
 
   // Heli crew
@@ -867,7 +879,9 @@ class opf_f {
 			EAST_SMG_SCOPE,
 			EAST_SMG_RAIL
 		};
-    radio = true;
+    radios[] = {
+      "rfl"
+    };
   };
 
   // Repair Specialist

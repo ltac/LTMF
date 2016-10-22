@@ -248,12 +248,14 @@ class blu_f {
 		};
 		// List the attachments that will be automatically added
 		// to the unit's equipped weapons
-    attachments[] = {
+   		attachments[] = {
 			WEST_RIFLE_SCOPE,
 			WEST_RIFLE_RAIL
 		};
 		// Set the basic radio for the unit
-		radio = true;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	/* END RIFLEMAN BASE */
@@ -285,8 +287,10 @@ class blu_f {
 			"ACE_Vector"
 		};
 		items[] = {"ACE_MapTools"};
-		radio = true;
-		lr_radio = true
+		radios[] = {
+      		"sr",
+      		"rfl"
+    	};
 	};
 
 	// SL
@@ -297,8 +301,10 @@ class blu_f {
 		};
 		items[] = {"ACE_MapTools"};
 		backpackItems[] += {"ACE_fieldDressing"};
-		radio = true;
-		lr_radio = true
+		radios[] = {
+      		"sr",
+      		"rfl"
+    	};
 	};
 
 	// UAV
@@ -308,7 +314,9 @@ class blu_f {
 		linkedItems[] += {
 			"B_uavterminal"
 		};
-		radio = true;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	// FTL
@@ -325,7 +333,7 @@ class blu_f {
 			WEST_FRAG,
 			WEST_SMOKE_WHITE
 		};
-    attachments[] = {
+    	attachments[] = {
 			WEST_GLRIFLE_SCOPE,
 			WEST_GLRIFLE_RAIL
 		};
@@ -346,7 +354,7 @@ class blu_f {
 			WEST_FRAG,
 			WEST_SMOKE_WHITE
 		};
-    attachments[] = {
+    	attachments[] = {
 			WEST_AR_SCOPE,
 			WEST_AR_RAIL
 		};
@@ -381,12 +389,12 @@ class blu_f {
 		magazines[] = {
 			WEST_CARBINE_MAG,
 			WEST_SMOKE_WHITE,
-      WEST_SMOKE_WHITE,
-      WEST_SMOKE_WHITE
+      		WEST_SMOKE_WHITE,
+      		WEST_SMOKE_WHITE
 		};
 		backpackItems[] = {
 			"Medikit",
-      "FirstAidKit:3"
+      		"FirstAidKit:3"
 		};
 	};
 
@@ -401,7 +409,7 @@ class blu_f {
 			WEST_SMOKE_WHITE
 		};
 		handguns[] = {WEST_PISTOL}; /// randomized
-    attachments[] = {
+    	attachments[] = {
 			WEST_MMG_SCOPE,
 			WEST_MMG_RAIL
 		};
@@ -456,7 +464,7 @@ class blu_f {
 			WEST_CARBINE_MAG,
 			WEST_FRAG,
 			WEST_SMOKE_WHITE,
-      "MiniGrenade:1"
+      		"MiniGrenade:1"
 		};
 		launchers[] = {WEST_SAM};
 		backpackItems[] += {WEST_SAM_MAG};
@@ -543,11 +551,13 @@ class blu_f {
 			"LaserDesignator",
 			"rhsusf_ANPVS_15"
 		};
-    attachments[] = {
+    	attachments[] = {
 			WEST_SPOTTER_SCOPE,
 			WEST_SPOTTER_RAIL
 		};
-		radio = true;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	/* SNIPER BASE */
@@ -599,7 +609,9 @@ class blu_f {
 			"rhsusf_ANPVS_15"
 		};
 		attachments[] = {};
-		radio = true;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	/* HELICOPTER CREW BASE */
@@ -650,11 +662,13 @@ class blu_f {
 			"itemGPS",
 			"rhsusf_ANPVS_15"
 		};
-    attachments[] = {
+    	attachments[] = {
 			WEST_SMG_SCOPE,
 			WEST_SMG_RAIL
 		};
-		radio = true;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	// Heli crew
@@ -709,11 +723,13 @@ class blu_f {
 			"itemGPS",
 			"rhsusf_ANPVS_15"
 		};
-    attachments[] = {
+    	attachments[] = {
 			WEST_SMG_SCOPE,
 			WEST_SMG_RAIL
 		};
-		radio = true;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	// Repair Specialist

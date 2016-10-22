@@ -222,7 +222,9 @@ class blu_f {
 			WEST_RIFLE_RAIL
 		};
     // Set the basic radio for the unit
-    radio = true;
+    radios[] = {
+      "rfl"
+    };
   };
 
   /* END RIFLEMAN BASE */
@@ -257,8 +259,9 @@ class blu_f {
 			WEST_GLRIFLE_SCOPE,
 			WEST_GLRIFLE_RAIL
 		};
-    radio = true;
-    lr_radio = true
+    radios[] = {
+      "rfl"
+    };
   };
 
   // SL
@@ -273,8 +276,9 @@ class blu_f {
     items[] = {"ACE_MapTools"};
     backpackItems[] += {"ACE_fieldDressing"};
     attachments[] += {"rhsusf_acc_ACOG_USMC"};
-    radio = true;
-    lr_radio = true
+    radios[] = {
+      "rfl"
+    };
   };
 
   // UAV
@@ -284,7 +288,9 @@ class blu_f {
     linkedItems[] += {
       "B_uavterminal"
     };
-    radio = true;
+    radios[] = {
+      "rfl"
+    };
   };
 
   // FTL
@@ -538,7 +544,9 @@ class blu_f {
 			WEST_SPOTTER_SCOPE,
 			WEST_SPOTTER_RAIL
 		};
-    radio = true;
+    radios[] = {
+      "rfl"
+    };
   };
 
   /* SNIPER BASE */
@@ -587,7 +595,9 @@ class blu_f {
 			WEST_SNIPER_SCOPE,
 			WEST_SNIPER_RAIL
 		};
-    radio = true;
+    radios[] = {
+      "rfl"
+    };
   };
 
   /* HELICOPTER CREW BASE */
@@ -634,7 +644,9 @@ class blu_f {
 			WEST_SMG_SCOPE,
 			WEST_SMG_RAIL
 		};
-    radio = true;
+    radios[] = {
+      "rfl"
+    };
   };
 
   // Heli crew
@@ -690,7 +702,9 @@ class blu_f {
 			WEST_SMG_SCOPE,
 			WEST_SMG_RAIL
 		};
-    radio = true;
+    radios[] = {
+      "rfl"
+    };
   };
 
   // Repair Specialist

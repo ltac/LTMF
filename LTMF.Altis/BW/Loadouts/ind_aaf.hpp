@@ -236,11 +236,14 @@ class ind_f {
 		};
 		// List the attachments that will be automatically added
 		// to the unit's equipped weapons
-    attachments[] = {
+    	attachments[] = {
 			IND_RIFLE_RAIL
 		};
 		// Set the basic radio for the unit
-		radio = true;
+		radios[] = {
+      		"sr",
+      		"rfl"
+    	};
 	};
 
 	/* END RIFLEMAN BASE */
@@ -273,8 +276,10 @@ class ind_f {
 			"rhsusf_ANPVS_15"
 		};
 		items[] = {"ACE_MapTools"};
-		radio = true;
-		lr_radio = true
+		radios[] = {
+      		"sr",
+      		"rfl"
+    	};
 	};
 
 	// SL
@@ -286,8 +291,10 @@ class ind_f {
 		};
 		items[] = {"ACE_MapTools"};
 		backpackItems[] += {"ACE_fieldDressing"};
-		radio = true;
-		lr_radio = true
+		radios[] = {
+      		"sr",
+      		"rfl"
+    	};
 	};
 
 	// UAV
@@ -297,7 +304,9 @@ class ind_f {
 		linkedItems[] += {
 			"I_uavterminal"
 		};
-		radio = true;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	// FTL
@@ -546,7 +555,9 @@ class ind_f {
 			IND_SPOTTER_SCOPE,
 			IND_SPOTTER_RAIL
 		};
-		radio = true;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	/* SNIPER BASE */
@@ -608,7 +619,9 @@ class ind_f {
 			IND_SNIPER_SCOPE,
 			IND_SNIPER_RAIL
 		};
-		radio = true;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	/* HELICOPTER CREW BASE */
@@ -649,7 +662,9 @@ class ind_f {
 			IND_SMG_SCOPE,
 			IND_SMG_RAIL
 		};
-		radio = true;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	// Heli crew
@@ -710,11 +725,13 @@ class ind_f {
 			"ItemCompass",
 			"itemGPS"
 		};
-    attachments[] = {
+    	attachments[] = {
 			IND_SMG_SCOPE,
 			IND_SMG_RAIL
 		};
-		radio = true;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	// Repair Specialist

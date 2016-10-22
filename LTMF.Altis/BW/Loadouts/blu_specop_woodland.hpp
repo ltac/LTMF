@@ -297,7 +297,9 @@ class blu_f {
 			WEST_RIFLE_RAIL
 		};
 		// Set the basic radio for the unit
-		radio = true;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	/* END RIFLEMAN BASE */
@@ -353,8 +355,10 @@ class blu_f {
 			"Laserbatteries",
 			"ALIVE_Tablet"
 		};
-		radio = true;
-		lr_radio = true
+		radios[] = {
+      		"sr",
+      		"rfl"
+    	};
 	};
 
 	// SL
@@ -368,8 +372,10 @@ class blu_f {
 			"Laserbatteries"
 		};
 		backpackItems[] += {"ACE_fieldDressing"};
-		radio = true;
-		lr_radio = true
+		radios[] = {
+      		"sr",
+      		"rfl"
+    	};
 	};
 	// UAV
 	// Define gear additions and overrides for UAV Operator units
@@ -378,7 +384,9 @@ class blu_f {
 		linkedItems[] += {
 			"B_uavterminal"
 		};
-		radio = true;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	// FTL
@@ -554,7 +562,10 @@ class blu_f {
 	// Mortar Asst
 	// Define gear additions and overrides for Mortar Asst units
 	class B_support_AMort_F: B_Soldier_F {
-		lr_radio = true
+		radios[] = {
+      		"sr",
+      		"rfl"
+    	};
 		launchers[] = {"UK3CB_BAF_L16_Tripod"};
 		linkedItems[] += {"ACE_Vector"};
 		items[] += {
@@ -616,11 +627,14 @@ class blu_f {
 			"ACE_Vector",
 			West_NVG
 		};
-    attachments[] = {
+    	attachments[] = {
 			WEST_SPOTTER_SCOPE,
 			WEST_SPOTTER_RAIL
 		};
-		radio = true;
+		radios[] = {
+      		"sr",
+      		"rfl"
+    	};
 	};
 
 	/* SNIPER BASE */
@@ -678,7 +692,9 @@ class blu_f {
 			WEST_SNIPER_SCOPE,
 			WEST_SNIPER_RAIL
 		};
-		radio = true;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	/* HELICOPTER CREW BASE */
@@ -722,11 +738,13 @@ class blu_f {
 			"itemGPS",
 			"NVGogglesB_blk_F"
 		};
-    attachments[] = {
+    	attachments[] = {
 			WEST_SMG_SCOPE,
 			WEST_SMG_RAIL
 		};
-		radio = true;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	// Heli crew
@@ -780,11 +798,13 @@ class blu_f {
 			"itemGPS",
 			West_NVG
 		};
-    attachments[] = {
+    	attachments[] = {
 			WEST_SMG_SCOPE,
 			WEST_SMG_RAIL
 		};
-		radio = true;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	// Repair Specialist
