@@ -3,6 +3,10 @@
  * This file contains the global public variables that determine 
  */
 
+if (!isDedicated) then {
+	[] call f_fnc_tfr_configureSpectatorChat;
+};
+
 /* BOOL: false to add long range radios to all group leaders,
  * true to do nothing
  */

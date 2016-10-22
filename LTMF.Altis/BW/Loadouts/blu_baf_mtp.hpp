@@ -547,7 +547,7 @@ class blu_f {
 			WEST_SPOTTER_SCOPE,
 			WEST_SPOTTER_RAIL
 		};
-    radios[]{
+    radios[] = {
       "rfl"
     };
   };
@@ -646,7 +646,7 @@ class blu_f {
 			/*WEST_SMG_SCOPE,*/
 			WEST_SMG_RAIL
 		};
-    /*radios[]{
+    /*radios[] = {
       "rfl"
     }*/
   };

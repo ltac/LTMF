@@ -338,7 +338,7 @@ class blu_f {
 			WEST_SMOKE_WHITE,
 			WEST_SMOKE_COLOR
 		};
-    attachments[] = {
+    	attachments[] = {
 			WEST_GLRIFLE_SCOPE,
 			WEST_GLRIFLE_RAIL
 		};

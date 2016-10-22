@@ -121,16 +121,14 @@ clearAllItemsFromBackpack _unit;
 // ====================================================================================
 // Radio
 
-if (!isNil "_radio") then {
+if (!isNil "_radios") then {
     switch (f_var_radios) do {
         // TFR
         case 1: {
-            // TODO: TFR radio item script
             [_unit, _radios] call L_fnc_getRadiosTRF;
         };
         // ACRE2
         case 2: {
-            // TODO: ACRE2 radio item script
             [_unit, _radios] call L_fnc_getRadiosACRE;
         };
     }

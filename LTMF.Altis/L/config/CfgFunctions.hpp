@@ -11,7 +11,7 @@ class L
 	}
 	class radio
 	{
-		file="L\radio";
+		file="L\radios";
 		class getRadiosTFR {};
 		class getRadiosACRE {};
 	}

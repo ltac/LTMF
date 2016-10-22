@@ -18,7 +18,7 @@ _radios = _this select 1;
 
 // Set a different preset channel list for different sides
 _preset = "default";
-switch (_unit side) do {
+switch (side _unit) do {
     case west: {
         _preset = "default2";
     };

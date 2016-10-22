@@ -14,35 +14,35 @@ class blu_f {
 	// Rifle
 	#define WEST_RIFLE "hlc_rifle_g3ka4"
 	#define WEST_RIFLE_MAG "hlc_20rnd_762x51_b_G3:8","hlc_20rnd_762x51_T_G3:2"
-  #define WEST_RIFLE_SCOPE "rhsusf_acc_eotech_552"
-  #define WEST_RIFLE_RAIL "rhsusf_acc_anpeq15A"
+  	#define WEST_RIFLE_SCOPE "rhsusf_acc_eotech_552"
+  	#define WEST_RIFLE_RAIL "rhsusf_acc_anpeq15A"
 	// GL Rifle
 	#define WEST_GLRIFLE "HLC_Rifle_g3ka4_GL"
 	#define WEST_GLRIFLE_MAG "hlc_20rnd_762x51_b_G3:8","hlc_20rnd_762x51_T_G3:2"
 	#define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
 	#define WEST_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:8"
 	#define WEST_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareGreen_F:2"
-  #define WEST_GLRIFLE_SCOPE "rhsusf_acc_eotech_552"
-  #define WEST_GLRIFLE_RAIL "rhsusf_acc_anpeq15A"
+  	#define WEST_GLRIFLE_SCOPE "rhsusf_acc_eotech_552"
+  	#define WEST_GLRIFLE_RAIL "rhsusf_acc_anpeq15A"
 	// Carbine
 	#define WEST_CARBINE "RH_hk416c_tg"
 	#define WEST_CARBINE_MAG "RH_30Rnd_556x45_M855A1:8","30Rnd_556x45_Stanag_Tracer_Red:2"
-  #define WEST_CARBINE_SCOPE "rhsusf_acc_eotech_552"
-  #define WEST_CARBINE_RAIL "rhsusf_acc_anpeq15A"
+  	#define WEST_CARBINE_SCOPE "rhsusf_acc_eotech_552"
+  	#define WEST_CARBINE_RAIL "rhsusf_acc_anpeq15A"
 	// AR
 	#define WEST_AR "hlc_lmg_minimi_railed"
 	#define WEST_AR_MAG "hlc_200rnd_556x45_M_SAW:2"
 	#define WEST_AR_MAG2 "hlc_200rnd_556x45_M_SAW:2"
-  #define WEST_AR_SCOPE "rhsusf_acc_eotech_552"
-  #define WEST_AR_RAIL "rhsusf_acc_anpeq15A"
+  	#define WEST_AR_SCOPE "rhsusf_acc_eotech_552"
+  	#define WEST_AR_RAIL "rhsusf_acc_anpeq15A"
 	// AT
 	#define WEST_AT "rhs_weap_M136"
 	#define WEST_AT_MAG "rhs_m136_mag"
 	// MMG
 	#define WEST_MMG "rhs_weap_m240B"
 	#define WEST_MMG_MAG "rhsusf_100Rnd_762x51:5"
-  #define WEST_MMG_SCOPE "rhsusf_acc_eotech_552"
-  #define WEST_MMG_RAIL "rhsusf_acc_anpeq15A"
+  	#define WEST_MMG_SCOPE "rhsusf_acc_eotech_552"
+ 	#define WEST_MMG_RAIL "rhsusf_acc_anpeq15A"
 	// MAT
 	#define WEST_MAT "launch_I_Titan_short_F"
 	#define WEST_MAT_MAG "Titan_AT:2","Titan_AP:1"
@@ -52,18 +52,18 @@ class blu_f {
 	// Sniper Rifle
 	#define WEST_SNIPER "hlc_rifle_psg1"
 	#define WEST_SNIPER_MAG "hlc_20rnd_762x51_barrier_G3:8"
-  #define WEST_SNIPER_SCOPE "rhsusf_acc_LEUPOLDMK4_2"
-  #define WEST_SNIPER_RAIL "rhsusf_acc_anpeq15side"
+  	#define WEST_SNIPER_SCOPE "rhsusf_acc_LEUPOLDMK4_2"
+  	#define WEST_SNIPER_RAIL "rhsusf_acc_anpeq15side"
 	// Spotter Rifle
 	#define WEST_SPOTTER "hlc_rifle_g3ka4"
 	#define WEST_SPOTTER_MAG "hlc_20rnd_762x51_b_G3:8"
-  #define WEST_SPOTTER_SCOPE "rhsusf_acc_eotech_552"
-  #define WEST_SPOTTER_RAIL "rhsusf_acc_anpeq15A"
+  	#define WEST_SPOTTER_SCOPE "rhsusf_acc_eotech_552"
+  	#define WEST_SPOTTER_RAIL "rhsusf_acc_anpeq15A"
 	// SMG
 	#define WEST_SMG "hlc_smg_MP5N"
 	#define WEST_SMG_MAG "hlc_30Rnd_9x19_B_MP5:6"
-  #define WEST_SMG_SCOPE "rhsusf_acc_eotech_552"
-  #define WEST_SMG_RAIL "rhsusf_acc_anpeq15A"
+  	#define WEST_SMG_SCOPE "rhsusf_acc_eotech_552"
+  	#define WEST_SMG_RAIL "rhsusf_acc_anpeq15A"
 	// Pistol
 	#define WEST_PISTOL "hgun_P07_F"
 	#define WEST_PISTOL_MAG "16Rnd_9x21_Mag:4"
@@ -72,15 +72,15 @@ class blu_f {
 	#define WEST_RADIO_SHORTWAVE "tf_anprc152"
 	#define WEST_RADIO_MANPACK "tf_rt1523g_big_bwmod"
 	#define WEST_RADIO_AIRBORNE "tf_anarc210"
-  // Throwables
-  #define WEST_SMOKE_WHITE "SmokeShell:2"
-  #define WEST_SMOKE_COLOR "SmokeShellGreen:2"
-  #define WEST_CHEMLIGHT "Chemlight_green:2"
-  #define WEST_FRAG "HandGrenade:2"
-  // Backpacks
-  #define WEST_PACK_LIGHT "B_AssaultPack_blk"
-  #define WEST_PACK_MEDIUM "B_Kitbag_rgr"
-  #define WEST_PACK_HEAVY "B_Carryall_oli"
+  	// Throwables
+  	#define WEST_SMOKE_WHITE "SmokeShell:2"
+  	#define WEST_SMOKE_COLOR "SmokeShellGreen:2"
+  	#define WEST_CHEMLIGHT "Chemlight_green:2"
+  	#define WEST_FRAG "HandGrenade:2"
+  	// Backpacks
+  	#define WEST_PACK_LIGHT "B_AssaultPack_blk"
+  	#define WEST_PACK_MEDIUM "B_Kitbag_rgr"
+  	#define WEST_PACK_HEAVY "B_Carryall_oli"
 
 	// By default, BLUFOR uses White, Black, and Asian faces.
 	// If you want something else, specify the list here.
