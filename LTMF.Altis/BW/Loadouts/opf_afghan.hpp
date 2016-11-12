@@ -2,7 +2,7 @@
 * Description:
 * Loadout definition for Afghan insurgent forces
 * Weapons: AK47/RPK/RPG/SVD
-* Uniforms: CAF Afghan fatigues
+* Uniforms: Project Opfor Afghan fatigues
 * Extremely limited equipment
 *
 * Author:
@@ -148,43 +148,12 @@ class opf_f {
 
     // Define the list of possible uniforms that units will wear
     uniform[] = {
-      "U_CAF_AG_ME_FATIGUES_01",
-      "U_CAF_AG_ME_FATIGUES_01a",
-      "U_CAF_AG_ME_FATIGUES_01b",
-      "U_CAF_AG_ME_FATIGUES_01c",
-      "U_CAF_AG_ME_FATIGUES_01d",
-      "U_CAF_AG_ME_ROBES_Mil_01",
-      "U_CAF_AG_ME_ROBES_mil_01a",
-      "U_CAF_AG_ME_ROBES_01",
-      "U_CAF_AG_ME_ROBES_01a",
-      "U_CAF_AG_ME_ROBES_01b",
-      "U_CAF_AG_ME_ROBES_01c",
-      "U_CAF_AG_ME_ROBES_01d",
-      "U_CAF_AG_ME_ROBES_02",
-      "U_CAF_AG_ME_ROBES_02a",
-      "U_CAF_AG_ME_ROBES_02b",
-      "U_CAF_AG_ME_ROBES_02c",
-      "U_CAF_AG_ME_ROBES_03",
-      "U_CAF_AG_ME_ROBES_03a",
-      "U_CAF_AG_ME_ROBES_03b",
-      "U_CAF_AG_ME_ROBES_03c",
-      "U_CAF_AG_ME_ROBES_03d",
-      "U_CAF_AG_ME_ROBES_04",
-      "U_CAF_AG_ME_ROBES_04a",
-      "U_CAF_AG_ME_ROBES_04b",
-      "U_CAF_AG_ME_ROBES_04c",
-      "U_CAF_AG_ME_ROBES_04d"
+      "LOP_U_TAK_Civ_Fatigue_01",
+      "LOP_U_TAK_Civ_Fatigue_02",
+      "LOP_U_TAK_Civ_Fatigue_04"
     };
     // Define the list of possible vests that units will wear
-    vest[] = {
-      "rhs_vydra_3m",
-      "rhs_6sh46",
-      "rhs_6b23",
-      "rhs_6b23_ML_crewofficer",
-      "rhs_6b23_ML_crew",
-      "rhs_6sh92",
-      "rhs_6sh92_vog",
-      "rhs_6b23_rifleman",
+    vest[] = {      
       "V_Chestrig_blk",
       "V_Chestrig_rgr",
       "V_Chestrig_khk",
@@ -196,21 +165,14 @@ class opf_f {
       "V_BandollierB_oli"
     };
     // Define the list of possible headgear that units will wear
-    headgear[] = {
-      "H_caf_ag_turban",
+    headgear[] = {      
       "H_Shemag_olive",
       "H_ShemagOpen_tan",
       "H_ShemagOpen_khk",
-      "H_caf_ag_paktol_04",
-      "H_caf_ag_paktol",
-      "H_caf_ag_paktol_03",
-      "H_caf_ag_paktol_02",
-      "H_caf_ag_paktol_04",
-      "H_caf_ag_paktol_04",
-      "ibr_mol_redberet",
-      "H_caf_ag_fur2",
-      "H_caf_ag_fur",
-      "H_caf_ag_wrap"
+      "LOP_H_Pakol",
+      "LOP_H_Turban",
+      "LOP_H_Turban_mask",
+      "LOP_H_Worker_cap"
     };
     // Define the list of possible facewear that units will wear
     facewear[] = {};
@@ -491,32 +453,9 @@ class opf_f {
   // Define the base class for Spotter units
   class O_spotter_F {
     uniform[] = {
-      "U_CAF_AG_ME_FATIGUES_01",
-      "U_CAF_AG_ME_FATIGUES_01a",
-      "U_CAF_AG_ME_FATIGUES_01b",
-      "U_CAF_AG_ME_FATIGUES_01c",
-      "U_CAF_AG_ME_FATIGUES_01d",
-      "U_CAF_AG_ME_ROBES_Mil_01",
-      "U_CAF_AG_ME_ROBES_mil_01a",
-      "U_CAF_AG_ME_ROBES_01",
-      "U_CAF_AG_ME_ROBES_01a",
-      "U_CAF_AG_ME_ROBES_01b",
-      "U_CAF_AG_ME_ROBES_01c",
-      "U_CAF_AG_ME_ROBES_01d",
-      "U_CAF_AG_ME_ROBES_02",
-      "U_CAF_AG_ME_ROBES_02a",
-      "U_CAF_AG_ME_ROBES_02b",
-      "U_CAF_AG_ME_ROBES_02c",
-      "U_CAF_AG_ME_ROBES_03",
-      "U_CAF_AG_ME_ROBES_03a",
-      "U_CAF_AG_ME_ROBES_03b",
-      "U_CAF_AG_ME_ROBES_03c",
-      "U_CAF_AG_ME_ROBES_03d",
-      "U_CAF_AG_ME_ROBES_04",
-      "U_CAF_AG_ME_ROBES_04a",
-      "U_CAF_AG_ME_ROBES_04b",
-      "U_CAF_AG_ME_ROBES_04c",
-      "U_CAF_AG_ME_ROBES_04d"
+      "LOP_U_TAK_Civ_Fatigue_01",
+      "LOP_U_TAK_Civ_Fatigue_02",
+      "LOP_U_TAK_Civ_Fatigue_04"
     };
     vest[] = {
       "rhs_vydra_3m",
@@ -538,20 +477,13 @@ class opf_f {
       "V_BandollierB_oli"
     };
     headgear[] = {
-      "H_caf_ag_turban",
       "H_Shemag_olive",
       "H_ShemagOpen_tan",
       "H_ShemagOpen_khk",
-      "H_caf_ag_paktol_04",
-      "H_caf_ag_paktol",
-      "H_caf_ag_paktol_03",
-      "H_caf_ag_paktol_02",
-      "H_caf_ag_paktol_04",
-      "H_caf_ag_paktol_04",
-      "ibr_mol_redberet",
-      "H_caf_ag_fur2",
-      "H_caf_ag_fur",
-      "H_caf_ag_wrap"
+      "LOP_H_Pakol",
+      "LOP_H_Turban",
+      "LOP_H_Turban_mask",
+      "LOP_H_Worker_cap"
     };
     facewear[] = {};
     backpack[] = {
@@ -599,32 +531,9 @@ class opf_f {
   // Define the base class for Sniper units
   class O_sniper_F {
     uniform[] = {
-      "U_CAF_AG_ME_FATIGUES_01",
-      "U_CAF_AG_ME_FATIGUES_01a",
-      "U_CAF_AG_ME_FATIGUES_01b",
-      "U_CAF_AG_ME_FATIGUES_01c",
-      "U_CAF_AG_ME_FATIGUES_01d",
-      "U_CAF_AG_ME_ROBES_Mil_01",
-      "U_CAF_AG_ME_ROBES_mil_01a",
-      "U_CAF_AG_ME_ROBES_01",
-      "U_CAF_AG_ME_ROBES_01a",
-      "U_CAF_AG_ME_ROBES_01b",
-      "U_CAF_AG_ME_ROBES_01c",
-      "U_CAF_AG_ME_ROBES_01d",
-      "U_CAF_AG_ME_ROBES_02",
-      "U_CAF_AG_ME_ROBES_02a",
-      "U_CAF_AG_ME_ROBES_02b",
-      "U_CAF_AG_ME_ROBES_02c",
-      "U_CAF_AG_ME_ROBES_03",
-      "U_CAF_AG_ME_ROBES_03a",
-      "U_CAF_AG_ME_ROBES_03b",
-      "U_CAF_AG_ME_ROBES_03c",
-      "U_CAF_AG_ME_ROBES_03d",
-      "U_CAF_AG_ME_ROBES_04",
-      "U_CAF_AG_ME_ROBES_04a",
-      "U_CAF_AG_ME_ROBES_04b",
-      "U_CAF_AG_ME_ROBES_04c",
-      "U_CAF_AG_ME_ROBES_04d"
+      "LOP_U_TAK_Civ_Fatigue_01",
+      "LOP_U_TAK_Civ_Fatigue_02",
+      "LOP_U_TAK_Civ_Fatigue_04"
     };
     vest[] = {
       "rhs_vydra_3m",
@@ -647,20 +556,13 @@ class opf_f {
       "V_BandollierB_oli"
     };
     headgear[] = {
-      "H_caf_ag_turban",
       "H_Shemag_olive",
       "H_ShemagOpen_tan",
       "H_ShemagOpen_khk",
-      "H_caf_ag_paktol_04",
-      "H_caf_ag_paktol",
-      "H_caf_ag_paktol_03",
-      "H_caf_ag_paktol_02",
-      "H_caf_ag_paktol_04",
-      "H_caf_ag_paktol_04",
-      "ibr_mol_redberet",
-      "H_caf_ag_fur2",
-      "H_caf_ag_fur",
-      "H_caf_ag_wrap"
+      "LOP_H_Pakol",
+      "LOP_H_Turban",
+      "LOP_H_Turban_mask",
+      "LOP_H_Worker_cap"
     };
     facewear[] = {};
     backpack[] = {
@@ -709,32 +611,9 @@ class opf_f {
   // Define the base class for all Helicopter pilot and crew units
   class O_Helipilot_F {
     uniform[] = {
-      "U_CAF_AG_ME_FATIGUES_01",
-      "U_CAF_AG_ME_FATIGUES_01a",
-      "U_CAF_AG_ME_FATIGUES_01b",
-      "U_CAF_AG_ME_FATIGUES_01c",
-      "U_CAF_AG_ME_FATIGUES_01d",
-      "U_CAF_AG_ME_ROBES_Mil_01",
-      "U_CAF_AG_ME_ROBES_mil_01a",
-      "U_CAF_AG_ME_ROBES_01",
-      "U_CAF_AG_ME_ROBES_01a",
-      "U_CAF_AG_ME_ROBES_01b",
-      "U_CAF_AG_ME_ROBES_01c",
-      "U_CAF_AG_ME_ROBES_01d",
-      "U_CAF_AG_ME_ROBES_02",
-      "U_CAF_AG_ME_ROBES_02a",
-      "U_CAF_AG_ME_ROBES_02b",
-      "U_CAF_AG_ME_ROBES_02c",
-      "U_CAF_AG_ME_ROBES_03",
-      "U_CAF_AG_ME_ROBES_03a",
-      "U_CAF_AG_ME_ROBES_03b",
-      "U_CAF_AG_ME_ROBES_03c",
-      "U_CAF_AG_ME_ROBES_03d",
-      "U_CAF_AG_ME_ROBES_04",
-      "U_CAF_AG_ME_ROBES_04a",
-      "U_CAF_AG_ME_ROBES_04b",
-      "U_CAF_AG_ME_ROBES_04c",
-      "U_CAF_AG_ME_ROBES_04d"
+      "LOP_U_TAK_Civ_Fatigue_01",
+      "LOP_U_TAK_Civ_Fatigue_02",
+      "LOP_U_TAK_Civ_Fatigue_04"
     };
     headgear[] = {
       "rhs_gssh18"
@@ -786,48 +665,18 @@ class opf_f {
   // Define the base class for all vehicle crew and engineer units
   class O_crew_F {
     uniform[] = {
-      "U_CAF_AG_ME_FATIGUES_01",
-      "U_CAF_AG_ME_FATIGUES_01a",
-      "U_CAF_AG_ME_FATIGUES_01b",
-      "U_CAF_AG_ME_FATIGUES_01c",
-      "U_CAF_AG_ME_FATIGUES_01d",
-      "U_CAF_AG_ME_ROBES_Mil_01",
-      "U_CAF_AG_ME_ROBES_mil_01a",
-      "U_CAF_AG_ME_ROBES_01",
-      "U_CAF_AG_ME_ROBES_01a",
-      "U_CAF_AG_ME_ROBES_01b",
-      "U_CAF_AG_ME_ROBES_01c",
-      "U_CAF_AG_ME_ROBES_01d",
-      "U_CAF_AG_ME_ROBES_02",
-      "U_CAF_AG_ME_ROBES_02a",
-      "U_CAF_AG_ME_ROBES_02b",
-      "U_CAF_AG_ME_ROBES_02c",
-      "U_CAF_AG_ME_ROBES_03",
-      "U_CAF_AG_ME_ROBES_03a",
-      "U_CAF_AG_ME_ROBES_03b",
-      "U_CAF_AG_ME_ROBES_03c",
-      "U_CAF_AG_ME_ROBES_03d",
-      "U_CAF_AG_ME_ROBES_04",
-      "U_CAF_AG_ME_ROBES_04a",
-      "U_CAF_AG_ME_ROBES_04b",
-      "U_CAF_AG_ME_ROBES_04c",
-      "U_CAF_AG_ME_ROBES_04d"
+      "LOP_U_TAK_Civ_Fatigue_01",
+      "LOP_U_TAK_Civ_Fatigue_02",
+      "LOP_U_TAK_Civ_Fatigue_04"
     };
     headgear[] = {
-      "H_caf_ag_turban",
       "H_Shemag_olive",
       "H_ShemagOpen_tan",
       "H_ShemagOpen_khk",
-      "H_caf_ag_paktol_04",
-      "H_caf_ag_paktol",
-      "H_caf_ag_paktol_03",
-      "H_caf_ag_paktol_02",
-      "H_caf_ag_paktol_04",
-      "H_caf_ag_paktol_04",
-      "ibr_mol_redberet",
-      "H_caf_ag_fur2",
-      "H_caf_ag_fur",
-      "H_caf_ag_wrap"
+      "LOP_H_Pakol",
+      "LOP_H_Turban",
+      "LOP_H_Turban_mask",
+      "LOP_H_Worker_cap"
     };
     vest[] = {"rhs_6b23_ML_crew"};
     facewear[] = {};
