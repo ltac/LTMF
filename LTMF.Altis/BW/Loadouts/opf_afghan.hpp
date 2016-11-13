@@ -2,7 +2,7 @@
 * Description:
 * Loadout definition for Afghan insurgent forces
 * Weapons: AK47/RPK/RPG/SVD
-* Uniforms: CAF Afghan fatigues
+* Uniforms: Project Opfor Afghan fatigues
 * Extremely limited equipment
 *
 * Author:
@@ -29,11 +29,12 @@ class opf_f {
   #define EAST_CARBINE_MAG "rhs_30Rnd_762x39mm:8","rhs_30Rnd_762x39mm_tracer:2"
   #define EAST_CARBINE_SCOPE "RH_barska_rds"
   #define EAST_CARBINE_RAIL "rhsusf_acc_anpeq15A"
-  // AR
-  #define EAST_AR "hlc_rifle_rpk"
-  #define EAST_AR_MAG "hlc_75Rnd_762x39_m_rpk:5"
-  #define EAST_AR_MAG2 "hlc_75Rnd_762x39_m_rpk:5"
-  #define EAST_AR_SCOPE "rhs_acc_pkas"
+  // AR  
+  #define EAST_AR "rhs_weap_pkm"
+  #define EAST_AR_MAG "rhs_100Rnd_762x54mmR:2"
+  #define EAST_AR_MAG2 "rhs_100Rnd_762x54mmR_green:2"
+  #define EAST_AR_SCOPE "RH_barska_rds"
+  #define EAST_AR_RAIL "rhsusf_acc_anpeq15A"
   // AT
   #define EAST_AT "rhs_weap_rpg7"
   #define EAST_AT_MAG "rhs_rpg7_PG7VL_mag"
@@ -49,9 +50,9 @@ class opf_f {
   #define EAST_SAM "rhs_weap_igla"
   #define EAST_SAM_MAG "rhs_mag_9k38_rocket:2"
   // Sniper Rifle
-  #define EAST_SNIPER "rhs_weap_svdp"
-  #define EAST_SNIPER_MAG "rhs_10Rnd_762x54mmR_7N1:8"
-  #define EAST_SNIPER_SCOPE "rhs_acc_pso1m2"
+  #define EAST_SNIPER "ibr_svd"
+  #define EAST_SNIPER_MAG "10Rnd_762x54R_ibr:8"
+  #define EAST_SNIPER_SCOPE "rhs_acc_1pn93_1"
   #define EAST_SNIPER_RAIL "rhsusf_acc_anpeq15side"
   // Spotter Rifle
   #define EAST_SPOTTER "rhs_weap_akm"
@@ -127,8 +128,7 @@ class opf_f {
     };
     TransportItems[] = {
       "ACE_fieldDressing:12",
-      "ACE_morphine:4",
-      "ItemGPS"
+      "ACE_morphine:4"
     };
   };
 
@@ -148,43 +148,12 @@ class opf_f {
 
     // Define the list of possible uniforms that units will wear
     uniform[] = {
-      "U_CAF_AG_ME_FATIGUES_01",
-      "U_CAF_AG_ME_FATIGUES_01a",
-      "U_CAF_AG_ME_FATIGUES_01b",
-      "U_CAF_AG_ME_FATIGUES_01c",
-      "U_CAF_AG_ME_FATIGUES_01d",
-      "U_CAF_AG_ME_ROBES_Mil_01",
-      "U_CAF_AG_ME_ROBES_mil_01a",
-      "U_CAF_AG_ME_ROBES_01",
-      "U_CAF_AG_ME_ROBES_01a",
-      "U_CAF_AG_ME_ROBES_01b",
-      "U_CAF_AG_ME_ROBES_01c",
-      "U_CAF_AG_ME_ROBES_01d",
-      "U_CAF_AG_ME_ROBES_02",
-      "U_CAF_AG_ME_ROBES_02a",
-      "U_CAF_AG_ME_ROBES_02b",
-      "U_CAF_AG_ME_ROBES_02c",
-      "U_CAF_AG_ME_ROBES_03",
-      "U_CAF_AG_ME_ROBES_03a",
-      "U_CAF_AG_ME_ROBES_03b",
-      "U_CAF_AG_ME_ROBES_03c",
-      "U_CAF_AG_ME_ROBES_03d",
-      "U_CAF_AG_ME_ROBES_04",
-      "U_CAF_AG_ME_ROBES_04a",
-      "U_CAF_AG_ME_ROBES_04b",
-      "U_CAF_AG_ME_ROBES_04c",
-      "U_CAF_AG_ME_ROBES_04d"
+      "LOP_U_TAK_Civ_Fatigue_01",
+      "LOP_U_TAK_Civ_Fatigue_02",
+      "LOP_U_TAK_Civ_Fatigue_04"
     };
     // Define the list of possible vests that units will wear
-    vest[] = {
-      "rhs_vydra_3m",
-      "rhs_6sh46",
-      "rhs_6b23",
-      "rhs_6b23_ML_crewofficer",
-      "rhs_6b23_ML_crew",
-      "rhs_6sh92",
-      "rhs_6sh92_vog",
-      "rhs_6b23_rifleman",
+    vest[] = {      
       "V_Chestrig_blk",
       "V_Chestrig_rgr",
       "V_Chestrig_khk",
@@ -196,21 +165,14 @@ class opf_f {
       "V_BandollierB_oli"
     };
     // Define the list of possible headgear that units will wear
-    headgear[] = {
-      "H_caf_ag_turban",
+    headgear[] = {      
       "H_Shemag_olive",
       "H_ShemagOpen_tan",
       "H_ShemagOpen_khk",
-      "H_caf_ag_paktol_04",
-      "H_caf_ag_paktol",
-      "H_caf_ag_paktol_03",
-      "H_caf_ag_paktol_02",
-      "H_caf_ag_paktol_04",
-      "H_caf_ag_paktol_04",
-      "ibr_mol_redberet",
-      "H_caf_ag_fur2",
-      "H_caf_ag_fur",
-      "H_caf_ag_wrap"
+      "LOP_H_Pakol",
+      "LOP_H_Turban",
+      "LOP_H_Turban_mask",
+      "LOP_H_Worker_cap"
     };
     // Define the list of possible facewear that units will wear
     facewear[] = {};
@@ -238,7 +200,9 @@ class opf_f {
     // List the items (along with the amount) that will be placed
     // specifically in the unit's backpack
     backpackItems[] = {
-
+      "ACE_fieldDressing:3",
+      "ACE_morphine",
+      "ACE_IR_Strobe_item"
     };
     // List the magazines, explosives, and throwables
     // that will be placed wherever there is room in the unit's
@@ -251,11 +215,7 @@ class opf_f {
     // List the items (along with the amount) that will be placed
     // wherever there is room in the unit's inventory
     items[] = {
-      "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_IR_Strobe_item",
-      "ACE_CableTie",
-      "ACE_Flashlight_XL50"
+      "ACE_Banana" // In case of emergency.
     };
     // List the gear items txhat should be automatically slotted
     // correctly for the unit (like Map, Watch, NVG, etc)
@@ -493,32 +453,9 @@ class opf_f {
   // Define the base class for Spotter units
   class O_spotter_F {
     uniform[] = {
-      "U_CAF_AG_ME_FATIGUES_01",
-      "U_CAF_AG_ME_FATIGUES_01a",
-      "U_CAF_AG_ME_FATIGUES_01b",
-      "U_CAF_AG_ME_FATIGUES_01c",
-      "U_CAF_AG_ME_FATIGUES_01d",
-      "U_CAF_AG_ME_ROBES_Mil_01",
-      "U_CAF_AG_ME_ROBES_mil_01a",
-      "U_CAF_AG_ME_ROBES_01",
-      "U_CAF_AG_ME_ROBES_01a",
-      "U_CAF_AG_ME_ROBES_01b",
-      "U_CAF_AG_ME_ROBES_01c",
-      "U_CAF_AG_ME_ROBES_01d",
-      "U_CAF_AG_ME_ROBES_02",
-      "U_CAF_AG_ME_ROBES_02a",
-      "U_CAF_AG_ME_ROBES_02b",
-      "U_CAF_AG_ME_ROBES_02c",
-      "U_CAF_AG_ME_ROBES_03",
-      "U_CAF_AG_ME_ROBES_03a",
-      "U_CAF_AG_ME_ROBES_03b",
-      "U_CAF_AG_ME_ROBES_03c",
-      "U_CAF_AG_ME_ROBES_03d",
-      "U_CAF_AG_ME_ROBES_04",
-      "U_CAF_AG_ME_ROBES_04a",
-      "U_CAF_AG_ME_ROBES_04b",
-      "U_CAF_AG_ME_ROBES_04c",
-      "U_CAF_AG_ME_ROBES_04d"
+      "LOP_U_TAK_Civ_Fatigue_01",
+      "LOP_U_TAK_Civ_Fatigue_02",
+      "LOP_U_TAK_Civ_Fatigue_04"
     };
     vest[] = {
       "rhs_vydra_3m",
@@ -540,20 +477,13 @@ class opf_f {
       "V_BandollierB_oli"
     };
     headgear[] = {
-      "H_caf_ag_turban",
       "H_Shemag_olive",
       "H_ShemagOpen_tan",
       "H_ShemagOpen_khk",
-      "H_caf_ag_paktol_04",
-      "H_caf_ag_paktol",
-      "H_caf_ag_paktol_03",
-      "H_caf_ag_paktol_02",
-      "H_caf_ag_paktol_04",
-      "H_caf_ag_paktol_04",
-      "ibr_mol_redberet",
-      "H_caf_ag_fur2",
-      "H_caf_ag_fur",
-      "H_caf_ag_wrap"
+      "LOP_H_Pakol",
+      "LOP_H_Turban",
+      "LOP_H_Turban_mask",
+      "LOP_H_Worker_cap"
     };
     facewear[] = {};
     backpack[] = {
@@ -580,14 +510,12 @@ class opf_f {
     };
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_CableTie",
-      "ACE_Flashlight_XL50"
+      "ACE_morphine"
     };
     attachments[] = {
-			EAST_SPOTTER_SCOPE,
-			EAST_SPOTTER_RAIL
-		};
+      EAST_SPOTTER_SCOPE,
+      EAST_SPOTTER_RAIL
+    };
     backpackItems[] = {};
     linkedItems[] = {
       "itemWatch",
@@ -603,32 +531,9 @@ class opf_f {
   // Define the base class for Sniper units
   class O_sniper_F {
     uniform[] = {
-      "U_CAF_AG_ME_FATIGUES_01",
-      "U_CAF_AG_ME_FATIGUES_01a",
-      "U_CAF_AG_ME_FATIGUES_01b",
-      "U_CAF_AG_ME_FATIGUES_01c",
-      "U_CAF_AG_ME_FATIGUES_01d",
-      "U_CAF_AG_ME_ROBES_Mil_01",
-      "U_CAF_AG_ME_ROBES_mil_01a",
-      "U_CAF_AG_ME_ROBES_01",
-      "U_CAF_AG_ME_ROBES_01a",
-      "U_CAF_AG_ME_ROBES_01b",
-      "U_CAF_AG_ME_ROBES_01c",
-      "U_CAF_AG_ME_ROBES_01d",
-      "U_CAF_AG_ME_ROBES_02",
-      "U_CAF_AG_ME_ROBES_02a",
-      "U_CAF_AG_ME_ROBES_02b",
-      "U_CAF_AG_ME_ROBES_02c",
-      "U_CAF_AG_ME_ROBES_03",
-      "U_CAF_AG_ME_ROBES_03a",
-      "U_CAF_AG_ME_ROBES_03b",
-      "U_CAF_AG_ME_ROBES_03c",
-      "U_CAF_AG_ME_ROBES_03d",
-      "U_CAF_AG_ME_ROBES_04",
-      "U_CAF_AG_ME_ROBES_04a",
-      "U_CAF_AG_ME_ROBES_04b",
-      "U_CAF_AG_ME_ROBES_04c",
-      "U_CAF_AG_ME_ROBES_04d"
+      "LOP_U_TAK_Civ_Fatigue_01",
+      "LOP_U_TAK_Civ_Fatigue_02",
+      "LOP_U_TAK_Civ_Fatigue_04"
     };
     vest[] = {
       "rhs_vydra_3m",
@@ -651,20 +556,13 @@ class opf_f {
       "V_BandollierB_oli"
     };
     headgear[] = {
-      "H_caf_ag_turban",
       "H_Shemag_olive",
       "H_ShemagOpen_tan",
       "H_ShemagOpen_khk",
-      "H_caf_ag_paktol_04",
-      "H_caf_ag_paktol",
-      "H_caf_ag_paktol_03",
-      "H_caf_ag_paktol_02",
-      "H_caf_ag_paktol_04",
-      "H_caf_ag_paktol_04",
-      "ibr_mol_redberet",
-      "H_caf_ag_fur2",
-      "H_caf_ag_fur",
-      "H_caf_ag_wrap"
+      "LOP_H_Pakol",
+      "LOP_H_Turban",
+      "LOP_H_Turban_mask",
+      "LOP_H_Worker_cap"
     };
     facewear[] = {};
     backpack[] = {
@@ -691,9 +589,7 @@ class opf_f {
     };
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_CableTie",
-      "ACE_Flashlight_XL50"
+      "ACE_morphine"
     };
     backpackItems[] = {};
     linkedItems[] = {
@@ -703,8 +599,8 @@ class opf_f {
       "Binocular"
     };
     attachments[] = {
-			EAST_SNIPER_SCOPE
-		};
+      EAST_SNIPER_SCOPE
+    };
 
     radio = EAST_RADIO_SHORTWAVE;
   };
@@ -715,32 +611,9 @@ class opf_f {
   // Define the base class for all Helicopter pilot and crew units
   class O_Helipilot_F {
     uniform[] = {
-      "U_CAF_AG_ME_FATIGUES_01",
-      "U_CAF_AG_ME_FATIGUES_01a",
-      "U_CAF_AG_ME_FATIGUES_01b",
-      "U_CAF_AG_ME_FATIGUES_01c",
-      "U_CAF_AG_ME_FATIGUES_01d",
-      "U_CAF_AG_ME_ROBES_Mil_01",
-      "U_CAF_AG_ME_ROBES_mil_01a",
-      "U_CAF_AG_ME_ROBES_01",
-      "U_CAF_AG_ME_ROBES_01a",
-      "U_CAF_AG_ME_ROBES_01b",
-      "U_CAF_AG_ME_ROBES_01c",
-      "U_CAF_AG_ME_ROBES_01d",
-      "U_CAF_AG_ME_ROBES_02",
-      "U_CAF_AG_ME_ROBES_02a",
-      "U_CAF_AG_ME_ROBES_02b",
-      "U_CAF_AG_ME_ROBES_02c",
-      "U_CAF_AG_ME_ROBES_03",
-      "U_CAF_AG_ME_ROBES_03a",
-      "U_CAF_AG_ME_ROBES_03b",
-      "U_CAF_AG_ME_ROBES_03c",
-      "U_CAF_AG_ME_ROBES_03d",
-      "U_CAF_AG_ME_ROBES_04",
-      "U_CAF_AG_ME_ROBES_04a",
-      "U_CAF_AG_ME_ROBES_04b",
-      "U_CAF_AG_ME_ROBES_04c",
-      "U_CAF_AG_ME_ROBES_04d"
+      "LOP_U_TAK_Civ_Fatigue_01",
+      "LOP_U_TAK_Civ_Fatigue_02",
+      "LOP_U_TAK_Civ_Fatigue_04"
     };
     headgear[] = {
       "rhs_gssh18"
@@ -765,9 +638,7 @@ class opf_f {
     backpackItems[] += {"ACE_key_east"};
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_CableTie",
-      "ACE_Flashlight_XL50"
+      "ACE_morphine"
     };
     linkedItems[] = {
       "ItemWatch",
@@ -775,9 +646,9 @@ class opf_f {
       "ItemCompass"
     };
     attachments[] = {
-			EAST_SMG_SCOPE,
-			EAST_SMG_RAIL
-		};
+      EAST_SMG_SCOPE,
+      EAST_SMG_RAIL
+    };
     radio = EAST_RADIO_SHORTWAVE;
   };
 
@@ -794,48 +665,18 @@ class opf_f {
   // Define the base class for all vehicle crew and engineer units
   class O_crew_F {
     uniform[] = {
-      "U_CAF_AG_ME_FATIGUES_01",
-      "U_CAF_AG_ME_FATIGUES_01a",
-      "U_CAF_AG_ME_FATIGUES_01b",
-      "U_CAF_AG_ME_FATIGUES_01c",
-      "U_CAF_AG_ME_FATIGUES_01d",
-      "U_CAF_AG_ME_ROBES_Mil_01",
-      "U_CAF_AG_ME_ROBES_mil_01a",
-      "U_CAF_AG_ME_ROBES_01",
-      "U_CAF_AG_ME_ROBES_01a",
-      "U_CAF_AG_ME_ROBES_01b",
-      "U_CAF_AG_ME_ROBES_01c",
-      "U_CAF_AG_ME_ROBES_01d",
-      "U_CAF_AG_ME_ROBES_02",
-      "U_CAF_AG_ME_ROBES_02a",
-      "U_CAF_AG_ME_ROBES_02b",
-      "U_CAF_AG_ME_ROBES_02c",
-      "U_CAF_AG_ME_ROBES_03",
-      "U_CAF_AG_ME_ROBES_03a",
-      "U_CAF_AG_ME_ROBES_03b",
-      "U_CAF_AG_ME_ROBES_03c",
-      "U_CAF_AG_ME_ROBES_03d",
-      "U_CAF_AG_ME_ROBES_04",
-      "U_CAF_AG_ME_ROBES_04a",
-      "U_CAF_AG_ME_ROBES_04b",
-      "U_CAF_AG_ME_ROBES_04c",
-      "U_CAF_AG_ME_ROBES_04d"
+      "LOP_U_TAK_Civ_Fatigue_01",
+      "LOP_U_TAK_Civ_Fatigue_02",
+      "LOP_U_TAK_Civ_Fatigue_04"
     };
     headgear[] = {
-      "H_caf_ag_turban",
       "H_Shemag_olive",
       "H_ShemagOpen_tan",
       "H_ShemagOpen_khk",
-      "H_caf_ag_paktol_04",
-      "H_caf_ag_paktol",
-      "H_caf_ag_paktol_03",
-      "H_caf_ag_paktol_02",
-      "H_caf_ag_paktol_04",
-      "H_caf_ag_paktol_04",
-      "ibr_mol_redberet",
-      "H_caf_ag_fur2",
-      "H_caf_ag_fur",
-      "H_caf_ag_wrap"
+      "LOP_H_Pakol",
+      "LOP_H_Turban",
+      "LOP_H_Turban_mask",
+      "LOP_H_Worker_cap"
     };
     vest[] = {"rhs_6b23_ML_crew"};
     facewear[] = {};
@@ -854,9 +695,7 @@ class opf_f {
     backpackItems[] = {"ACE_key_east"};
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_CableTie",
-      "ACE_Flashlight_XL50"
+      "ACE_morphine"
     };
     linkedItems[] = {
       "ItemWatch",
@@ -864,9 +703,9 @@ class opf_f {
       "ItemCompass"
     };
     attachments[] = {
-			EAST_SMG_SCOPE,
-			EAST_SMG_RAIL
-		};
+      EAST_SMG_SCOPE,
+      EAST_SMG_RAIL
+    };
     radio = EAST_RADIO_SHORTWAVE;
   };
 
@@ -881,9 +720,9 @@ class opf_f {
       EAST_SMOKE_WHITE
     };
     attachments[] = {
-			EAST_CARBINE_SCOPE,
-			EAST_CARBINE_RAIL
-		};
+      EAST_CARBINE_SCOPE,
+      EAST_CARBINE_RAIL
+    };
     backpack[] = {
       "B_Kitbag_rgr",
       "B_Kitbag_cbr"
