@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7728.4795,422.47925,8065.7295};
-		dir[]={0.0096074957,-0.90467781,0.42625263};
-		up[]={0.020387141,0.42611274,0.90444267};
-		aside[]={0.99984384,7.6672586e-007,-0.022536639};
+		pos[]={8700.417,41.793823,7472.5947};
+		dir[]={0.76389885,-0.25308317,-0.59384698};
+		up[]={0.19996026,0.96739233,-0.15544918};
+		aside[]={-0.61381537,-1.1082739e-007,-0.78958672};
 	};
 };
 binarizationWanted=0;
@@ -51,6 +51,7 @@ addons[]=
 	"ace_explosives",
 	"A3_Modules_F_Curator_Curator",
 	"cba_xeh",
+	"po_factions_me",
 	"ace_weather",
 	"ace_finger",
 	"ace_captives",
@@ -64,7 +65,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=34;
+		items=35;
 		class Item0
 		{
 			className="RHS_US_A2_AirImport";
@@ -247,54 +248,60 @@ class AddonsMetaData
 		};
 		class Item26
 		{
+			className="po_factions_me";
+			name="po_factions_me";
+			author="Leight, Keeway";
+		};
+		class Item27
+		{
 			className="ace_weather";
 			name="ACE3 - Weather";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item27
+		class Item28
 		{
 			className="ace_finger";
 			name="ACE3 - Finger";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item28
+		class Item29
 		{
 			className="ace_captives";
 			name="ACE3 - Captives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item29
+		class Item30
 		{
 			className="ace_interaction";
 			name="ACE3 - Interaction";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item30
+		class Item31
 		{
 			className="ace_map";
 			name="ACE3 - Map";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item31
+		class Item32
 		{
 			className="ace_zeus";
 			name="ACE3 - Zeus";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item32
+		class Item33
 		{
 			className="ace_advanced_ballistics";
 			name="ACE3 - Advanced Ballistics";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item33
+		class Item34
 		{
 			className="acex_headless";
 			name="ACEX - Headless";

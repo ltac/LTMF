@@ -124,9 +124,7 @@ f_wound_extraFAK = 2;
 // ====================================================================================
 
 // Radio Initialization
+[] execVM "L\radios\radioInit.sqf";
 
-if (f_var_radios != 0) then {
-	[] execVM "L\radios\radioInit.sqf";
-};
 
 // ====================================================================================

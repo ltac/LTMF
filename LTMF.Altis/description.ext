@@ -33,7 +33,7 @@ overviewText = "*** Insert description for mission browser here. ***";
 // ============================================================================================
 
 //Extended Event Handlers:
-class Extended_InitPost_EventHandlers {
+class Extended_Init_EventHandlers {
     class CAManBase {
         class F_AssignGear { init = "_this call F_fnc_assignGearMan; _this call L_fnc_initUnit"; };
     };
@@ -164,20 +164,6 @@ class Params
             texts[] = {"Light","Medium","Heavy"};
             default = 1;
             code = "f_param_backpacks = %1";
-    };
-
-// ============================================================================================
-
-// F3 - Radio Systems Support
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-    class f_param_radios
-    {
-            title = "Radio System";
-            values[] = {0,1,2};
-            texts[] = {"Off","TFR", "ACRE2"};
-            default = 2;
-            code = "f_var_radios = %1";
     };
 
 // ============================================================================================
