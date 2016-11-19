@@ -8,14 +8,14 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=739;
+		nextID=742;
 	};
 	class Camera
 	{
-		pos[]={7584.4194,114.74236,8096.4028};
-		dir[]={0.12194735,-0.46963704,0.87452233};
-		up[]={0.064881831,0.88278443,0.46527663};
-		aside[]={0.99051273,1.0797521e-007,-0.13812307};
+		pos[]={7728.4795,422.47925,8065.7295};
+		dir[]={0.0096074957,-0.90467781,0.42625263};
+		up[]={0.020387141,0.42611274,0.90444267};
+		aside[]={0.99984384,7.6672586e-007,-0.022536639};
 	};
 };
 binarizationWanted=0;
@@ -57,13 +57,14 @@ addons[]=
 	"ace_interaction",
 	"ace_map",
 	"ace_zeus",
-	"ace_advanced_ballistics"
+	"ace_advanced_ballistics",
+	"acex_headless"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=33;
+		items=34;
 		class Item0
 		{
 			className="RHS_US_A2_AirImport";
@@ -293,6 +294,13 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
+		class Item33
+		{
+			className="acex_headless";
+			name="ACEX - Headless";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
 	};
 };
 randomSeed=12583912;
@@ -353,7 +361,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=276;
+		items=278;
 		class Item0
 		{
 			dataType="Object";
@@ -427,7 +435,7 @@ class Mission
 			};
 			id=3;
 			type="RHS_CH_47F";
-			atlOffset=0.00035858154;
+			atlOffset=0.014144897;
 		};
 		class Item4
 		{
@@ -554,7 +562,6 @@ class Mission
 			};
 			id=10;
 			type="RHS_M2A2";
-			atlOffset=-8.2015991e-005;
 		};
 		class Item11
 		{
@@ -573,7 +580,6 @@ class Mission
 			};
 			id=11;
 			type="RHS_M2A2";
-			atlOffset=-0.00013923645;
 		};
 		class Item12
 		{
@@ -592,7 +598,6 @@ class Mission
 			};
 			id=12;
 			type="RHS_M2A2";
-			atlOffset=8.7738037e-005;
 		};
 		class Item13
 		{
@@ -629,7 +634,6 @@ class Mission
 			};
 			id=14;
 			type="RHS_M2A2";
-			atlOffset=-1.5258789e-005;
 		};
 		class Item15
 		{
@@ -648,7 +652,7 @@ class Mission
 			};
 			id=15;
 			type="RHS_M2A2";
-			atlOffset=2.0980835e-005;
+			atlOffset=0.0016450882;
 		};
 		class Item16
 		{
@@ -667,7 +671,6 @@ class Mission
 			};
 			id=16;
 			type="RHS_M2A2";
-			atlOffset=2.0980835e-005;
 		};
 		class Item17
 		{
@@ -686,7 +689,6 @@ class Mission
 			};
 			id=17;
 			type="RHS_M2A2";
-			atlOffset=2.8610229e-005;
 		};
 		class Item18
 		{
@@ -2546,7 +2548,6 @@ class Mission
 				angles[]={0,0,6.2791886};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -2685,6 +2686,7 @@ class Mission
 			};
 			id=58;
 			type="rhs_tigr_ffv_msv";
+			atlOffset=-1.9822559;
 		};
 		class Item59
 		{
@@ -2702,7 +2704,7 @@ class Mission
 			};
 			id=59;
 			type="RHS_Ural_MSV_01";
-			atlOffset=0.0035552979;
+			atlOffset=0.31210709;
 		};
 		class Item60
 		{
@@ -2720,7 +2722,7 @@ class Mission
 			};
 			id=60;
 			type="RHS_Ural_MSV_01";
-			atlOffset=0.0036277771;
+			atlOffset=0.31407738;
 		};
 		class Item61
 		{
@@ -2738,7 +2740,7 @@ class Mission
 			};
 			id=61;
 			type="RHS_Ural_MSV_01";
-			atlOffset=0.0035629272;
+			atlOffset=0.31171036;
 		};
 		class Item62
 		{
@@ -17574,6 +17576,110 @@ class Mission
 				};
 				nAttributes=10;
 			};
+		};
+		class Item276
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7699.9658,0,8341.9502};
+			};
+			id=739;
+			type="acex_headless_module";
+			atlOffset=104.50023;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="acex_headless_module_delay";
+					expression="_this setVariable ['delay',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="acex_headless_module_log";
+					expression="_this setVariable ['log',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="acex_headless_module_enabled";
+					expression="_this setVariable ['enabled',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="acex_headless_module_endMission";
+					expression="_this setVariable ['endMission',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item277
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7798.1509,0.00012207031,8345.0039};
+			};
+			name="HC";
+			isPlayable=1;
+			id=741;
+			type="HeadlessClient_F";
+			atlOffset=99.142006;
 		};
 	};
 };
