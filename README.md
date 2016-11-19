@@ -5,7 +5,7 @@ Based on F3 Mission Framework Version 3.3.0
 
 ## INSTALLATION ##
 
-To begin using the Software, move the LTMF.Altis folder into one of the following directories:
+To begin using the Software, move the LTMF.VR folder into one of the following directories:
 
 * \My Documents\Arma 3\MPMissions\
 * \My Documents\Arma 3 Other Profiles\YourPlayerName\MPMissions\
@@ -33,4 +33,8 @@ http://ferstaberinde.com/f3/en//index.php?title=Main_Page
  
  * ##### Modified for Legion Lactical #####
 
- Contributors: Eddbc, Grubes, Imperator
+ Legion Tactical Contributors: 
+	* Eddbc
+	* Grubes
+	* Imperator
+	* Stampede

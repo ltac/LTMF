@@ -1,13 +1,13 @@
 <#
  # .Synopsis
- # Finds and returns the folder of the base LTMF.Altis mission
+ # Finds and returns the folder of the base LTMF.VR mission
  #
  # .Description
- # Finds and returns the folder of the base LTMF.Altis mission
+ # Finds and returns the folder of the base LTMF.VR mission
  #
  # .Outputs
- # 		[System.String] The absolute path to the LTMF.Altis mission folder
+ # 		[System.String] The absolute path to the LTMF.VR mission folder
  #>
 function Get-BaseFrameworkPath {
-	Join-Path (Get-RepoPath) "LTMF.Altis" -resolve
+	Join-Path (Get-RepoPath) "LTMF.VR" -resolve
 }
