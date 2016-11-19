@@ -240,7 +240,9 @@ class ind_f {
 			IND_RIFLE_RAIL
 		};
     // Set the basic radio for the unit
-    radio = IND_RADIO_RIFLEMAN;
+    radios[] = {
+      "rfl"
+    };
   };
 
   /* END RIFLEMAN BASE */
@@ -250,7 +252,6 @@ class ind_f {
   // CO and DC
   // Define gear additions and overrides for Officer units
   class I_officer_F: I_Soldier_F {
-    backpack[] = {IND_RADIO_MANPACK};
     weapons[] = {IND_GLRIFLE};
     magazines[] = {
       IND_GLRIFLE_MAG,
@@ -274,20 +275,25 @@ class ind_f {
       "rhsusf_ANPVS_15"
     };
     items[] = {"ACE_MapTools"};
-    radio = IND_RADIO_SHORTWAVE;
+    radios[] = {
+      "sr",
+      "rfl"
+    };
   };
 
   // SL
   // Define gear additions and overrides for Squad Leader units
   class I_Soldier_SL_F: I_Officer_F {
-    backpack[] = {IND_RADIO_MANPACK};
     linkedItems[] += {
       "Binocular",
       "rhsusf_ANPVS_15"
     };
     items[] = {"ACE_MapTools"};
     backpackItems[] += {"ACE_fieldDressing"};
-    radio = IND_RADIO_SHORTWAVE;
+    radios[] = {
+      "sr",
+      "rfl"
+    };
   };
 
   // UAV
@@ -297,7 +303,9 @@ class ind_f {
     linkedItems[] += {
       "I_uavterminal"
     };
-    radio = IND_RADIO_SHORTWAVE;
+    radios[] = {
+      "rfl"
+    };
   };
 
   // FTL
@@ -546,7 +554,9 @@ class ind_f {
 			IND_SPOTTER_SCOPE,
 			IND_SPOTTER_RAIL
 		};
-    radio = IND_RADIO_SHORTWAVE;
+    radios[] = {
+      "rfl"
+    };
   };
 
   /* SNIPER BASE */
@@ -608,7 +618,9 @@ class ind_f {
 			IND_SNIPER_SCOPE,
 			IND_SNIPER_RAIL
 		};
-    radio = IND_RADIO_SHORTWAVE;
+    radios[] = {
+      "rfl"
+    };
   };
 
   /* HELICOPTER CREW BASE */
@@ -654,7 +666,9 @@ class ind_f {
 			IND_SMG_SCOPE,
 			IND_SMG_RAIL
 		};
-    radio = IND_RADIO_SHORTWAVE;
+    radios[] = {
+      "rfl"
+    };
   };
 
   // Heli crew
@@ -719,7 +733,9 @@ class ind_f {
 			IND_SMG_SCOPE,
 			IND_SMG_RAIL
 		};
-    radio = IND_RADIO_SHORTWAVE;
+    radios[] = {
+      "rfl"
+    };
   };
 
   // Repair Specialist

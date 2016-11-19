@@ -9,4 +9,9 @@ class L
 		file="L\init";
 		class initUnit{};
 	}
+	class radio
+	{
+		file="L\radios";		
+		class getRadiosACRE {};
+	}
 };

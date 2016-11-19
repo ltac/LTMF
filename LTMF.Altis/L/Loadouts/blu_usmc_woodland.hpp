@@ -1,8 +1,8 @@
 /*
 * Description:
-* Loadout definition for USMC Desert forces
+* Loadout definition for USMC Woodland forces
 * Weapons: M4/M249/M240/M136 variants
-* Uniforms: RHS Frog Desert MARPAT
+* Uniforms: RHS Frog Woodland MARPAT
 * Ubiquitous NVG and Optics
 *
 * Author:
@@ -70,7 +70,7 @@ class blu_f {
   // Radio
   #define WEST_RADIO_RIFLEMAN "tf_rf7800str"
   #define WEST_RADIO_SHORTWAVE "tf_anprc152"
-  #define WEST_RADIO_MANPACK "tf_rt1523g_sage"
+  #define WEST_RADIO_MANPACK "UK3CB_BAF_B_Bergen_TAN_SL_A"
   #define WEST_RADIO_AIRBORNE "tf_anarc210"
   // Throwables
   #define WEST_SMOKE_WHITE "SmokeShell:2"
@@ -78,9 +78,9 @@ class blu_f {
   #define WEST_CHEMLIGHT "Chemlight_green:2"
   #define WEST_FRAG "HandGrenade:2"
   // Backpacks
-  #define WEST_PACK_LIGHT "MNP_B_WB_AP"
-  #define WEST_PACK_MEDIUM "MNP_B_WB_KB"
-  #define WEST_PACK_HEAVY "B_Carryall_khk"
+  #define WEST_PACK_LIGHT "rhsusf_falconii"
+  #define WEST_PACK_MEDIUM "B_Kitbag_rgr"
+  #define WEST_PACK_HEAVY "B_Carryall_oli"
 
   // By default, BLUFOR uses White, Black, and Asian faces.
   // If you want something else, specify the list here.
@@ -153,7 +153,7 @@ class blu_f {
 
     // Define the list of possible uniforms that units will wear
     uniform[] = {
-      "MNP_CombatUniform_USMC_arctic"
+      "rhs_uniform_FROG01_wd"
     };
     // Define the list of possible vests that units will wear
     vest[] = {
@@ -164,7 +164,10 @@ class blu_f {
     };
     // Define the list of possible headgear that units will wear
     headgear[] = {
-      "MNP_Helmet_USMC_arctic"
+      "rhsusf_mich_helmet_marpatwd",
+      "rhsusf_mich_helmet_marpatwd_alt",
+      "rhsusf_mich_helmet_marpatwd_norotos",
+      "rhsusf_mich_helmet_marpatwd_norotos_arc"
     };
     // Define the list of possible facewear that units will wear
     facewear[] = {};
@@ -185,7 +188,6 @@ class blu_f {
     // List the items (along with the amount) that will be placed
     // specifically in the unit's backpack
     backpackItems[] = {
-
     };
     // List the magazines, explosives, and throwables
     // that will be placed wherever there is room in the unit's
@@ -202,7 +204,7 @@ class blu_f {
       "ACE_morphine",
       "ACE_IR_Strobe_item",
       "ACE_CableTie",
-      "ACE_Flashlight_XL50" 
+      "ACE_Flashlight_XL50"
     };
     // List the gear items txhat should be automatically slotted
     // correctly for the unit (like Map, Watch, NVG, etc)
@@ -210,7 +212,7 @@ class blu_f {
       "ItemMap",
       "ItemCompass",
       "ItemWatch",
-      "rhsusf_ANPVS_14"
+      "rhsusf_ANPVS_15"
     };
     // List the attachments that will be automatically added
     // to the unit's equipped weapons
@@ -218,10 +220,7 @@ class blu_f {
 			WEST_RIFLE_SCOPE,
 			WEST_RIFLE_RAIL
 		};
-    // Set the basic radio for the unit
-    radio = WEST_RADIO_RIFLEMAN;
   };
-
   /* END RIFLEMAN BASE */
 
   /* RIFLEMAN EXTENSIONS */
@@ -232,7 +231,6 @@ class blu_f {
     vest[] = {
       "rhsusf_spc_squadleader"
     };
-    backpack[] = {WEST_RADIO_MANPACK};
     weapons[] = {WEST_GLRIFLE};
     magazines[] = {
       WEST_GLRIFLE_MAG,
@@ -255,13 +253,15 @@ class blu_f {
 			WEST_GLRIFLE_SCOPE,
 			WEST_GLRIFLE_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
+    radios[] = {
+      "sr",
+      "rfl"
+    };
   };
 
   // SL
   // Define gear additions and overrides for Squad Leader units
   class B_Soldier_SL_F: B_Officer_F {
-    backpack[] = {WEST_RADIO_MANPACK};
     vest[] = {
       "rhsusf_spc_squadleader"
     };
@@ -271,7 +271,10 @@ class blu_f {
     items[] = {"ACE_MapTools"};
     backpackItems[] += {"ACE_fieldDressing"};
     attachments[] += {"rhsusf_acc_ACOG_USMC"};
-    radio = WEST_RADIO_SHORTWAVE;
+    radios[] = {
+      "sr",
+      "rfl"
+    };
   };
 
   // UAV
@@ -281,7 +284,6 @@ class blu_f {
     linkedItems[] += {
       "B_uavterminal"
     };
-    radio = WEST_RADIO_SHORTWAVE;
   };
 
   // FTL
@@ -310,6 +312,10 @@ class blu_f {
     linkedItems[] += {
       "ItemGPS",
       "Binocular"
+    };
+    radios[] = {
+      "sr",
+      "rfl"
     };
   };
 
@@ -494,18 +500,15 @@ class blu_f {
   // Define the base class for Spotter units
   class B_spotter_F {
     uniform[] = {
-      "MNP_CombatUniform_USMC_arctic"
+      "rhs_uniform_FROG01_wd"
     };
     vest[] = {
       "rhsusf_spc_marksman"
     };
     headgear[] = {
-      "H_Watchcap_blk"
+      "rhs_Booniehat_marpatwd"
     };
     facewear[] = {};
-    backpack[] = {
-      WEST_PACK_LIGHT
-    };
 
     weapons[] = {WEST_SPOTTER};
     launchers[] = {};
@@ -520,6 +523,7 @@ class blu_f {
       "ACE_fieldDressing:3",
       "ACE_morphine",
       "ACE_CableTie",
+      "ACE_IR_Strobe_item",
       "ACE_Flashlight_XL50"
     };
     backpackItems[] = {};
@@ -535,21 +539,23 @@ class blu_f {
 			WEST_SPOTTER_SCOPE,
 			WEST_SPOTTER_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
+    radios[] = {
+      "sr",
+      "rfl"
+    };
   };
-
   /* SNIPER BASE */
 
   // Define the base class for Sniper units
   class B_sniper_F {
     uniform[] = {
-      "MNP_CombatUniform_USMC_arctic"
+      "rhs_uniform_FROG01_wd"
     };
     vest[] = {
       "rhsusf_spc_marksman"
     };
     headgear[] = {
-      "H_Watchcap_blk"
+      "rhs_Booniehat_marpatwd"
     };
     facewear[] = {};
     backpack[] = {
@@ -569,6 +575,7 @@ class blu_f {
       "ACE_fieldDressing:3",
       "ACE_morphine",
       "ACE_CableTie",
+      "ACE_IR_Strobe_item",
       "ACE_Flashlight_XL50"
     };
     backpackItems[] = {};
@@ -584,7 +591,6 @@ class blu_f {
 			WEST_SNIPER_SCOPE,
 			WEST_SNIPER_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
   };
 
   /* HELICOPTER CREW BASE */
@@ -593,7 +599,7 @@ class blu_f {
   // Define the base class for all Helicopter pilot and crew units
   class B_Helipilot_F {
     uniform[] = {
-      "MNP_CombatUniform_USMC_arctic"
+      "rhs_uniform_FROG01_wd"
     };
     headgear[] = {"H_PilotHelmetHeli_B"};
     vest[] = {
@@ -618,6 +624,7 @@ class blu_f {
       "ACE_fieldDressing:3",
       "ACE_morphine",
       "ACE_CableTie",
+      "ACE_IR_Strobe_item",
       "ACE_Flashlight_XL50"
     };
     linkedItems[] = {
@@ -631,7 +638,6 @@ class blu_f {
 			WEST_SMG_SCOPE,
 			WEST_SMG_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
   };
 
   // Heli crew
@@ -645,13 +651,16 @@ class blu_f {
   // Define the base class for all vehicle crew and engineer units
   class B_crew_F {
     uniform[] = {
-      "MNP_CombatUniform_USMC_arctic"
+      "rhs_uniform_FROG01_wd"
     };
     vest[] = {
       "rhsusf_spc_crewman"
     };
     headgear[] = {
-      "MNP_Helmet_USMC_arctic"
+      "rhsusf_mich_helmet_marpatwd",
+      "rhsusf_mich_helmet_marpatwd_alt",
+      "rhsusf_mich_helmet_marpatwd_norotos",
+      "rhsusf_mich_helmet_marpatwd_norotos_arc"
     };
     facewear[] = {};
     backpack[] = {
@@ -671,6 +680,7 @@ class blu_f {
       "ACE_fieldDressing:3",
       "ACE_morphine",
       "ACE_CableTie",
+      "ACE_IR_Strobe_item",
       "ACE_Flashlight_XL50"
     };
     linkedItems[] = {
@@ -684,7 +694,6 @@ class blu_f {
 			WEST_SMG_SCOPE,
 			WEST_SMG_RAIL
 		};
-    radio = WEST_RADIO_SHORTWAVE;
   };
 
   // Repair Specialist
@@ -702,6 +711,9 @@ class blu_f {
 			WEST_CARBINE_RAIL
 		};
     backpack[] = {WEST_PACK_MEDIUM};
+    vest[] = {
+      "rhsusf_spc_rifleman"
+    };
     backpackItems[] = {"Toolkit"};
   };
 

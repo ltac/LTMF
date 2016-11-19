@@ -106,9 +106,9 @@ f_var_JIP_GearMenu = true;			// Can JIP/respawned players select their own gear?
 // F3 - Radio Systems Support
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-if (!isDedicated) then {
-	[] call f_fnc_tfr_configureSpectatorChat;
-};
+// if (!isDedicated) then {
+// 	[] call f_fnc_tfr_configureSpectatorChat;
+// };
 
 // ====================================================================================
 
@@ -120,5 +120,11 @@ if (!isDedicated) then {
 f_wound_extraFAK = 2;
 
 [] execVM "f\medical\medical_init.sqf";
+
+// ====================================================================================
+
+// Radio Initialization
+[] execVM "L\radios\radioInit.sqf";
+
 
 // ====================================================================================

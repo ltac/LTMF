@@ -1,88 +1,108 @@
 /*
 * Description:
 * Loadout definition for US Army OCP forces
-* Weapons: Mk18 variants
-* Uniforms: CTRG Woodland
-* All of the best goodies
+* Weapons: M4/M249/M240/M136 variants
+* Uniforms: MNP OCP
+* Ubiquitous NVG and Optics
 *
 * Author:
 * BWMF
 * modified by Legion Tactical
 */
 class blu_f {
+	/*
+	* NOTE This comment can be deleted when copied in actual loadout files
+	* Template file for BLUFOR faction loadouts.
+	*
+	* All objects are specified by their classname. Classnames can be
+	* found easily by creating a loadout in the Virtual Arsenal
+	* (ARMA 3 Main Menu > Learn > Virtual Arsenal), clicking Export,
+	* then pasting into a text document.
+	*
+	* For placing multiples of some object in inventory, type the
+	* classname, a colon, then the number of that item to place.
+	* For example, if we want the Car class to contain 12 ACE Bandages,
+	* then we include "ACE_fieldDressing:12".
+	*
+	* When #define-ing the standard magazine loadouts, you can list
+	* multiple magazine types and counts by separating them with a comma.
+	* For example:
+	* #define WEST_RIFLE_MAG "hlc_30rnd_556x45_EPR:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
+	*
+	* This will add 8 EPR magazines and 2 yellow tracer magazines to
+	* the loadout.
+	*/
+
 	// Rifle
-	#define WEST_RIFLE "rhs_weap_mk18_wd"
+	#define WEST_RIFLE "rhs_weap_m4a1_carryhandle_grip2"
 	#define WEST_RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_m18_red:2"
- 	#define WEST_RIFLE_SCOPE "rhsusf_acc_SpecterDR_OD"
-  	#define WEST_RIFLE_RAIL "rhsusf_acc_anpeq15side","muzzle_snds_m_khk_F"
+  #define WEST_RIFLE_SCOPE "rhsusf_acc_eotech_552"
+  #define WEST_RIFLE_RAIL "rhsusf_acc_anpeq15A"
 	// GL Rifle
-	#define WEST_GLRIFLE "rhs_weap_mk18_m320"
+	#define WEST_GLRIFLE "rhs_weap_m4a1_carryhandle_m203S"
 	#define WEST_GLRIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_m18_red:2"
 	#define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
-	#define WEST_GLRIFLE_MAG_HE "3Rnd_HE_Grenade_shell:3","ACE_HuntIR_M203:2"
+	#define WEST_GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:8"
 	#define WEST_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareGreen_F:2"
-  	#define WEST_GLRIFLE_SCOPE "rhsusf_acc_SpecterDR_A"
-  	#define WEST_GLRIFLE_RAIL "rhsusf_acc_anpeq15side","rhsusf_acc_nt4_black"
+  #define WEST_GLRIFLE_SCOPE "rhsusf_acc_eotech_552"
+  #define WEST_GLRIFLE_RAIL "rhsusf_acc_anpeq15A"
 	// Carbine
-	#define WEST_CARBINE "rhs_weap_mk18_wd"
+	#define WEST_CARBINE "rhs_weap_m4a1_carryhandle_grip"
 	#define WEST_CARBINE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_m18_red:2"
-	#define WEST_CARBINE_SCOPE "optic_Aco"
-  	#define WEST_CARBINE_RAIL "rhsusf_acc_anpeq15side","muzzle_snds_m_khk_F"
+	#define WEST_CARBINE_SCOPE "rhsusf_acc_eotech_552"
+  #define WEST_CARBINE_RAIL "rhsusf_acc_anpeq15A"
 	// AR
 	#define WEST_AR "rhs_weap_m249_pip_L"
 	#define WEST_AR_MAG "rhsusf_200Rnd_556x45_soft_pouch:2"
 	#define WEST_AR_MAG2 "rhsusf_200Rnd_556x45_soft_pouch:2"
-  	#define WEST_AR_SCOPE "rhsusf_acc_SpecterDR_A"
-  	#define WEST_AR_RAIL "rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_black"
+  #define WEST_AR_SCOPE "rhsusf_acc_eotech_552"
+  #define WEST_AR_RAIL "rhsusf_acc_anpeq15A"
 	// AT
 	#define WEST_AT "rhs_weap_M136"
 	#define WEST_AT_MAG "rhs_m136_mag"
 	// MMG
-	#define WEST_MMG "rhs_weap_m240G"
-	#define WEST_MMG_MAG "rhsusf_100Rnd_762x51_m62_tracer:5"
-  	#define WEST_MMG_SCOPE "rhsusf_acc_SpecterDR_A"
-  	#define WEST_MMG_RAIL "rhsusf_acc_anpeq15side"
+	#define WEST_MMG "rhs_weap_m240B"
+	#define WEST_MMG_MAG "rhsusf_100Rnd_762x51:5"
+  #define WEST_MMG_SCOPE "rhsusf_acc_eotech_552"
+  #define WEST_MMG_RAIL "rhsusf_acc_anpeq15A"
 	// MAT
-	#define WEST_MAT "rhs_weap_smaw_green"
-	#define West_MAT_SCOPE "rhs_weap_optic_smaw"
-	#define WEST_MAT_MAG "rhs_mag_smaw_HEDP:2","rhs_mag_smaw_SR"
+	#define WEST_MAT "launch_I_Titan_short_F"
+	#define WEST_MAT_MAG "Titan_AT:2","Titan_AP:1"
 	// SAM
 	#define WEST_SAM "rhs_weap_fim92"
 	#define WEST_SAM_MAG "rhs_fim92_mag:2"
 	// Sniper Rifle
-	#define WEST_SNIPER "rhs_weap_XM2010_wd"
-	#define WEST_SNIPER_MAG "hlc_5rnd_300WM_mk248_AWM:8","hlc_5rnd_300WM_AP_AWM:2"
-  	#define WEST_SNIPER_SCOPE "rhsusf_acc_premier_low"
-  	#define WEST_SNIPER_RAIL "rhsusf_acc_anpeq15side","rhsusf_acc_harris_bipod"
+	#define WEST_SNIPER "rhs_weap_m14ebrri"
+	#define WEST_SNIPER_MAG "rhsusf_20Rnd_762x51_m993_Mag:8"
+  #define WEST_SNIPER_SCOPE "rhsusf_acc_LEUPOLDMK4_2"
+  #define WEST_SNIPER_RAIL "rhsusf_acc_anpeq15side"
 	// Spotter Rifle
-	#define WEST_SPOTTER "hlc_rifle_honeybadger"
-	#define WEST_SPOTTER_MAG "29rnd_300BLK_STANAG:8"
-  	#define WEST_SPOTTER_SCOPE "rhsusf_acc_SpecterDR_OD"
-  	#define WEST_SPOTTER_RAIL "rhsusf_acc_anpeq15_bk_top","muzzle_HBADGER"
+	#define WEST_SPOTTER "rhs_weap_m4a1_blockII_grip2_KAC"
+	#define WEST_SPOTTER_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8"
+  #define WEST_SPOTTER_SCOPE "rhsusf_acc_eotech_552"
+  #define WEST_SPOTTER_RAIL "rhsusf_acc_anpeq15A"
 	// SMG
-	#define WEST_SMG "rhsusf_weap_MP7A1_base_f"
-	#define WEST_SMG_MAG "rhsusf_mag_40Rnd_46x30_FMJ:6"
-  	#define WEST_SMG_SCOPE "optic_ACO_grn_smg"
-  	#define WEST_SMG_RAIL "rhsusf_acc_anpeq15A"
+	#define WEST_SMG "hlc_smg_mp5a4"
+	#define WEST_SMG_MAG "hlc_30Rnd_9x19_B_MP5:6"
+  #define WEST_SMG_SCOPE "rhsusf_acc_eotech_552"
+  #define WEST_SMG_RAIL "rhsusf_acc_anpeq15A"
 	// Pistol
-	#define WEST_PISTOL "rhsusf_weap_m9"
-	#define WEST_PISTOL_MAG "rhsusf_mag_15Rnd_9x19_JHP:4"
+	#define WEST_PISTOL "rhsusf_weap_m1911a1"
+	#define WEST_PISTOL_MAG "rhsusf_mag_7x45acp_MHP:4"
 	// Radio
 	#define WEST_RADIO_RIFLEMAN "tf_rf7800str"
 	#define WEST_RADIO_SHORTWAVE "tf_anprc152"
-	#define WEST_RADIO_MANPACK "UK3CB_BAF_B_Bergen_OLI_SL_A"
+	#define WEST_RADIO_MANPACK "tf_rt1523g_big"
 	#define WEST_RADIO_AIRBORNE "tf_anarc210"
-  	// Throwables
-  	#define WEST_SMOKE_WHITE "SmokeShell:2"
-  	#define WEST_SMOKE_COLOR "SmokeShellGreen:2"
-  	#define WEST_CHEMLIGHT "Chemlight_green:2"
-  	#define WEST_FRAG "HandGrenade:2"
-  	// Backpacks
-  	#define WEST_PACK_LIGHT "rhsusf_falconii"
-  	#define WEST_PACK_MEDIUM "UK3CB_BAF_B_Bergen_OLI_Rifleman_A"
-  	#define WEST_PACK_HEAVY "B_Carryall_oli"
-  	// NVG
-  	#define West_NVG "NVGogglesB_grn_F"
+  // Throwables
+  #define WEST_SMOKE_WHITE "SmokeShell:2"
+  #define WEST_SMOKE_COLOR "SmokeShellGreen:2"
+  #define WEST_CHEMLIGHT "Chemlight_green:2"
+  #define WEST_FRAG "HandGrenade:2"
+  // Backpacks
+  #define WEST_PACK_LIGHT "rhsusf_assault_eagleaiii_ocp"
+  #define WEST_PACK_MEDIUM "B_Kitbag_rgr"
+  #define WEST_PACK_HEAVY "B_Carryall_oli"
 
 	// By default, BLUFOR uses White, Black, and Asian faces.
 	// If you want something else, specify the list here.
@@ -98,18 +118,18 @@ class blu_f {
 			WEST_AR_MAG,
 			WEST_GLRIFLE_MAG_HE,
 			WEST_AT_MAG,
-      		WEST_FRAG,
-      		WEST_FRAG,
-     		WEST_FRAG,
-      		WEST_FRAG,
-      		WEST_SMOKE_COLOR,
-      		WEST_SMOKE_COLOR,
-      		WEST_SMOKE_COLOR,
-      		WEST_SMOKE_COLOR,
-      		WEST_SMOKE_WHITE,
-      		WEST_SMOKE_WHITE,
-      		WEST_SMOKE_WHITE,
-      		WEST_SMOKE_WHITE
+      WEST_FRAG,
+      WEST_FRAG,
+      WEST_FRAG,
+      WEST_FRAG,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE
 		};
 		TransportItems[] = {
 			"ACE_fieldDressing:12",
@@ -127,18 +147,18 @@ class blu_f {
 			WEST_AR_MAG,
 			WEST_GLRIFLE_MAG_HE,
 			WEST_AT_MAG,
-      		WEST_FRAG,
-      		WEST_FRAG,
-      		WEST_FRAG,
-      		WEST_FRAG,
-      		WEST_SMOKE_COLOR,
-      		WEST_SMOKE_COLOR,
-      		WEST_SMOKE_COLOR,
-      		WEST_SMOKE_COLOR,
-      		WEST_SMOKE_WHITE,
-      		WEST_SMOKE_WHITE,
-      		WEST_SMOKE_WHITE,
-      		WEST_SMOKE_WHITE
+      WEST_FRAG,
+      WEST_FRAG,
+      WEST_FRAG,
+      WEST_FRAG,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE
 		};
 		TransportItems[] = {
 			"ACE_fieldDressing:12",
@@ -155,18 +175,18 @@ class blu_f {
 			WEST_AR_MAG,
 			WEST_AR_MAG,
 			WEST_GLRIFLE_MAG_HE,
-      		WEST_FRAG,
-      		WEST_FRAG,
-      		WEST_FRAG,
-      		WEST_FRAG,
-      		WEST_SMOKE_COLOR,
-      		WEST_SMOKE_COLOR,
-      		WEST_SMOKE_COLOR,
-      		WEST_SMOKE_COLOR,
-      		WEST_SMOKE_WHITE,
-      		WEST_SMOKE_WHITE,
-      		WEST_SMOKE_WHITE,
-      		WEST_SMOKE_WHITE
+      WEST_FRAG,
+      WEST_FRAG,
+      WEST_FRAG,
+      WEST_FRAG,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_COLOR,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE
 		};
 		TransportItems[] = {
 			"ACE_fieldDressing:12",
@@ -220,23 +240,23 @@ class blu_f {
 
 		// Define the list of possible uniforms that units will wear
 		uniform[] = {
-			"U_B_CTRG_Soldier_F",
-			"U_B_CTRG_Soldier_3_F"
+			"rhs_uniform_cu_ocp"
 		};
 		// Define the list of possible vests that units will wear
 		vest[] = {
-			"V_PlateCarrier2_rgr_noflag_F",
-			"V_PlateCarrier1_rgr_noflag_F"
+			"rhsusf_iotv_ocp",
+			"rhsusf_iotv_ocp_Rifleman"
 		};
 		// Define the list of possible headgear that units will wear
 		headgear[] = {
-			"H_HelmetB_TI_tna_F"
+			"rhsusf_ach_helmet_ocp",
+			"rhsusf_ach_helmet_ESS_ocp",
+			"rhsusf_ach_helmet_headset_ocp",
+			"rhsusf_ach_helmet_headset_ess_ocp",
+			"rhsusf_ach_helmet_camo_ocp"
 		};
 		// Define the list of possible facewear that units will wear
-		facewear[] = {
-			"G_Balaclava_TI_tna_F",
-			"H_HelmetB_TI_tna_F"
-		};
+		facewear[] = {nil};
 		// Define the list of possible backpacks that units will wear
 		backpack[] = {
 			WEST_PACK_LIGHT
@@ -263,6 +283,7 @@ class blu_f {
 		// List the items (along with the amount) that will be placed
 		// specifically in the unit's backpack
 		backpackItems[] = {
+
 		};
 		// List the magazines, explosives, and throwables
 		// that will be placed wherever there is room in the unit's
@@ -275,12 +296,11 @@ class blu_f {
 		// List the items (along with the amount) that will be placed
 		// wherever there is room in the unit's inventory
 		items[] = {
-			"ACE_microDAGR",
 			"ACE_fieldDressing:3",
 			"ACE_morphine",
 			"ACE_IR_Strobe_item",
 			"ACE_CableTie",
-			"ACE_Flashlight_XL50"
+			"ACE_Flashlight_XL50"	
 		};
 		// List the gear items txhat should be automatically slotted
 		// correctly for the unit (like Map, Watch, NVG, etc)
@@ -288,7 +308,7 @@ class blu_f {
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			West_NVG
+			"rhsusf_ANPVS_14"
 		};
 		// List the attachments that will be automatically added
 		// to the unit's equipped weapons
@@ -297,7 +317,9 @@ class blu_f {
 			WEST_RIFLE_RAIL
 		};
 		// Set the basic radio for the unit
-		radio = WEST_RADIO_RIFLEMAN;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	/* END RIFLEMAN BASE */
@@ -316,7 +338,7 @@ class blu_f {
 	You can override a certain type of gear by setting it to something
 	new using =
 	For example:
-	backpack[] = {WEST_RADIO_MANPACK};
+	lr_radio = true
 
 	Instead of replacing gear, you can also add to gear by using +=
 	For example, to add GPS in addition to the base Watch, Map,
@@ -327,7 +349,6 @@ class blu_f {
 	// CO and DC
 	// Define gear additions and overrides for Officer units
 	class B_officer_F: B_Soldier_F {
-		backpack[] = {WEST_RADIO_MANPACK};
 		weapons[] = {WEST_GLRIFLE};
 		magazines[] = {
 			WEST_GLRIFLE_MAG,
@@ -339,7 +360,7 @@ class blu_f {
 			WEST_SMOKE_WHITE,
 			WEST_SMOKE_COLOR
 		};
-    attachments[] = {
+    	attachments[] = {
 			WEST_GLRIFLE_SCOPE,
 			WEST_GLRIFLE_RAIL
 		};
@@ -347,38 +368,39 @@ class blu_f {
 		backpackItems[] += {"ACE_key_west"};
 		linkedItems[] += {
 			"ItemGPS",
-			"Laserdesignator_03"
+			"ACE_Vector"
 		};
-		items[] = {
-			"ACE_MapTools",
-			"Laserbatteries",
-			"ALIVE_Tablet"
-		};
-		radio = WEST_RADIO_SHORTWAVE;
+		items[] = {"ACE_MapTools"};
+		radios[] = {
+      		"sr",
+      		"rfl"
+    	};
 	};
 
 	// SL
 	// Define gear additions and overrides for Squad Leader units
 	class B_Soldier_SL_F: B_Officer_F {
-		backpack[] = {WEST_RADIO_MANPACK};
 		linkedItems[] += {
-			"Laserdesignator_03"
+			"Binocular"
 		};
-		items[] += {
-			"ACE_MapTools",
-			"Laserbatteries"
-		};
+		items[] = {"ACE_MapTools"};
 		backpackItems[] += {"ACE_fieldDressing"};
-		radio = WEST_RADIO_SHORTWAVE;
+		radios[] = {
+      		"sr",
+      		"rfl"
+    	};
 	};
+
 	// UAV
 	// Define gear additions and overrides for UAV Operator units
 	class B_Soldier_UAV_F: B_Soldier_F {
-		backpack[] = {"B_UAV_01_backpack_F"};
+		backpack[] = {"B_rhsusf_B_BACKPACK"};
 		linkedItems[] += {
 			"B_uavterminal"
 		};
-		radio = WEST_RADIO_SHORTWAVE;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	// FTL
@@ -396,24 +418,20 @@ class blu_f {
 			WEST_FRAG,
 			WEST_SMOKE_WHITE
 		};
-    	attachments[] = {
+    attachments[] = {
 			WEST_GLRIFLE_SCOPE,
 			WEST_GLRIFLE_RAIL
 		};
-		backpackItems[] += {
-			"ACE_key_west",
-			"Laserbatteries"
-		};
+		backpackItems[] += {"ACE_key_west"};
 		linkedItems[] += {
 			"ItemGPS",
-			"Laserdesignator_03"
+			"Binocular"
 		};
 	};
 
 	// AR
 	// Define gear additions and overrides for Autorifleman units
 	class B_Soldier_AR_F: B_Soldier_F {
-		backpackItems[] += {"ACE_SpareBarrel"};
 		weapons[] = {WEST_AR};
 		magazines[] = {
 			WEST_AR_MAG,
@@ -421,7 +439,7 @@ class blu_f {
 			WEST_FRAG,
 			WEST_SMOKE_WHITE
 		};
-    	attachments[] = {
+    attachments[] = {
 			WEST_AR_SCOPE,
 			WEST_AR_RAIL
 		};
@@ -432,7 +450,8 @@ class blu_f {
 	// Define gear additions and overrides for Asst Autorifleman units
 	class B_Soldier_AAR_F: B_Soldier_F {
 		backpackItems[] += {WEST_AR_MAG2};
-		linkedItems[] += {"Rangefinder"};
+		attachments[] += {"rhsusf_acc_ACOG_USMC"};
+		linkedItems[] += {"Binocular"};
 	};
 
 	// RAT
@@ -455,12 +474,12 @@ class blu_f {
 		magazines[] = {
 			WEST_CARBINE_MAG,
 			WEST_SMOKE_WHITE,
-      		WEST_SMOKE_WHITE,
-      		WEST_SMOKE_WHITE
+      WEST_SMOKE_WHITE,
+      WEST_SMOKE_WHITE
 		};
 		backpackItems[] = {
 			"Medikit",
-      		"FirstAidKit:3"
+      "FirstAidKit:3"
 		};
 	};
 
@@ -475,7 +494,7 @@ class blu_f {
 			WEST_SMOKE_WHITE
 		};
 		handguns[] = {WEST_PISTOL}; /// randomized
-    	attachments[] = {
+    attachments[] = {
 			WEST_MMG_SCOPE,
 			WEST_MMG_RAIL
 		};
@@ -499,7 +518,10 @@ class blu_f {
 			WEST_SMOKE_WHITE
 		};
 		launchers[] = {WEST_MAT};
-		attachments[] = {West_MAT_SCOPE};
+		items[] += {
+			"ACE_fieldDressing:3",
+			"ACE_morphine"
+		};
 		backpack[] = {WEST_PACK_MEDIUM};
 		backpackItems[] = {WEST_MAT_MAG};
 	};
@@ -510,6 +532,10 @@ class blu_f {
 		backpack[] = {WEST_PACK_MEDIUM};
 		backpackItems[] = {WEST_MAT_MAG};
 		linkedItems[] += {"ACE_Vector"};
+		items[] += {
+			"ACE_fieldDressing:3",
+			"ACE_morphine"
+		};
 	};
 
 	// AA Gunner
@@ -548,18 +574,17 @@ class blu_f {
 			"ACE_fieldDressing:3",
 			"ACE_morphine"
 		};
-		launchers[] = {"UK3CB_BAF_L16"};
+		backpack[] = {"B_Mortar_01_weapon_F"};
 	};
 
 	// Mortar Asst
 	// Define gear additions and overrides for Mortar Asst units
 	class B_support_AMort_F: B_Soldier_F {
-		backpack[] = {WEST_RADIO_MANPACK};
-		launchers[] = {"UK3CB_BAF_L16_Tripod"};
+		backpack[] = {"B_Mortar_01_support_F"};
 		linkedItems[] += {"ACE_Vector"};
 		items[] += {
-			"ACE_MapTools",
-			"ACE_RangeTable_82mm"
+			"ACE_fieldDressing:3",
+			"ACE_morphine"
 		};
 	};
 
@@ -570,57 +595,57 @@ class blu_f {
 	// Define the base class for Spotter units
 	class B_spotter_F {
 		uniform[] = {
-			"U_B_CTRG_Soldier_F"
+			"rhs_uniform_cu_ocp"
 		};
 		vest[] = {
-			"V_PlateCarrier2_rgr_noflag_F"
+			"rhsusf_iotv_ocp",
+			"rhsusf_iotv_ocp_Rifleman"
 		};
 		headgear[] = {
-			"H_HelmetB_TI_tna_F"
+			"rhsusf_ach_helmet_ocp",
+			"rhsusf_ach_helmet_ESS_ocp",
+			"rhsusf_ach_helmet_headset_ocp",
+			"rhsusf_ach_helmet_headset_ess_ocp",
+			"rhsusf_ach_helmet_camo_ocp"
 		};
 		facewear[] = {
-			"G_Balaclava_TI_tna_F"
+			nil
 		};
 		backpack[] = {
-			WEST_RADIO_MANPACK
+			WEST_PACK_LIGHT
 		};
 
 		weapons[] = {WEST_SPOTTER};
 		launchers[] = {};
-		handguns[] = {WEST_PISTOL};
+		handguns[] = {};
 
 		magazines[] = {
 			WEST_SPOTTER_MAG,
 			WEST_SMOKE_WHITE,
-			WEST_FRAG,
-			WEST_PISTOL_MAG
+			WEST_FRAG
 		};
 		items[] = {
-			"ACE_microDAGR",
-			"ACE_Kestrel4500",
-			"ACE_MapTools",
-			"ACE_RangeCard",
 			"ACE_fieldDressing:3",
 			"ACE_morphine",
 			"ACE_CableTie",
 			"ACE_Flashlight_XL50"
 		};
-		backpackItems[] = {
-			"ACE_SpottingScope"
-		};
+		backpackItems[] = {};
 		linkedItems[] = {
 			"itemWatch",
 			"itemMap",
 			"itemCompass",
 			"itemGPS",
-			"ACE_Vector",
-			West_NVG
+			"LaserDesignator",
+			"rhsusf_ANPVS_15"
 		};
-    attachments[] = {
+    	attachments[] = {
 			WEST_SPOTTER_SCOPE,
 			WEST_SPOTTER_RAIL
 		};
-		radio = WEST_RADIO_SHORTWAVE;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	/* SNIPER BASE */
@@ -628,16 +653,21 @@ class blu_f {
 	// Define the base class for Sniper units
 	class B_sniper_F {
 		uniform[] = {
-			"U_B_CTRG_Soldier_F"
+			"rhs_uniform_cu_ocp"
 		};
 		vest[] = {
-			"V_PlateCarrier2_rgr_noflag_F"
+			"rhsusf_iotv_ocp",
+			"rhsusf_iotv_ocp_Rifleman"
 		};
 		headgear[] = {
-			"H_HelmetB_TI_tna_F"
+			"rhsusf_ach_helmet_ocp",
+			"rhsusf_ach_helmet_ESS_ocp",
+			"rhsusf_ach_helmet_headset_ocp",
+			"rhsusf_ach_helmet_headset_ess_ocp",
+			"rhsusf_ach_helmet_camo_ocp"
 		};
 		facewear[] = {
-			"G_Balaclava_TI_tna_F"
+			nil
 		};
 		backpack[] = {
 			WEST_PACK_LIGHT
@@ -645,40 +675,35 @@ class blu_f {
 
 		weapons[] = {WEST_SNIPER};
 		launchers[] = {};
-		handguns[] = {WEST_PISTOL};
+		handguns[] = {};
 
 		magazines[] = {
 			WEST_SNIPER_MAG,
 			WEST_SMOKE_WHITE,
-			WEST_FRAG,
-			WEST_PISTOL_MAG
+			WEST_FRAG
 		};
 		items[] = {
-			"ACE_microDAGR",
-			"ACE_Kestrel4500",
-			"ACE_MapTools",
-			"ACE_RangeCard",
 			"ACE_fieldDressing:3",
 			"ACE_morphine",
 			"ACE_CableTie",
 			"ACE_Flashlight_XL50"
 		};
-		backpackItems[] = {
-			"ACE_Tripod"
-		};
+		backpackItems[] = {};
 		linkedItems[] = {
 			"itemWatch",
 			"itemMap",
 			"itemCompass",
 			"itemGPS",
-			"ACE_Vector",
-			West_NVG
+			"LaserDesignator",
+			"rhsusf_ANPVS_15"
 		};
-    attachments[] = {
+    	attachments[] = {
 			WEST_SNIPER_SCOPE,
 			WEST_SNIPER_RAIL
 		};
-		radio = WEST_RADIO_SHORTWAVE;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	/* HELICOPTER CREW BASE */
@@ -687,12 +712,12 @@ class blu_f {
 	// Define the base class for all Helicopter pilot and crew units
 	class B_Helipilot_F {
 		uniform[] = {
-			"U_B_HeliPilotCoveralls"
+			"rhs_uniform_cu_ocp"
 		};
 		headgear[] = {"H_PilotHelmetHeli_B"};
 		vest[] = {
-			"V_PlateCarrier2_rgr_noflag_F",
-			"V_PlateCarrier1_rgr_noflag_F"
+			"rhsusf_iotv_ocp",
+			"rhsusf_iotv_ocp_Rifleman"
 		};
 		facewear[] = {nil};
 		backpack[] = {
@@ -720,19 +745,21 @@ class blu_f {
 			"ItemMap",
 			"ItemCompass",
 			"itemGPS",
-			"NVGogglesB_blk_F"
+			"rhsusf_ANPVS_15"
 		};
-    attachments[] = {
+    	attachments[] = {
 			WEST_SMG_SCOPE,
 			WEST_SMG_RAIL
 		};
-		radio = WEST_RADIO_SHORTWAVE;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	// Heli crew
 	// Define gear additions and overrides for Helicopter Crew units
 	class B_helicrew_F: B_Helipilot_F {
-		headgear[] = {"H_CrewHelmetHeli_B"};
+		// No changes
 	};
 
 	/* VEHICLE CREW BASE */
@@ -740,19 +767,21 @@ class blu_f {
 	// Define the base class for all vehicle crew and engineer units
 	class B_crew_F {
 		uniform[] = {
-			"U_B_CTRG_Soldier_F",
-			"U_B_CTRG_Soldier_3_F"
+			"rhs_uniform_cu_ocp"
 		};
 		vest[] = {
-			"V_PlateCarrier2_rgr_noflag_F",
-			"V_PlateCarrier1_rgr_noflag_F"
+			"rhsusf_iotv_ocp",
+			"rhsusf_iotv_ocp_Rifleman"
 		};
 		headgear[] = {
-			"H_HelmetB_TI_tna_F"
+			"rhsusf_ach_helmet_ocp",
+			"rhsusf_ach_helmet_ESS_ocp",
+			"rhsusf_ach_helmet_headset_ocp",
+			"rhsusf_ach_helmet_headset_ess_ocp",
+			"rhsusf_ach_helmet_camo_ocp"
 		};
 		facewear[] = {
-			"G_Balaclava_TI_tna_F",
-			"H_HelmetB_TI_tna_F"
+			nil
 		};
 		backpack[] = {
 			WEST_PACK_LIGHT
@@ -778,13 +807,15 @@ class blu_f {
 			"ItemMap",
 			"ItemCompass",
 			"itemGPS",
-			West_NVG
+			"rhsusf_ANPVS_15"
 		};
-    attachments[] = {
+    	attachments[] = {
 			WEST_SMG_SCOPE,
 			WEST_SMG_RAIL
 		};
-		radio = WEST_RADIO_SHORTWAVE;
+		radios[] = {
+      		"rfl"
+    	};
 	};
 
 	// Repair Specialist

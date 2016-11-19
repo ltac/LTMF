@@ -1,43 +1,65 @@
 /*
 * Description:
-* Loadout definition for Afghan insurgent forces
-* Weapons: AK47/RPK/RPG/SVD
-* Uniforms: Project Opfor Afghan fatigues
-* Extremely limited equipment
+* Loadout definition for Russian Woodland forces
+* Weapons: AK47/74/PKP/RPG variants
+* Uniforms: MNP Russian Digital Flora
+* Ubiquitous NVG, GPS, and Optics
 *
 * Author:
 * BWMF
 * modified by Legion Tactical
 */
 class opf_f {
+  /*
+  * NOTE This comment can be deleted when copied in actual loadout files
+  * Template file for INDFOR faction loadouts.
+  *
+  * All objects are specified by their classname. Classnames can be
+  * found easily by creating a loadout in the Virtual Arsenal
+  * (ARMA 3 Main Menu > Learn > Virtual Arsenal), clicking Export,
+  * then pasting into a text document.
+  *
+  * For placing multiples of some object in inventory, type the
+  * classname, a colon, then the number of that item to place.
+  * For example, if we want the Car class to contain 12 ACE Bandages,
+  * then we include "ACE_fieldDressing:12".
+  *
+  * When #define-ing the standard magazine loadouts, you can list
+  * multiple magazine types and counts by separating them with a comma.
+  * For example:
+  * #define EAST_RIFLE_MAG "hlc_30rnd_556x45_EPR:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
+  *
+  * This will add 8 EPR magazines and 2 yellow tracer magazines to
+  * the loadout.
+  */
 
   // Rifle
-  #define EAST_RIFLE "rhs_weap_akm"
-  #define EAST_RIFLE_MAG "rhs_30Rnd_762x39mm:8","rhs_30Rnd_762x39mm_tracer:2"
+  #define EAST_RIFLE "rhs_weap_ak74m_npz"
+  #define EAST_RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
   #define EAST_RIFLE_SCOPE "RH_barska_rds"
   #define EAST_RIFLE_RAIL "rhsusf_acc_anpeq15A"
   // GL Rifle
-  #define EAST_GLRIFLE "rhs_weap_akm_gp25"
-  #define EAST_GLRIFLE_MAG "rhs_30Rnd_762x39mm:8","rhs_30Rnd_762x39mm_tracer:2"
+  #define EAST_GLRIFLE "rhs_weap_ak74m_gp25_npz"
+  #define EAST_GLRIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
   #define EAST_GLRIFLE_MAG_SMOKE "rhs_GRD40_White:4","rhs_GRD40_Green:2","rhs_GRD40_Red:3"
   #define EAST_GLRIFLE_MAG_HE "rhs_VOG25:8"
   #define EAST_GLRIFLE_MAG_FLARE "rhs_VG40OP_white:2","rhs_VG40OP_green:2"
   #define EAST_GLRIFLE_SCOPE "RH_barska_rds"
   #define EAST_GLRIFLE_RAIL "rhsusf_acc_anpeq15A"
   // Carbine
-  #define EAST_CARBINE "rhs_weap_akm"
-  #define EAST_CARBINE_MAG "rhs_30Rnd_762x39mm:8","rhs_30Rnd_762x39mm_tracer:2"
+  #define EAST_CARBINE "rhs_weap_ak74m_npz"
+  #define EAST_CARBINE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
   #define EAST_CARBINE_SCOPE "RH_barska_rds"
   #define EAST_CARBINE_RAIL "rhsusf_acc_anpeq15A"
-  // AR  
+  // AR
   #define EAST_AR "rhs_weap_pkm"
   #define EAST_AR_MAG "rhs_100Rnd_762x54mmR:2"
   #define EAST_AR_MAG2 "rhs_100Rnd_762x54mmR_green:2"
   #define EAST_AR_SCOPE "RH_barska_rds"
   #define EAST_AR_RAIL "rhsusf_acc_anpeq15A"
   // AT
-  #define EAST_AT "rhs_weap_rpg7"
-  #define EAST_AT_MAG "rhs_rpg7_PG7VL_mag"
+  #define EAST_AT "rhs_weap_rshg2"
+  #define EAST_AT_MAG "rhs_rshg2_mag"
   // MMG
   #define EAST_MMG "rhs_weap_pkp"
   #define EAST_MMG_MAG "rhs_100Rnd_762x54mmR_green:5"
@@ -50,18 +72,18 @@ class opf_f {
   #define EAST_SAM "rhs_weap_igla"
   #define EAST_SAM_MAG "rhs_mag_9k38_rocket:2"
   // Sniper Rifle
-  #define EAST_SNIPER "ibr_svd"
-  #define EAST_SNIPER_MAG "10Rnd_762x54R_ibr:8"
-  #define EAST_SNIPER_SCOPE "rhs_acc_1pn93_1"
+  #define EAST_SNIPER "rhs_weap_svdp","rhs_weap_svds"
+  #define EAST_SNIPER_MAG "rhs_10Rnd_762x54mmR_7N1:8"
+  #define EAST_SNIPER_SCOPE "rhs_acc_pso1m2"
   #define EAST_SNIPER_RAIL "rhsusf_acc_anpeq15side"
   // Spotter Rifle
-  #define EAST_SPOTTER "rhs_weap_akm"
-  #define EAST_SPOTTER_MAG "rhs_30Rnd_762x39mm:8"
+  #define EAST_SPOTTER "rhs_weap_ak74m_npz"
+  #define EAST_SPOTTER_MAG "rhs_30Rnd_545x39_AK:8"
   #define EAST_SPOTTER_SCOPE "RH_barska_rds"
   #define EAST_SPOTTER_RAIL "rhsusf_acc_anpeq15A"
   // SMG
-  #define EAST_SMG "rhs_weap_akm"
-  #define EAST_SMG_MAG "rhs_30Rnd_762x39mm:6"
+  #define EAST_SMG "hlc_smg_mp5k_PDW"
+  #define EAST_SMG_MAG "hlc_30Rnd_9x19_B_MP5:6"
   #define EAST_SMG_SCOPE "RH_barska_rds"
   #define EAST_SMG_RAIL "rhsusf_acc_anpeq15A"
   // Pistol
@@ -70,7 +92,7 @@ class opf_f {
   // Radio
   #define EAST_RADIO_RIFLEMAN "tf_pnr1000a"
   #define EAST_RADIO_SHORTWAVE "tf_fadak"
-  #define EAST_RADIO_MANPACK "tf_mr3000"
+  #define EAST_RADIO_MANPACK "tf_mr3000_rhs"
   #define EAST_RADIO_AIRBORNE "tf_mr6000l"
   // Throwables
   #define EAST_SMOKE_WHITE "rhs_mag_rdg2_white:2"
@@ -78,9 +100,13 @@ class opf_f {
   #define EAST_CHEMLIGHT "Chemlight_red:2"
   #define EAST_FRAG "rhs_mag_rgd5:2"
   // Backpacks
-  #define EAST_PACK_LIGHT "rhs_sidor","B_TacticalPack_blk","B_TacticalPack_rgr","B_TacticalPack_oli","rhs_assault_umbts_engineer_empty","rhs_assault_umbts","MNP_B_RU2_FP","B_FieldPack_khk","B_FieldPack_blk","ibr_backpack"
-  #define EAST_PACK_MEDIUM "B_Kitbag_rgr","B_Kitbag_cbr"
+  #define EAST_PACK_LIGHT "MNP_B_RU2_FP"
+  #define EAST_PACK_MEDIUM "B_Kitbag_rgr"
   #define EAST_PACK_HEAVY "MNP_B_RU2_CA"
+
+  // By default, OPFOR uses Persian faces.
+  // If you want something else, specify the list here.
+  faces[] = {};
 
   // Define the cargo for Vehicles
   class Car {
@@ -128,7 +154,8 @@ class opf_f {
     };
     TransportItems[] = {
       "ACE_fieldDressing:12",
-      "ACE_morphine:4"
+      "ACE_morphine:4",
+      "ItemGPS"
     };
   };
 
@@ -144,40 +171,84 @@ class opf_f {
 
   /* RIFLEMAN BASE */
 
+  /*
+  NOTE This comment can be deleted when copied in actual loadout files
+  -Rifleman
+  -Officer
+  -Squad leader
+  -Team leader
+  -Autorifleman
+  -UAV Operator
+  -Assistant Autorifleman
+  -AT Rifleman
+  -Medic
+  -MMG Gunner
+  -MMG Spotter
+  -MAT Gunner
+  -MAT Assistant
+  -SAM Gunner
+  -SAM Assistant
+  -Mortar Gunner
+  -Mortar Assistant
+
+  Each specific class can add to or completely override the
+  loadouts defined by this base
+  */
   class O_Soldier_F {
+    /* Randomized gear
+    One item from each of these lists will be chosen at
+    random when the unit spawns.
+
+    If you want "nothing" to be one of the random options,
+    just include nil in the list
+
+    Leave the list empty {} to add nothing of that type.
+    */
 
     // Define the list of possible uniforms that units will wear
     uniform[] = {
-      "LOP_U_TAK_Civ_Fatigue_01",
-      "LOP_U_TAK_Civ_Fatigue_02",
-      "LOP_U_TAK_Civ_Fatigue_04"
+      "MNP_CombatUniform_RU_Med",
+      "MNP_CombatUniform_RU_Med_B"
     };
     // Define the list of possible vests that units will wear
-    vest[] = {      
-      "V_Chestrig_blk",
-      "V_Chestrig_rgr",
-      "V_Chestrig_khk",
-      "V_Chestrig_oli",
-      "V_BandollierB_blk",
-      "V_BandollierB_cbr",
-      "V_BandollierB_rgr",
-      "V_BandollierB_khk",
-      "V_BandollierB_oli"
+    vest[] = {
+      "MNP_Vest_RU_T",
+      "MNP_Vest_RU_T2",
+      "MNP_Vest_Light_R2"
     };
     // Define the list of possible headgear that units will wear
-    headgear[] = {      
-      "H_Shemag_olive",
-      "H_ShemagOpen_tan",
-      "H_ShemagOpen_khk",
-      "LOP_H_Pakol",
-      "LOP_H_Turban",
-      "LOP_H_Turban_mask",
-      "LOP_H_Worker_cap"
+    headgear[] = {
+      "MNP_Helmet_PAGST_RT",
+      "MNP_Helmet_RU_LT"
     };
     // Define the list of possible facewear that units will wear
-    facewear[] = {};
+    facewear[] = {
+      nil,
+      "G_Balaclava_oli",
+      "G_Shades_Black",
+      "G_Shades_Blue",
+      "G_Shades_Green",
+      "G_Shades_Red",
+      "G_Lady_Blue",
+      "G_Spectacles",
+      "G_Squares",
+      "G_Tactical_Clear",
+      "G_Bandanna_oli",
+      "G_Bandanna_blk",
+      "G_Bandanna_shades",
+      "G_Bandanna_sport",
+      "G_Bandanna_beast",
+      "G_Sport_BlackWhite",
+      "G_Sport_Checkered",
+      "G_Sport_Blackred",
+      "G_Sport_Greenblack",
+      "G_Goggles_VR",
+      "G_Sport_Blackyellow"
+    };
     // Define the list of possible backpacks that units will wear
-    backpack[] = {EAST_PACK_LIGHT};
+    backpack[] = {
+      EAST_PACK_LIGHT
+    };
     // Define the list of possible primary weapons that units
     // will be assigned
     weapons[] = {EAST_RIFLE};
@@ -200,9 +271,7 @@ class opf_f {
     // List the items (along with the amount) that will be placed
     // specifically in the unit's backpack
     backpackItems[] = {
-      "ACE_fieldDressing:3",
-      "ACE_morphine",
-      "ACE_IR_Strobe_item"
+
     };
     // List the magazines, explosives, and throwables
     // that will be placed wherever there is room in the unit's
@@ -215,80 +284,134 @@ class opf_f {
     // List the items (along with the amount) that will be placed
     // wherever there is room in the unit's inventory
     items[] = {
-      "ACE_Banana" // In case of emergency.
+      "ACE_fieldDressing:3",
+      "ACE_morphine",
+      "ACE_IR_Strobe_item",
+      "ACE_CableTie",
+      "ACE_Flashlight_XL50"
     };
     // List the gear items txhat should be automatically slotted
     // correctly for the unit (like Map, Watch, NVG, etc)
     linkedItems[] = {
       "ItemMap",
       "ItemCompass",
-      "ItemWatch"
+      "ItemWatch",
+      "rhsusf_ANPVS_15"
     };
     // List the attachments that will be automatically added
     // to the unit's equipped weapons
-    attachments[] = {};
+    attachments[] = {
+			EAST_RIFLE_SCOPE,
+			EAST_RIFLE_RAIL
+		};
     // Set the basic radio for the unit
-    radio = EAST_RADIO_RIFLEMAN;
+    radios[] = {
+      "rfl"
+    };
   };
 
   /* END RIFLEMAN BASE */
 
   /* RIFLEMAN EXTENSIONS */
 
+  /*
+  The next set of units all copy their gear from the Rifleman Base,
+  as defined with the : in the class definition. For example,
+
+  class O_officer_F : O_Soldier_F
+
+  says that O_officer_F will have the same properties and data
+  as O_Soldier_F unless specifically set otherwise.
+
+  You can override a certain type of gear by setting it to something
+  new using =
+  For example:
+
+
+  Instead of replacing gear, you can also add to gear by using +=
+  For example, to add GPS in addition to the base Watch, Map,
+  and Compass:
+  linkedItems[] += {"ItemGPS"};
+  */
+
   // CO and DC
   // Define gear additions and overrides for Officer units
   class O_Officer_F: O_Soldier_F {
-    backpack[] = {EAST_RADIO_MANPACK};
     weapons[] = {EAST_GLRIFLE};
     magazines[] = {
       EAST_GLRIFLE_MAG,
       EAST_GLRIFLE_MAG_HE,
       EAST_GLRIFLE_MAG_SMOKE,
+      EAST_GLRIFLE_MAG_FLARE,
       EAST_PISTOL_MAG,
       EAST_FRAG,
       EAST_SMOKE_WHITE,
       EAST_SMOKE_COLOR
     };
+    attachments[] = {
+			EAST_GLRIFLE_SCOPE,
+			EAST_GLRIFLE_RAIL
+		};
     handguns[] = {EAST_PISTOL};
     backpackItems[] += {"ACE_key_east"};
     linkedItems[] += {
-      "Binocular"
+      "ItemGPS",
+      "ACE_Vector"
     };
     items[] = {"ACE_MapTools"};
-    radio = EAST_RADIO_SHORTWAVE;
+    radios[] = {
+      "sr",
+      "rfl"
+    };
   };
 
   // SL
   // Define gear additions and overrides for Squad Leader units
   class O_Soldier_SL_F: O_Officer_F {
+    linkedItems[] += {
+      "Binocular"
+    };
     items[] = {"ACE_MapTools"};
     backpackItems[] += {"ACE_fieldDressing"};
-    radio = EAST_RADIO_SHORTWAVE;
+    radios[] = {
+      "rfl"
+    };
   };
 
   // UAV
   // Define gear additions and overrides for UAV Operator units
   class O_Soldier_UAV_F: O_Soldier_F {
-    // Afghan should not have uav, so keep as normal soldier
+    backpack[] = {"B_rhsusf_B_BACKPACK"};
+    linkedItems[] += {
+      "O_uavterminal"
+    };
+    radios[] = {
+      "rfl"
+    };
   };
 
   // FTL
   // Define gear additions and overrides for Team Leader units
   class O_Soldier_TL_F: O_Soldier_F {
-    vest[] = {"rhs_6sh92_vog"};
     weapons[] = {EAST_GLRIFLE};
     magazines[] = {
       EAST_GLRIFLE_MAG,
       EAST_GLRIFLE_MAG_HE,
       EAST_GLRIFLE_MAG_SMOKE,
+      EAST_GLRIFLE_MAG_FLARE,
       EAST_SMOKE_COLOR,
       EAST_FRAG,
       EAST_SMOKE_WHITE,
       EAST_FRAG,
       EAST_SMOKE_WHITE
     };
+    attachments[] = {
+			EAST_GLRIFLE_SCOPE,
+			EAST_GLRIFLE_RAIL
+		};
     backpackItems[] += {"ACE_key_east"};
     linkedItems[] += {
+      "ItemGPS",
       "Binocular"
     };
   };
@@ -303,7 +426,10 @@ class opf_f {
       EAST_FRAG,
       EAST_SMOKE_WHITE
     };
-    attachments[] = {};
+    attachments[] = {
+			EAST_AR_SCOPE,
+			EAST_AR_RAIL
+		};
     handguns[] = {EAST_PISTOL};
   };
 
@@ -311,6 +437,7 @@ class opf_f {
   // Define gear additions and overrides for Asst Autorifleman units
   class O_Soldier_AAR_F: O_Soldier_F {
     backpackItems[] += {EAST_AR_MAG2};
+    attachments[] = {"optic_MRCO"};
     linkedItems[] += {"Binocular"};
   };
 
@@ -330,7 +457,6 @@ class opf_f {
   // Medic
   // Define gear additions and overrides for Medic units
   class O_medic_F: O_Soldier_F {
-    vest[] = {"rhs_6b23_medic"};
     weapons[] = {EAST_CARBINE};
     magazines[] = {
       EAST_CARBINE_MAG,
@@ -355,15 +481,18 @@ class opf_f {
       EAST_SMOKE_WHITE
     };
     handguns[] = {EAST_PISTOL}; /// randomized
-    attachments[] = {};
+    attachments[] = {
+			EAST_MMG_SCOPE,
+			EAST_MMG_RAIL
+		};
   };
 
   // MMG Asst
   // Define gear additions and overrides for MMG Spotter units
   class O_Soldier_A_F: O_Soldier_F {
-    backpack[] = {EAST_PACK_MEDIUM};
+    backpack[] = {EAST_PACK_LIGHT};
     backpackItems[] += {EAST_MMG_MAG};
-    linkedItems[] += {"Binocular"};
+    linkedItems[] += {"ACE_Vector"};
   };
 
   // Medium AT
@@ -389,7 +518,7 @@ class opf_f {
   class O_Soldier_AAT_F: O_Soldier_F {
     backpack[] = {"rhs_rpg_empty"};
     backpackItems[] = {EAST_MAT_MAG};
-    linkedItems[] += {"Binocular"};
+    linkedItems[] += {"ACE_Vector"};
     items[] += {
       "ACE_fieldDressing:3",
       "ACE_morphine"
@@ -399,7 +528,7 @@ class opf_f {
   // AA Gunner
   // Define gear additions and overrides for AA Gunner units
   class O_Soldier_AA_F: O_Soldier_F {
-    backpack[] = {EAST_PACK_HEAVY};
+    backpack[] = {EAST_PACK_LIGHT};
     weapons[] = {EAST_CARBINE};
     magazines[] = {
       EAST_CARBINE_MAG,
@@ -414,9 +543,9 @@ class opf_f {
   // AA Asst
   // Define gear additions and overrides for AA Spotter units
   class O_Soldier_AAA_F: O_Soldier_F {
-    backpack[] = {EAST_PACK_HEAVY};
+    backpack[] = {EAST_PACK_LIGHT};
     backpackItems[] = {EAST_SAM_MAG};
-    linkedItems[] += {"Binocular"};
+    linkedItems[] += {"ACE_Vector"};
   };
 
   // Mortar Gunner
@@ -439,7 +568,7 @@ class opf_f {
   // Define gear additions and overrides for Mortar Asst units
   class O_support_AMort_F: O_Soldier_F {
     backpack[] = {"B_Mortar_01_support_F"};
-    linkedItems[] += {"Binocular"};
+    linkedItems[] += {"ACE_Vector"};
     items[] += {
       "ACE_fieldDressing:3",
       "ACE_morphine"
@@ -453,50 +582,43 @@ class opf_f {
   // Define the base class for Spotter units
   class O_spotter_F {
     uniform[] = {
-      "LOP_U_TAK_Civ_Fatigue_01",
-      "LOP_U_TAK_Civ_Fatigue_02",
-      "LOP_U_TAK_Civ_Fatigue_04"
+      "MNP_CombatUniform_RU_Med",
+      "MNP_CombatUniform_RU_Med_B"
     };
     vest[] = {
-      "rhs_vydra_3m",
-      "rhs_6sh46",
-      "rhs_6b23",
-      "rhs_6b23_ML_crewofficer",
-      "rhs_6b23_ML_crew",
-      "rhs_6sh92",
-      "rhs_6sh92_vog",
-      "rhs_6b23_rifleman",
-      "V_Chestrig_blk",
-      "V_Chestrig_rgr",
-      "V_Chestrig_khk",
-      "V_Chestrig_oli",
-      "V_BandollierB_blk",
-      "V_BandollierB_cbr",
-      "V_BandollierB_rgr",
-      "V_BandollierB_khk",
-      "V_BandollierB_oli"
+      "MNP_Vest_RU_T",
+      "MNP_Vest_RU_T2",
+      "MNP_Vest_Light_R2"
     };
     headgear[] = {
-      "H_Shemag_olive",
-      "H_ShemagOpen_tan",
-      "H_ShemagOpen_khk",
-      "LOP_H_Pakol",
-      "LOP_H_Turban",
-      "LOP_H_Turban_mask",
-      "LOP_H_Worker_cap"
+      "MNP_Helmet_PAGST_RT",
+      "MNP_Helmet_RU_LT"
     };
-    facewear[] = {};
+    facewear[] = {
+      nil,
+      "G_Balaclava_oli",
+      "G_Shades_Black",
+      "G_Shades_Blue",
+      "G_Shades_Green",
+      "G_Shades_Red",
+      "G_Lady_Blue",
+      "G_Spectacles",
+      "G_Squares",
+      "G_Tactical_Clear",
+      "G_Bandanna_oli",
+      "G_Bandanna_blk",
+      "G_Bandanna_shades",
+      "G_Bandanna_sport",
+      "G_Bandanna_beast",
+      "G_Sport_BlackWhite",
+      "G_Sport_Checkered",
+      "G_Sport_Blackred",
+      "G_Sport_Greenblack",
+      "G_Goggles_VR",
+      "G_Sport_Blackyellow"
+    };
     backpack[] = {
-      "rhs_sidor",
-      "B_TacticalPack_blk",
-      "B_TacticalPack_rgr",
-      "B_TacticalPack_oli",
-      "rhs_assault_umbts_engineer_empty",
-      "rhs_assault_umbts",
-      "MNP_B_RU2_FP",
-      "B_FieldPack_khk",
-      "B_FieldPack_blk",
-      "ibr_backpack"
+      EAST_PACK_LIGHT
     };
 
     weapons[] = {EAST_SPOTTER};
@@ -510,20 +632,26 @@ class opf_f {
     };
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine"
-    };
-    attachments[] = {
-      EAST_SPOTTER_SCOPE,
-      EAST_SPOTTER_RAIL
+      "ACE_morphine",
+      "ACE_CableTie",
+      "ACE_Flashlight_XL50"
     };
     backpackItems[] = {};
     linkedItems[] = {
       "itemWatch",
       "itemMap",
       "itemCompass",
-      "Binocular"
+      "itemGPS",
+      "LaserDesignator",
+      "rhsusf_ANPVS_15"
     };
-    radio = EAST_RADIO_SHORTWAVE;
+    attachments[] = {
+			EAST_SPOTTER_SCOPE,
+			EAST_SPOTTER_RAIL
+		};
+    radios[] = {
+      "rfl"
+    };
   };
 
   /* SNIPER BASE */
@@ -531,51 +659,43 @@ class opf_f {
   // Define the base class for Sniper units
   class O_sniper_F {
     uniform[] = {
-      "LOP_U_TAK_Civ_Fatigue_01",
-      "LOP_U_TAK_Civ_Fatigue_02",
-      "LOP_U_TAK_Civ_Fatigue_04"
+      "MNP_CombatUniform_RU_Med",
+      "MNP_CombatUniform_RU_Med_B"
     };
     vest[] = {
-      "rhs_vydra_3m",
-      "rhs_vest_commander",
-      "rhs_6sh46",
-      "rhs_6b23",
-      "rhs_6b23_ML_crewofficer",
-      "rhs_6b23_ML_crew",
-      "rhs_6sh92",
-      "rhs_6sh92_vog",
-      "rhs_6b23_rifleman",
-      "V_Chestrig_blk",
-      "V_Chestrig_rgr",
-      "V_Chestrig_khk",
-      "V_Chestrig_oli",
-      "V_BandollierB_blk",
-      "V_BandollierB_cbr",
-      "V_BandollierB_rgr",
-      "V_BandollierB_khk",
-      "V_BandollierB_oli"
+      "MNP_Vest_RU_T",
+      "MNP_Vest_RU_T2",
+      "MNP_Vest_Light_R2"
     };
     headgear[] = {
-      "H_Shemag_olive",
-      "H_ShemagOpen_tan",
-      "H_ShemagOpen_khk",
-      "LOP_H_Pakol",
-      "LOP_H_Turban",
-      "LOP_H_Turban_mask",
-      "LOP_H_Worker_cap"
+      "MNP_Helmet_PAGST_RT",
+      "MNP_Helmet_RU_LT"
     };
-    facewear[] = {};
+    facewear[] = {
+      nil,
+      "G_Balaclava_oli",
+      "G_Shades_Black",
+      "G_Shades_Blue",
+      "G_Shades_Green",
+      "G_Shades_Red",
+      "G_Lady_Blue",
+      "G_Spectacles",
+      "G_Squares",
+      "G_Tactical_Clear",
+      "G_Bandanna_oli",
+      "G_Bandanna_blk",
+      "G_Bandanna_shades",
+      "G_Bandanna_sport",
+      "G_Bandanna_beast",
+      "G_Sport_BlackWhite",
+      "G_Sport_Checkered",
+      "G_Sport_Blackred",
+      "G_Sport_Greenblack",
+      "G_Goggles_VR",
+      "G_Sport_Blackyellow"
+    };
     backpack[] = {
-      "rhs_sidor",
-      "B_TacticalPack_blk",
-      "B_TacticalPack_rgr",
-      "B_TacticalPack_oli",
-      "rhs_assault_umbts_engineer_empty",
-      "rhs_assault_umbts",
-      "MNP_B_RU2_FP",
-      "B_FieldPack_khk",
-      "B_FieldPack_blk",
-      "ibr_backpack"
+      EAST_PACK_LIGHT
     };
 
     weapons[] = {EAST_SNIPER};
@@ -589,20 +709,26 @@ class opf_f {
     };
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine"
+      "ACE_morphine",
+      "ACE_CableTie",
+      "ACE_Flashlight_XL50"
     };
     backpackItems[] = {};
     linkedItems[] = {
       "itemWatch",
       "itemMap",
       "itemCompass",
-      "Binocular"
+      "itemGPS",
+      "LaserDesignator",
+      "rhsusf_ANPVS_15"
     };
     attachments[] = {
-      EAST_SNIPER_SCOPE
+			EAST_SNIPER_SCOPE,
+			EAST_SNIPER_RAIL
+		};
+    radios[] = {
+      "rfl"
     };
-
-    radio = EAST_RADIO_SHORTWAVE;
   };
 
   /* HELICOPTER CREW BASE */
@@ -611,19 +737,20 @@ class opf_f {
   // Define the base class for all Helicopter pilot and crew units
   class O_Helipilot_F {
     uniform[] = {
-      "LOP_U_TAK_Civ_Fatigue_01",
-      "LOP_U_TAK_Civ_Fatigue_02",
-      "LOP_U_TAK_Civ_Fatigue_04"
+      "MNP_CombatUniform_RU_Med",
+      "MNP_CombatUniform_RU_Med_B"
     };
     headgear[] = {
-      "rhs_gssh18"
+      "rhs_zsh7a_mike",
+      "rhs_gssh18",
+      "MNP_Helmet_STPilot"
     };
     vest[] = {
-      "rhs_6b23_ML_crewofficer",
+      "MNP_Vest_Light_R2"
     };
     facewear[] = {};
     backpack[] = {
-      "rhs_sidor"
+      EAST_PACK_LIGHT
     };
 
     weapons[] = {EAST_SMG};
@@ -638,26 +765,30 @@ class opf_f {
     backpackItems[] += {"ACE_key_east"};
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine"
+      "ACE_morphine",
+      "ACE_CableTie",
+      "ACE_Flashlight_XL50"
     };
     linkedItems[] = {
       "ItemWatch",
       "ItemMap",
-      "ItemCompass"
+      "ItemCompass",
+      "itemGPS",
+      "rhsusf_ANPVS_15"
     };
     attachments[] = {
-      EAST_SMG_SCOPE,
-      EAST_SMG_RAIL
+			EAST_SMG_SCOPE,
+			EAST_SMG_RAIL
+		};
+    radios[] = {
+      "rfl"
     };
-    radio = EAST_RADIO_SHORTWAVE;
   };
 
   // Heli crew
   // Define gear additions and overrides for Helicopter Crew units
   class O_helicrew_F: O_Helipilot_F {
-    vest[] = {
-      "rhs_6b23_ML_crew",
-    };
+    // No changes
   };
 
   /* VEHICLE CREW BASE */
@@ -665,23 +796,41 @@ class opf_f {
   // Define the base class for all vehicle crew and engineer units
   class O_crew_F {
     uniform[] = {
-      "LOP_U_TAK_Civ_Fatigue_01",
-      "LOP_U_TAK_Civ_Fatigue_02",
-      "LOP_U_TAK_Civ_Fatigue_04"
+      "MNP_CombatUniform_RU_Med",
+      "MNP_CombatUniform_RU_Med_B"
     };
     headgear[] = {
-      "H_Shemag_olive",
-      "H_ShemagOpen_tan",
-      "H_ShemagOpen_khk",
-      "LOP_H_Pakol",
-      "LOP_H_Turban",
-      "LOP_H_Turban_mask",
-      "LOP_H_Worker_cap"
+      "MNP_Helmet_PAGST_RT",
+      "MNP_Helmet_RU_LT"
     };
-    vest[] = {"rhs_6b23_ML_crew"};
-    facewear[] = {};
+    vest[] = {
+      "MNP_Vest_Light_R2"
+    };
+    facewear[] = {
+      nil,
+      "G_Balaclava_oli",
+      "G_Shades_Black",
+      "G_Shades_Blue",
+      "G_Shades_Green",
+      "G_Shades_Red",
+      "G_Lady_Blue",
+      "G_Spectacles",
+      "G_Squares",
+      "G_Tactical_Clear",
+      "G_Bandanna_oli",
+      "G_Bandanna_blk",
+      "G_Bandanna_shades",
+      "G_Bandanna_sport",
+      "G_Bandanna_beast",
+      "G_Sport_BlackWhite",
+      "G_Sport_Checkered",
+      "G_Sport_Blackred",
+      "G_Sport_Greenblack",
+      "G_Goggles_VR",
+      "G_Sport_Blackyellow"
+    };
     backpack[] = {
-      "rhs_sidor"
+      EAST_PACK_LIGHT
     };
 
     weapons[] = {EAST_SMG};
@@ -695,18 +844,23 @@ class opf_f {
     backpackItems[] = {"ACE_key_east"};
     items[] = {
       "ACE_fieldDressing:3",
-      "ACE_morphine"
+      "ACE_morphine",
+      "ACE_CableTie",
+      "ACE_Flashlight_XL50"
     };
     linkedItems[] = {
       "ItemWatch",
       "ItemMap",
-      "ItemCompass"
+      "ItemCompass",
+      "itemGPS"
     };
     attachments[] = {
-      EAST_SMG_SCOPE,
-      EAST_SMG_RAIL
+			EAST_SMG_SCOPE,
+			EAST_SMG_RAIL
+		};
+    radios[] = {
+      "rfl"
     };
-    radio = EAST_RADIO_SHORTWAVE;
   };
 
   // Repair Specialist
@@ -720,13 +874,10 @@ class opf_f {
       EAST_SMOKE_WHITE
     };
     attachments[] = {
-      EAST_CARBINE_SCOPE,
-      EAST_CARBINE_RAIL
-    };
-    backpack[] = {
-      "B_Kitbag_rgr",
-      "B_Kitbag_cbr"
-    };
+			EAST_CARBINE_SCOPE,
+			EAST_CARBINE_RAIL
+		};
+    backpack[] = {EAST_PACK_LIGHT};
     backpackItems[] = {"Toolkit"};
   };
 

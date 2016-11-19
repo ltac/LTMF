@@ -94,19 +94,32 @@ class opf_f {
   #define EAST_RADIO_SHORTWAVE "tf_fadak"
   #define EAST_RADIO_MANPACK "tf_mr3000_rhs"
   #define EAST_RADIO_AIRBORNE "tf_mr6000l"
-  // Throwables
-  #define EAST_SMOKE_WHITE "rhs_mag_rdg2_white:2"
-  #define EAST_SMOKE_COLOR "rhs_mag_rdg2_black:2"
-  #define EAST_CHEMLIGHT "Chemlight_red:2"
-  #define EAST_FRAG "rhs_mag_rgd5:2"
   // Backpacks
   #define EAST_PACK_LIGHT "MNP_B_RU2_FP"
   #define EAST_PACK_MEDIUM "B_Kitbag_rgr"
   #define EAST_PACK_HEAVY "MNP_B_RU2_CA"
 
-  // By default, OPFOR uses Persian faces.
-  // If you want something else, specify the list here.
-  faces[] = {};
+  // Define the set of Faces to be used by units
+  faces[] = {
+    "WhiteHead_01",
+    "WhiteHead_02",
+    "WhiteHead_03",
+    "WhiteHead_04",
+    "WhiteHead_05",
+    "WhiteHead_06",
+    "WhiteHead_07",
+    "WhiteHead_08",
+    "WhiteHead_09",
+    "WhiteHead_10",
+    "WhiteHead_11",
+    "WhiteHead_12",
+    "WhiteHead_13",
+    "WhiteHead_14",
+    "WhiteHead_15",
+    "WhiteHead_16",
+    "WhiteHead_17",
+    "WhiteHead_18"
+  };
 
   // Define the cargo for Vehicles
   class Car {
@@ -305,7 +318,9 @@ class opf_f {
 			EAST_RIFLE_RAIL
 		};
     // Set the basic radio for the unit
-    radio = EAST_RADIO_RIFLEMAN;
+    radios[] = {
+      "rfl"
+    };
   };
 
   /* END RIFLEMAN BASE */
@@ -324,7 +339,7 @@ class opf_f {
   You can override a certain type of gear by setting it to something
   new using =
   For example:
-  backpack[] = {EAST_RADIO_MANPACK};
+  
 
   Instead of replacing gear, you can also add to gear by using +=
   For example, to add GPS in addition to the base Watch, Map,
@@ -335,7 +350,6 @@ class opf_f {
   // CO and DC
   // Define gear additions and overrides for Officer units
   class O_Officer_F: O_Soldier_F {
-    backpack[] = {EAST_RADIO_MANPACK};
     weapons[] = {EAST_GLRIFLE};
     magazines[] = {
       EAST_GLRIFLE_MAG,
@@ -358,7 +372,10 @@ class opf_f {
       "ACE_Vector"
     };
     items[] = {"ACE_MapTools"};
-    radio = EAST_RADIO_SHORTWAVE;
+    radios[] = {
+      "sr",
+      "rfl"
+    };
   };
 
   // SL
@@ -369,7 +386,10 @@ class opf_f {
     };
     items[] = {"ACE_MapTools"};
     backpackItems[] += {"ACE_fieldDressing"};
-    radio = EAST_RADIO_SHORTWAVE;
+    radios[] = {
+      "sr",
+      "rfl"
+    };
   };
 
   // UAV
@@ -379,7 +399,9 @@ class opf_f {
     linkedItems[] += {
       "O_uavterminal"
     };
-    radio = EAST_RADIO_SHORTWAVE;
+    radios[] = {
+      "rfl"
+    };
   };
 
   // FTL
@@ -482,7 +504,7 @@ class opf_f {
   // MMG Asst
   // Define gear additions and overrides for MMG Spotter units
   class O_Soldier_A_F: O_Soldier_F {
-    backpack[] = {EAST_PACK_LIGHT};
+    backpack[] = {EAST_PACK_MEDIUM};
     backpackItems[] += {EAST_MMG_MAG};
     linkedItems[] += {"ACE_Vector"};
   };
@@ -520,7 +542,7 @@ class opf_f {
   // AA Gunner
   // Define gear additions and overrides for AA Gunner units
   class O_Soldier_AA_F: O_Soldier_F {
-    backpack[] = {EAST_PACK_LIGHT};
+    backpack[] = {EAST_PACK_HEAVY};
     weapons[] = {EAST_CARBINE};
     magazines[] = {
       EAST_CARBINE_MAG,
@@ -535,7 +557,7 @@ class opf_f {
   // AA Asst
   // Define gear additions and overrides for AA Spotter units
   class O_Soldier_AAA_F: O_Soldier_F {
-    backpack[] = {EAST_PACK_LIGHT};
+    backpack[] = {EAST_PACK_HEAVY};
     backpackItems[] = {EAST_SAM_MAG};
     linkedItems[] += {"ACE_Vector"};
   };
@@ -641,7 +663,9 @@ class opf_f {
 			EAST_SPOTTER_SCOPE,
 			EAST_SPOTTER_RAIL
 		};
-    radio = EAST_RADIO_SHORTWAVE;
+    radios[] = {
+      "rfl"
+    };
   };
 
   /* SNIPER BASE */
@@ -716,7 +740,9 @@ class opf_f {
 			EAST_SNIPER_SCOPE,
 			EAST_SNIPER_RAIL
 		};
-    radio = EAST_RADIO_SHORTWAVE;
+    radios[] = {
+      "rfl"
+    };
   };
 
   /* HELICOPTER CREW BASE */
@@ -768,7 +794,9 @@ class opf_f {
 			EAST_SMG_SCOPE,
 			EAST_SMG_RAIL
 		};
-    radio = EAST_RADIO_SHORTWAVE;
+    radios[] = {
+      "rfl"
+    };
   };
 
   // Heli crew
@@ -844,7 +872,9 @@ class opf_f {
 			EAST_SMG_SCOPE,
 			EAST_SMG_RAIL
 		};
-    radio = EAST_RADIO_SHORTWAVE;
+    radios[] = {
+      "rfl"
+    };
   };
 
   // Repair Specialist
@@ -861,7 +891,7 @@ class opf_f {
 			EAST_CARBINE_SCOPE,
 			EAST_CARBINE_RAIL
 		};
-    backpack[] = {EAST_PACK_LIGHT};
+    backpack[] = {EAST_PACK_MEDIUM};
     backpackItems[] = {"Toolkit"};
   };
 

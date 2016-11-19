@@ -34,7 +34,7 @@ _magazines = getArray(_path >> "magazines");
 _items = getArray(_path >> "items");
 _linkedItems = getArray(_path >> "linkedItems");
 _attachments = getArray(_path >> "attachments");
-_radio = getText(_path >> "radio");
+_radios = getArray(_path >> "radios");
 
 removeAllWeapons _unit;
 removeAllAssignedItems _unit;
@@ -54,7 +54,7 @@ if ((count _uniforms) == 0) then {
             _unit forceAddUniform _toAdd;
         };
     } else {
-        diag_log text format ["[BW] %1 Uniform (%2) not found using default (%3)", _loadout, _toAdd, (uniform _unit)];
+        diag_log text format ["[LT] %1 Uniform (%2) not found using default (%3)", _loadout, _toAdd, (uniform _unit)];
     };
 };
 //Random Vest:
@@ -66,7 +66,7 @@ if ((count _vests) == 0) then {
         removeVest _unit;
         _unit addVest _toAdd;
     } else {
-        diag_log text format ["[BW] %1 Vest (%2) not found using default (%3)", _loadout, _toAdd, (vest _unit)];
+        diag_log text format ["[LT] %1 Vest (%2) not found using default (%3)", _loadout, _toAdd, (vest _unit)];
     };
 };
 //Random Backpack:
@@ -78,7 +78,7 @@ if ((count _backpack) == 0) then {
         removeBackpack _unit;
         _unit addBackpack _toAdd;
     } else {
-        diag_log text format ["[BW] %1 Backpack (%2) not found using default (%3)", _loadout, _toAdd, (backpack _unit)];
+        diag_log text format ["[LT] %1 Backpack (%2) not found using default (%3)", _loadout, _toAdd, (backpack _unit)];
     };
 };
 //Random Headgear:
@@ -90,7 +90,7 @@ if ((count _headgears) == 0) then {
         removeHeadgear _unit;
         _unit addHeadgear _toAdd;
     } else {
-        diag_log text format ["[BW] %1 Headgear (%2) not found using default (%3)", _loadout, _toAdd, (headgear _unit)];
+        diag_log text format ["[LT] %1 Headgear (%2) not found using default (%3)", _loadout, _toAdd, (headgear _unit)];
     };
 };
 //Random Facewear:
@@ -102,7 +102,7 @@ if ((count _facewears) == 0) then {
         removeGoggles _unit;
         _unit addGoggles _toAdd;
     } else {
-        diag_log text format ["[BW] %1 Facewear (%2) not found using default (%3)", _loadout, _toAdd, (goggles _unit)];
+        diag_log text format ["[LT] %1 Facewear (%2) not found using default (%3)", _loadout, _toAdd, (goggles _unit)];
     };
 };
 //Random Face:
@@ -111,7 +111,7 @@ if ((count _faces) != 0) then {
     if (!isNil "_toAdd") then {
         _unit setFace _toAdd
     } else {
-        diag_log text format ["[BW] %1 Face (%2) not found using default", _loadout, _toAdd];
+        diag_log text format ["[LT] %1 Face (%2) not found using default", _loadout, _toAdd];
     };
 };
 //Clear backpack
@@ -121,8 +121,8 @@ clearAllItemsFromBackpack _unit;
 // ====================================================================================
 // Radio
 
-if (!isNil "_radio") then {
-	_unit linkItem _radio;
+if (count _radios != 0) then {
+    [_unit, _radios] call L_fnc_getRadiosACRE;
 };
 
 // Backpack Items
@@ -211,10 +211,10 @@ if ((count _handguns) > 0) then {_unit addWeapon (_handguns call BIS_fnc_selectR
         _unit addMagazines [_x, 1];
     } else {
         if (isNil "F_GEAR_ERROR_LOADOUTS") then {F_GEAR_ERROR_LOADOUTS = [];};
-        diag_log text format ["[BW] %1 - No room for magazine %2", _loadout, _x];
+        diag_log text format ["[LT] %1 - No room for magazine %2", _loadout, _x];
         if (!(_loadout in F_GEAR_ERROR_LOADOUTS)) then {
             F_GEAR_ERROR_LOADOUTS pushBack _loadout;
-            diag_log text format ["[BW] Failed To add Magazine %1 to %2", _x, _loadout];
+            diag_log text format ["[LT] Failed To add Magazine %1 to %2", _x, _loadout];
         };
     };
 } forEach _magazinesNotAdded;
