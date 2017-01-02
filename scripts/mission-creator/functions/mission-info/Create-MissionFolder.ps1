@@ -5,7 +5,7 @@
  # .Description
  # Creates a new directory for the mission in the generated-missions folder
  # with the format folderName.folderExtension, then copies all contents of
- # LTMF.Altis to the new directory
+ # LTMF.VR to the new directory
  #
  # .Parameter folderName
  # 		The name of the mission that will be used to name the folder
@@ -19,7 +19,7 @@ function Create-MissionFolder {
 		[parameter(Mandatory=$true)][string]$folderExtension
 	)
 
-	# Retrieve the LTMF.Altis folder
+	# Retrieve the LTMF.VR folder
 	$frameworkDirectory = Get-BaseFrameworkPath
 	
 	# Retrieve the output folder where we will place our new folder
@@ -34,7 +34,7 @@ function Create-MissionFolder {
 	}
 	md $newDirectory
 	
-	# Copy the contents of LTMF.Altis into our new directory
+	# Copy the contents of LTMF.VR into our new directory
 	Copy-Item $frameworkDirectory\* $newDirectory -recurse
 	
 	# Save the newly created path in the Script variable

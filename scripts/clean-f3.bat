@@ -1,7 +1,7 @@
 @echo off
 
 rem Set commonly used paths
-SET frameworkDir=..\LTMF.Altis
+SET frameworkDir=..\LTMF.VR
 SET f3Dir=%frameworkDir%\f
 SET optDir=..\optional
 SET optFDir=%optDir%\f

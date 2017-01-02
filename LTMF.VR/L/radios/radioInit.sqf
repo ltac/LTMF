@@ -1,0 +1,1 @@
+[] execVM "L\radios\init_acre.sqf";
