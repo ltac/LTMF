@@ -215,7 +215,7 @@ class blu_f {
       "ItemMap",
       "ItemCompass",
       "ItemWatch",
-      "rhsusf_ANPVS_14"
+      "ACE_NVG_Wide"
     };
     // List the attachments that will be automatically added
     // to the unit's equipped weapons

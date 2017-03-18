@@ -210,7 +210,7 @@ class blu_f {
       "ItemMap",
       "ItemCompass",
       "ItemWatch",
-      "rhsusf_ANPVS_14"
+      "ACE_NVG_Wide"
     };
     // List the attachments that will be automatically added
     // to the unit's equipped weapons
@@ -536,7 +536,7 @@ class blu_f {
       "itemCompass",
       "itemGPS",
       "LaserDesignator",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			WEST_SPOTTER_SCOPE,
@@ -587,7 +587,7 @@ class blu_f {
       "itemCompass",
       "itemGPS",
       "LaserDesignator",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			WEST_SNIPER_SCOPE,
@@ -636,7 +636,7 @@ class blu_f {
       "ItemMap",
       "ItemCompass",
       "itemGPS",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			WEST_SMG_SCOPE,
@@ -691,7 +691,7 @@ class blu_f {
       "ItemMap",
       "ItemCompass",
       "itemGPS",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			WEST_SMG_SCOPE,

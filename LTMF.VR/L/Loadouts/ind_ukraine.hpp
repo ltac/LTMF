@@ -272,7 +272,7 @@ class ind_f {
     linkedItems[] += {
       "ItemGPS",
       "ACE_Vector",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     items[] = {"ACE_MapTools"};
     radios[] = {
@@ -286,7 +286,7 @@ class ind_f {
   class I_Soldier_SL_F: I_Officer_F {
     linkedItems[] += {
       "Binocular",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     items[] = {"ACE_MapTools"};
     backpackItems[] += {"ACE_fieldDressing"};
@@ -548,7 +548,7 @@ class ind_f {
       "itemCompass",
       "itemGPS",
       "LaserDesignator",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			IND_SPOTTER_SCOPE,
@@ -612,7 +612,7 @@ class ind_f {
       "itemCompass",
       "itemGPS",
       "LaserDesignator",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			IND_SNIPER_SCOPE,
@@ -660,7 +660,7 @@ class ind_f {
       "ItemMap",
       "ItemCompass",
       "itemGPS",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			IND_SMG_SCOPE,

@@ -504,7 +504,7 @@ class blu_f {
       "itemCompass",
       "itemGPS",
       "LaserDesignator",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			WEST_SPOTTER_SCOPE,
@@ -552,7 +552,7 @@ class blu_f {
       "itemCompass",
       "itemGPS",
       "LaserDesignator",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			WEST_SNIPER_SCOPE,
@@ -603,7 +603,7 @@ class blu_f {
       "ItemMap",
       "ItemCompass",
       "itemGPS",
-      /*"rhsusf_ANPVS_15"*/
+      /*"ACE_NVG_Wide"*/
     };
     attachments[] = {
 			/*WEST_SMG_SCOPE,*/
@@ -658,7 +658,7 @@ class blu_f {
       "ItemMap",
       "ItemCompass",
       "itemGPS",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			WEST_SMG_SCOPE,

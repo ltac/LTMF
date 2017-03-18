@@ -296,7 +296,7 @@ class opf_f {
       "ItemMap",
       "ItemCompass",
       "ItemWatch",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     // List the attachments that will be automatically added
     // to the unit's equipped weapons
@@ -643,7 +643,7 @@ class opf_f {
       "itemCompass",
       "itemGPS",
       "LaserDesignator",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			EAST_SPOTTER_SCOPE,
@@ -720,7 +720,7 @@ class opf_f {
       "itemCompass",
       "itemGPS",
       "LaserDesignator",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			EAST_SNIPER_SCOPE,
@@ -774,7 +774,7 @@ class opf_f {
       "ItemMap",
       "ItemCompass",
       "itemGPS",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			EAST_SMG_SCOPE,
