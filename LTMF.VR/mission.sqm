@@ -9280,7 +9280,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0.80000001;
 						};
 					};
 				};
@@ -9318,7 +9318,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=15;
+							value=20;
 						};
 					};
 				};
@@ -9337,7 +9337,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1;
+							value=0.89999998;
 						};
 					};
 				};
@@ -9356,7 +9356,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=6;
+							value=7;
 						};
 					};
 				};
