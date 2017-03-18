@@ -36,35 +36,35 @@ class blu_f {
 	// Rifle
 	#define WEST_RIFLE "rhs_weap_m4a1_carryhandle_grip2"
 	#define WEST_RIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_m18_red:2"
-  #define WEST_RIFLE_SCOPE "rhsusf_acc_eotech_552"
-  #define WEST_RIFLE_RAIL "rhsusf_acc_anpeq15A"
+	#define WEST_RIFLE_SCOPE "rhsusf_acc_eotech_552"
+	#define WEST_RIFLE_RAIL "rhsusf_acc_anpeq15A"
 	// GL Rifle
 	#define WEST_GLRIFLE "rhs_weap_m4a1_carryhandle_m203S"
 	#define WEST_GLRIFLE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_m18_red:2"
 	#define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
 	#define WEST_GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:8"
 	#define WEST_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareGreen_F:2"
-  #define WEST_GLRIFLE_SCOPE "rhsusf_acc_eotech_552"
-  #define WEST_GLRIFLE_RAIL "rhsusf_acc_anpeq15A"
+	#define WEST_GLRIFLE_SCOPE "rhsusf_acc_eotech_552"
+	#define WEST_GLRIFLE_RAIL "rhsusf_acc_anpeq15A"
 	// Carbine
 	#define WEST_CARBINE "rhs_weap_m4a1_carryhandle_grip"
 	#define WEST_CARBINE_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8","rhs_mag_m18_red:2"
 	#define WEST_CARBINE_SCOPE "rhsusf_acc_eotech_552"
-  #define WEST_CARBINE_RAIL "rhsusf_acc_anpeq15A"
+	#define WEST_CARBINE_RAIL "rhsusf_acc_anpeq15A"
 	// AR
 	#define WEST_AR "rhs_weap_m249_pip_L"
-	#define WEST_AR_MAG "rhsusf_200Rnd_556x45_soft_pouch:2"
-	#define WEST_AR_MAG2 "rhsusf_200Rnd_556x45_soft_pouch:2"
-  #define WEST_AR_SCOPE "rhsusf_acc_eotech_552"
-  #define WEST_AR_RAIL "rhsusf_acc_anpeq15A"
+	#define WEST_AR_MAG "rhsusf_200Rnd_556x45_soft_pouch:3"
+	#define WEST_AR_MAG2 "rhsusf_200Rnd_556x45_soft_pouch:3"
+	#define WEST_AR_SCOPE "rhsusf_acc_eotech_552"
+	#define WEST_AR_RAIL "rhsusf_acc_anpeq15A"
 	// AT
 	#define WEST_AT "rhs_weap_M136"
 	#define WEST_AT_MAG "rhs_m136_mag"
 	// MMG
 	#define WEST_MMG "rhs_weap_m240B"
 	#define WEST_MMG_MAG "rhsusf_100Rnd_762x51:5"
-  #define WEST_MMG_SCOPE "rhsusf_acc_eotech_552"
-  #define WEST_MMG_RAIL "rhsusf_acc_anpeq15A"
+	#define WEST_MMG_SCOPE "rhsusf_acc_eotech_552"
+	#define WEST_MMG_RAIL "rhsusf_acc_anpeq15A"
 	// MAT
 	#define WEST_MAT "launch_I_Titan_short_F"
 	#define WEST_MAT_MAG "Titan_AT:2","Titan_AP:1"
@@ -74,18 +74,18 @@ class blu_f {
 	// Sniper Rifle
 	#define WEST_SNIPER "rhs_weap_m14ebrri"
 	#define WEST_SNIPER_MAG "rhsusf_20Rnd_762x51_m993_Mag:8"
-  #define WEST_SNIPER_SCOPE "rhsusf_acc_LEUPOLDMK4_2"
-  #define WEST_SNIPER_RAIL "rhsusf_acc_anpeq15side"
+	#define WEST_SNIPER_SCOPE "rhsusf_acc_LEUPOLDMK4_2"
+	#define WEST_SNIPER_RAIL "rhsusf_acc_anpeq15side"
 	// Spotter Rifle
 	#define WEST_SPOTTER "rhs_weap_m4a1_blockII_grip2_KAC"
 	#define WEST_SPOTTER_MAG "rhs_mag_30Rnd_556x45_Mk318_Stanag:8"
-  #define WEST_SPOTTER_SCOPE "rhsusf_acc_eotech_552"
-  #define WEST_SPOTTER_RAIL "rhsusf_acc_anpeq15A"
+	#define WEST_SPOTTER_SCOPE "rhsusf_acc_eotech_552"
+	#define WEST_SPOTTER_RAIL "rhsusf_acc_anpeq15A"
 	// SMG
 	#define WEST_SMG "hlc_smg_mp5a4"
 	#define WEST_SMG_MAG "hlc_30Rnd_9x19_B_MP5:6"
-  #define WEST_SMG_SCOPE "rhsusf_acc_eotech_552"
-  #define WEST_SMG_RAIL "rhsusf_acc_anpeq15A"
+	#define WEST_SMG_SCOPE "rhsusf_acc_eotech_552"
+	#define WEST_SMG_RAIL "rhsusf_acc_anpeq15A"
 	// Pistol
 	#define WEST_PISTOL "rhsusf_weap_m1911a1"
 	#define WEST_PISTOL_MAG "rhsusf_mag_7x45acp_MHP:4"
@@ -94,15 +94,15 @@ class blu_f {
 	#define WEST_RADIO_SHORTWAVE "tf_anprc152"
 	#define WEST_RADIO_MANPACK "tf_rt1523g_big"
 	#define WEST_RADIO_AIRBORNE "tf_anarc210"
-  // Throwables
-  #define WEST_SMOKE_WHITE "SmokeShell:2"
-  #define WEST_SMOKE_COLOR "SmokeShellGreen:2"
-  #define WEST_CHEMLIGHT "Chemlight_green:2"
-  #define WEST_FRAG "HandGrenade:2"
-  // Backpacks
-  #define WEST_PACK_LIGHT "rhsusf_assault_eagleaiii_ocp"
-  #define WEST_PACK_MEDIUM "B_Kitbag_rgr"
-  #define WEST_PACK_HEAVY "B_Carryall_oli"
+  	// Throwables
+	#define WEST_SMOKE_WHITE "SmokeShell:2"
+	#define WEST_SMOKE_COLOR "SmokeShellGreen:2"
+	#define WEST_CHEMLIGHT "Chemlight_green:2"
+	#define WEST_FRAG "HandGrenade:2"
+  	// Backpacks
+	#define WEST_PACK_LIGHT "rhsusf_assault_eagleaiii_ocp"
+	#define WEST_PACK_MEDIUM "B_Kitbag_rgr"
+	#define WEST_PACK_HEAVY "B_Carryall_oli"
 
 	// By default, BLUFOR uses White, Black, and Asian faces.
 	// If you want something else, specify the list here.

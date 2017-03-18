@@ -31,8 +31,8 @@ class ind_f {
   #define IND_CARBINE_RAIL "nil"
   // AR
   #define IND_AR "hlc_rifle_rpk"
-  #define IND_AR_MAG "hlc_75Rnd_762x39_m_rpk:5"
-  #define IND_AR_MAG2 "hlc_75Rnd_762x39_m_rpk:5"
+  #define IND_AR_MAG "hlc_75Rnd_762x39_m_rpk:6"
+  #define IND_AR_MAG2 "hlc_75Rnd_762x39_m_rpk:6"
   #define IND_AR_SCOPE "nil"
   #define IND_AR_RAIL "nil"
   // AT

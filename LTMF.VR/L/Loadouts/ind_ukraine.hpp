@@ -30,8 +30,8 @@ class ind_f {
   #define IND_CARBINE_RAIL "acc_flashlight"
   // AR
   #define IND_AR "rhs_weap_pkm"
-  #define IND_AR_MAG "rhs_100Rnd_762x54mmR:2"
-  #define IND_AR_MAG2 "rhs_100Rnd_762x54mmR_green:2"
+  #define IND_AR_MAG "rhs_100Rnd_762x54mmR:5"
+  #define IND_AR_MAG2 "rhs_100Rnd_762x54mmR_green:5"
   #define IND_AR_SCOPE "RH_barska_rds"
   #define IND_AR_RAIL "acc_flashlight"
   // AT

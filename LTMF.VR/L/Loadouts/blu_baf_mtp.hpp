@@ -31,8 +31,8 @@ class blu_f {
   #define WEST_CARBINE_RAIL "rhsusf_acc_anpeq15A"
   // AR
   #define WEST_AR "UK3CB_BAF_L110A2"
-  #define WEST_AR_MAG "UK3CB_BAF_556_100Rnd:3"
-  #define WEST_AR_MAG2 "UK3CB_BAF_556_100Rnd:3"
+  #define WEST_AR_MAG "UK3CB_BAF_556_100Rnd:5"
+  #define WEST_AR_MAG2 "UK3CB_BAF_556_100Rnd:5"
   #define WEST_AR_SCOPE "rhsusf_acc_eotech_552"
   #define WEST_AR_RAIL "rhsusf_acc_anpeq15A"
   // AT

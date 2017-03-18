@@ -30,8 +30,8 @@ class blu_f {
   	#define WEST_CARBINE_RAIL "rhsusf_acc_anpeq15side","muzzle_snds_m_khk_F"
 	// AR
 	#define WEST_AR "rhs_weap_m249_pip_L"
-	#define WEST_AR_MAG "rhsusf_200Rnd_556x45_soft_pouch:2"
-	#define WEST_AR_MAG2 "rhsusf_200Rnd_556x45_soft_pouch:2"
+	#define WEST_AR_MAG "rhsusf_200Rnd_556x45_soft_pouch:3"
+	#define WEST_AR_MAG2 "rhsusf_200Rnd_556x45_soft_pouch:3"
   	#define WEST_AR_SCOPE "rhsusf_acc_SpecterDR_A"
   	#define WEST_AR_RAIL "rhsusf_acc_anpeq15side_bk","rhsusf_acc_nt4_black"
 	// AT

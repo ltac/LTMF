@@ -13,35 +13,35 @@ class ind_f {
 	// Rifle
 	#define IND_RIFLE "arifle_Mk20_ACO_pointer_F"
 	#define IND_RIFLE_MAG "30Rnd_556x45_Stanag:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
-  #define IND_RIFLE_SCOPE "RH_barska_rds"
-  #define IND_RIFLE_RAIL "acc_flashlight"
+  	#define IND_RIFLE_SCOPE "RH_barska_rds"
+  	#define IND_RIFLE_RAIL "acc_flashlight"
 	// GL Rifle
 	#define IND_GLRIFLE "arifle_Mk20_GL_F"
 	#define IND_GLRIFLE_MAG "30Rnd_556x45_Stanag:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
 	#define IND_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
 	#define IND_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:8"
 	#define IND_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareGreen_F:2"
-  #define IND_GLRIFLE_SCOPE "RH_barska_rds"
-  #define IND_GLRIFLE_RAIL "acc_flashlight"
+  	#define IND_GLRIFLE_SCOPE "RH_barska_rds"
+  	#define IND_GLRIFLE_RAIL "acc_flashlight"
 	// Carbine
 	#define IND_CARBINE "arifle_Mk20C_F"
 	#define IND_CARBINE_MAG "30Rnd_556x45_Stanag:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
-  #define IND_CARBINE_SCOPE "RH_barska_rds"
-  #define IND_CARBINE_RAIL "acc_flashlight"
+  	#define IND_CARBINE_SCOPE "RH_barska_rds"
+  	#define IND_CARBINE_RAIL "acc_flashlight"
 	// AR
 	#define IND_AR "LMG_Mk200_LP_BI_F"
-	#define IND_AR_MAG "200Rnd_65x39_cased_Box:2"
-	#define IND_AR_MAG2 "200Rnd_65x39_cased_Box:2"
-  #define IND_AR_SCOPE "RH_barska_rds"
-  #define IND_AR_RAIL "acc_flashlight"
+	#define IND_AR_MAG "200Rnd_65x39_cased_Box:3"
+	#define IND_AR_MAG2 "200Rnd_65x39_cased_Box:3"
+  	#define IND_AR_SCOPE "RH_barska_rds"
+  	#define IND_AR_RAIL "acc_flashlight"
 	// AT
 	#define IND_AT "launch_NLAW_F"
 	#define IND_AT_MAG "NLAW_F"
 	// MMG
 	#define IND_MMG "MMG_02_black_F"
 	#define IND_MMG_MAG "130Rnd_338_Mag:5"
-  #define IND_MMG_SCOPE "RH_barska_rds"
-  #define IND_MMG_RAIL "acc_flashlight"
+  	#define IND_MMG_SCOPE "RH_barska_rds"
+ 	#define IND_MMG_RAIL "acc_flashlight"
 	// MAT
 	#define IND_MAT "launch_I_Titan_short_F"
 	#define IND_MAT_MAG "Titan_AT:2","Titan_AP:1"
@@ -51,18 +51,18 @@ class ind_f {
 	// Sniper Rifle
 	#define IND_SNIPER "srifle_GM6_LRPS_F"
 	#define IND_SNIPER_MAG "5Rnd_127x108_Mag:8"
-  #define IND_SNIPER_SCOPE "rhsusf_acc_LEUPOLDMK4_2"
-  #define IND_SNIPER_RAIL "acc_flashlight"
+  	#define IND_SNIPER_SCOPE "rhsusf_acc_LEUPOLDMK4_2"
+  	#define IND_SNIPER_RAIL "acc_flashlight"
 	// Spotter Rifle
 	#define IND_SPOTTER "arifle_Mk20C_F"
 	#define IND_SPOTTER_MAG "30Rnd_556x45_Stanag:8"
-  #define IND_SPOTTER_SCOPE "RH_barska_rds"
-  #define IND_SPOTTER_RAIL "acc_flashlight"
+	#define IND_SPOTTER_SCOPE "RH_barska_rds"
+	#define IND_SPOTTER_RAIL "acc_flashlight"
 	// SMG
 	#define IND_SMG "SMG_02_F"
 	#define IND_SMG_MAG "30Rnd_9x21_Mag:6"
-  #define IND_SMG_SCOPE "RH_barska_rds"
-  #define IND_SMG_RAIL "acc_flashlight"
+	#define IND_SMG_SCOPE "RH_barska_rds"
+	#define IND_SMG_RAIL "acc_flashlight"
 	// Pistol
 	#define IND_PISTOL "hgun_ACPC2_snds_F"
 	#define IND_PISTOL_MAG "9Rnd_45ACP_Mag:4"
@@ -71,15 +71,15 @@ class ind_f {
 	#define IND_RADIO_SHORTWAVE "tf_anprc148jem"
 	#define IND_RADIO_MANPACK "tf_anprc155"
 	#define IND_RADIO_AIRBORNE "tf_anarc164"
-  // Throwables
-  #define IND_SMOKE_WHITE "rhs_mag_rdg2_white:2"
-  #define IND_SMOKE_COLOR "rhs_mag_rdg2_black:2"
-  #define IND_CHEMLIGHT "Chemlight_yellow:2"
-  #define IND_FRAG "rhs_mag_rgd5:2"
-  // Backpacks
-  #define IND_PACK_LIGHT "B_AssaultPack_dgtl"
-  #define IND_PACK_MEDIUM "B_Kitbag_rgr"
-  #define IND_PACK_HEAVY "B_Carryall_oli"
+  	// Throwables
+	#define IND_SMOKE_WHITE "rhs_mag_rdg2_white:2"
+	#define IND_SMOKE_COLOR "rhs_mag_rdg2_black:2"
+	#define IND_CHEMLIGHT "Chemlight_yellow:2"
+	#define IND_FRAG "rhs_mag_rgd5:2"
+  	// Backpacks
+	#define IND_PACK_LIGHT "B_AssaultPack_dgtl"
+	#define IND_PACK_MEDIUM "B_Kitbag_rgr"
+	#define IND_PACK_HEAVY "B_Carryall_oli"
 
 	// Define the cargo for Vehicles
 	class Car {
