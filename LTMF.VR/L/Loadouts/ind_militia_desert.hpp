@@ -31,8 +31,8 @@ class ind_f {
   #define IND_CARBINE_RAIL "nil"
   // AR
   #define IND_AR "hlc_rifle_rpk"
-  #define IND_AR_MAG "hlc_75Rnd_762x39_m_rpk:5"
-  #define IND_AR_MAG2 "hlc_75Rnd_762x39_m_rpk:5"
+  #define IND_AR_MAG "hlc_75Rnd_762x39_m_rpk:6"
+  #define IND_AR_MAG2 "hlc_75Rnd_762x39_m_rpk:6"
   #define IND_AR_SCOPE "nil"
   #define IND_AR_RAIL "nil"
   // AT
@@ -308,7 +308,7 @@ class ind_f {
     linkedItems[] += {
       "ItemGPS",
       "Binocular",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			IND_GLRIFLE_SCOPE,
@@ -326,7 +326,7 @@ class ind_f {
   class I_Soldier_SL_F: I_Officer_F {
     linkedItems[] += {
       "Binocular",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     items[] = {"ACE_MapTools"};
     backpackItems[] += {"ACE_fieldDressing"};
@@ -588,7 +588,7 @@ class ind_f {
       "itemCompass",
       "itemGPS",
       "LaserDesignator",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			IND_SPOTTER_SCOPE,
@@ -652,7 +652,7 @@ class ind_f {
       "itemCompass",
       "itemGPS",
       "LaserDesignator",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			IND_SNIPER_SCOPE
@@ -696,7 +696,7 @@ class ind_f {
       "ItemMap",
       "ItemCompass",
       "itemGPS",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			IND_SMG_SCOPE,

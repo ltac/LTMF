@@ -30,8 +30,8 @@ class ind_f {
   #define IND_CARBINE_RAIL "acc_flashlight"
   // AR
   #define IND_AR "rhs_weap_pkm"
-  #define IND_AR_MAG "rhs_100Rnd_762x54mmR:2"
-  #define IND_AR_MAG2 "rhs_100Rnd_762x54mmR_green:2"
+  #define IND_AR_MAG "rhs_100Rnd_762x54mmR:5"
+  #define IND_AR_MAG2 "rhs_100Rnd_762x54mmR_green:5"
   #define IND_AR_SCOPE "RH_barska_rds"
   #define IND_AR_RAIL "acc_flashlight"
   // AT
@@ -272,7 +272,7 @@ class ind_f {
     linkedItems[] += {
       "ItemGPS",
       "ACE_Vector",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     items[] = {"ACE_MapTools"};
     radios[] = {
@@ -286,7 +286,7 @@ class ind_f {
   class I_Soldier_SL_F: I_Officer_F {
     linkedItems[] += {
       "Binocular",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     items[] = {"ACE_MapTools"};
     backpackItems[] += {"ACE_fieldDressing"};
@@ -548,7 +548,7 @@ class ind_f {
       "itemCompass",
       "itemGPS",
       "LaserDesignator",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			IND_SPOTTER_SCOPE,
@@ -612,7 +612,7 @@ class ind_f {
       "itemCompass",
       "itemGPS",
       "LaserDesignator",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			IND_SNIPER_SCOPE,
@@ -660,7 +660,7 @@ class ind_f {
       "ItemMap",
       "ItemCompass",
       "itemGPS",
-      "rhsusf_ANPVS_15"
+      "ACE_NVG_Wide"
     };
     attachments[] = {
 			IND_SMG_SCOPE,

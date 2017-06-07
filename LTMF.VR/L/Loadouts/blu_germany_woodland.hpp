@@ -31,8 +31,8 @@ class blu_f {
   	#define WEST_CARBINE_RAIL "rhsusf_acc_anpeq15A"
 	// AR
 	#define WEST_AR "hlc_lmg_minimi_railed"
-	#define WEST_AR_MAG "hlc_200rnd_556x45_M_SAW:2"
-	#define WEST_AR_MAG2 "hlc_200rnd_556x45_M_SAW:2"
+	#define WEST_AR_MAG "hlc_200rnd_556x45_M_SAW:3"
+	#define WEST_AR_MAG2 "hlc_200rnd_556x45_M_SAW:3"
   	#define WEST_AR_SCOPE "rhsusf_acc_eotech_552"
   	#define WEST_AR_RAIL "rhsusf_acc_anpeq15A"
 	// AT
@@ -244,7 +244,7 @@ class blu_f {
 			"ItemCompass",
 			"ItemWatch",
 			"ACE_CableTie",
-			"rhsusf_ANPVS_15"
+			"ACE_NVG_Wide"
 		};
 		// List the attachments that will be automatically added
 		// to the unit's equipped weapons
@@ -549,7 +549,7 @@ class blu_f {
 			"itemCompass",
 			"itemGPS",
 			"LaserDesignator",
-			"rhsusf_ANPVS_15"
+			"ACE_NVG_Wide"
 		};
     	attachments[] = {
 			WEST_SPOTTER_SCOPE,
@@ -606,7 +606,7 @@ class blu_f {
 			"itemCompass",
 			"itemGPS",
 			"LaserDesignator",
-			"rhsusf_ANPVS_15"
+			"ACE_NVG_Wide"
 		};
 		attachments[] = {};
 		radios[] = {
@@ -660,7 +660,7 @@ class blu_f {
 			"ItemMap",
 			"ItemCompass",
 			"itemGPS",
-			"rhsusf_ANPVS_15"
+			"ACE_NVG_Wide"
 		};
     	attachments[] = {
 			WEST_SMG_SCOPE,
@@ -721,7 +721,7 @@ class blu_f {
 			"ItemMap",
 			"ItemCompass",
 			"itemGPS",
-			"rhsusf_ANPVS_15"
+			"ACE_NVG_Wide"
 		};
     	attachments[] = {
 			WEST_SMG_SCOPE,
