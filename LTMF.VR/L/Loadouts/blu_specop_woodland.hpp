@@ -286,6 +286,7 @@ class blu_f {
 		// correctly for the unit (like Map, Watch, NVG, etc)
 		linkedItems[] = {
 			"ItemMap",
+			"ItemGPS",
 			"ItemCompass",
 			"ItemWatch",
 			West_NVG
