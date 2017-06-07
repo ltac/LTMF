@@ -1,4 +1,5 @@
 /*
+// #include "BW\Loadouts\blu_merc_FAL_MK48_RPG.hpp" // Mercenaries, Tropical Gear, FALs, Mk48s, RPGs
 * Description:
 * Loadout definition for PMC
 * Weapons: FAL/MK48/RPG/Glock
