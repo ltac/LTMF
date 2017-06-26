@@ -18,7 +18,8 @@ class CfgLoadouts {
     //#include "L\Loadouts\blu_usmc_woodland.hpp" // USMC, Woodland MARPAT, M4
     //#include "L\Loadouts\blu_usmc_snow.hpp" // USMC, Arctic MARPAT, M4
     //#include "L\Loadouts\blu_germany_woodland.hpp" // Germany, Autumn Flecktarn, HK/G3
-    //#include "L\Loadouts\blu_specop_woodland.hpp // US, CTRG Woodland, MK18"
+    //#include "L\Loadouts\blu_specop_woodland.hpp" // US, CTRG Woodland, MK18
+    //#include "L\Loadouts\blu_merc_FAL_MK48_RPG.hpp" // Mercenaries, Tropical Gear, FALs, Mk48s, RPGs
 
     /* BLUFOR GUERILLA FACITON */
 
