@@ -29,6 +29,7 @@ function Get-Map {
 	$tanoa = New-Object System.Management.Automation.Host.ChoiceDescription "[&E] Tanoa", "Tanoa"
 	$clafghan = New-Object System.Management.Automation.Host.ChoiceDescription "[&F] Clafghan", "Clafghan"
 	$vr = New-Object System.Management.Automation.Host.ChoiceDescription "[&G] Virtual Reality", "Virtual Reality"
+	$malden = New-Object System.Management.Automation.Host.ChoiceDescription "[&H] Malden", "Malden"
 
 	$options = [System.management.Automation.Host.ChoiceDescription[]](
 		$altis,
@@ -47,7 +48,8 @@ function Get-Map {
 		$pg,
 		$tanoa,
 		$clafghan,
-		$vr
+		$vr,
+		$malden
 	)
 
 	# We use the $folderNames array for the appropriate folder extension
@@ -72,7 +74,8 @@ function Get-Map {
 		"ProvingGrounds_PMC",
 		"Tanoa",
 		"clafghan",
-		"vr"
+		"vr",
+		"Malden"
 	)
 
 	$response = $host.ui.PromptForChoice($title, $message, $options, 0)
